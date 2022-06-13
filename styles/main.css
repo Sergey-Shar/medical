@@ -171,6 +171,7 @@ html {
 
 .wrapper select option {
   font-weight: normal;
+  color: #222;
 }
 
 .wrapper select *[dir="rtl"] .select-css,
@@ -4390,9 +4391,9 @@ input {
 
 @media screen and (max-width: 480px) {
   .cards-block__header {
-    -ms-grid-columns: 130px 260px;
-        grid-template-columns: 130px 260px;
-    gap: 0;
+    -ms-grid-columns: 25% 60%;
+        grid-template-columns: 25% 60%;
+    gap: 2rem;
   }
   .cards-block__grid-list {
     display: none;
@@ -4465,7 +4466,7 @@ input {
     color: #07c47f;
     border: none;
     font-size: 2rem;
-    width: 130px;
+    width: 90px;
   }
   .cards-block__filter-btn.sort {
     color: #000;
@@ -4482,6 +4483,11 @@ input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 1rem;
+    width: 100%;
+  }
+  .cards-block__sort button {
+    width: 100%;
   }
 }
 
@@ -4971,6 +4977,9 @@ input {
 }
 
 @media screen and (max-width: 480px) {
+  .account button {
+    height: 7rem;
+  }
   .account_password-icon {
     top: 38%;
   }
@@ -5015,21 +5024,34 @@ input {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .account__delivery-address-choose button[type='reset'] {
+    height: 3rem;
+    margin: 5rem 0;
+  }
   .account__delivery-address-current-right {
     width: 100%;
   }
   .account__delivery-address-select-btn {
+    min-height: 5rem;
+    gap: 5rem;
     width: 100%;
-    height: 5rem;
-    gap: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .account__delivery-address-select-btn button {
     width: 100%;
-    padding: 1rem 0 1rem 1rem;
+    font-size: 12px;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    height: 7rem;
   }
   .account__tab :checked + .account__tab-title {
     border-bottom: 2px solid #07c47f;
-    padding-bottom: 7px;
+    padding-bottom: 12px;
   }
   .account__delivery-add-new-address-wrap {
     -ms-flex-wrap: wrap;
@@ -5078,10 +5100,9 @@ input {
             flex-direction: column;
   }
   .account__tabs label {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 900;
     color: #95969b;
-    margin-right: 3rem;
   }
 }
 

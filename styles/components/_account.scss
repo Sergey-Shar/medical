@@ -416,6 +416,10 @@
 
 @media screen and (max-width: 480px) {
     .account {
+        button{
+        height: 7rem;
+        }
+
         &_password-icon {
             top: 38%;
         }
@@ -459,24 +463,37 @@
             flex-direction: column;
         }
 
+        &__delivery-address-choose{
+         button[type='reset']{
+             height: 3rem;
+             margin: 5rem 0;
+         }
+        }
+
         &__delivery-address-current-right {
             width: 100%;
         }
 
         &__delivery-address-select-btn {
+
+            min-height: 5rem;
+            gap: 5rem;
             width: 100%;
-            height: 5rem;
-            gap: 1rem;
+            display: flex;
+            flex-direction: column;
+
 
             & button {
                 width: 100%;
-                padding: 1rem 0 1rem 1rem;
+                font-size: 12px;
+                padding: 0.5rem 0 0.5rem 0.5rem;
+                height: 7rem;
             }
         }
 
         &__tab :checked+.account__tab-title {
             border-bottom: 2px solid rgb(7, 196, 127);
-            padding-bottom: 7px;
+            padding-bottom: 12px;
         }
 
         &__delivery-add-new-address-wrap {
@@ -527,12 +544,11 @@
 
         &__tabs {
             & label {
-                font-size: 12px;
+                font-size: 11px;
                 font-weight: 900;
                 color: rgb(149, 150, 155);
-                ;
-                margin-right: 3rem;
             }
         }
+      
     }
 }

@@ -242,8 +242,8 @@
 @media screen and(max-width:480px) {
   .cards-block {
     &__header {
-      grid-template-columns: 130px 260px;
-      gap: 0;
+      grid-template-columns: 25% 60%;
+      gap: 2rem;
     }
     &__grid-list {
       display: none;
@@ -310,7 +310,7 @@
       color: rgb(7, 196, 127);
       border: none;
       font-size: 2rem;
-      width: 130px;
+      width: 90px;
 
       &.sort {
         color: #000;
@@ -329,6 +329,12 @@
 
     &__sort {
       display: flex;
+      gap: 1rem;
+      width: 100%;
+
+      button{
+        width: 100%;
+      }
     }
   }
 }

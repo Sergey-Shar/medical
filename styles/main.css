@@ -4466,7 +4466,7 @@ input {
     color: #07c47f;
     border: none;
     font-size: 2rem;
-    width: 90px;
+    width: 120%;
   }
   .cards-block__filter-btn.sort {
     color: #000;

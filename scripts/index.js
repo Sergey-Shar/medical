@@ -61,8 +61,8 @@ const swiperFeatures = new Swiper(".features__swiper", {
     invert: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".features__btn-next",
+    prevEl: ".features__btn-prev",
   },
 });
 

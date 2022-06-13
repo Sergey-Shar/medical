@@ -1318,6 +1318,11 @@ input {
   height: 54rem;
 }
 
+.banner__swiper .swiper-button-next {
+  right: auto;
+  left: 97%;
+}
+
 .banner__slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1567,12 +1572,10 @@ input {
   width: 1100px;
 }
 
-.features__btn {
-  color: #119273;
-}
-
-.features__btn::after {
-  font-size: 5rem;
+.features__btn-next::after, .features__btn-prev::after {
+  color: #10ae73;
+  font-size: 4rem;
+  font-weight: bold;
 }
 
 .features__block {
@@ -1628,6 +1631,14 @@ input {
     width: 155px;
     text-align: center;
     margin-top: 1rem;
+  }
+  .features__btn-next {
+    right: -5px;
+    left: auto;
+  }
+  .features__btn-prev {
+    left: -5px;
+    right: auto;
   }
 }
 

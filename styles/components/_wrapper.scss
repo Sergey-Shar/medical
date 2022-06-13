@@ -25,10 +25,10 @@
     box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
     font-size: 14px;
     background-color: #fff;
+    color: #222;
 
     & option {
       font-weight: normal;
-      color: #222;
     }
 
     *[dir="rtl"] .select-css,

@@ -364,6 +364,7 @@
         width: 70%;
     }
 }
+
 .account .card__nav {
     width: 230px;
 }
@@ -416,8 +417,8 @@
 
 @media screen and (max-width: 480px) {
     .account {
-        button{
-        height: 7rem;
+        button {
+            height: 7rem;
         }
 
         &_password-icon {
@@ -463,11 +464,11 @@
             flex-direction: column;
         }
 
-        &__delivery-address-choose{
-         button[type='reset']{
-             height: 3rem;
-             margin: 5rem 0;
-         }
+        &__delivery-address-choose {
+            button[type='reset'] {
+                height: 3rem;
+                margin: 5rem 0;
+            }
         }
 
         &__delivery-address-current-right {
@@ -549,6 +550,6 @@
                 color: rgb(149, 150, 155);
             }
         }
-      
+
     }
 }

@@ -213,16 +213,18 @@
         &__title {
             width: 50%;
         }
+
         &__line {
             margin-bottom: 60px;
             margin-top: 30px;
         }
+
         &__container {
             grid-template-columns: repeat(3, 1fr);
             row-gap: 50px;
             column-gap: 38px;
         }
-        
+
     }
 
     .favorite-product {
@@ -231,15 +233,18 @@
             text-transform: uppercase;
             width: 80%;
         }
+
         &__img-block {
             width: 220px;
             height: 220px;
         }
+
         &__img {
             width: 200px;
             height: 200px;
             margin: 10px;
         }
+
         &__header {
             padding: 10px 10px 0 10px;
         }
@@ -249,9 +254,11 @@
 @media screen and(max-width:480px) {
     .favorites-products {
         margin-bottom: 50px;
+
         &__nav {
             width: 180px;
         }
+
         &__line {
             margin-bottom: 10px;
             margin-top: 25px;
@@ -261,13 +268,16 @@
             grid-template-columns: 1fr;
             gap: 0;
         }
+
         &__title {
             width: 70%;
         }
+
         &__reset-btn {
             width: 34px;
             height: 34px;
         }
+
         &__reset-btn p {
             display: none;
         }
@@ -277,20 +287,22 @@
     .favorite-product {
         border-bottom: 1px solid #d2d2d2;
         padding: 20px 0;
+
         &__img-block {
             width: 115px;
             height: 115px;
         }
+
         &__img {
             width: 100px;
             height: 100px;
             margin: 8px 7px 7px 8px;
         }
-        grid-template-areas:
-            'img description'
-            'img description'
-            'img footer'
-            'img footer';
+
+        grid-template-areas: 'img description'
+        'img description'
+        'img footer'
+        'img footer';
         column-gap: 3rem;
 
         &__header {
@@ -298,12 +310,16 @@
             width: 93vw;
             top: -1rem;
         }
-        &__manufacturer, &__country {
+
+        &__manufacturer,
+        &__country {
             font-size: 9px;
         }
+
         &__link {
             font-size: 14px;
         }
+
         &__price {
             font-size: 16px;
         }
@@ -328,16 +344,19 @@
         &__header {
             padding: 1rem 0.5rem;
         }
+
         &__banner--advice {
             width: 85px;
             height: 20px;
             padding: 12px 9px;
         }
+
         &__delete-btn #icon {
             width: 25px;
             height: 25px;
         }
     }
+
     .favorite-product:last-child {
         border-bottom: none;
     }

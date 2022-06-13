@@ -142,7 +142,8 @@
 
   &__select {
     height: 4rem;
-    width: 165px;;
+    width: 165px;
+    ;
   }
 
   &__calculation {
@@ -227,6 +228,7 @@
     line-height: 3rem;
   }
 }
+
 .card-product .card__nav {
   width: 500px;
 }
@@ -241,14 +243,17 @@
         "main main"
         "calculation calculation";
     }
+
     &__header-title {
       width: 630px;
     }
+
     &__header-description {
       justify-content: space-around;
       min-height: 18rem;
       border-bottom: none;
     }
+
     &__block-foto {
       width: 720px;
     }
@@ -299,27 +304,34 @@
   .card {
     &__header {
       min-height: 10rem;
+
       &-title {
         font-size: 20px;
         width: 350px;
       }
     }
+
     &__block-foto {
       width: 350px;
     }
-    &__nav-link, &__nav-slach {
+
+    &__nav-link,
+    &__nav-slach {
       font-size: 12px;
     }
 
     &__brand-img {
       height: 5rem;
     }
+
     &__main-text {
       font-size: 14px;
     }
+
     &__main-link {
       font-size: 14px;
     }
+
     &__main-selects-block {
       grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
@@ -329,6 +341,7 @@
       gap: 1rem;
       min-height: 3rem;
       margin-bottom: 1.5rem;
+
       & select {
         font-size: 14px;
       }

@@ -36,14 +36,17 @@
             overflow: hidden;
             cursor: pointer;
             transition: transform 0.5s ease;
-            & h3{
+
+            & h3 {
                   font-size: 26px;
                   font-weight: bold;
                   margin-bottom: 28px;
                   color: #090909;
             }
+
             &:hover {
                   background-color: rgb(241, 248, 248);
+
                   h3 {
                         color: #10ae73;
                   }
@@ -60,6 +63,7 @@
                   color: rgb(7, 196, 127);
             }
       }
+
       &__link img {
             margin-left: 15px;
       }
@@ -71,6 +75,7 @@
             overflow: hidden;
       }
 }
+
 .catalog .card__nav {
       width: 175px;
 }
@@ -82,11 +87,13 @@
                   column-gap: 30px;
                   row-gap: 30px;
             }
+
             &__item {
                   min-width: 345px;
                   padding: 55px 0 66px 34px;
             }
       }
+
       .catalog .card__nav {
             width: 147px;
             min-width: 0;
@@ -104,10 +111,12 @@
             &__content {
                   display: none;
             }
+
             &__title-main {
                   font-size: 26px;
             }
       }
+
       .catalog .card__nav {
             width: 147px;
             min-width: 0;

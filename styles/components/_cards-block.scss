@@ -1,5 +1,4 @@
 .cards-block {
-
   &__header {
     display: flex;
     min-height: 12rem;
@@ -20,11 +19,12 @@
     gap: 2rem;
     height: 45px;
   }
-  &__selects-block > :nth-child(n) {
-      height: 45px;
-      width: 200px;
-      padding: 0 1rem;
-      margin-right: 2rem;
+
+  &__selects-block> :nth-child(n) {
+    height: 45px;
+    width: 200px;
+    padding: 0 1rem;
+    margin-right: 2rem;
   }
 
   &__grid-list {
@@ -43,10 +43,10 @@
     border: 1px solid #c2c2c2;
     border-radius: 0.5rem;
     transition: all 0.5s ease 0s;
-    &:hover{
+
+    &:hover {
       transition: all 0.5s ease 0s;
-      border: 1px solid #747373;;
-    
+      border: 1px solid #747373;
     }
   }
 
@@ -65,11 +65,13 @@
     border: 1px solid #c2c2c2;
     border-radius: 0.5rem;
     transition: all 0.5s ease 0s;
-    &:hover{
+
+    &:hover {
       transition: all 0.5s ease 0s;
       border: 1px solid #747373;
     }
   }
+
   &__main {
     display: grid;
     grid-template-columns: repeat(3, 300px);
@@ -79,6 +81,7 @@
     &.list {
       grid-template-columns: 1fr;
     }
+
     & .main-btn {
       width: 160px;
       height: 45px;
@@ -87,6 +90,7 @@
       font-weight: normal;
       justify-content: space-evenly;
     }
+
     & .icon-btn {
       width: 45px;
       height: 45px;
@@ -111,7 +115,7 @@
     border-radius: 0.5rem;
 
     &:hover {
-      border: 1px solid #B8B8B8;
+      border: 1px solid #b8b8b8;
     }
   }
 
@@ -141,16 +145,18 @@
     background-color: #fff;
     transition: all 0.5s ease 0s;
     color: #000;
-    border: 1px solid #B8B8B8;
+    border: 1px solid #b8b8b8;
 
     &:hover {
       background-color: #e8e9e9;
     }
   }
+
   &__pagination-btn--active {
     background: #134574;
     color: #fff;
   }
+
   &__btn-further {
     position: static;
     font-size: 14px;
@@ -173,21 +179,25 @@
     &__more-show-btn {
       height: 50px;
     }
+
     &__main {
       grid-template-columns: repeat(3, 220px);
       column-gap: 35px;
     }
+
     &__header {
       display: grid;
       grid-template-columns: 150px 420px 110px;
       justify-content: unset;
       gap: 25px;
     }
+
     &__selects-block {
       display: grid;
       grid-template-columns: repeat(2, 200px);
-      gap:20px;
+      gap: 20px;
     }
+
     &__grid-list {
       display: grid;
       grid-template-columns: repeat(2, 45px);
@@ -199,16 +209,19 @@
       gap: 20px;
       grid-template-columns: 200px 200px;
     }
+
     &__pagination-buttons {
       margin-right: 0;
     }
+
     &__select-footer {
       margin-left: 0;
     }
+
     &__btn-further {
-    justify-content: flex-start;  
-    padding: 0;
-    flex-grow: 0.6;
+      justify-content: flex-start;
+      padding: 0;
+      flex-grow: 0.6;
     }
 
     &__filter-btn {
@@ -228,8 +241,10 @@
       border-radius: 0.5rem;
     }
   }
+
   .list {
     justify-content: center;
+
     & .main-btn {
       width: 120px;
       height: 45px;
@@ -245,6 +260,7 @@
       grid-template-columns: 25% 60%;
       gap: 2rem;
     }
+
     &__grid-list {
       display: none;
     }
@@ -255,6 +271,7 @@
 
     &__main {
       grid-template-columns: 0.7fr;
+
       & .main-btn {
         width: 130px;
         height: 35px;
@@ -263,6 +280,7 @@
 
     &__card {
       grid-template-columns: 1fr;
+
       & .swiper-card__img-block {
         width: 115px;
         height: 115px;
@@ -332,7 +350,7 @@
       gap: 1rem;
       width: 100%;
 
-      button{
+      button {
         width: 100%;
       }
     }

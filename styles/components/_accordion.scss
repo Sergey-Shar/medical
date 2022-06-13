@@ -1,4 +1,5 @@
 .accordion {
+    position: relative;
     display: none;
     background-color: white;
     color: #000;
@@ -6,9 +7,15 @@
     padding: 1.8rem;
     width: 100%;
     text-align: left;
-    border-top: 2px solid rgb(207, 207, 207);
+    border-top: 1px solid rgb(207, 207, 207);
     outline: none;
     transition: all 0.5s ease 0s;
+    min-height: 10rem;
+
+    & a {
+        font-size: 13px;
+        margin-top: 3rem;
+    }
 
     &__icon {
         position: relative;
@@ -23,6 +30,7 @@
 
         .chevron:before,
         .chevron:after {
+            transition: all 0.5s ease 0s;
             position: absolute;
             display: block;
             content: "";
@@ -31,6 +39,7 @@
 
         .active:before,
         .active:after {
+            transition: all 0.5s ease 0s;
             position: absolute;
             display: block;
             content: "";
@@ -45,44 +54,47 @@
 
         .chevron:after {
             top: -10px;
-            
+
         }
     }
 }
 
 .panel {
+    display: none;
     padding: 0 1.8rem;
     background-color: #F4F9F9;
-    display: none;
     overflow: hidden;
     margin-bottom: 2rem;
     margin: 0 -1rem;
-    transition: all 0.5s ease 0s;
-
-    & p {
-        line-height: 4rem;
-        font-size: 2.5rem;
-    }
 
     & ul {
         margin: 1rem 0;
+
         & li a {
-            margin-bottom: 2rem;
+            margin: 3rem 4rem;
+            line-height: 4rem;
+            font-size: 12px;
+            font-weight: 200;
         }
     }
 }
+
 .active {
+    transition: all 0.5s ease 0s;
     background: #FFF;
 }
 
 @media screen and (max-width: 480px) {
     .accordion {
+        transition: all 0.5s ease 0s;
         display: flex;
         justify-content: space-between;
     }
+
     .card__accordion {
+        transition: all 0.5s ease 0s;
         font-size: 16px;
         font-weight: bold;
     }
-    
+
 }

@@ -15,7 +15,10 @@
         margin-top: 3rem;
         margin-bottom: 3.5rem;
         min-width: 0;
-        &-link, &-link-home, &-slash {
+
+        &-link,
+        &-link-home,
+        &-slash {
             color: #5C596A;
         }
     }
@@ -114,7 +117,8 @@
         font-size: 18px;
         font-weight: bold;
     }
-    &__day{
+
+    &__day {
         color: #161616;
     }
 
@@ -135,16 +139,20 @@
         font-weight: bold;
         color: #090909;
     }
-    &__link{
+
+    &__link {
         color: #07b87f;
         font-size: 16px;
     }
+
     &__link:hover {
         text-decoration: underline;
     }
+
     p {
         margin-bottom: 30px;
     }
+
     &__paragraph {
         margin-bottom: 1rem;
         line-height: 3rem;
@@ -220,12 +228,15 @@
             width: 100%;
         }
     }
+
     .article-inside {
         height: 880px;
     }
+
     .article-inside__swiper {
         min-height: 650px;
     }
+
     .article-inside .swiper-pagination-bullet {
         width: 16px;
         height: 16px;
@@ -235,17 +246,21 @@
 @media screen and(max-width:480px) {
 
     .article {
-       
+
         &__nav {
             display: flex;
             min-height: 6rem;
             width: 80%;
             justify-content: space-between;
             margin-top: 3rem;
-            &-link, &-link-home, &-slash {
+
+            &-link,
+            &-link-home,
+            &-slash {
                 font-size: 12px;
             }
         }
+
         &__header h2 {
             font-size: 26px;
         }
@@ -270,21 +285,26 @@
         &__subtitle {
             font-size: 18px;
         }
+
         &__swiper {
             min-height: 280px;
         }
+
         &__description {
             & p {
                 margin-left: 0;
             }
         }
     }
+
     .article-inside {
         height: 550px;
     }
+
     .article-inside__swiper {
         min-height: 430px;
     }
+
     .article .swiper-pagination-bullet {
         width: 16px;
         height: 16px;

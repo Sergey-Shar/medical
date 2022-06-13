@@ -6,8 +6,11 @@
     display: flex;
     margin-bottom: 4.7rem;
     align-items: center;
+    flex-wrap: wrap;
   }
-
+  &__text {
+    width: 52%;
+  }
   &__title {
     font-size: 52px;
     font-weight: bold;

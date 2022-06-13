@@ -44,6 +44,7 @@
     &__form textarea {
         border-radius: 5px;
         padding: 1rem;
+        resize: none;
     }
     &__name {
         grid-area: name;
@@ -88,5 +89,104 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    &__btn-close:hover {
+        font-weight: bold;
+    }
+}
+
+@media screen and(max-width:1100px) {
+    .write-review {
+        &__btn-close {
+            position: absolute;
+            right: 0;
+            width: 7rem;
+            height: 7rem;
+            font-size: 4rem;
+            padding: 1.5rem;
+        }
+        &__content {
+            padding: 30rem 3rem;
+        }
+        &__form {
+            grid-template-areas: "name name name"
+            "phone phone email"
+            "text text text"
+            "politic captcha submit";
+            gap: 4rem;
+            & input {
+                height: 7rem;
+            }
+            & label, & input, & textarea {
+                font-size: 2.3rem;
+            }
+            & input, & textarea {
+                padding-left: 2.5rem;
+            }
+            & textarea {
+                padding-top: 3rem;
+            }
+        }
+        &__phone {
+            width: 75%;
+        }
+        &__email {
+            margin-left: -50%;
+        }
+        &__title {
+            font-size: 8rem;
+        }
+        &__politic {
+            padding: 0;
+            line-height: 3rem;
+            font-size: 1.7rem;
+        }
+        &__btn-submit {
+            padding: 0;
+            height: 8.5rem;
+            font-size: 2rem;
+            font-weight: normal;
+            width: 100%;
+        }
+    }    
+}
+
+@media screen and(max-width:480px) {
+    .write-review {
+        &__content {
+            padding: 10rem 2.5rem 5rem;
+        }
+        &__title {
+            font-size: 5rem;
+        }
+        &__form {
+            display: flex;
+            flex-direction: column;
+            & input {
+                height: 10rem;
+            }
+            & label, & input, & textarea {
+                font-size: 2.8rem;
+            }
+            & textarea {
+                height: 28rem;
+            }
+        }
+        &__phone {
+            width: 100%;
+        }
+        &__email {
+            margin: 0;
+        }
+        &__politic {
+            font-size: 2.4rem;
+        }
+        &__captcha img {
+            width: 100%;
+        }
+        &__btn-submit {
+            height: 10rem;
+            font-size: 2.8rem;
+        }
     }
 }

@@ -1665,7 +1665,7 @@ input {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: "first   first   fifth sixth" "second  third   fifth seventh" "fourth  fourth  eighth eighth";
+      grid-template-areas: "first   first   fifth sixth" "second  third   fifth seventh" "fourth  fourth  eighth eighth";
   gap: 2.5rem;
 }
 
@@ -1804,13 +1804,13 @@ input {
     -ms-grid-rows: auto;
     -ms-grid-columns: (1fr)[2];
         grid-template: auto/repeat(2, 1fr);
-        grid-template-areas: "first   first" "first   first" "second  third" "second  third" "fourth  fourth" "fourth  fourth";
+        grid-template-areas: "first   first" "first   first" "second  third" "second  third" "fourth  fourth" "fourth  fourth";
   }
   .products__right-columns {
     -ms-grid-rows: auto;
     -ms-grid-columns: (1fr)[2];
         grid-template: auto/repeat(2, 1fr);
-        grid-template-areas: "fifth sixth " "fifth sixth " "fifth seventh" "fifth seventh" "eighth eighth";
+        grid-template-areas: "fifth sixth " "fifth sixth " "fifth seventh" "fifth seventh" "eighth eighth";
     gap: 1rem;
     border-radius: 2rem;
   }
@@ -3040,7 +3040,7 @@ input {
   display: -ms-grid;
   display: grid;
   gap: 1rem;
-      grid-template-areas: 'img' 'description' 'footer';
+      grid-template-areas: 'img' 'description' 'footer';
 }
 
 .swiper-card__products.list {
@@ -3144,7 +3144,7 @@ input {
   .swiper-card__products {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: 'img description' 'img  description' 'img  footer';
+        grid-template-areas: 'img description' 'img  description' 'img  footer';
     gap: 20px;
   }
   .swiper-card__price {
@@ -3201,7 +3201,7 @@ input {
   display: -ms-grid;
   display: grid;
   gap: 2rem;
-      grid-template-areas: "foto description" "foto main" "foto calculation" "foto .. ";
+      grid-template-areas: "foto description" "foto main" "foto calculation" "foto .. ";
   margin-top: 2rem;
 }
 
@@ -3458,7 +3458,7 @@ input {
 
 @media screen and (max-width: 1100px) {
   .card__main {
-        grid-template-areas: "description description" "foto foto" "foto foto" "main main" "calculation calculation";
+        grid-template-areas: "description description" "foto foto" "foto foto" "main main" "calculation calculation";
   }
   .card__header-title {
     width: 630px;
@@ -6179,7 +6179,7 @@ input {
   display: -ms-grid;
   display: grid;
   gap: 16px;
-      grid-template-areas: 'img' 'description' 'footer';
+      grid-template-areas: 'img' 'description' 'footer';
 }
 
 .favorite-product__img-block {
@@ -6418,7 +6418,7 @@ input {
   .favorite-product {
     border-bottom: 1px solid #d2d2d2;
     padding: 20px 0;
-        grid-template-areas: 'img description' 'img description' 'img footer' 'img footer';
+        grid-template-areas: 'img description' 'img description' 'img footer' 'img footer';
     -webkit-column-gap: 3rem;
             column-gap: 3rem;
   }
@@ -7326,6 +7326,7 @@ input {
 .feedback__form textarea {
   border-radius: 5px;
   padding: 1rem;
+  resize: none;
 }
 
 .feedback__name {
@@ -7408,6 +7409,104 @@ input {
           justify-content: center;
 }
 
+.feedback__btn-close:hover {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1100px) {
+  .feedback__btn-close {
+    position: absolute;
+    right: 0;
+    width: 7rem;
+    height: 7rem;
+    font-size: 4rem;
+    padding: 1.5rem;
+  }
+  .feedback__content {
+    padding: 30rem 3rem;
+  }
+  .feedback__form {
+        grid-template-areas: "name name name" "phone phone email" "text text text" "politic captcha submit";
+    gap: 4rem;
+  }
+  .feedback__form input {
+    height: 7rem;
+  }
+  .feedback__form label, .feedback__form input, .feedback__form textarea {
+    font-size: 2.3rem;
+  }
+  .feedback__form input, .feedback__form textarea {
+    padding-left: 2.5rem;
+  }
+  .feedback__form textarea {
+    padding-top: 3rem;
+  }
+  .feedback__phone {
+    width: 75%;
+  }
+  .feedback__email {
+    margin-left: -50%;
+  }
+  .feedback__title {
+    font-size: 8rem;
+  }
+  .feedback__politic {
+    padding: 0;
+    line-height: 3rem;
+    font-size: 1.7rem;
+  }
+  .feedback__btn-submit {
+    padding: 0;
+    height: 8.5rem;
+    font-size: 2rem;
+    font-weight: normal;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .feedback__content {
+    padding: 10rem 2.5rem 5rem;
+  }
+  .feedback__title {
+    font-size: 5rem;
+  }
+  .feedback__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .feedback__form input {
+    height: 10rem;
+  }
+  .feedback__form label, .feedback__form input, .feedback__form textarea {
+    font-size: 2.8rem;
+  }
+  .feedback__form textarea {
+    height: 28rem;
+  }
+  .feedback__phone {
+    width: 100%;
+  }
+  .feedback__email {
+    margin: 0;
+  }
+  .feedback__politic {
+    font-size: 2.4rem;
+  }
+  .feedback__captcha img {
+    width: 100%;
+  }
+  .feedback__btn-submit {
+    height: 10rem;
+    font-size: 2.8rem;
+  }
+}
+
 .write-review {
   background: -webkit-gradient(linear, right top, left top, from(#134574), to(#10ae73));
   background: linear-gradient(270deg, #134574, #10ae73);
@@ -7481,6 +7580,7 @@ input {
 .write-review__form textarea {
   border-radius: 5px;
   padding: 1rem;
+  resize: none;
 }
 
 .write-review__name {
@@ -7561,5 +7661,103 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.write-review__btn-close:hover {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1100px) {
+  .write-review__btn-close {
+    position: absolute;
+    right: 0;
+    width: 7rem;
+    height: 7rem;
+    font-size: 4rem;
+    padding: 1.5rem;
+  }
+  .write-review__content {
+    padding: 30rem 3rem;
+  }
+  .write-review__form {
+        grid-template-areas: "name name name" "phone phone email" "text text text" "politic captcha submit";
+    gap: 4rem;
+  }
+  .write-review__form input {
+    height: 7rem;
+  }
+  .write-review__form label, .write-review__form input, .write-review__form textarea {
+    font-size: 2.3rem;
+  }
+  .write-review__form input, .write-review__form textarea {
+    padding-left: 2.5rem;
+  }
+  .write-review__form textarea {
+    padding-top: 3rem;
+  }
+  .write-review__phone {
+    width: 75%;
+  }
+  .write-review__email {
+    margin-left: -50%;
+  }
+  .write-review__title {
+    font-size: 8rem;
+  }
+  .write-review__politic {
+    padding: 0;
+    line-height: 3rem;
+    font-size: 1.7rem;
+  }
+  .write-review__btn-submit {
+    padding: 0;
+    height: 8.5rem;
+    font-size: 2rem;
+    font-weight: normal;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .write-review__content {
+    padding: 10rem 2.5rem 5rem;
+  }
+  .write-review__title {
+    font-size: 5rem;
+  }
+  .write-review__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .write-review__form input {
+    height: 10rem;
+  }
+  .write-review__form label, .write-review__form input, .write-review__form textarea {
+    font-size: 2.8rem;
+  }
+  .write-review__form textarea {
+    height: 28rem;
+  }
+  .write-review__phone {
+    width: 100%;
+  }
+  .write-review__email {
+    margin: 0;
+  }
+  .write-review__politic {
+    font-size: 2.4rem;
+  }
+  .write-review__captcha img {
+    width: 100%;
+  }
+  .write-review__btn-submit {
+    height: 10rem;
+    font-size: 2.8rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

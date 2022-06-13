@@ -1,0 +1,38 @@
+.catalog-individual {
+
+    &__nav {
+        min-height: 6rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__content {
+        display: grid;
+        gap: 70px;
+        grid-template-columns: 1fr 3fr;
+        border-top: 1px solid #c2c2c2;
+    }
+}
+.catalog-individual .card__nav {
+    width: 310px;
+}
+
+@media screen and(max-width:1100px){
+    .catalog-individual{
+        &__nav {
+            width: 304px;
+            margin: 2rem 0 1rem 0;
+        }
+        &__content {
+            gap: 4rem;
+            grid-template-columns: 1fr ;
+        }
+    }
+}
+
+@media screen and(max-width:480px){
+    .catalog-individual .card__nav {
+        width: 230px;
+        min-width: 0;
+    }
+}

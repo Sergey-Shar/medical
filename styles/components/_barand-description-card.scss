@@ -1,0 +1,21 @@
+.brand-description-card {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    gap: 1rem;
+
+
+    &__manufacturer {
+        font-size: 9px;
+        background-color: rgb(207, 207, 207);
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+    }
+
+    &__country {
+        font-size: 9px;
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        border: 1px solid rgb(207, 207, 207);
+    }
+}

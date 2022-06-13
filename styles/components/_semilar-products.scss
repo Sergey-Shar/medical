@@ -1,0 +1,91 @@
+.semilar-products {
+  &__header {
+    display: flex;
+    align-items: center;
+    min-height: 20rem;
+  }
+
+  &__title {
+    font-size: 42px;
+    font-weight: 900;
+  }
+
+  &__swiper {
+    min-height: 75rem;
+  }
+
+  &__footer {
+    min-height: 15rem;
+    display: flex;
+    align-items: center;
+  }
+  &__swiper {
+    & .main-btn {
+      width: 160px;
+      height: 45px;
+      font-size: 14px;
+      text-transform: uppercase;
+      justify-content: space-evenly;
+      flex-direction: row-reverse;
+    }
+    & .navigation__button {
+      flex-direction: row;
+    }
+  }
+}
+
+.back-to-list-linck {
+  font-size: 1.8rem;
+  color: rgb(7, 196, 127);
+}
+
+@media screen and (max-width: 1100px) {
+  .semilar-products {
+    &__swiper {
+      min-height: 70rem;
+      border-bottom: 1px solid #d2d2d2;
+    }
+    &__nav {
+      .navigation__button {
+        gap: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .semilar-products {
+    &__swiper {
+      min-height: 45rem;
+      margin-bottom: 30px;
+      border-bottom: none;
+      & .main-btn {
+        width: 130px;
+        height: 35px;
+      }
+      & .navigation__button {
+        width: 45%;
+        left: 30%;
+        margin: 0;
+      }
+      & .swiper-pagination {
+        width: 30%;
+      }
+      & .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &__header {
+      min-height: 0;
+      margin: 30px 0;
+    }
+    &__title {
+      font-size: 20px;
+    }
+    &__footer {
+      display: none;
+    }
+  }
+}

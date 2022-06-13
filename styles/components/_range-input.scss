@@ -1,0 +1,92 @@
+// .range-input {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 3rem;
+
+//     &__inputs {
+//         position: relative;
+//         width: 100%;
+//         height: 100%;
+//         margin-bottom: 3rem;
+
+//         input[type="range"] {
+//             -webkit-appearance: none;
+//             -moz-appearance: none;
+//             appearance: none;
+//             width: 100%;
+//             outline: none;
+//             position: absolute;
+//             margin: auto;
+//             top: 0;
+//             bottom: 0;
+//             background-color: transparent;
+//             pointer-events: none;
+//         }
+
+//         input[type="range"]::-webkit-slider-runnable-track {
+//             -webkit-appearance: none;
+//             height: 5px;
+//         }
+
+//         input[type="range"]::-moz-range-track {
+//             -moz-appearance: none;
+//             height: 5px;
+//         }
+
+//         input[type="range"]::-ms-track {
+//             appearance: none;
+//             height: 5px;
+//         }
+
+//         input[type="range"]::-webkit-slider-thumb {
+//             -webkit-appearance: none;
+//             height: 1em;
+//             width: 1em;
+//             background-color: #10ae73;
+//             cursor: pointer;
+//             border-radius: 50%;
+//             pointer-events: auto;
+//             margin-top: -4px;
+//             pointer-events: auto;
+//         }
+
+//         input[type="range"]:active::-webkit-slider-thumb {
+//             background-color: #fff;
+//             border: 1px solid #10ae73;
+//         }
+//     }
+
+//     &__values {
+//         display: flex;
+//         justify-content: space-between;
+//         width: 100%;
+//     }
+
+//     &__value {
+//         border: 1px solid #cfcfcf;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         border-radius: 0.5rem;
+//         height: 5rem;
+//         width: 10rem;
+//     }
+
+//     &__value-from {
+//         font-size: 1.6rem;
+//     }
+
+//     &__value-to {
+//         font-size: 1.6rem;
+//     }
+
+//     &__track {
+//         width: 100%;
+//         height: 3px;
+//         position: absolute;
+//         margin: auto;
+//         top: 0;
+//         bottom: 0;
+//         border-radius: 5px;
+//     }
+// }

@@ -1,0 +1,107 @@
+.brands {
+  background: linear-gradient(226.84deg, #134574 16.01%, #10ae73 100%);
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 20rem;
+    //width: 110rem;
+  }
+
+  &__title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+    color: #ffffff;
+  }
+
+  &__swiper {
+    height: 50%;
+    width: 80%;
+    padding: 0 3.5rem;
+  }
+
+  &__btn-next {
+    position: absolute;
+    right: 0;
+    color: #fff;
+  }
+
+  &__btn-prev {
+    position: absolute;
+    left: 0;
+    color: #fff;
+  }
+
+  &__img {
+    transition: transform 0.5s linear;
+    overflow: hidden;
+    min-height: 10rem;
+    padding: 1.3rem;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+@media screen and(max-width: 1100px) {
+  .brands {
+    &__container {
+      display: block;
+      padding-bottom: 4rem;
+    }
+
+    &__title {
+      margin: 20px 0 10px 0;
+    }
+
+    &__btn-next {
+      right: -2px;
+    }
+
+    &__btn-prev {
+      left: -2px;
+    }
+
+    &__img {
+      &:hover {
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 480px) {
+  .brands {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding-bottom: 0;
+    }
+
+    &__title {
+      margin: 10px 0 10px 0;
+    }
+
+    &__swiper {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 0 8rem;
+    }
+
+    &__btn-next::after, &__btn-prev::after{
+      font-size: 21px;
+    }
+
+    &__img {
+      padding: 0rem;
+    }
+  }
+}

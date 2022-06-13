@@ -1,0 +1,215 @@
+.filter-modal {
+    &.open &__overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(3px);
+        z-index: 1;
+        transition: all 0.3s ease 0s;
+        z-index: 10000;
+    }
+
+    &.open &__filter-bar {
+        display: flex;
+        min-width: 100%;
+    }
+
+    &.open &__body {
+        z-index: 10000;
+        transition: all 0.5s ease 0s;
+        transform: translateX(0);
+    }
+
+    &__overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -10;
+        background-color: rgba(0, 0, 0, 0);
+        transition: all 0.5s ease 0s;
+    }
+
+    &__body {
+        width: 50%;
+        height: 100vh;
+        background-color: #fff;
+        transform: translateX(-100%);
+        transition: all 0.5s ease 0s;
+    }
+
+    &__header {
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 13rem;
+        border-bottom: 1px solid #c2c2c2;
+        padding: 0 3rem;
+    }
+
+    &__title {
+        font-size: 35px;
+        font-weight: 900;
+        font-family: "Nunito", sans-serif;
+    }
+
+    &__close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 3rem;
+        font-size: 25px;
+    }
+
+    &__category {
+        min-height: 50rem;
+
+        & p {
+            font-size: 22px;
+            margin: 5rem 0 3rem 3rem;
+        }
+
+        & li {
+            font-size: 16px;
+            line-height: 5rem;
+            font-weight: 100;
+            margin-left: 3rem;
+        }
+    }
+
+    &__price {
+        min-height: 28rem;
+
+        & p {
+            font-size: 22px;
+            margin: 4rem 0 3rem 3rem;
+        }
+
+        & .range-input__value {
+            width: 40%;
+            margin: 0 2rem 2rem 2rem;
+            height: 7rem;
+            display: flex;
+            align-items: center;
+        }
+
+        & .range-input__inputs {
+            margin: 0 3rem;
+            width: 90%;
+        }
+
+        & span {
+            font-size: 20px;
+        }
+    }
+
+    &__sale-products {
+        & label {
+            font-size: 22px;
+            margin: 3rem 0 3rem 3rem;
+        }
+    }
+
+    &__manufacturer {
+        & p {
+            font-size: 22px;
+            margin: 3rem 0 3rem 3rem;
+        }
+
+        & label {
+            font-size: 16px;
+            margin: 2rem 0;
+        }
+
+        & input[type="search"] {
+            min-width: 90%;
+            height: 6rem;
+            margin: 0 3rem;
+        }
+    }
+
+    &__checkboxes {
+        height: 13rem;
+        margin-left: 3rem;
+        overflow: scroll;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    &__reset {
+        padding: 1.5rem 2.5rem;
+        margin: 0 0;
+        max-width: 90%;
+
+        & span,
+        p {
+            color: #c2c2c2;
+        }
+    }
+
+    &__apply {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        font-size: 1.8rem;
+        padding: 1.5rem 2.5rem;
+        width: 90%;
+        transition: all 300ms ease;
+        border-radius: 0.5rem;
+        background-color: rgb(16, 174, 115);
+        color: #fff;
+        margin: 0rem 0rem;
+
+        &:hover {
+            background-color: rgb(7, 196, 127);
+        }
+    }
+}
+
+@media screen and(max-width:480px) {
+    .filter-modal {
+        &__body {
+            width: 100%;
+        }
+
+        &__checkboxes {
+            display: none;
+        }
+
+        &__manufacturer {
+            display: none;
+        }
+
+        &__sale-products {
+            display: none;
+        }
+
+        &__category {
+            min-height: 53rem;
+        }
+
+        &__price {
+            height: 32rem;
+
+            & .range-input__inputs {
+                margin-top: 1rem;
+            }
+        }
+
+        &__apply {
+            margin: 0 0;
+            font-size: 3rem;
+            padding: 2rem 3rem;
+        }
+
+        &__reset {
+            font-size: 3rem;
+            padding: 2rem 3rem;
+        }
+    }
+}

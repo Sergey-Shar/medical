@@ -1,0 +1,115 @@
+.catalog {
+      &__nav {
+            display: flex;
+            min-height: 6rem;
+            width: 50%;
+      }
+
+      &__header {
+            margin-bottom: 46px;
+      }
+
+      &__title-main {
+            font-size: 56px;
+            font-weight: bold;
+      }
+
+      &__content {
+            display: grid;
+            row-gap: 38px;
+            column-gap: 50px;
+            grid-template-columns: repeat(3, 1fr);
+            margin-bottom: 100px;
+
+            & a {
+                  color: #000;
+            }
+      }
+
+      &__item {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            box-shadow: 5px 5px 35px #00000029;
+            border-radius: 8px;
+            padding: 55px 0 48px 44px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.5s ease;
+            & h3{
+                  font-size: 26px;
+                  font-weight: bold;
+                  margin-bottom: 28px;
+                  color: #090909;
+            }
+            &:hover {
+                  background-color: rgb(241, 248, 248);
+                  h3 {
+                        color: #10ae73;
+                  }
+            }
+      }
+
+      &__link {
+            color: #161616;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                  color: rgb(7, 196, 127);
+            }
+      }
+      &__link img {
+            margin-left: 15px;
+      }
+
+      &__panel {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            overflow: hidden;
+      }
+}
+.catalog .card__nav {
+      width: 175px;
+}
+
+@media screen and(max-width:1100px) {
+      .catalog {
+            &__content {
+                  grid-template-columns: repeat(2, 1fr);
+                  column-gap: 30px;
+                  row-gap: 30px;
+            }
+            &__item {
+                  min-width: 345px;
+                  padding: 55px 0 66px 34px;
+            }
+      }
+      .catalog .card__nav {
+            width: 147px;
+            min-width: 0;
+      }
+}
+
+@media screen and(max-width:480px) {
+      .catalog {
+            margin: 3rem 0;
+
+            &__header {
+                  margin-bottom: 22px;
+            }
+
+            &__content {
+                  display: none;
+            }
+            &__title-main {
+                  font-size: 26px;
+            }
+      }
+      .catalog .card__nav {
+            width: 147px;
+            min-width: 0;
+      }
+}

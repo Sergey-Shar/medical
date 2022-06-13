@@ -1,0 +1,334 @@
+.cards-block {
+
+  &__header {
+    display: flex;
+    min-height: 12rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__filter-btn {
+    display: none;
+  }
+
+  &__sort {
+    display: none;
+  }
+
+  &__selets-block {
+    display: flex;
+    gap: 2rem;
+    height: 45px;
+  }
+  &__selects-block > :nth-child(n) {
+      height: 45px;
+      width: 200px;
+      padding: 0 1rem;
+      margin-right: 2rem;
+  }
+
+  &__grid-list {
+    display: flex;
+    // width: 110px;
+  }
+
+  &__grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(7, 196, 127);
+    margin-right: 1rem;
+    height: 45px;
+    width: 45px;
+    border: 1px solid #c2c2c2;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease 0s;
+    &:hover{
+      transition: all 0.5s ease 0s;
+      border: 1px solid #747373;;
+    
+    }
+  }
+
+  &__grid-icon {
+    stroke: #fff;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin-right: 0rem;
+    height: 45px;
+    width: 45px;
+    border: 1px solid #c2c2c2;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease 0s;
+    &:hover{
+      transition: all 0.5s ease 0s;
+      border: 1px solid #747373;
+    }
+  }
+  &__main {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    column-gap: 32px;
+    row-gap: 47px;
+
+    &.list {
+      grid-template-columns: 1fr;
+    }
+    & .main-btn {
+      width: 160px;
+      height: 45px;
+      flex-direction: row-reverse;
+      font-size: 14px;
+      font-weight: normal;
+      justify-content: space-evenly;
+    }
+    & .icon-btn {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    min-height: 12rem;
+    flex-direction: column;
+  }
+
+  &__more-show-btn {
+    height: 5rem;
+    background-color: #fff;
+    border: 1px dashed #c2c2c2;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 50px 0 0 0;
+    border-radius: 0.5rem;
+
+    &:hover {
+      border: 1px solid #B8B8B8;
+    }
+  }
+
+  &__pagination-block {
+    display: flex;
+    width: 100%;
+    min-height: 45px;
+    margin-top: 45px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 96px;
+  }
+
+  &__pagination-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+    align-items: center;
+    margin-right: 40px;
+  }
+
+  &__pagination-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 12px;
+    background-color: #fff;
+    transition: all 0.5s ease 0s;
+    color: #000;
+    border: 1px solid #B8B8B8;
+
+    &:hover {
+      background-color: #e8e9e9;
+    }
+  }
+  &__pagination-btn--active {
+    background: #134574;
+    color: #fff;
+  }
+  &__btn-further {
+    position: static;
+    font-size: 14px;
+    width: 75px;
+    flex-grow: 1;
+    justify-content: flex-start;
+  }
+
+  &__select-footer {
+    // margin-left: 775px;
+    min-height: 4rem;
+    max-width: 25rem;
+    padding: 0 1rem;
+    height: 45px;
+  }
+}
+
+@media screen and(max-width:1100px) {
+  .cards-block {
+    &__more-show-btn {
+      height: 50px;
+    }
+    &__main {
+      grid-template-columns: repeat(3, 220px);
+      column-gap: 35px;
+    }
+    &__header {
+      display: grid;
+      grid-template-columns: 150px 420px 110px;
+      justify-content: unset;
+      gap: 25px;
+    }
+    &__selects-block {
+      display: grid;
+      grid-template-columns: repeat(2, 200px);
+      gap:20px;
+    }
+    &__grid-list {
+      display: grid;
+      grid-template-columns: repeat(2, 45px);
+      gap: 20px;
+    }
+
+    &__selets-block {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 200px 200px;
+    }
+    &__pagination-buttons {
+      margin-right: 0;
+    }
+    &__select-footer {
+      margin-left: 0;
+    }
+    &__btn-further {
+    justify-content: flex-start;  
+    padding: 0;
+    flex-grow: 0.6;
+    }
+
+    &__filter-btn {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      width: 150px;
+      height: 45px;
+      text-transform: uppercase;
+      font-size: 14;
+      font-weight: bold;
+      background-color: rgb(7, 196, 127);
+      color: #fff;
+      height: 45px;
+      padding: 0 3rem;
+      border: 1px solid #c2c2c2;
+      border-radius: 0.5rem;
+    }
+  }
+  .list {
+    justify-content: center;
+    & .main-btn {
+      width: 120px;
+      height: 45px;
+      text-transform: uppercase;
+      gap: 2rem;
+    }
+  }
+}
+
+@media screen and(max-width:480px) {
+  .cards-block {
+    &__header {
+      grid-template-columns: 130px 260px;
+      gap: 0;
+    }
+    &__grid-list {
+      display: none;
+    }
+
+    &__selects-block {
+      display: none;
+    }
+
+    &__main {
+      grid-template-columns: 0.7fr;
+      & .main-btn {
+        width: 130px;
+        height: 35px;
+      }
+    }
+
+    &__card {
+      grid-template-columns: 1fr;
+      & .swiper-card__img-block {
+        width: 115px;
+        height: 115px;
+        min-width: 0;
+      }
+    }
+
+    &__more-show-btn {
+      display: none;
+    }
+
+    &__pagination-block {
+      height: 100%;
+      flex-wrap: wrap-reverse;
+      margin-top: 30px;
+      margin-bottom: 55px;
+    }
+
+    &__pagination-buttons {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      max-width: 230px;
+      order: 1;
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+
+    &__select-footer {
+      min-width: 350px;
+      margin-bottom: 30px;
+      order: 3;
+    }
+
+    &__btn-further {
+      margin-left: 0;
+      left: 0;
+      order: 2;
+      justify-content: flex-end;
+    }
+
+    &__filter-btn {
+      height: 5rem;
+      background-color: #fff;
+      color: rgb(7, 196, 127);
+      border: none;
+      font-size: 2rem;
+      width: 130px;
+
+      &.sort {
+        color: #000;
+      }
+    }
+
+    &__filter-icon {
+      height: 3rem;
+      width: 3rem;
+      stroke: rgb(7, 196, 127);
+
+      &.sort {
+        stroke: #000;
+      }
+    }
+
+    &__sort {
+      display: flex;
+    }
+  }
+}

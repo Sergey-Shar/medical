@@ -1,0 +1,538 @@
+.account {
+
+    &__required {
+        position: absolute;
+        right: 2rem;
+        top: 43%;
+        color: red;
+    }
+
+    &__nav {
+        min-height: 6rem;
+        display: flex;
+        align-items: center;
+        width: 60%;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 12rem;
+        border-bottom: 1px solid rgb(207, 207, 207);
+    }
+
+    &__tabs-sing-up-wrapp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.8rem;
+    }
+
+    &__tabs {
+        display: flex;
+
+        & input[type="radio"] {
+            display: none;
+        }
+
+        & label {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: rgb(149, 150, 155);
+            ;
+            margin-right: 3rem;
+        }
+    }
+
+    &__tab :checked+.account__tab-title {
+        position: relative;
+        padding-bottom: 1.9rem;
+        border-bottom: 3px solid rgb(7, 196, 127);
+        z-index: 10;
+        color: #000;
+    }
+
+    &__tab-title {
+        border-bottom: none;
+        top: 0;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__singup-btn {
+        background-color: #fff;
+        color: rgb(149, 150, 155);
+        transition: all 300ms ease;
+
+        &:hover {
+            background-color: #fff;
+            color: rgb(131, 132, 136);
+            opacity: 0.6;
+        }
+    }
+
+    &__signup-icon {
+        stroke: rgb(149, 150, 155);
+    }
+
+    &__input-wrapp {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__inputs-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__inputs-row {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+
+        & input {
+            width: 100%;
+        }
+    }
+
+    &__form {
+
+        & input[type='text'],
+        input[type='tel'],
+        input[type='number'],
+        input[type='email'],
+        input[type='password'] {
+            border: 1px solid rgb(207, 207, 207);
+            border-radius: 3px;
+            min-height: 3.3rem;
+            font-size: 1.4rem;
+            background-clip: padding-box;
+            margin: 0 0 3rem 0;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            cursor: pointer;
+        }
+
+        & label {
+            margin-bottom: 1rem;
+            font-weight: 900;
+        }
+
+        & input:focus {
+            color: #212529;
+            background-color: #fff;
+            border-color: #bdbdbd;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+        }
+
+        & input:hover {
+            border: 1px solid rgb(130, 128, 128);
+        }
+
+        & button[type='reset'] {
+            background-color: #fff;
+            color: rgb(149, 150, 155);
+            text-decoration: underline;
+            padding-left: 0;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+
+    &__personal-data {
+        border-bottom: 1px solid rgb(207, 207, 207);
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 900;
+        margin: 3rem 0 5rem 0;
+    }
+
+    &__personal-data-inputs {
+        display: flex;
+        justify-content: space-between;
+
+        & input {
+            min-width: 25rem;
+        }
+    }
+
+    &__organization-data {
+        display: none;
+        border-bottom: 1px solid rgb(207, 207, 207);
+    }
+
+    &__organization-data-addresses {
+        display: flex;
+        gap: 3rem;
+        width: 100%;
+    }
+
+    &__organization-data-addresses-legal {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__organization-data-addresses-actual {
+        width: 100%;
+    }
+
+    &__delivery-address {
+        border-bottom: 1px solid rgb(207, 207, 207);
+    }
+
+    &__delivery-address-select-btn {
+        display: flex;
+        gap: 3rem;
+
+        & select {
+            min-width: 48%;
+            cursor: pointer;
+        }
+
+        & button {
+            background-color: #fff;
+            border: 1px solid rgb(7, 196, 127);
+            color: rgb(7, 196, 127);
+
+            &:hover {
+                background-color: #fff;
+                opacity: 0.6;
+            }
+        }
+
+        & button:disabled {
+            background-color: #fff;
+            border: 1px solid rgb(207, 207, 207);
+            color: rgb(207, 207, 207);
+
+            & .account__choose-icon {
+                stroke: rgb(207, 207, 207);
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__choose-icon {
+        stroke: rgb(7, 196, 127);
+    }
+
+    &__delivery-address-delete {
+        margin: 2rem 0 2rem 0;
+    }
+
+    &__delete-icon {
+        stroke: rgb(149, 150, 155);
+        ;
+    }
+
+    &__delivery-address-current {
+        display: flex;
+        gap: 3rem;
+
+        &.hidden {
+            display: none;
+        }
+    }
+
+    &__delivery-address-current-left {
+        display: flex;
+        flex-direction: column;
+        min-width: 44%;
+    }
+
+    &__delivery-address-current-right {
+        min-width: none;
+        width: 56%;
+    }
+
+    &__delivery-add-new-address {
+        display: none;
+
+        & p {
+            color: rgb(7, 196, 127);
+        }
+
+        &.add-address {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__delivery-add-new-address-center {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+
+        & input {
+            min-width: 446px;
+        }
+    }
+
+    &__delivery-add-new-address-wrap {
+        display: flex;
+        gap: 3rem;
+    }
+
+    &__delivery-add-new-address-left {
+        display: flex;
+        flex-direction: column;
+        min-width: 48.5%;
+    }
+
+    &__delivery-add-new-address-right {
+        display: flex;
+        flex-direction: column;
+        min-width: 50%;
+    }
+
+
+    &__delivery-add-new-address-buttons {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    &__password {
+        border-bottom: 1px solid rgb(207, 207, 207);
+        width: 50%;
+
+        & input {
+            width: 22rem;
+        }
+    }
+
+    &__password-create-new {
+        display: flex;
+        justify-content: space-between;
+
+        & input {
+            margin: 0;
+            min-width: 22rem;
+        }
+    }
+
+    &__remind-pass {
+        position: absolute;
+        left: 30%;
+        color: rgb(149, 150, 155);
+        text-decoration: underline;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    &__save-buttons {
+        display: flex;
+        gap: 2rem;
+        margin: 4rem 0;
+    }
+
+    &_password-icon {
+        display: flex;
+        justify-content: end;
+        position: absolute;
+        margin-right: 1rem;
+        right: 0;
+        top: 32%;
+        opacity: 0.4;
+        cursor: pointer;
+        transition: all 300ms ease;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &_password-icon.old {
+        justify-content: start;
+        width: 70%;
+    }
+}
+.account .card__nav {
+    width: 230px;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .account {
+        &_password-icon {
+            height: 2rem;
+            width: 2rem;
+        }
+
+        &_password-icon.old {
+            display: none;
+        }
+
+        &__tab :checked+.account__tab-title {
+            border-bottom: 3px solid rgb(7, 196, 127);
+            padding-bottom: 19px;
+        }
+
+        &__delivery-address-current-left {
+            min-width: 48%;
+        }
+
+        &__delivery-address-current-right {
+            width: 53%;
+        }
+
+        &__delivery-add-new-address-center {
+            & input {
+                min-width: 357px;
+            }
+        }
+
+        &__password {
+            & input {
+                width: 180px;
+            }
+        }
+
+        &__password-create-new {
+            & input {
+                min-width: 180px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .account {
+        &_password-icon {
+            top: 38%;
+        }
+
+        &_password-icon.old {
+            display: flex;
+            justify-content: end;
+            height: 2rem;
+            width: 2rem;
+        }
+
+        &__form {
+
+            & input {
+                height: 5rem;
+                width: 100%;
+            }
+
+            & label {
+                font-size: 12px;
+                font-weight: 300;
+            }
+
+            & p {
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+
+        &__delivery-address-current {
+            flex-direction: column;
+        }
+
+        &__personal-data-inputs {
+            flex-direction: column;
+
+        }
+
+        &__delivery-address-current-left {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        &__delivery-address-current-right {
+            width: 100%;
+        }
+
+        &__delivery-address-select-btn {
+            width: 100%;
+            height: 5rem;
+            gap: 1rem;
+
+            & button {
+                width: 100%;
+                padding: 1rem 0 1rem 1rem;
+            }
+        }
+
+        &__tab :checked+.account__tab-title {
+            border-bottom: 2px solid rgb(7, 196, 127);
+            padding-bottom: 7px;
+        }
+
+        &__delivery-add-new-address-wrap {
+            flex-wrap: wrap;
+        }
+
+        &__delivery-add-new-address-left {
+            width: 100%;
+        }
+
+        &__delivery-add-new-address-right {
+            width: 100%;
+        }
+
+        &__delivery-add-new-address-center {
+            gap: 1rem;
+        }
+
+        &__remind-pass {
+            left: 79%;
+        }
+
+
+        &__organization-data-addresses {
+            flex-direction: column;
+
+        }
+
+        &__inputs-block {
+            flex-direction: column;
+        }
+
+        &__inputs-row {
+            flex-direction: column;
+        }
+
+        &__password {
+            width: 100%;
+
+            & input {
+                width: 100%;
+            }
+        }
+
+        &__password-create-new {
+            flex-direction: column;
+        }
+
+        &__tabs {
+            & label {
+                font-size: 12px;
+                font-weight: 900;
+                color: rgb(149, 150, 155);
+                ;
+                margin-right: 3rem;
+            }
+        }
+    }
+}

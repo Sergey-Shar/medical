@@ -1,0 +1,57 @@
+.dropdown {
+
+  * {
+        font-family: "Nunito", sans-serif;
+    }
+
+    &.open &__owerlay {
+        background-color: rgba(45, 47, 48, 0.7);
+        backdrop-filter: blur(3px);
+        z-index: 2000;
+        transition: all 0.5s ease 0s;
+        opacity: 1;
+    }
+
+    &.open &__body {
+        transition: all 0.5s ease 0s;
+        opacity: 1;
+    }
+
+    &__owerlay {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 20%;
+        z-index: -1;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        transition: all 0.5s ease 0s;
+        opacity: 0;
+        backdrop-filter: blur(3px);
+        width: 34rem;
+        height: 40rem;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 30rem;
+        height: 30rem;
+        opacity: 0;
+        transition: all 0.5s ease 0s;
+    }
+
+    &__list-item {
+        color: #fff;
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 3rem;
+
+        &:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+    }
+}

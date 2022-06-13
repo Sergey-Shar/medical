@@ -1,0 +1,269 @@
+.articles {
+  padding: 8rem 0 12.5rem;
+  background-color: #f4f5fa;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7.2rem;
+  }
+
+  &__content {
+    height: 45rem;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    flex: 0 1 60%;
+    font-size: 5.2rem;
+    font-weight: bold;
+  }
+
+  &__line {
+    height: 1px;
+    background: #10ae73;
+    flex: 0 1 20%;
+  }
+
+  &__date {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    flex: 0 1 20%;
+  }
+
+  &__time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: #000000;
+    gap: 1rem;
+  }
+
+  &__day {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__img {
+    border-radius: 0 0 10rem 0;
+  }
+
+  &__description {
+    display: flex;
+    width: 90%;
+    position: absolute;
+    top: 273px;
+    height: 181px;
+    background-color: #fff;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__swiper {
+    min-height: 54rem;
+  }
+
+  &__description-date {
+    width: 45%;
+    font-size: 14px;
+    color: #5c596a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4.7rem;
+  }
+
+  &__date-day {
+    font-size: 63px;
+    color: #000;
+  }
+
+  &__description-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 3rem;
+    margin-right: 10rem;
+
+  }
+
+  &__description-title {
+    text-decoration: underline;
+    font-size: 22px;
+    font-weight: bold;
+    color: #161616;
+  }
+
+  &__description-category {
+    color: #10ae73;
+    font-size: 14px;
+    font-weight: bold;
+    // margin-top: 2.7rem;
+  }
+  &__button-all {
+    position: absolute;
+    left: 30%;
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    text-transform: uppercase;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  &__button-all:hover, &__button-all:hover #icon {
+    color: #626161;
+  }
+  &__navigation {
+    height: 50px;
+  }
+
+  &__button {
+    background-color: #f4f5fa;
+    color: #000;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f4f5fa;
+      opacity: 0.7;
+    }
+
+    &__pagination {
+      left: 40%;
+      width: 20%;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .articles {
+    padding: 5rem 0 3rem;
+
+    &__swiper {
+      display: block;
+      width: 720px;
+      padding-bottom: 10rem;
+      min-height: 85rem;
+    }
+
+    &__img {
+      width: 100%;
+      height: 54rem;
+    }
+
+    &__description {
+      width: 90%;
+      top: 320px;
+    }
+
+    &__description-text {
+      width: 80%;
+      line-height: 4.5rem;
+      margin-top: 0rem;
+    }
+
+    &__description-date {
+      width: 16%;
+    }
+    &__button-all {
+      width: 30%;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .articles {
+    padding: 5rem 0 3rem;
+
+    &__top {
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 7.2rem;
+    }
+    &__day, &__time {
+      font-size: 12px;
+    }
+    &__content {
+      height: 36rem;
+    }
+    &__title {
+      flex: 40%;
+    }
+
+    &__line {
+      flex: 20%;
+    }
+
+    &__date {
+      flex: 40%;
+    }
+
+    &__swiper {
+      display: flex;
+      width: 90vw;
+      height: auto;
+      min-height: 430px;
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+    &__date-day {
+      font-size: 14px;
+    }
+
+    &__description {
+      flex-direction: column;
+      height: 40%;
+      width: 90%;
+      gap: 3rem;
+      top: 125px;
+      background: none;
+    }
+    &__description-title {
+      font-size: 18px;
+      line-height: 5rem;
+    }
+    &__description-text {
+      width: 100%;
+      line-height: 4rem;
+      margin: 0 0 0 0;
+      margin-top: 1.5rem;
+    }
+    &__description-category {
+      margin-left: 0;
+      margin-top: 20px;
+      padding-bottom: 50px;
+      border-bottom: 2px solid #c2c2c2;
+    }
+
+    &__description-date {
+      flex-direction: row;
+      width: 140px;
+      justify-content: space-between;
+      margin: 0;
+    }
+    &__button-all {
+      position: absolute;
+      left: 0px;
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+      text-transform: uppercase;
+      font-size: 12px;
+      align-items: center;
+    }
+    &__navigation {
+      height: 50px;
+    }
+    &__pagination {
+      display: none;
+    }
+  }
+}

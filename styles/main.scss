@@ -1,0 +1,86 @@
+@import "../styles/config/reset";
+@import "../styles/config/base-config";
+
+// main page components
+
+@import "../styles/components/wrapper";
+@import "../styles/components/main-container";
+@import "../styles/components/search";
+@import "../styles/components/burger";
+@import "../styles/components/dropdown";
+@import "../styles/components/icon-btn";
+@import "../styles/components/logo";
+@import "../styles/components/main-btn";
+@import "../styles/components/site-nav";
+@import "../styles/components/tel";
+@import "../styles/components/swiper";
+@import "../styles/components/accordion";
+@import "../styles/components/range-input";
+@import "../styles/components/custome-checkbox";
+@import "../styles/components/filter-modal";
+@import "../styles/components/header";
+@import "../styles/components/banner";
+@import "../styles/components/features";
+@import "../styles/components/products";
+@import "../styles/components/brands";
+@import "../styles/components/reviews";
+@import "../styles/components/navigation";
+@import "../styles/components/articles";
+@import "../styles/components/footer";
+
+// card products page components
+
+@import "../styles/components/barand-description-card";
+@import "../styles/components/swiper-card-prod";
+@import "../styles/components/card-prod";
+@import "../styles/components/semilar-products";
+
+// catalog main page
+
+@import "../styles/components/catalog-main";
+
+// catalog individual page 
+
+@import "../styles/components/catalog-individual";
+@import "../styles/components/filter-bar";
+@import "../styles/components/cards-block";
+
+// user account page 
+
+@import "../styles/components/account";
+@import "../styles/components/history";
+@import "../styles/components/history-diteal";
+
+// articles page
+
+@import "../styles/components/articles-all";
+@import "../styles/components/article-inside";
+
+// reviews page
+
+@import "../styles/components/reviews-all";
+
+// favorites products page
+
+@import "../styles/components/favorites-products";
+
+// menu modal 
+
+@import "../styles/components/menu-modal";
+
+// derections page 
+
+@import "../styles/components/directions";
+
+// 404 page
+
+@import "../styles/components/404";
+
+// feedback modal
+
+@import "../styles/components/feedback";
+
+// write review modal
+
+@import "../styles/components/write-review";
+

@@ -1,0 +1,190 @@
+.filter-bar {
+
+    & h1,
+    h2,
+    h3,
+    p,
+    ul,
+    li,
+    a,
+    span,
+    select,
+    label {
+        font-family: "Nunito", sans-serif;
+    }
+
+    display: flex;
+    flex-direction: column;
+    max-width: 22rem;
+
+    &__sale-icon {
+        margin-left: 1rem;
+    }
+
+    &__category {
+        border-bottom: 1px solid #c2c2c2;
+    }
+
+    &__category-name {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 4rem 0 2rem 0;
+    }
+
+    &__category-list {
+        font-size: 14px;
+        line-height: 3rem;
+        margin-bottom: 2rem;
+
+        & li {
+            color: #000;
+
+            &:hover {
+                color: rgb(7, 196, 127);
+            }
+        }
+
+    }
+
+    &__price {
+        border-bottom: 1px solid #c2c2c2;
+    }
+
+    &__price-name {
+        font-size: 16px;
+        font-weight: 900;
+        margin: 2rem 0;
+    }
+
+    &__sale-products {
+        border-bottom: 1px solid #c2c2c2;
+        font-size: 14px;
+        padding: 2rem 0;
+    }
+
+    &__manufacturer {
+        border-bottom: 1px solid #c2c2c2;
+
+    }
+
+    &__manufacturer-name {
+        font-size: 16px;
+        font-weight: 900;
+        margin: 2rem 0;
+    }
+
+    &__manufacturer-search {
+        margin-bottom: 2rem;
+    }
+
+    &__manufacturer-search-input {
+        max-width: 22rem;
+        border-radius: 0rem;
+        background-color: #fff;
+        border: 1px solid #c2c2c2;
+        border-radius: 0.5rem;
+    }
+
+    &__manufacturer-checkboxes {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 14px;
+        margin-bottom: 2rem;
+        cursor: grab;
+    }
+
+    &__material {
+        border-bottom: 1px solid #c2c2c2;
+    }
+
+    &__material-name {
+        font-size: 14px;
+        font-weight: 900;
+        margin: 2rem 0;
+    }
+
+    &__material-checkboxes {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 14px;
+        margin-bottom: 2rem;
+
+    }
+
+    &__size {
+        border-bottom: 1px solid #c2c2c2;
+
+    }
+
+    &__size-name {
+        font-size: 16px;
+        font-weight: 900;
+        margin: 2rem 0;
+    }
+
+    &__size-checkboxes {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    &__selects {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+        gap: 1rem;
+
+        & select {
+            font-size: 1.4rem;
+            height: 4rem;
+        }
+    }
+
+    &__reset-btn {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        font-size: 14px;
+        padding: 1rem 2rem;
+        width: 100%;
+        border: 1px solid #c2c2c2;
+        transition: all 300ms ease;
+        border-radius: 0.5rem;
+        background-color: #fff;
+
+        & p {
+            color: #292929;
+        }
+
+        &:hover {
+            background-color: #e2e2e2;
+            border: 1px solid #00000033;
+        }
+    
+        &:hover>.feather-x-circle {
+            fill: #000;
+            stroke: #B8B8B8;
+        }
+        
+    }
+}
+
+@media screen and(max-width:1100px) {
+    .filter-bar {
+        display: none;
+    }
+}
+
+@media screen and(max-width:480px) {
+    .filter-bar {
+
+        &__reset-btn {
+            font-size: 3rem;
+            padding: 2rem 3rem;
+        }
+    }
+}

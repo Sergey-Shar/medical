@@ -1,0 +1,46 @@
+.site-nav {
+  position: relative;
+  min-width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  & span{
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    background-color: #c2c2c2;
+  }
+
+  &__icon-sale {
+    position: absolute;
+    left: 0;
+  }
+
+  &__link {
+    font: caption;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #161616;
+
+    &:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+
+    &_red {
+      font-weight: 700;
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+      color: red;
+      margin-left: 1rem;
+
+      &:hover {
+        opacity: 0.8;
+        text-decoration: underline;
+      }
+    }
+  }
+}

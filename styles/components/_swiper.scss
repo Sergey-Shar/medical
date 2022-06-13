@@ -1,0 +1,17 @@
+.swiper-pagination-bullet-active {
+  background: #ffffff;
+}
+
+.swiper-pagination-bullet{
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #fff;
+}
+
+@media screen and (max-width: 1100px) {
+  .swiper-pagination-bullet {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,369 @@
+.card {
+  &__header {
+    display: flex;
+    min-height: 6rem;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 26px;
+    margin-bottom: 30px;
+    // min-width: 70%;
+  }
+
+  &__nav-link {
+    color: #5C596A;
+    font-size: 14px;
+  }
+
+  &__main {
+    display: grid;
+    // grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    grid-template-areas:
+      "foto description"
+      "foto main"
+      "foto calculation"
+      "foto .. "
+    ;
+    margin-top: 2rem;
+  }
+
+  &__block-foto {
+    grid-area: foto;
+    width: 550px;
+  }
+
+  &__foto {
+    margin-bottom: 3rem;
+    width: 100%;
+    border: 1px solid rgb(207, 207, 207);
+  }
+
+  &__block-foto-mini {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    gap: 20px;
+
+    & input[type="radio"] {
+      display: none;
+    }
+  }
+
+  &__foto-tab :checked+.card__foto-radio {
+    position: relative;
+    padding-bottom: 58px;
+    border-bottom: 4px solid rgb(7, 196, 127);
+    z-index: 10;
+  }
+
+  &__foto-mini {
+    cursor: pointer;
+    transition: transform 1s ease;
+
+    &:hover {
+      opacity: 0.6;
+      box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__header-description {
+    grid-area: description;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(207, 207, 207);
+  }
+
+  &__header-title {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 1rem;
+  }
+
+  &__brand-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  &__brand-img {
+    height: 3rem;
+  }
+
+  &__main-description {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 22rem;
+    border-bottom: 1px solid rgb(207, 207, 207);
+  }
+
+  &__main-text {
+    font-size: 16px;
+    line-height: 2.5rem;
+  }
+
+  &__main-link {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    text-decoration: underline;
+    color: rgb(7, 196, 127);
+  }
+
+  &__main-selects-block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+    gap: 1rem;
+
+    & select {
+      font-size: 14px;
+    }
+  }
+
+  &__select-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    min-height: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__seclect-title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  &__select {
+    height: 4rem;
+    width: 165px;;
+  }
+
+  &__calculation {
+    font-size: 14px;
+    margin-left: 1rem;
+    color: rgb(255, 145, 50);
+  }
+
+  &__footer-description {
+    display: flex;
+    align-items: center;
+    grid-area: calculation;
+  }
+
+  &__footer {
+    border-bottom: 1px solid rgb(207, 207, 207);
+  }
+
+  &__footer-lincks-block {
+    display: flex;
+    position: relative;
+    align-items: center;
+    min-height: 5rem;
+    border-bottom: 1px solid rgb(207, 207, 207);
+
+    & input[type="radio"] {
+      display: none;
+    }
+
+    & label {
+      font-size: 18px;
+      font-weight: 900;
+      color: #000;
+      margin-right: 3rem;
+    }
+  }
+
+  &__footer-tab-title {
+    position: relative;
+    padding: 0.5px 1rem;
+    border-bottom: none;
+    top: 0;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__footer-tab-content {
+    position: absolute;
+    padding: 1rem;
+    left: 0;
+    top: 7rem;
+    width: calc(100% - 2rem);
+    visibility: hidden;
+  }
+
+  &__footer-tab :checked+.card__footer-tab-title {
+    position: relative;
+    padding-bottom: 0.8rem;
+    border-bottom: 3.5px solid rgb(7, 196, 127);
+    top: 0;
+    z-index: 1;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__footer-tab :checked~.card__footer-tab-content {
+    visibility: visible;
+  }
+
+  &__footer-text-block {
+    min-height: 15rem;
+  }
+
+  &__footer-text {
+    font-size: 16px;
+    line-height: 3rem;
+  }
+}
+.card-product .card__nav {
+  width: 500px;
+}
+
+@media screen and(max-width:1100px) {
+  .card {
+    &__main {
+      grid-template-areas:
+        "description description"
+        "foto foto"
+        "foto foto"
+        "main main"
+        "calculation calculation";
+    }
+    &__header-title {
+      width: 630px;
+    }
+    &__header-description {
+      justify-content: space-around;
+      min-height: 18rem;
+      border-bottom: none;
+    }
+    &__block-foto {
+      width: 720px;
+    }
+
+    &__main-description {
+      min-height: 20rem;
+      justify-content: space-around;
+      line-height: 3rem;
+    }
+
+    &__main-selects-block {
+      margin-top: 1rem;
+    }
+
+    &__select-container {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1rem;
+      min-height: 2rem;
+      margin-bottom: 2rem;
+
+      & select {
+        font-size: 2rem;
+        min-width: 100%;
+      }
+    }
+
+    &__main-text {
+      margin: 1.5rem 0;
+    }
+
+    &__main-link {
+      margin-bottom: 2rem;
+    }
+
+    &__footer-description {
+      min-height: 20rem;
+    }
+
+    &__nav {
+      min-width: 70%;
+    }
+  }
+}
+
+@media screen and(max-width:480px) {
+  .card {
+    &__header {
+      min-height: 10rem;
+      &-title {
+        font-size: 20px;
+        width: 350px;
+      }
+    }
+    &__block-foto {
+      width: 350px;
+    }
+    &__nav-link, &__nav-slach {
+      font-size: 12px;
+    }
+
+    &__brand-img {
+      height: 5rem;
+    }
+    &__main-text {
+      font-size: 14px;
+    }
+    &__main-link {
+      font-size: 14px;
+    }
+    &__main-selects-block {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    &__select-container {
+      gap: 1rem;
+      min-height: 3rem;
+      margin-bottom: 1.5rem;
+      & select {
+        font-size: 14px;
+      }
+    }
+
+    &__select {
+      height: 45px;
+    }
+
+    &__block-foto-mini {
+      width: 100%;
+    }
+
+    &__header-description {
+      min-height: 25rem;
+    }
+
+    &__main-description {
+      min-height: 40rem;
+    }
+
+    &__footer-description {
+      min-height: 20rem;
+    }
+
+    &__nav {
+      min-width: 100%;
+    }
+
+    &__footer-text-block {
+      display: none;
+    }
+
+    &__footer-lincks-block {
+      display: none;
+    }
+  }
+}

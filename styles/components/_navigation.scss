@@ -1,0 +1,93 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+
+  &__button {
+    background: #fff;
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+    left: 25rem;
+
+    &:hover {
+      color: #10ae73;
+      background: #fff;
+      text-decoration: underline;
+    }
+  }
+
+  &__btn-prev {
+    left: 92%;
+    color: #10ae73;
+  }
+
+  &__btn-next {
+    color: #10ae73;
+  }
+
+  &__btn-next::after,
+  &__btn-prev::after {
+    font-size: 22px;
+    font-weight: bold;
+  }
+}
+
+.navigation .swiper-pagination-bullet-active {
+  background: #10ae73;
+}
+
+.navigation .swiper-pagination {
+  text-align: left;
+}
+
+.navigation .reviews__pagination,
+.navigation .articles__pagination {
+  left: 0;
+  width: 15rem;
+  height: 45%;
+}
+
+@media screen and (max-width: 1100px) {
+  .navigation {
+
+    & .reviews__pagination,
+    .navigation .articles__pagination {
+      width: 20rem;
+    }
+
+    &__btn-prev {
+      left: 85%;
+    }
+
+    &__button {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navigation {
+    bottom: 0;
+    & .reviews__pagination,
+    .navigation .articles__pagination {
+      width: 35%;
+    }
+    &__btn-next::after,
+    &__btn-prev::after {
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    &__button {
+      font-size: 2rem;
+      margin-left: 2rem;
+    }
+    &__btn-prev {
+      left: 80%;
+    }
+  }
+}

@@ -1,0 +1,283 @@
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 64rem;
+  background: linear-gradient(226.84deg, #134574 16.01%, #10ae73 100%);
+
+  &__semecircle-top {
+    position: absolute;
+    left: 36.7rem;
+    top: 0;
+    max-width: 26.7rem;
+    height: auto;
+  }
+
+  &__circle-left {
+    position: absolute;
+    top: 15.5rem;
+    left: -27.5rem;
+    max-width: 33rem;
+    height: auto;
+  }
+
+  &__cross-bg {
+    position: absolute;
+    right: 20rem;
+    top: 12rem;
+    max-width: 60rem;
+    max-height: 40rem;
+  }
+
+  &__cross {
+    position: absolute;
+    top: 14.5rem;
+    right: 30rem;
+    max-width: 50rem;
+    max-height: 35rem;
+  }
+
+  &__semecircle-rigth {
+    position: absolute;
+    right: 0;
+    top: 5rem;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &__circle-rigth {
+    position: absolute;
+    top: 15.5rem;
+    right: -16.5rem;
+    max-width: 33rem;
+    height: auto;
+  }
+
+  &__swiper {
+    
+    height: 54rem;
+
+  }
+
+  &__slide {
+    display: flex;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    //align-items: flex-end;
+    width: 50%;
+    margin-left: 15rem;
+  }
+
+  &__title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6.8rem;
+    line-height: 8.2rem;
+    width: 64rem;
+    color: #ffffff;
+  }
+
+  &__sub-title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    width: 48rem;
+    color: #ffffff;
+  }
+
+  &__button-num-block {
+    display: flex;
+    align-items: center;
+    width: 83%;
+  }
+
+  &__button {
+    background: #134574;
+    width: 200px;
+    font-weight: normal;
+    justify-content: space-evenly;
+
+    &:hover {
+      background-color: #26629a;
+    }
+  }
+
+  &__line {
+    width: 10rem;
+    height: 2px;
+    background-color: #10ae73;
+    margin: 0 1rem 0 1rem;
+  }
+
+  &__brand-image {
+    position: relative;
+    width: 50%;
+  }
+
+  &__brand {
+    margin-top: 3rem;
+    width: 20rem;
+    height: 7rem;
+    border-radius: 20rem;
+    background-color: #fff;
+  }
+
+  &__image-brand {
+    position: absolute;
+    left: -14rem;
+    top: 6rem;
+    width: 70rem;
+    height: auto;
+  }
+
+  &__slider-btn {
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .banner {
+
+    min-height: 50rem;
+
+    &__circle-left {
+      display: none;
+    }
+
+    &__semecircle-rigth {
+      display: none;
+    }
+
+    &__circle-rigth {
+      display: none;
+    }
+
+    &__cross-bg {
+      max-height: 35rem;
+      right: 15px;
+      top: 14rem;
+    }
+
+    &__cross {
+      position: absolute;
+      top: 16.5rem;
+      right: 11.2rem;
+      max-height: 30rem;
+    }
+
+    &__swiper {
+      width: 90vw;
+      height: 50rem;
+      //margin: 2.5rem 0;
+    }
+
+    &__description {
+      align-items: flex-start;
+      justify-content: center;
+      margin-left: 0rem;
+    }
+
+    &__button-num-block {
+      margin-top: 2.1rem;
+    }
+
+    &__line {
+      display: none;
+    }
+
+    &__num-icon {
+      display: none;
+    }
+
+    &__brand-image {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__brand {
+      margin: 3rem 2rem 0 0;
+      width: 20rem;
+      height: 6rem;
+    }
+
+    &__slider-btn {
+      display: none;
+    }
+
+    &__image-brand {
+      left: 0;
+      top: 14rem;
+      width: 50rem;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width:480px) {
+
+  .banner {
+    &__swiper {
+      position: relative;
+      width:100vw;
+      min-height: 60rem;
+      margin: 2.5rem 0;
+    }
+    &__description {
+      margin-right:0;
+    }
+
+    &__image-brand {
+      left: 40%;
+      top: 60%;
+      width: 33rem;
+      height: auto;
+    }
+
+    &__cross-bg {
+      display: none;
+    }
+
+    &__cross {
+      display: none;
+    }
+
+    &__brand-image {
+      position: static;
+    }
+
+    &__button {
+      width: 160px;
+      height: 45px;
+      border-radius: 5rem;
+      font-size: 14px;
+      font-weight: normal;
+    }
+    &__brand {
+      margin: 3rem 5rem 0 0;
+      width: 20rem;
+      height: 6rem;
+    }
+    &__title {
+      width: 60rem;
+    }
+
+  }
+  .banner .swiper-pagination {
+    width: 25%;
+    bottom: 0;
+  }
+  .banner .swiper-pagination-bullet {
+    background: none;
+    opacity: 1;
+  }
+  .banner .swiper-pagination-bullet-active {
+    background: #fff;
+  }
+}

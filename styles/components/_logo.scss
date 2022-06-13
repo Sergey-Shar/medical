@@ -1,0 +1,27 @@
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 4rem;
+
+}
+
+@media screen and (max-width: 1100px) {
+  .logo {
+  margin-left:10rem ;
+  }
+  .logo__icon {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    width: auto;
+    gap: 2rem;
+  }
+  .logo__icon {
+    width: 100%;
+  }
+}

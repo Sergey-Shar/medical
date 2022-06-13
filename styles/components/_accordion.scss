@@ -1,0 +1,88 @@
+.accordion {
+    display: none;
+    background-color: white;
+    color: #000;
+    cursor: pointer;
+    padding: 1.8rem;
+    width: 100%;
+    text-align: left;
+    border-top: 2px solid rgb(207, 207, 207);
+    outline: none;
+    transition: all 0.5s ease 0s;
+
+    &__icon {
+        position: relative;
+        background-color: #fff;
+
+        .chevron {
+            position: relative;
+            display: block;
+            height: 5px;
+            margin-right: 3rem;
+        }
+
+        .chevron:before,
+        .chevron:after {
+            position: absolute;
+            display: block;
+            content: "";
+            border: 5px solid transparent;
+        }
+
+        .active:before,
+        .active:after {
+            position: absolute;
+            display: block;
+            content: "";
+            border: 5px solid transparent;
+            transform: rotate(180deg);
+        }
+
+        .chevron:before {
+            top: 0;
+            border-top-color: rgb(207, 207, 207);
+        }
+
+        .chevron:after {
+            top: -10px;
+            
+        }
+    }
+}
+
+.panel {
+    padding: 0 1.8rem;
+    background-color: #F4F9F9;
+    display: none;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    margin: 0 -1rem;
+    transition: all 0.5s ease 0s;
+
+    & p {
+        line-height: 4rem;
+        font-size: 2.5rem;
+    }
+
+    & ul {
+        margin: 1rem 0;
+        & li a {
+            margin-bottom: 2rem;
+        }
+    }
+}
+.active {
+    background: #FFF;
+}
+
+@media screen and (max-width: 480px) {
+    .accordion {
+        display: flex;
+        justify-content: space-between;
+    }
+    .card__accordion {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+}

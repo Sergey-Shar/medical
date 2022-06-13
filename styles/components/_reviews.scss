@@ -1,0 +1,233 @@
+.reviews {
+  padding: 8.9rem 0 9.8rem;
+  background: #fff;
+
+  &__top {
+    display: flex;
+    margin-bottom: 4.7rem;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 52px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 4.7rem;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    line-height: 3rem;
+    font-weight: 600;
+    margin-left: 2rem;
+  }
+
+  &__quotes {
+    margin: 0 10rem 0 7rem;
+  }
+
+  &__button {
+    justify-content: center;
+    width: 190px;
+    font-weight: normal;
+  }
+  &__button-all {
+    position: absolute;
+    left: 30%;
+    display: flex;
+    justify-content: space-between;
+    width: 28%;
+    text-transform: uppercase;
+    align-items: center;
+  }
+  &__button-all:hover, &__button-all:hover #icon {
+    color: #626161;
+  }
+
+  &__swiper {
+    min-height: 50rem;
+    padding: 1rem 1rem;
+  }
+
+  &__cards {
+    height: 41rem;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    padding: 4.7rem 4rem 5rem 4rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0px 0px 10px 0px rgba(119, 118, 118, 0.5);
+    overflow: hidden;
+  }
+
+  &__item-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__photo {
+    margin-bottom: 3.5rem;
+  }
+
+  &__item-text {
+    font-style: italic;
+    font-size: 16px;
+    color: #626161;
+    line-height: 3rem;
+    flex: 10;
+  }
+
+  &__author {
+    margin-bottom: 1rem;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &__date {
+    color: #707070;
+    font-size: 14px;
+  }
+
+  &__pagination {
+    left: 40%;
+    min-width:20%;
+  }
+  &__navigation {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .reviews {
+    padding: 1rem 0 3.8rem;
+
+    &__top {
+      position: relative;
+      min-height: 180px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 12rem;
+      margin-bottom: 0;
+    }
+
+    &__swiper {
+      display: flex;
+      align-items: center;
+      width: 738px;
+      padding-bottom: 10rem;
+    }
+
+    &__item {
+      min-height: 40rem;
+      box-shadow: 0 0 0.5rem 0.5rem rgba(204, 201, 201, 0.5);
+    }
+    &__author {
+      font-size: 14px;
+    }
+
+    &__cards {
+      align-items: center;
+    }
+
+    &__button {
+      position: relative;
+      z-index: 100;
+      // flex: 0 1 40%;
+      justify-content: center;
+    }
+
+    &__quotes {
+      position: absolute;
+      right: 20rem;
+      z-index: 1;
+      margin: 0 0 0 10rem;
+    }
+
+    &__subtitle {
+      position: relative;
+      z-index: 100;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .reviews {
+    padding: 5rem 0 3rem;
+
+    &__top {
+      min-height: 120px;
+      margin-top: 9rem;
+    }
+    &__text {
+      align-self: center;
+    }
+
+    &__swiper {
+      display: flex;
+      align-items: center;
+      width: 90vw;
+      min-height: 450px;
+      padding: 1rem 0.5rem;
+    }
+
+    &__item {
+      height: 350px;
+      margin-bottom: 8rem;
+      box-shadow: 0 0 0.3rem 0.1rem rgba(204, 201, 201, 0.5);
+      justify-content: space-between;
+    }
+    &__item-text {
+      flex: 0;
+      line-height: 4rem;
+    }
+    &__title {
+      font-size: 26px;
+      margin-bottom: 0;
+    }
+    &__subtitle {
+      font-size: 14px;
+      position: relative;
+      z-index: 100;
+      margin-top: 20px;
+      margin-left: 0;
+      line-height: 4rem;
+    }
+
+    &__button {
+      width: 140px;
+      height: 45px;
+      border-radius: 10rem;
+      font-size: 14px;
+      padding: 0;
+    }
+    &__button-all {
+      position: absolute;
+      left: 0px;
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+      text-transform: uppercase;
+      font-size: 12px;
+      align-items: center;
+    }
+    &__pagination {
+      display: none;
+    }
+
+    &__quotes {
+      display: none;
+    }
+    &__navigation {
+      height: 50px; 
+    }
+  }
+}

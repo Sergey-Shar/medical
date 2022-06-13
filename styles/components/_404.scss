@@ -16,7 +16,7 @@
 
     &__nav-link,
     &__nav-slash {
-        color: #FFF;
+        color: #fff;
     }
 
     &__content {
@@ -29,14 +29,14 @@
     }
 
     &__title {
-        color: #FFF;
+        color: #fff;
         font-size: 56px;
         font-weight: bold;
         margin-bottom: 2.8rem;
     }
 
     &__text {
-        color: #FFF;
+        color: #fff;
         font-size: 26px;
         margin-bottom: 75px;
         text-align: center;
@@ -53,18 +53,21 @@
         font-size: 14px;
         font-weight: normal;
     }
-    .card__nav-link, .card__nav-slash {
-            color: #FFF;
+
+    .card__nav-link,
+    .card__nav-slash {
+        color: #fff;
     }
 }
 
 @media screen and(max-width: 1100px) {
     .error {
         min-height: 100vh;
-    
+
         &__content {
-        margin: 12rem auto 0;
+            margin: 12rem auto 0;
         }
+
         &__text {
             width: 620px;
             line-height: 1.5;
@@ -75,24 +78,28 @@
 @media screen and(max-width: 480px) {
     .error {
         min-height: 374px;
+
         &__nav {
             font-size: 12px;
         }
+
         &__title {
             font-size: 26px;
         }
-    
+
         &__text {
             font-size: 18px;
             margin-bottom: 5rem;
             width: 288px;
         }
+
         &__btn-home {
             width: 220px;
             height: 50px;
         }
+
         &__content {
-        margin: 8rem auto 0;
+            margin: 8rem auto 0;
         }
     }
 }

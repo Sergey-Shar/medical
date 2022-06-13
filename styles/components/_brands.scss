@@ -7,7 +7,6 @@
     align-items: center;
     justify-content: space-between;
     min-height: 20rem;
-    //width: 110rem;
   }
 
   &__title {
@@ -96,7 +95,8 @@
       padding: 0 8rem;
     }
 
-    &__btn-next::after, &__btn-prev::after{
+    &__btn-next::after,
+    &__btn-prev::after {
       font-size: 21px;
     }
 

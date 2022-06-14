@@ -20,12 +20,17 @@
     width: 1100px;
   }
 
-  &__btn {
-    color: #119273;
-  }
+  // &__btn {
+  //   color: #119273;
+  // }
 
-  &__btn::after {
-    font-size: 5rem;
+  // &__btn::after {
+  //   font-size: 5rem;
+  // }
+  &__btn-next::after,  &__btn-prev::after {
+    color: #10ae73;
+    font-size: 4rem;
+    font-weight: bold;
   }
 
   &__block {
@@ -81,14 +86,23 @@
     &__name {
       font-weight: bold;
       font-size: 2.6rem;
-      width: 60%;
+      width: 70%;
       text-align: center;
       margin-top: 1rem;
+    }
+    &__btn-next {
+      right: -5px;
+      left: auto;
+    }
+    &__btn-prev {
+      left: -5px;
+      right: auto;
     }
   }
 
   #auto {
-    width: 65px;
+    width: 70px;
+    height: 65px;
   }
 }
 
@@ -100,7 +114,7 @@
 
     &__block {
       border-right: none;
-      width: 70%;
+      width: 100%;
       margin-right: 0;
     }
 
@@ -111,7 +125,8 @@
 
     &__name {
       width: 100px;
-      line-height: 4rem;
+      line-height: 3rem;
+      font-size: 12px;
     }
 
     &__swiper {

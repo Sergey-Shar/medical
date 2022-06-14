@@ -412,6 +412,7 @@
             </div>
           </div>
           <div class="swiper-button-prev banner__slider-btn"></div>
+          <div class="swiper-button-next banner__slider-btn"></div>
           <div class="swiper-pagination"></div>
         </div>
       </div>
@@ -456,15 +457,15 @@
             </div>
             <div class="swiper-slide features__block">
               <img id="auto" src="./common/svg/Delivery.svg" alt="">
-              <p class="features__name">Быстрая поставка</p>
+              <p class="features__name">Быстрая<br> поставка</p>
             </div>
             <div class="swiper-slide features__block">
               <img src="./common/svg/Stock.svg" alt="">
-              <p class="features__name">Склад в г. Москве</p>
+              <p class="features__name">Склад в<br> г. Москве</p>
             </div>
           </div>
-          <div class="swiper-button-next features__btn"></div>
-          <div class="swiper-button-prev features__btn"></div>
+          <div class="swiper-button-next features__btn-next"></div>
+          <div class="swiper-button-prev features__btn-prev"></div>
         </div>
       </div>
     </section>
@@ -590,6 +591,26 @@
         </div>
       </div>
     </section>
+    <div class="write-review">
+      <div class="write-review__container">
+      <div class="write-review__content">
+      <h1 class="write-review__title">Написать отзыв</h1>
+      <form class="write-review__form" action="">
+          <label class="write-review__name" for="write-review-name">Ваше имя<input id="write-review-name" placeholder="Введите имя" type="text"></label>
+          <label class="write-review__phone" for="write-review-phone">Телефон<input id="write-review-phone" placeholder="+7(" type="tel"></label>
+          <label class="write-review__email" for="write-review-email">E-mail<input id="write-review-email" placeholder="Введите e-mail" type="email"></label>
+          <label class="write-review__text" for="write-review-text"><textarea id="write-review-text" placeholder="Текст отзыва" name="" id="" cols="30" rows="10"></textarea></label>
+          <span class="write-review__politic">Нажимая кнопку отправить, вы соглашаетесь
+              с политикой обработки <a class="write-review__link" href="">персональных данных</a></span>
+          <div class="write-review__captcha">
+            <img src="./common/images/Капча.png" alt="">
+          </div>
+          <button class="write-review__btn-submit main-btn">ОТПРАВИТЬ</button>
+          <button class="write-review__btn-close">&#9587;</button>
+      </form>
+      </div>
+  </div>
+  </div>
     <section class="reviews">
       <div class="container-main">
         <div class="reviews__top">
@@ -863,30 +884,29 @@
     </footer>
     <div class="feedback">
       <div class="feedback__container">
-        <div class="feedback__content">
-          <h1 class="feedback__title">Обратная связь</h1>
-          <form class="feedback__form" action="">
-            <label class="feedback__name" for="feedback-name">Ваше имя<input id="feedback-name"
-                placeholder="Введите имя" type="text"></label>
-            <label class="feedback__phone" for="feedback-phone">Телефон<input id="feedback-phone" placeholder="+7("
-                type="tel"></label>
-            <label class="feedback__email" for="feedback-email">E-mail<input id="feedback-email"
-                placeholder="Введите e-mail" type="email"></label>
-            <label class="feedback__text" for="feedback-text"><textarea id="feedback-text" placeholder="Текст отзыва"
-                name="" id="" cols="30" rows="10"></textarea></label>
-            <span class="feedback__politic">Нажимая кнопку отправить, вы соглашаетесь
+      <div class="feedback__content">
+      <h1 class="feedback__title">Обратная связь</h1>
+      <form class="feedback__form" action="">
+          <label class="feedback__name" for="feedback-name">Ваше имя<input id="feedback-name" placeholder="Введите имя" type="text"></label>
+          <label class="feedback__phone" for="feedback-phone">Телефон<input id="feedback-phone" placeholder="+7(" type="tel"></label>
+          <label class="feedback__email" for="feedback-email">E-mail<input id="feedback-email" placeholder="Введите e-mail" type="email"></label>
+          <label class="feedback__text" for="feedback-text"><textarea id="feedback-text" placeholder="Текст сообщения" name="" id="" cols="30" rows="10"></textarea></label>
+          <span class="feedback__politic">Нажимая кнопку отправить, вы соглашаетесь
               с политикой обработки <a class="feedback__link" href="">персональных данных</a></span>
-            <div class="feedback__captcha"></div>
-            <button class="feedback__btn-submit main-btn">ОТПРАВИТЬ</button>
-          </form>
-        </div>
-        <button class="feedback__btn-close">&#9587;</button>
+          <div class="feedback__captcha">
+            <img src="./common/images/Капча.png" alt="">
+          </div>
+          <button class="feedback__btn-submit main-btn">ОТПРАВИТЬ</button>
+          <button class="feedback__btn-close">&#9587;</button>
+      </form>
       </div>
     </div>
+  </div>
   </div>
   <script src="https://unpkg.com/feather-icons"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script type="module" src="./scripts/index.js"></script>
+  <script type="module" src="./scripts/reviews-all.js"></script>
 </body>
 
 </html>

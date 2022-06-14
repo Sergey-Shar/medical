@@ -61,8 +61,8 @@ const swiperFeatures = new Swiper(".features__swiper", {
     invert: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".features__btn-next",
+    prevEl: ".features__btn-prev",
   },
 });
 
@@ -249,7 +249,7 @@ const onClickBurgerNav = () => {
 
   if (navModal.className === 'nav-modal open') {
     document.body.style.overflow = 'hidden'
-    document.body.style.paddingRight = '17px'
+    document.body.style.paddingRight = '16.8px'
   }
   else {
     document.body.style.overflow = 'visible'
@@ -264,9 +264,11 @@ const onClickBurgerMobile = () => {
 
   if (navModal.className === 'nav-modal open') {
     document.body.style.overflow = 'hidden'
+    document.body.style.paddingRight = '16.8px'
   }
   else {
     document.body.style.overflow = 'visible'
+    document.body.style.paddingRight = '0'
   }
 };
 

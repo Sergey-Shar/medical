@@ -152,7 +152,7 @@
 
 @media screen and (max-width: 480px) {
   .products {
-
+    margin-bottom: 3rem;
     & button {
     height: 20px;
     width: 20px;
@@ -171,10 +171,10 @@
     }
     &__grid-wrapper > div {
       display: flex;
-      border-bottom:2px solid #C2C2C2;
+      border-bottom:1px solid #C2C2C2;
     }
     &__grid-wrapper > div:last-child {
-      border-bottom:2px solid transparent;
+      border-bottom:1px solid transparent;
     }
     &__menu {
       position: static;
@@ -186,7 +186,6 @@
     &__name {
       margin: 0;
       font-size: 12px;
-      //font-weight: bold;
       line-height: 4rem;
       width: 90%;
     }

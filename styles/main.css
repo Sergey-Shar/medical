@@ -729,6 +729,13 @@ input {
   margin: 0 -1rem;
 }
 
+.panel p {
+  margin: 3rem 4rem;
+  line-height: 4rem;
+  font-size: 12px;
+  font-weight: 200;
+}
+
 .panel ul {
   margin: 1rem 0;
 }
@@ -1637,6 +1644,9 @@ input {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 14rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .features__block img {
     height: 48px;
@@ -1673,12 +1683,13 @@ input {
     margin-right: 0;
   }
   .features__block img {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
   .features__name {
-    width: 100px;
-    line-height: 4rem;
+    width: 100%;
+    line-height: 3rem;
+    font-size: 10px;
   }
   .features__swiper {
     padding: 8rem;
@@ -1688,8 +1699,8 @@ input {
     display: none;
   }
   #auto {
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 30px;
   }
 }
 
@@ -1702,7 +1713,7 @@ input {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: "first   first   fifth sixth" "second  third   fifth seventh" "fourth  fourth  eighth eighth";
+      grid-template-areas: "first   first   fifth sixth" "second  third   fifth seventh" "fourth  fourth  eighth eighth";
   gap: 2.5rem;
 }
 
@@ -1842,13 +1853,13 @@ input {
     -ms-grid-rows: auto;
     -ms-grid-columns: (1fr)[2];
         grid-template: auto/repeat(2, 1fr);
-        grid-template-areas: "first   first" "first   first" "second  third" "second  third" "fourth  fourth" "fourth  fourth";
+        grid-template-areas: "first   first" "first   first" "second  third" "second  third" "fourth  fourth" "fourth  fourth";
   }
   .products__right-columns {
     -ms-grid-rows: auto;
     -ms-grid-columns: (1fr)[2];
         grid-template: auto/repeat(2, 1fr);
-        grid-template-areas: "fifth sixth " "fifth sixth " "fifth seventh" "fifth seventh" "eighth eighth";
+        grid-template-areas: "fifth sixth " "fifth sixth " "fifth seventh" "fifth seventh" "eighth eighth";
     gap: 1rem;
     border-radius: 2rem;
   }
@@ -1862,6 +1873,7 @@ input {
 
 @media screen and (max-width: 480px) {
   .products {
+    margin-bottom: 3rem;
     padding-bottom: 0;
   }
   .products button {
@@ -1883,10 +1895,10 @@ input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border-bottom: 2px solid #C2C2C2;
+    border-bottom: 1px solid #C2C2C2;
   }
   .products__grid-wrapper > div:last-child {
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
   }
   .products__menu {
     position: static;
@@ -3098,7 +3110,7 @@ input {
   display: -ms-grid;
   display: grid;
   gap: 1rem;
-      grid-template-areas: 'img' 'description' 'footer';
+      grid-template-areas: 'img' 'description' 'footer';
 }
 
 .swiper-card__products.list {
@@ -3202,7 +3214,7 @@ input {
   .swiper-card__products {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: 'img description' 'img  description' 'img  footer';
+        grid-template-areas: 'img description' 'img  description' 'img  footer';
     gap: 20px;
   }
   .swiper-card__price {
@@ -3259,7 +3271,7 @@ input {
   display: -ms-grid;
   display: grid;
   gap: 2rem;
-      grid-template-areas: "foto description" "foto main" "foto calculation" "foto .. ";
+      grid-template-areas: "foto description" "foto main" "foto calculation" "foto .. ";
   margin-top: 2rem;
 }
 
@@ -3421,6 +3433,7 @@ input {
 .card__calculation {
   font-size: 14px;
   margin-left: 1rem;
+  line-height: 3rem;
   color: #ff9132;
 }
 
@@ -3516,7 +3529,7 @@ input {
 
 @media screen and (max-width: 1100px) {
   .card__main {
-        grid-template-areas: "description description" "foto foto" "foto foto" "main main" "calculation calculation";
+        grid-template-areas: "description description" "foto foto" "foto foto" "main main" "calculation calculation";
   }
   .card__header-title {
     width: 630px;
@@ -3591,6 +3604,8 @@ input {
   }
   .card__main-text {
     font-size: 14px;
+    line-height: 4rem;
+    margin-bottom: 2rem;
   }
   .card__main-link {
     font-size: 14px;
@@ -3613,6 +3628,7 @@ input {
   }
   .card__block-foto-mini {
     width: 100%;
+    margin-bottom: 3rem;
   }
   .card__header-description {
     min-height: 25rem;
@@ -6237,7 +6253,7 @@ input {
   display: -ms-grid;
   display: grid;
   gap: 16px;
-      grid-template-areas: 'img' 'description' 'footer';
+      grid-template-areas: 'img' 'description' 'footer';
 }
 
 .favorite-product__img-block {
@@ -6476,7 +6492,7 @@ input {
   .favorite-product {
     border-bottom: 1px solid #d2d2d2;
     padding: 20px 0;
-        grid-template-areas: 'img description' 'img description' 'img footer' 'img footer';
+        grid-template-areas: 'img description' 'img description' 'img footer' 'img footer';
     -webkit-column-gap: 3rem;
             column-gap: 3rem;
   }
@@ -7496,7 +7512,7 @@ input {
     padding: 1.5rem;
   }
   .feedback__form {
-        grid-template-areas: "name name name" "phone phone email" "text text text" "politic captcha submit";
+        grid-template-areas: "name name name" "phone phone email" "text text text" "politic captcha submit";
     gap: 4rem;
   }
   .feedback__form input {
@@ -7767,7 +7783,7 @@ input {
     padding: 1.5rem;
   }
   .write-review__form {
-        grid-template-areas: "name name name" "phone phone email" "text text text" "politic captcha submit";
+        grid-template-areas: "name name name" "phone phone email" "text text text" "politic captcha submit";
     gap: 4rem;
   }
   .write-review__form input {

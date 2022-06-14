@@ -76,6 +76,7 @@
     &__block {
       flex-direction: column;
       height: 14rem;
+      align-items: center;
 
       & img {
         height: 48px;
@@ -119,13 +120,14 @@
     }
 
     &__block img {
-      width: 35px;
-      height: 35px;
+      width: 30px;
+      height: 30px;
     }
 
     &__name {
-      width: 100px;
-      line-height: 4rem;
+      width: 100%;
+      line-height: 3rem;
+      font-size: 10px;
     }
 
     &__swiper {
@@ -139,7 +141,7 @@
   }
 
   #auto {
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 30px;
   }
 }

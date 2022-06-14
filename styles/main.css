@@ -2180,6 +2180,11 @@ input {
             align-items: flex-start;
     margin-top: 12rem;
     margin-bottom: 0;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .reviews__text {
+    width: auto;
   }
   .reviews__swiper {
     display: -webkit-box;

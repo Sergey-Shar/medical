@@ -119,6 +119,10 @@
       align-items: flex-start;
       margin-top: 12rem;
       margin-bottom: 0;
+      flex-wrap: nowrap;
+    }
+    &__text {
+      width: auto;
     }
 
     &__swiper {

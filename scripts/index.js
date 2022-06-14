@@ -47,7 +47,7 @@ const swiperFeatures = new Swiper(".features__swiper", {
   breakpoints: {
     320: {
       slidesPerView: 2,
-      spaceBetween: 50,
+      spaceBetween: 55,
     },
     480: {
       slidesPerView: 1,

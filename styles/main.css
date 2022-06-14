@@ -1673,13 +1673,13 @@ input {
     margin-right: 0;
   }
   .features__block img {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
   .features__name {
-    width: 100px;
+    width: 100%;
     line-height: 3rem;
-    font-size: 12px;
+    font-size: 10px;
   }
   .features__swiper {
     padding: 8rem;
@@ -1689,8 +1689,8 @@ input {
     display: none;
   }
   #auto {
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 30px;
   }
 }
 

@@ -314,11 +314,13 @@
                   placeholder="Текст отзыва" name="" id="" cols="30" rows="10"></textarea></label>
               <span class="write-review__politic">Нажимая кнопку отправить, вы соглашаетесь
                 с политикой обработки <a class="write-review__link" href="">персональных данных</a></span>
-              <div class="write-review__captcha"></div>
-              <button class="write-review__btn-submit main-btn">ОТПРАВИТЬ</button>
-            </form>
+            <div class="write-review__captcha">
+              <img src="./common/images/Капча.png" alt="">
+            </div>
+            <button class="write-review__btn-submit main-btn">ОТПРАВИТЬ</button>
+            <button class="write-review__btn-close">&#9587;</button>
+        </form>
           </div>
-          <button class="write-review__btn-close">&#9587;</button>
         </div>
       </div>
       <div class="container-main">
@@ -567,26 +569,24 @@
     </footer>
     <div class="feedback">
       <div class="feedback__container">
-        <div class="feedback__content">
-          <h1 class="feedback__title">Обратная связь</h1>
-          <form class="feedback__form" action="">
-            <label class="feedback__name" for="feedback-name">Ваше имя<input id="feedback-name"
-                placeholder="Введите имя" type="text"></label>
-            <label class="feedback__phone" for="feedback-phone">Телефон<input id="feedback-phone" placeholder="+7("
-                type="tel"></label>
-            <label class="feedback__email" for="feedback-email">E-mail<input id="feedback-email"
-                placeholder="Введите e-mail" type="email"></label>
-            <label class="feedback__text" for="feedback-text"><textarea id="feedback-text" placeholder="Текст отзыва"
-                name="" id="" cols="30" rows="10"></textarea></label>
-            <span class="feedback__politic">Нажимая кнопку отправить, вы соглашаетесь
+      <div class="feedback__content">
+      <h1 class="feedback__title">Обратная связь</h1>
+      <form class="feedback__form" action="">
+          <label class="feedback__name" for="feedback-name">Ваше имя<input id="feedback-name" placeholder="Введите имя" type="text"></label>
+          <label class="feedback__phone" for="feedback-phone">Телефон<input id="feedback-phone" placeholder="+7(" type="tel"></label>
+          <label class="feedback__email" for="feedback-email">E-mail<input id="feedback-email" placeholder="Введите e-mail" type="email"></label>
+          <label class="feedback__text" for="feedback-text"><textarea id="feedback-text" placeholder="Текст сообщения" name="" id="" cols="30" rows="10"></textarea></label>
+          <span class="feedback__politic">Нажимая кнопку отправить, вы соглашаетесь
               с политикой обработки <a class="feedback__link" href="">персональных данных</a></span>
-            <div class="feedback__captcha"></div>
-            <button class="feedback__btn-submit main-btn">ОТПРАВИТЬ</button>
-          </form>
-        </div>
-        <button class="feedback__btn-close">&#9587;</button>
+          <div class="feedback__captcha">
+            <img src="./common/images/Капча.png" alt="">
+          </div>
+          <button class="feedback__btn-submit main-btn">ОТПРАВИТЬ</button>
+          <button class="feedback__btn-close">&#9587;</button>
+      </form>
       </div>
     </div>
+  </div>
   </div>
   <script src="https://unpkg.com/feather-icons"></script>
   <script src="./scripts/reviews-all.js"></script>

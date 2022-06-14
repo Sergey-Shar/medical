@@ -13,11 +13,12 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0 3rem;
+        padding: 0 53rem 0 37rem;
     }
 
     &__container {
         display: flex;
+        height: 100%;
     }
 
     &__title {
@@ -51,6 +52,7 @@
     &__form textarea {
         border-radius: 5px;
         padding: 1rem;
+        resize: none;
     }
 
     &__name {
@@ -96,13 +98,125 @@
     }
 
     &__btn-close {
+        position: absolute;
+        right: 0;
+        top: 0;
         background: #FFF;
+        color: #000;
         height: 100vh;
-        width: 80px;
         font-size: 50px;
         padding: 3rem;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    &__btn-close:hover {
+        font-weight: bold;
+    }
+}
+
+@media screen and(max-width:1100px) {
+    .feedback {
+        overflow: scroll;
+        &__container {
+            margin: 30rem 4rem;
+        }
+        &__content {
+            padding: 0;
+        }
+        &__btn-close {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 7rem;
+            height: 7rem;
+            font-size: 4rem;
+            padding: 1.5rem;
+        }
+        &__form {
+            grid-template-areas: "name name name"
+            "phone phone email"
+            "text text text"
+            "politic captcha submit";
+            gap: 4rem;
+            & input {
+                height: 7rem;
+            }
+            & label, & input, & textarea {
+                font-size: 2.3rem;
+            }
+            & input, & textarea {
+                padding-left: 2.5rem;
+            }
+            & textarea {
+                padding-top: 3rem;
+            }
+        }
+        &__phone {
+            width: 75%;
+        }
+        &__email {
+            margin-left: -50%;
+        }
+        &__title {
+            font-size: 8rem;
+        }
+        &__politic {
+            padding: 0;
+            line-height: 3rem;
+            font-size: 1.7rem;
+        }
+        &__btn-submit {
+            padding: 0;
+            height: 8.5rem;
+            font-size: 2rem;
+            font-weight: normal;
+            width: 100%;
+        }
+    }    
+}
+
+@media screen and(max-width:480px) {
+    .feedback {
+        overflow: scroll;
+        &__container {
+            margin: 15rem 3rem
+        }
+        &__content {
+            padding: 0;
+        }
+        &__title {
+            font-size: 5rem;
+            margin-bottom: 3rem;    
+        }
+        &__form {
+            display: flex;
+            flex-direction: column;
+            & input {
+                height: 10rem;
+            }
+            & label, & input, & textarea {
+                font-size: 2.8rem;
+            }
+            & textarea {
+                height: 28rem;
+            }
+        }
+        &__phone {
+            width: 100%;
+        }
+        &__email {
+            margin: 0;
+        }
+        &__politic {
+            font-size: 2.4rem;
+        }
+        &__captcha img {
+            width: 100%;
+        }
+        &__btn-submit {
+            height: 10rem;
+            font-size: 2.8rem;
+        }
     }
 }

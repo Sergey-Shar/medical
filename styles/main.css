@@ -1331,6 +1331,11 @@ input {
   height: 54rem;
 }
 
+.banner__swiper .swiper-button-next {
+  right: auto;
+  left: 97%;
+}
+
 .banner__slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1580,12 +1585,10 @@ input {
   width: 1100px;
 }
 
-.features__btn {
-  color: #119273;
-}
-
-.features__btn::after {
-  font-size: 5rem;
+.features__btn-next::after, .features__btn-prev::after {
+  color: #10ae73;
+  font-size: 4rem;
+  font-weight: bold;
 }
 
 .features__block {
@@ -1642,12 +1645,21 @@ input {
   .features__name {
     font-weight: bold;
     font-size: 2.6rem;
-    width: 60%;
+    width: 70%;
     text-align: center;
     margin-top: 1rem;
   }
+  .features__btn-next {
+    right: -5px;
+    left: auto;
+  }
+  .features__btn-prev {
+    left: -5px;
+    right: auto;
+  }
   #auto {
-    width: 65px;
+    width: 70px;
+    height: 65px;
   }
 }
 
@@ -1657,7 +1669,7 @@ input {
   }
   .features__block {
     border-right: none;
-    width: 70%;
+    width: 100%;
     margin-right: 0;
   }
   .features__block img {
@@ -1666,7 +1678,8 @@ input {
   }
   .features__name {
     width: 100px;
-    line-height: 4rem;
+    line-height: 3rem;
+    font-size: 12px;
   }
   .features__swiper {
     padding: 8rem;
@@ -2021,6 +2034,12 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.reviews__text {
+  width: 52%;
 }
 
 .reviews__title {
@@ -2152,8 +2171,6 @@ input {
   .reviews__top {
     position: relative;
     min-height: 180px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -2162,6 +2179,9 @@ input {
             align-items: flex-start;
     margin-top: 12rem;
     margin-bottom: 0;
+  }
+  .reviews__text {
+    width: auto;
   }
   .reviews__swiper {
     display: -webkit-box;
@@ -2259,7 +2279,7 @@ input {
     z-index: 100;
     margin-top: 20px;
     margin-left: 0;
-    line-height: 4rem;
+    line-height: 4.5rem;
   }
   .reviews__button {
     width: 140px;
@@ -3005,6 +3025,9 @@ input {
   }
   .footer__menu-wrap-right {
     height: 100%;
+  }
+  .footer__menu-wrap-right .footer__link {
+    width: 100%;
   }
   .footer__line {
     margin-top: 20rem;
@@ -7316,13 +7339,14 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 3rem;
+  padding: 0 53rem 0 37rem;
 }
 
 .feedback__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
 }
 
 .feedback__title {
@@ -7363,6 +7387,7 @@ input {
 .feedback__form textarea {
   border-radius: 5px;
   padding: 1rem;
+  resize: none;
 }
 
 .feedback__name {
@@ -7429,9 +7454,12 @@ input {
 }
 
 .feedback__btn-close {
+  position: absolute;
+  right: 0;
+  top: 0;
   background: #FFF;
+  color: #000;
   height: 100vh;
-  width: 80px;
   font-size: 50px;
   padding: 3rem;
   display: -webkit-box;
@@ -7443,6 +7471,118 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.feedback__btn-close:hover {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1100px) {
+  .feedback {
+    overflow: scroll;
+  }
+  .feedback__container {
+    margin: 30rem 4rem;
+  }
+  .feedback__content {
+    padding: 0;
+  }
+  .feedback__btn-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 7rem;
+    height: 7rem;
+    font-size: 4rem;
+    padding: 1.5rem;
+  }
+  .feedback__form {
+        grid-template-areas: "name name name" "phone phone email" "text text text" "politic captcha submit";
+    gap: 4rem;
+  }
+  .feedback__form input {
+    height: 7rem;
+  }
+  .feedback__form label, .feedback__form input, .feedback__form textarea {
+    font-size: 2.3rem;
+  }
+  .feedback__form input, .feedback__form textarea {
+    padding-left: 2.5rem;
+  }
+  .feedback__form textarea {
+    padding-top: 3rem;
+  }
+  .feedback__phone {
+    width: 75%;
+  }
+  .feedback__email {
+    margin-left: -50%;
+  }
+  .feedback__title {
+    font-size: 8rem;
+  }
+  .feedback__politic {
+    padding: 0;
+    line-height: 3rem;
+    font-size: 1.7rem;
+  }
+  .feedback__btn-submit {
+    padding: 0;
+    height: 8.5rem;
+    font-size: 2rem;
+    font-weight: normal;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .feedback {
+    overflow: scroll;
+  }
+  .feedback__container {
+    margin: 15rem 3rem;
+  }
+  .feedback__content {
+    padding: 0;
+  }
+  .feedback__title {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+  }
+  .feedback__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .feedback__form input {
+    height: 10rem;
+  }
+  .feedback__form label, .feedback__form input, .feedback__form textarea {
+    font-size: 2.8rem;
+  }
+  .feedback__form textarea {
+    height: 28rem;
+  }
+  .feedback__phone {
+    width: 100%;
+  }
+  .feedback__email {
+    margin: 0;
+  }
+  .feedback__politic {
+    font-size: 2.4rem;
+  }
+  .feedback__captcha img {
+    width: 100%;
+  }
+  .feedback__btn-submit {
+    height: 10rem;
+    font-size: 2.8rem;
+  }
 }
 
 .write-review {
@@ -7471,10 +7611,11 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 3rem;
+  padding: 0 53rem 0 37rem;
 }
 
 .write-review__container {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7518,6 +7659,7 @@ input {
 .write-review__form textarea {
   border-radius: 5px;
   padding: 1rem;
+  resize: none;
 }
 
 .write-review__name {
@@ -7584,9 +7726,12 @@ input {
 }
 
 .write-review__btn-close {
+  position: absolute;
+  right: 0;
+  top: 0;
   background: #FFF;
+  color: #000;
   height: 100vh;
-  width: 80px;
   font-size: 50px;
   padding: 3rem;
   display: -webkit-box;
@@ -7598,5 +7743,116 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.write-review__btn-close:hover {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1100px) {
+  .write-review {
+    overflow: scroll;
+  }
+  .write-review__container {
+    margin: 30rem 4rem;
+  }
+  .write-review__content {
+    padding: 0;
+  }
+  .write-review__btn-close {
+    position: absolute;
+    right: 0;
+    width: 7rem;
+    height: 7rem;
+    font-size: 4rem;
+    padding: 1.5rem;
+  }
+  .write-review__form {
+        grid-template-areas: "name name name" "phone phone email" "text text text" "politic captcha submit";
+    gap: 4rem;
+  }
+  .write-review__form input {
+    height: 7rem;
+  }
+  .write-review__form label, .write-review__form input, .write-review__form textarea {
+    font-size: 2.3rem;
+  }
+  .write-review__form input, .write-review__form textarea {
+    padding-left: 2.5rem;
+  }
+  .write-review__form textarea {
+    padding-top: 3rem;
+  }
+  .write-review__phone {
+    width: 75%;
+  }
+  .write-review__email {
+    margin-left: -50%;
+  }
+  .write-review__title {
+    font-size: 8rem;
+  }
+  .write-review__politic {
+    padding: 0;
+    line-height: 3rem;
+    font-size: 1.7rem;
+  }
+  .write-review__btn-submit {
+    padding: 0;
+    height: 8.5rem;
+    font-size: 2rem;
+    font-weight: normal;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .write-review {
+    overflow: scroll;
+  }
+  .write-review__container {
+    margin: 15rem 3rem;
+  }
+  .write-review__content {
+    padding: 0;
+  }
+  .write-review__title {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+  }
+  .write-review__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .write-review__form input {
+    height: 10rem;
+  }
+  .write-review__form label, .write-review__form input, .write-review__form textarea {
+    font-size: 2.8rem;
+  }
+  .write-review__form textarea {
+    height: 28rem;
+  }
+  .write-review__phone {
+    width: 100%;
+  }
+  .write-review__email {
+    margin: 0;
+  }
+  .write-review__politic {
+    font-size: 2.4rem;
+  }
+  .write-review__captcha img {
+    width: 100%;
+  }
+  .write-review__btn-submit {
+    height: 10rem;
+    font-size: 2.8rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

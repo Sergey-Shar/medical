@@ -132,6 +132,9 @@
       min-height: 40rem;
       box-shadow: 0 0 0.5rem 0.5rem rgba(204, 201, 201, 0.5);
     }
+    &__item-text {
+      line-height: 3.5rem;
+    }
     &__author {
       font-size: 14px;
     }
@@ -158,6 +161,7 @@
       position: relative;
       z-index: 100;
       width: 100%;
+      line-height: 4rem;
     }
   }
 }
@@ -202,7 +206,7 @@
       z-index: 100;
       margin-top: 20px;
       margin-left: 0;
-      line-height: 4rem;
+      line-height: 4.5rem;
     }
 
     &__button {

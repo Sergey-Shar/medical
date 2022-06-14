@@ -54,7 +54,7 @@
   }
 
   &__swiper {
-    
+
     height: 54rem;
     & .swiper-button-next {
       right: auto;
@@ -229,12 +229,13 @@
   .banner {
     &__swiper {
       position: relative;
-      width:100vw;
+      width: 100vw;
       min-height: 60rem;
       margin: 2.5rem 0;
     }
+
     &__description {
-      margin-right:0;
+      margin-right: 0;
     }
 
     &__image-brand {
@@ -263,24 +264,29 @@
       font-size: 14px;
       font-weight: normal;
     }
+
     &__brand {
       margin: 3rem 5rem 0 0;
       width: 20rem;
       height: 6rem;
     }
+
     &__title {
       width: 60rem;
     }
 
   }
+
   .banner .swiper-pagination {
     width: 25%;
     bottom: 0;
   }
+
   .banner .swiper-pagination-bullet {
     background: none;
     opacity: 1;
   }
+
   .banner .swiper-pagination-bullet-active {
     background: #fff;
   }

@@ -105,6 +105,7 @@
     font-weight: bold;
     // margin-top: 2.7rem;
   }
+
   &__button-all {
     position: absolute;
     left: 30%;
@@ -116,9 +117,12 @@
     z-index: 1000;
     cursor: pointer;
   }
-  &__button-all:hover, &__button-all:hover #icon {
+
+  &__button-all:hover,
+  &__button-all:hover #icon {
     color: #626161;
   }
+
   &__navigation {
     height: 50px;
   }
@@ -170,6 +174,7 @@
     &__description-date {
       width: 16%;
     }
+
     &__button-all {
       width: 30%;
     }
@@ -185,12 +190,16 @@
       align-items: center;
       margin-bottom: 7.2rem;
     }
-    &__day, &__time {
+
+    &__day,
+    &__time {
       font-size: 12px;
     }
+
     &__content {
       height: 36rem;
     }
+
     &__title {
       flex: 40%;
     }
@@ -214,6 +223,7 @@
       width: 100%;
       height: auto;
     }
+
     &__date-day {
       font-size: 14px;
     }
@@ -226,16 +236,19 @@
       top: 125px;
       background: none;
     }
+
     &__description-title {
       font-size: 18px;
       line-height: 5rem;
     }
+
     &__description-text {
       width: 100%;
       line-height: 4rem;
       margin: 0 0 0 0;
       margin-top: 1.5rem;
     }
+
     &__description-category {
       margin-left: 0;
       margin-top: 20px;
@@ -249,6 +262,7 @@
       justify-content: space-between;
       margin: 0;
     }
+
     &__button-all {
       position: absolute;
       left: 0px;
@@ -259,9 +273,11 @@
       font-size: 12px;
       align-items: center;
     }
+
     &__navigation {
       height: 50px;
     }
+
     &__pagination {
       display: none;
     }

@@ -68,10 +68,12 @@
             grid-template-columns: repeat(2, 48%);
             column-gap: 30px;
         }
+
         &__line {
             margin-top: 30px;
             margin-bottom: 40px;
         }
+
         &__item {
             width: 345px;
         }
@@ -83,6 +85,7 @@
         &__nav {
             width: 170px;
         }
+
         &__title {
             font-size: 26px;
         }
@@ -92,16 +95,20 @@
             row-gap: 26px;
             margin-bottom: 46px;
         }
+
         &__item {
             width: 165px;
         }
+
         &__item-img {
             margin-bottom: 15px;
         }
+
         &__item-title {
             margin-bottom: 7px;
             font-size: 14px;
         }
+
         &__item-amount {
             font-size: 12px;
         }

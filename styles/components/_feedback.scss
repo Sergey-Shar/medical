@@ -8,31 +8,37 @@
     left: 0;
     z-index: 1000;
     transition: all 0.3s ease;
+
     &__content {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 0 3rem;
     }
+
     &__container {
         display: flex;
     }
+
     &__title {
         color: #FFF;
         font-size: 5.6rem;
         font-weight: bold;
         margin-bottom: 6rem;
     }
+
     &__form {
         display: grid;
         gap: 2rem;
-        grid-template-areas: 'name phone email''text text text' 'politic captcha submit';
+        grid-template-areas: 'name phone email''text text text''politic captcha submit';
         grid-template-columns: repeat(3, 1fr);
     }
+
     &__form input {
         height: 5rem;
         border-radius: 5px;
     }
+
     &__form label {
         display: flex;
         flex-direction: column;
@@ -41,36 +47,45 @@
         font-size: 1.6rem;
         font-weight: bold;
     }
+
     &__form textarea {
         border-radius: 5px;
         padding: 1rem;
         resize: none;
     }
+
     &__name {
         grid-area: name;
     }
+
     &__phone {
         grid-area: phone;
     }
+
     &__email {
         grid-area: email;
     }
+
     &__text {
         grid-area: text;
     }
+
     &__politic {
         color: #FFF;
         padding: 1rem;
         font-size: 1.2rem;
         grid-area: politic;
     }
+
     &__politic {
         grid-area: politic;
     }
+
     &__link {
         text-decoration: underline;
         color: #FFF;
     }
+
     &__btn-submit {
         width: 27rem;
         height: 6rem;
@@ -80,6 +95,7 @@
         justify-content: center;
         grid-area: submit;
     }
+
     &__btn-close {
         background: #FFF;
         height: 100vh;

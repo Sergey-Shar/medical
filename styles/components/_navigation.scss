@@ -72,10 +72,12 @@
 @media screen and (max-width: 480px) {
   .navigation {
     bottom: 0;
+
     & .reviews__pagination,
     .navigation .articles__pagination {
       width: 35%;
     }
+
     &__btn-next::after,
     &__btn-prev::after {
       font-size: 21px;
@@ -86,6 +88,7 @@
       font-size: 2rem;
       margin-left: 2rem;
     }
+
     &__btn-prev {
       left: 80%;
     }

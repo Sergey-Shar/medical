@@ -729,6 +729,13 @@ input {
   margin: 0 -1rem;
 }
 
+.panel p {
+  margin: 3rem 4rem;
+  line-height: 4rem;
+  font-size: 12px;
+  font-weight: 200;
+}
+
 .panel ul {
   margin: 1rem 0;
 }
@@ -3425,6 +3432,7 @@ input {
 .card__calculation {
   font-size: 14px;
   margin-left: 1rem;
+  line-height: 3rem;
   color: #ff9132;
 }
 
@@ -3595,6 +3603,8 @@ input {
   }
   .card__main-text {
     font-size: 14px;
+    line-height: 4rem;
+    margin-bottom: 2rem;
   }
   .card__main-link {
     font-size: 14px;
@@ -3617,6 +3627,7 @@ input {
   }
   .card__block-foto-mini {
     width: 100%;
+    margin-bottom: 3rem;
   }
   .card__header-description {
     min-height: 25rem;

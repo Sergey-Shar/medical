@@ -3025,6 +3025,9 @@ input {
   .footer__menu-wrap-right {
     height: 100%;
   }
+  .footer__menu-wrap-right .footer__link {
+    width: 100%;
+  }
   .footer__line {
     margin-top: 20rem;
   }
@@ -7454,6 +7457,7 @@ input {
   right: 0;
   top: 0;
   background: #FFF;
+  color: #000;
   height: 100vh;
   font-size: 50px;
   padding: 3rem;
@@ -7725,6 +7729,7 @@ input {
   right: 0;
   top: 0;
   background: #FFF;
+  color: #000;
   height: 100vh;
   font-size: 50px;
   padding: 3rem;

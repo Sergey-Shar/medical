@@ -1873,6 +1873,7 @@ input {
 
 @media screen and (max-width: 480px) {
   .products {
+    margin-bottom: 3rem;
     padding-bottom: 0;
   }
   .products button {
@@ -1894,10 +1895,10 @@ input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border-bottom: 2px solid #C2C2C2;
+    border-bottom: 1px solid #C2C2C2;
   }
   .products__grid-wrapper > div:last-child {
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
   }
   .products__menu {
     position: static;

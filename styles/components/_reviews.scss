@@ -114,12 +114,10 @@
     &__top {
       position: relative;
       min-height: 180px;
-      flex-wrap: wrap;
       justify-content: space-between;
       align-items: flex-start;
       margin-top: 12rem;
       margin-bottom: 0;
-      flex-wrap: nowrap;
     }
     &__text {
       width: auto;

@@ -2170,8 +2170,6 @@ input {
   .reviews__top {
     position: relative;
     min-height: 180px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -2180,8 +2178,6 @@ input {
             align-items: flex-start;
     margin-top: 12rem;
     margin-bottom: 0;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
   }
   .reviews__text {
     width: auto;

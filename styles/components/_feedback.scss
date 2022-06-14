@@ -13,11 +13,12 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0 3rem;
+        padding: 0 53rem 0 37rem;
     }
 
     &__container {
         display: flex;
+        height: 100%;
     }
 
     &__title {
@@ -97,9 +98,11 @@
     }
 
     &__btn-close {
+        position: absolute;
+        right: 0;
+        top: 0;
         background: #FFF;
         height: 100vh;
-        width: 80px;
         font-size: 50px;
         padding: 3rem;
         display: flex;
@@ -113,6 +116,13 @@
 
 @media screen and(max-width:1100px) {
     .feedback {
+        overflow: scroll;
+        &__container {
+            margin: 30rem 4rem;
+        }
+        &__content {
+            padding: 0;
+        }
         &__btn-close {
             position: absolute;
             right: 0;
@@ -121,9 +131,6 @@
             height: 7rem;
             font-size: 4rem;
             padding: 1.5rem;
-        }
-        &__content {
-            padding: 30rem 3rem;
         }
         &__form {
             grid-template-areas: "name name name"
@@ -170,11 +177,16 @@
 
 @media screen and(max-width:480px) {
     .feedback {
+        overflow: scroll;
+        &__container {
+            margin: 15rem 3rem
+        }
         &__content {
-            padding: 10rem 2.5rem 5rem;
+            padding: 0;
         }
         &__title {
             font-size: 5rem;
+            margin-bottom: 3rem;    
         }
         &__form {
             display: flex;

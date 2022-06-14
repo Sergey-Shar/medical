@@ -7335,13 +7335,14 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 3rem;
+  padding: 0 53rem 0 37rem;
 }
 
 .feedback__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
 }
 
 .feedback__title {
@@ -7449,9 +7450,11 @@ input {
 }
 
 .feedback__btn-close {
+  position: absolute;
+  right: 0;
+  top: 0;
   background: #FFF;
   height: 100vh;
-  width: 80px;
   font-size: 50px;
   padding: 3rem;
   display: -webkit-box;
@@ -7470,6 +7473,15 @@ input {
 }
 
 @media screen and (max-width: 1100px) {
+  .feedback {
+    overflow: scroll;
+  }
+  .feedback__container {
+    margin: 30rem 4rem;
+  }
+  .feedback__content {
+    padding: 0;
+  }
   .feedback__btn-close {
     position: absolute;
     right: 0;
@@ -7478,9 +7490,6 @@ input {
     height: 7rem;
     font-size: 4rem;
     padding: 1.5rem;
-  }
-  .feedback__content {
-    padding: 30rem 3rem;
   }
   .feedback__form {
         grid-template-areas: "name name name" "phone phone email" "text text text" "politic captcha submit";
@@ -7522,11 +7531,18 @@ input {
 }
 
 @media screen and (max-width: 480px) {
+  .feedback {
+    overflow: scroll;
+  }
+  .feedback__container {
+    margin: 15rem 3rem;
+  }
   .feedback__content {
-    padding: 10rem 2.5rem 5rem;
+    padding: 0;
   }
   .feedback__title {
     font-size: 5rem;
+    margin-bottom: 3rem;
   }
   .feedback__form {
     display: -webkit-box;
@@ -7590,10 +7606,11 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 3rem;
+  padding: 0 53rem 0 37rem;
 }
 
 .write-review__container {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7704,9 +7721,11 @@ input {
 }
 
 .write-review__btn-close {
+  position: absolute;
+  right: 0;
+  top: 0;
   background: #FFF;
   height: 100vh;
-  width: 80px;
   font-size: 50px;
   padding: 3rem;
   display: -webkit-box;
@@ -7725,6 +7744,15 @@ input {
 }
 
 @media screen and (max-width: 1100px) {
+  .write-review {
+    overflow: scroll;
+  }
+  .write-review__container {
+    margin: 30rem 4rem;
+  }
+  .write-review__content {
+    padding: 0;
+  }
   .write-review__btn-close {
     position: absolute;
     right: 0;
@@ -7732,9 +7760,6 @@ input {
     height: 7rem;
     font-size: 4rem;
     padding: 1.5rem;
-  }
-  .write-review__content {
-    padding: 30rem 3rem;
   }
   .write-review__form {
         grid-template-areas: "name name name" "phone phone email" "text text text" "politic captcha submit";
@@ -7776,11 +7801,18 @@ input {
 }
 
 @media screen and (max-width: 480px) {
+  .write-review {
+    overflow: scroll;
+  }
+  .write-review__container {
+    margin: 15rem 3rem;
+  }
   .write-review__content {
-    padding: 10rem 2.5rem 5rem;
+    padding: 0;
   }
   .write-review__title {
     font-size: 5rem;
+    margin-bottom: 3rem;
   }
   .write-review__form {
     display: -webkit-box;

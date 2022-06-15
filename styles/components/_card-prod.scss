@@ -149,6 +149,7 @@
   &__calculation {
     font-size: 14px;
     margin-left: 1rem;
+    line-height: 3rem;
     color: rgb(255, 145, 50);
   }
 
@@ -326,6 +327,8 @@
 
     &__main-text {
       font-size: 14px;
+      line-height: 4rem;
+      margin-bottom: 2rem;
     }
 
     &__main-link {
@@ -353,6 +356,7 @@
 
     &__block-foto-mini {
       width: 100%;
+      margin-bottom: 3rem;
     }
 
     &__header-description {

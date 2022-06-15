@@ -66,6 +66,12 @@
     overflow: hidden;
     margin-bottom: 2rem;
     margin: 0 -1rem;
+    & p{
+        margin: 3rem 4rem;
+        line-height: 4rem;
+        font-size: 12px;
+        font-weight: 200;
+    }
 
     & ul {
         margin: 1rem 0;

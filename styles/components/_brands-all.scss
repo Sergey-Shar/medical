@@ -32,7 +32,7 @@
         border-radius: 50px;
         width: 3rem;
         height: 3rem;
-        font-size: 16px;
+        font-size: 1.6rem;
         font-weight: bold;
         &:hover {
             background: #10ae73;
@@ -60,6 +60,7 @@
         font-size: 16px;
         font-weight: bold;
         text-decoration: underline;
+
     }
     &__name:hover a {
         color: #10ae73;
@@ -145,6 +146,14 @@
         }
         &__name {
             font-size: 12px;
+            line-height: 4rem;
+        }
+        &__abc {
+            display: flex;
+            width: fit-content;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 4.5rem;
         }
     }
 }

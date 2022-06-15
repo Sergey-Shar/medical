@@ -7925,7 +7925,7 @@ input {
   border-radius: 50px;
   width: 3rem;
   height: 3rem;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
@@ -8059,6 +8059,19 @@ input {
   }
   .brands-all__name {
     font-size: 12px;
+    line-height: 4rem;
+  }
+  .brands-all__abc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 4.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

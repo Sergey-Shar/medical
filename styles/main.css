@@ -8074,4 +8074,192 @@ input {
     margin-bottom: 4.5rem;
   }
 }
+
+.shoping-cart__promo {
+  position: relative;
+}
+
+.shoping-cart__quantity button {
+  background-color: #fff;
+}
+
+.shoping-cart__picker {
+  background-color: #fff;
+  border: 1px solid #95969b;
+  color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.shoping-cart__picker:hover {
+  background-color: #fff;
+  border: 1px solid #6c6d6f;
+}
+
+.shoping-cart__counter {
+  font-size: 1.6rem;
+}
+
+.shoping-cart__delete button {
+  background-color: #fff;
+}
+
+.shoping-cart__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.shoping-cart__footer input[type='text'] {
+  border: 1px solid #cfcfcf;
+  border-radius: 3px;
+  min-height: 45px;
+  min-width: 30rem;
+  font-size: 1.4rem;
+  background-clip: padding-box;
+  margin: 0 0 3rem 0;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.shoping-cart__promo-submit {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #10AE73;
+  top: 10px;
+  right: 1rem;
+}
+
+.shoping-cart__footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50%;
+}
+
+.shoping-cart__footer-content button {
+  width: 30rem;
+  height: 5rem;
+}
+
+.shoping-cart__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 30rem;
+  margin-bottom: 2rem;
+}
+
+.shoping-cart__list p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.shoping-cart__cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.shoping-cart__cost p {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1100px) {
+  .shoping-cart__picker {
+    width: 11.5rem;
+    height: 4.5rem;
+  }
+  .shoping-cart__delete-icon {
+    width: 1.7rem;
+    height: 1.9rem;
+  }
+  .shoping-cart__footer-content {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .shoping-cart__picker {
+    width: 11.5rem;
+    height: 4.5rem;
+    margin-left: 1rem;
+  }
+  .shoping-cart__delete {
+    visibility: hidden;
+    z-index: -10000;
+    max-height: 0.1rem;
+  }
+  .shoping-cart__delete-icon {
+    display: none;
+  }
+  .shoping-cart__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .shoping-cart__footer input[type='text'] {
+    min-width: 100%;
+  }
+  .shoping-cart__footer input[type='text']::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .shoping-cart__footer input[type='text']:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .shoping-cart__footer input[type='text']::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .shoping-cart__footer input[type='text']::placeholder {
+    font-size: 12px;
+  }
+  .shoping-cart__footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .shoping-cart__footer-content button {
+    min-width: 100%;
+    height: 45px;
+    font-size: 12px;
+  }
+  .shoping-cart__list p {
+    font-size: 10px;
+    margin-bottom: 1rem;
+  }
+  .shoping-cart__cost p {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
 /*# sourceMappingURL=main.css.map */

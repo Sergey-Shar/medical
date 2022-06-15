@@ -8186,6 +8186,11 @@ input {
   font-weight: bold;
 }
 
+.shoping-cart__delete-icon {
+  stroke: #222222;
+  opacity: 0.6;
+}
+
 @media screen and (max-width: 1100px) {
   .shoping-cart__picker {
     width: 11.5rem;

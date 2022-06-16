@@ -8531,7 +8531,6 @@ input {
   }
   .contacts__right {
     padding: 0;
-    margin-bottom: 5rem;
   }
 }
 
@@ -8747,21 +8746,22 @@ input {
   }
   .about__subtitle {
     font-size: 18px;
-    line-height: 4rem;
+    line-height: 5rem;
   }
   .about__text {
     font-size: 14px;
-    line-height: 4rem;
+    line-height: 5rem;
   }
   .about__text--hide {
     display: none;
   }
   .about h3 {
     width: 100%;
+    line-height: 5rem;
   }
   .about h4 {
     font-size: 16px;
-    line-height: 4rem;
+    line-height: 5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

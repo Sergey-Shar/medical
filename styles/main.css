@@ -8340,7 +8340,7 @@ input {
   font-size: 56px;
   font-weight: bold;
   margin-bottom: 4.2rem;
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: title;
@@ -8809,6 +8809,648 @@ input {
   .about h4 {
     font-size: 16px;
     line-height: 4rem;
+  }
+}
+
+.login-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-modal__title {
+  font-size: 32px;
+  font-weight: bold;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: title;
+}
+
+.login-modal__content {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "title title" "label-email label-email" "input-email input-email" "label-pass remind" "input-pass input-pass" "btn-block btn-block";
+  position: relative;
+  background: #fff;
+  width: 480px;
+  height: 480px;
+  border-radius: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 65px 80px;
+}
+
+.login-modal__content input {
+  border: 2px solid #B8B8B8;
+  border-radius: 10px;
+  height: 50px;
+  width: 320px;
+  padding: 1rem;
+  font-size: 16px;
+}
+
+.login-modal__content input::-webkit-input-placeholder {
+  color: #000;
+}
+
+.login-modal__content input:-ms-input-placeholder {
+  color: #000;
+}
+
+.login-modal__content input::-ms-input-placeholder {
+  color: #000;
+}
+
+.login-modal__content input::placeholder {
+  color: #000;
+}
+
+.login-modal__content label {
+  font-size: 16px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.login-modal__content label[for=login-email] {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: label-email;
+}
+
+.login-modal__content label[for=login-pass] {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: label-pass;
+}
+
+.login-modal__btn-close {
+  margin: 22px 22px 0 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #FFF;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-modal__email-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: input-email;
+}
+
+.login-modal__email-block img {
+  position: absolute;
+  right: 15px;
+}
+
+.login-modal__password-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: input-pass;
+}
+
+.login-modal__password-block img {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}
+
+.login-modal__btn-submit {
+  width: 170px;
+  height: 50px;
+  font-weight: normal;
+}
+
+.login-modal__link-register {
+  text-decoration: underline;
+}
+
+.login-modal__link-remind {
+  text-decoration: underline;
+  color: #707070;
+  font-weight: normal;
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: remind;
+  justify-self: flex-end;
+}
+
+.login-modal__link-remind:hover {
+  color: #10AE73;
+  text-decoration: underline;
+}
+
+.login-modal__btn-block {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: btn-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .login-modal__content {
+    width: 100%;
+    height: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    padding: 34rem 2rem;
+    border-radius: 0;
+  }
+  .login-modal__content input {
+    height: 50px;
+    padding: 1rem;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 7rem;
+  }
+  .login-modal__content label {
+    font-size: 14px;
+    margin-bottom: 2rem;
+  }
+  .login-modal__link-remind {
+    margin-bottom: 2rem;
+  }
+  .login-modal__title {
+    font-size: 26px;
+    margin-bottom: 4rem;
+  }
+  .login-modal__btn-submit {
+    height: 45px;
+    font-size: 14px;
+    border-radius: 32px;
+  }
+  .login-modal__password-block img, .login-modal__email-block img {
+    top: 20%;
+  }
+}
+
+.remind-password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.remind-password__title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.remind-password__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background: #fff;
+  width: 480px;
+  border-radius: 8px;
+  height: auto;
+  gap: 3rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 65px 80px;
+}
+
+.remind-password__content input {
+  border: 2px solid #B8B8B8;
+  border-radius: 10px;
+  height: 50px;
+  width: 320px;
+  padding: 1rem;
+  font-size: 16px;
+}
+
+.remind-password__content input::-webkit-input-placeholder {
+  color: #000;
+}
+
+.remind-password__content input:-ms-input-placeholder {
+  color: #000;
+}
+
+.remind-password__content input::-ms-input-placeholder {
+  color: #000;
+}
+
+.remind-password__content input::placeholder {
+  color: #000;
+}
+
+.remind-password__content label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.remind-password__btn-close {
+  margin: 22px 22px 0 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #FFF;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.remind-password__email-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.remind-password__email-block img {
+  position: absolute;
+  right: 15px;
+}
+
+.remind-password__btn-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.remind-password__btn-submit {
+  width: 170px;
+  height: 50px;
+  font-weight: normal;
+}
+
+.remind-password__link-back {
+  text-decoration: underline;
+}
+
+.remind-password__link-back:hover {
+  color: #10AE73;
+  text-decoration: underline;
+}
+
+.remind-password__text {
+  font-size: 16px;
+  margin-bottom: 5.5rem;
+}
+
+.remind-password__text-hide {
+  color: #B8B8B8;
+  width: 105px;
+}
+
+@media screen and (max-width: 480px) {
+  .remind-password {
+    width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+    height: auto;
+    overflow: visible;
+  }
+  .remind-password__content {
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    padding: 34rem 2rem;
+    border-radius: 0;
+  }
+  .remind-password__content input {
+    height: 50px;
+    padding: 1rem;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 7rem;
+  }
+  .remind-password__content label {
+    font-size: 14px;
+    margin-bottom: 2rem;
+  }
+  .remind-password__title {
+    font-size: 26px;
+    margin-bottom: 4rem;
+  }
+  .remind-password__btn-submit {
+    height: 45px;
+    font-size: 14px;
+    border-radius: 32px;
+  }
+  .remind-password__email-block {
+    width: 100%;
+  }
+  .remind-password__password-block img, .remind-password__email-block img {
+    top: 20%;
+  }
+  .remind-password__text {
+    font-size: 14px;
+  }
+}
+
+.city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.city__title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.city__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background: #fff;
+  width: 730px;
+  gap: 4rem;
+  border-radius: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 68px 65px 100px;
+}
+
+.city__content input {
+  border-radius: 32px;
+  height: 50px;
+  width: 100%;
+  background: #EFF1F5;
+  padding: 1rem 1rem 1rem 6rem;
+  font-size: 16px;
+}
+
+.city__content input::-webkit-input-placeholder {
+  color: #5C596A;
+}
+
+.city__content input:-ms-input-placeholder {
+  color: #5C596A;
+}
+
+.city__content input::-ms-input-placeholder {
+  color: #5C596A;
+}
+
+.city__content input::placeholder {
+  color: #5C596A;
+}
+
+.city__content input:hover {
+  background: #cfd0d7;
+}
+
+.city__search-block {
+  position: relative;
+  width: 100%;
+}
+
+.city__search-block img {
+  position: absolute;
+  left: 2%;
+  top: 30%;
+}
+
+.city__btn-close {
+  margin: 22px 22px 0 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #FFF;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.city__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.city__auto {
+  color: #10AE73;
+  font-weight: normal;
+  background: #FFF;
+}
+
+.city__auto:hover {
+  text-decoration: underline;
+}
+
+.city__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+.city__item {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.city__item:hover {
+  color: #10AE73;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .city__content {
+    width: 100%;
+    height: 100%;
+    padding: 34rem 2rem;
+    border-radius: 0;
+  }
+  .city__content input {
+    font-size: 14px;
+    padding: 1rem 1rem 1rem 10rem;
+  }
+  .city__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 2rem;
+  }
+  .city__title {
+    font-size: 26px;
+    text-transform: uppercase;
+  }
+  .city__search-block img {
+    left: 4%;
+  }
+  .city__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

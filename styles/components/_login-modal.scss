@@ -1,0 +1,164 @@
+.login-modal {
+    // display: none;
+    display: flex;
+    z-index: 3000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    &__title {
+        font-size: 32px;    
+        font-weight: bold;
+        grid-area: title;
+    }
+    &__content {
+        display: grid;
+        grid-template-areas: "title title"
+        "label-email label-email"
+        "input-email input-email"
+        "label-pass remind"
+        "input-pass input-pass"
+        "btn-block btn-block";
+        position: relative;
+        background: #fff;
+        width: 480px;
+        height: 480px;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 65px 80px;
+        & input {
+            border: 2px solid #B8B8B8;
+            border-radius: 10px;
+            height: 50px;
+            width: 320px;
+            padding: 1rem;
+            font-size: 16px;
+            &::placeholder {
+                color: #000;
+            }
+        }
+        & label {
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column-reverse;
+            &[for=login-email]{
+                grid-area: label-email;
+            }
+            &[for=login-pass]{
+                grid-area: label-pass;
+            }
+        }
+
+    }
+    &__btn-close {
+        margin: 22px 22px 0 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: #FFF;
+        color: #000;
+        font-weight: bold;
+        font-size: 20px;
+        height: 20px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__email-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        grid-area: input-email;
+        & img {
+            position: absolute;
+            right: 15px;
+        }
+    }
+    &__password-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        grid-area: input-pass;
+        & img {
+            position: absolute;
+            right: 15px;
+            cursor: pointer;
+        }
+    }
+    &__btn-submit {
+        width: 170px;
+        height: 50px;
+        font-weight: normal;
+    }
+    &__link-register {
+        text-decoration: underline;
+    }
+    &__link-remind {
+        text-decoration: underline;
+        color: #707070;
+        font-weight: normal;
+        grid-area: remind;
+        justify-self: flex-end;
+        &:hover {
+            color: #10AE73;
+            text-decoration: underline;
+        }
+    }
+    &__btn-block {
+        grid-area: btn-block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+}
+
+@media screen and(max-width:480px) {
+    .login-modal {
+        &__content {
+            width: 100%;
+            height: 100%;
+            min-width: 320px;
+            max-width: 480px;
+            padding: 34rem 2rem;
+            border-radius: 0;
+        & input {
+            height: 50px;
+            padding: 1rem;
+            font-size: 14px;
+            width: 100%;
+            margin-bottom: 7rem;
+        }
+        & label {
+            font-size: 14px;
+            margin-bottom: 2rem;
+        }
+    }
+    &__link-remind {
+        margin-bottom: 2rem;
+    }
+    &__title {
+        font-size: 26px;
+        margin-bottom: 4rem;
+    }
+    &__btn-submit {
+        height: 45px;
+        font-size: 14px;
+        border-radius: 32px;
+    }
+    &__password-block img, &__email-block img {
+        top: 20%;
+    }
+    }
+}

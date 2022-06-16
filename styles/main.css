@@ -8639,6 +8639,7 @@ input {
 
 .about .mobile-aside__link--title {
   cursor: pointer;
+  display: none;
 }
 
 .about__aside {
@@ -8694,6 +8695,7 @@ input {
   font-weight: bold;
   margin-bottom: 8rem;
   margin-top: 5rem;
+  line-height: 3rem;
 }
 
 .about__content h4 span {
@@ -8705,6 +8707,7 @@ input {
   font-weight: bold;
   width: 68rem;
   margin-bottom: 3rem;
+  line-height: 4rem;
 }
 
 .about__subtitle--green {
@@ -8724,6 +8727,7 @@ input {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 3rem;
+  line-height: 3rem;
 }
 
 .about__text img {
@@ -8749,9 +8753,11 @@ input {
     margin-top: 7rem;
     width: 100%;
     margin-bottom: 4.5rem;
+    line-height: 4rem;
   }
   .about__text {
     margin-bottom: 6rem;
+    line-height: 4rem;
   }
   .about__text--bold {
     margin-bottom: 8rem;
@@ -8761,6 +8767,15 @@ input {
   }
   .about h4 {
     margin-bottom: 11rem;
+    line-height: 4rem;
+  }
+  .about .mobile-aside__link {
+    margin-bottom: 1rem;
+  }
+  .about .mobile-aside__link--title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -8779,9 +8794,11 @@ input {
   }
   .about__subtitle {
     font-size: 18px;
+    line-height: 4rem;
   }
   .about__text {
     font-size: 14px;
+    line-height: 4rem;
   }
   .about__text--hide {
     display: none;
@@ -8791,6 +8808,7 @@ input {
   }
   .about h4 {
     font-size: 16px;
+    line-height: 4rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,222 @@
+.contacts {
+
+    &__flex-box {
+        display: flex;
+        width: 100;
+    }
+
+    &__header {
+        & nav {
+            margin-bottom: 8rem;
+        }
+    }
+
+    &__body {
+        height: 30rem;
+        margin-top: 8rem;
+        gap: 2rem;
+    }
+
+    &__left {
+        border-right: 1px solid rgb(108, 109, 111);
+        flex: 1 0 65rem;
+        min-height: 70rem;
+    }
+
+    &__icon {
+        margin-right: 2rem;
+    }
+
+    &__block {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &__location {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8rem;
+
+        &-title {
+            color: #5C596A;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        &-address {
+            display: flex;
+            align-items: center;
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 4rem;
+        }
+    }
+
+    &__phone {
+        grid-area: phone;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+
+        &-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #5C596A;
+            margin-bottom: 1rem;
+
+        }
+
+        &-number {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+
+    &__email {
+        grid-area: email;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+        width: 50%;
+
+        &-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #5C596A;
+            margin-bottom: 1rem;
+
+        }
+
+        &-address {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+
+    & .main-btn {
+        grid-area: button;
+        font-size: 16px;
+    }
+
+    &__right {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5rem;
+        flex-basis: 100%;
+    }
+}
+
+@media screen and(max-width:1100px) {
+    .contacts {
+        &__flex-box {
+            display: flex;
+            width: 100;
+            flex-direction: column;
+
+        }
+
+        &__left {
+            flex: 1 0 75rem;
+            border-right: none;
+            border-bottom: 1px solid rgb(108, 109, 111);
+        }
+
+        &__location {
+            margin-bottom: 8rem;
+
+            &-title {
+                margin-bottom: 2rem;
+            }
+        }
+
+        &__phone {
+            margin-bottom: 8rem;
+
+            &-title {
+                margin-bottom: 2rem;
+            }
+        }
+
+        &__email {
+            &-title {
+                margin-bottom: 2rem;
+            }
+        }
+
+        &__right {
+            padding: 10rem 0 14rem 0;
+            margin: 0;
+
+            & img {
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+@media screen and(max-width:480px) {
+    .contacts {
+        &__left {
+            height: auto;
+            border-right: none;
+            min-height: 0rem;
+            flex: 1 0 65rem;
+        }
+
+        &__location {
+            margin-bottom: 7rem;
+
+            &-address {
+                font-size: 14px;
+            }
+
+            &-title {
+                font-size: 12px;
+            }
+        }
+
+        &__phone {
+            margin-bottom: 0;
+
+            &-number {
+                font-size: 14px;
+            }
+
+            &-title {
+                font-size: 12px;
+            }
+        }
+
+        &__email {
+            width: auto;
+
+            &-address {
+                font-size: 14px;
+            }
+
+            &-title {
+                font-size: 12px;
+            }
+        }
+
+        & .main-btn,
+        &__line {
+            display: none;
+        }
+
+        &__right {
+            padding: 0;
+            margin-bottom: 5rem;
+
+        }
+    }
+}

@@ -166,21 +166,22 @@
         }
         &__subtitle {
             font-size: 18px;
-            line-height: 4rem;
+            line-height: 5rem;
         }
         &__text {
             font-size: 14px;
-            line-height: 4rem;
+            line-height: 5rem;
             &--hide{
                 display: none;
             }
         }
         & h3 {
             width: 100%;
+            line-height: 5rem;
         }
         & h4 {
             font-size: 16px;
-            line-height: 4rem;
+            line-height: 5rem;
         }
     }
 }

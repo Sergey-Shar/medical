@@ -2114,7 +2114,7 @@ input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 28%;
+  width: 15%;
   text-transform: uppercase;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2264,6 +2264,9 @@ input {
     z-index: 100;
     width: 100%;
     line-height: 4rem;
+  }
+  .reviews__button-all {
+    width: 28%;
   }
 }
 
@@ -3175,6 +3178,9 @@ input {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .swiper-card__footer {
@@ -3195,6 +3201,9 @@ input {
   padding: 1rem 0.5rem 0 0.5rem;
   border: 1px solid #cfcfcf;
   border-radius: 0.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .swiper-card__btn-block {
@@ -4796,7 +4805,6 @@ input {
 }
 
 .account__organization-data {
-  display: none;
   border-bottom: 1px solid #cfcfcf;
 }
 
@@ -4843,6 +4851,11 @@ input {
   background-color: #fff;
   border: 1px solid #07c47f;
   color: #07c47f;
+  min-width: 26rem;
+  min-height: 6rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 32px;
 }
 
 .account__delivery-address-select-btn button:hover {
@@ -4919,6 +4932,12 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.account__delivery-add-new-address button {
+  min-width: 25rem;
+  min-height: 5rem;
+  border-radius: 32px;
 }
 
 .account__delivery-add-new-address-center {
@@ -5079,6 +5098,7 @@ input {
 @media screen and (max-width: 480px) {
   .account button {
     height: 7rem;
+    font-size: 14px;
   }
   .account_password-icon {
     top: 38%;
@@ -5148,6 +5168,9 @@ input {
     font-size: 12px;
     padding: 0.5rem 0 0.5rem 0.5rem;
     height: 7rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .account__tab :checked + .account__tab-title {
     border-bottom: 2px solid #07c47f;

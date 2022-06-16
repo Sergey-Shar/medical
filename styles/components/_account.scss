@@ -167,7 +167,7 @@
     }
 
     &__organization-data {
-        display: none;
+        //display: none;
         border-bottom: 1px solid rgb(207, 207, 207);
     }
 
@@ -204,7 +204,10 @@
             background-color: #fff;
             border: 1px solid rgb(7, 196, 127);
             color: rgb(7, 196, 127);
-
+            min-width: 26rem;
+            min-height: 6rem;
+            justify-content: space-around;
+            border-radius: 32px;
             &:hover {
                 background-color: #fff;
                 opacity: 0.6;
@@ -269,6 +272,11 @@
         &.add-address {
             display: flex;
             flex-direction: column;
+        }
+        & button{
+           min-width: 25rem;
+           min-height: 5rem;
+           border-radius: 32px;
         }
     }
 
@@ -419,6 +427,7 @@
     .account {
         button {
             height: 7rem;
+            font-size: 14px;
         }
 
         &_password-icon {
@@ -489,6 +498,7 @@
                 font-size: 12px;
                 padding: 0.5rem 0 0.5rem 0.5rem;
                 height: 7rem;
+                justify-content: center;
             }
         }
 

@@ -9975,4 +9975,44 @@ input {
     font-size: 14px;
   }
 }
+
+.search-page__nav {
+  width: 23rem;
+}
+
+.search-page__result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  gap: 3rem;
+  margin: 3rem 0 4rem 0;
+}
+
+.search-page__result-item {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.search-page__result--green {
+  color: #10AE73;
+}
+
+@media screen and (max-width: 1100px) {
+  .search-page__nav {
+    width: 32rem;
+  }
+  .search-page__result {
+    gap: 4rem;
+    margin: 4rem 0 5rem 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .search-page__result-item {
+    font-size: 12px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

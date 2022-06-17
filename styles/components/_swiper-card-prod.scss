@@ -114,6 +114,10 @@
         width: 115px;
         height: 115px;
         min-width: 0;
+        position: relative;
+        & .favorite-product__header {
+          top: 0;
+        }
       }
     }
 

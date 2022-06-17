@@ -3,6 +3,7 @@
 }
 
 .account {
+  margin-bottom: 5rem;
   &__form-wrapp {
     max-width: 1019px;
   }
@@ -374,6 +375,12 @@
     display: flex;
     gap: 2rem;
     margin: 4rem 0;
+
+  }
+
+  &__save-btn{
+    width: 200px;
+    height: 50px;
   }
 
   &_password-icon {

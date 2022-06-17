@@ -22,13 +22,13 @@
 
         td {
             display: flex;
+            justify-content: start;
 
             &:before {
                 content: attr(data-th)": ";
-
-                margin-right: 2rem;
-                width: 15rem;
                 display: inline-block;
+                width: 50%;
+                color: #000;
 
                 @media (min-width:480px) {
                     display: none;
@@ -83,6 +83,11 @@
                     border-bottom: 1px solid;
                 }
             }
+        }
+
+        &__table-btn {
+            height: 35px;
+            width: 178px;
         }
     }
 }

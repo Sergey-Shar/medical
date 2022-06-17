@@ -1,4 +1,12 @@
+#name-organization {
+    width: 100%;
+}
+
 .account {
+
+    &__form-wrapp {
+        max-width: 1019px;
+    }
 
     &__required {
         position: absolute;
@@ -83,18 +91,28 @@
         position: relative;
         display: flex;
         flex-direction: column;
+
+        & input {
+            width: 49rem;
+        }
     }
 
     &__inputs-block {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        & input {
+            width: 23.5rem;
+        }
     }
 
     &__inputs-row {
         display: flex;
         gap: 2rem;
         justify-content: space-between;
+
+        width: 49rem;
 
         & input {
             width: 100%;
@@ -110,7 +128,7 @@
         input[type='password'] {
             border: 1px solid rgb(207, 207, 207);
             border-radius: 3px;
-            min-height: 3.3rem;
+            min-height: 50px;
             font-size: 1.4rem;
             background-clip: padding-box;
             margin: 0 0 3rem 0;
@@ -152,7 +170,7 @@
     }
 
     &__title {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         font-weight: 900;
         margin: 3rem 0 5rem 0;
     }
@@ -162,7 +180,7 @@
         justify-content: space-between;
 
         & input {
-            min-width: 25rem;
+            width: 32rem;
         }
     }
 
@@ -173,18 +191,21 @@
 
     &__organization-data-addresses {
         display: flex;
-        gap: 3rem;
-        width: 100%;
+        justify-content: space-between;
+        gap: 0rem;
+
     }
 
     &__organization-data-addresses-legal {
-        width: 100%;
+        width: 490px;
         display: flex;
         flex-direction: column;
+
     }
 
     &__organization-data-addresses-actual {
-        width: 100%;
+        width: 490px;
+
     }
 
     &__delivery-address {
@@ -196,8 +217,9 @@
         gap: 3rem;
 
         & select {
-            min-width: 48%;
+            min-width: 49rem;
             cursor: pointer;
+            height: 50px;
         }
 
         & button {
@@ -208,6 +230,7 @@
             min-height: 6rem;
             justify-content: space-around;
             border-radius: 32px;
+
             &:hover {
                 background-color: #fff;
                 opacity: 0.6;
@@ -244,7 +267,7 @@
 
     &__delivery-address-current {
         display: flex;
-        gap: 3rem;
+        justify-content: space-between;
 
         &.hidden {
             display: none;
@@ -254,12 +277,10 @@
     &__delivery-address-current-left {
         display: flex;
         flex-direction: column;
-        min-width: 44%;
     }
 
     &__delivery-address-current-right {
         min-width: none;
-        width: 56%;
     }
 
     &__delivery-add-new-address {
@@ -273,10 +294,11 @@
             display: flex;
             flex-direction: column;
         }
-        & button{
-           min-width: 25rem;
-           min-height: 5rem;
-           border-radius: 32px;
+
+        & button {
+            min-width: 25rem;
+            min-height: 5rem;
+            border-radius: 32px;
         }
     }
 
@@ -286,7 +308,7 @@
         gap: 3rem;
 
         & input {
-            min-width: 446px;
+            min-width: 490px;
         }
     }
 
@@ -298,13 +320,13 @@
     &__delivery-add-new-address-left {
         display: flex;
         flex-direction: column;
-        min-width: 48.5%;
+        width: 100%;
     }
 
     &__delivery-add-new-address-right {
         display: flex;
         flex-direction: column;
-        min-width: 50%;
+        width: 100%;
     }
 
 
@@ -316,10 +338,13 @@
 
     &__password {
         border-bottom: 1px solid rgb(207, 207, 207);
+    }
+
+    &__password-block {
         width: 50%;
 
         & input {
-            width: 22rem;
+            width: 320px;
         }
     }
 
@@ -329,16 +354,17 @@
 
         & input {
             margin: 0;
-            min-width: 22rem;
+            min-width: 32rem;
         }
     }
 
     &__remind-pass {
         position: absolute;
-        left: 30%;
+        right: 0;
         color: rgb(149, 150, 155);
         text-decoration: underline;
         cursor: pointer;
+        background-color: #fff;
 
         &:hover {
             opacity: 0.6;
@@ -355,9 +381,9 @@
         display: flex;
         justify-content: end;
         position: absolute;
-        margin-right: 1rem;
+        margin-right: 10px;
         right: 0;
-        top: 32%;
+        top: 36px;
         opacity: 0.4;
         cursor: pointer;
         transition: all 300ms ease;
@@ -367,9 +393,15 @@
         }
     }
 
-    &_password-icon.old {
-        justify-content: start;
-        width: 70%;
+    &__old-pass-wrap {
+        position: relative;
+
+        #old-pass-icon {
+            max-width: 320px;
+
+            position: absolute;
+            left: -10px;
+        }
     }
 }
 
@@ -377,16 +409,42 @@
     width: 230px;
 }
 
+.old-pass-wrap {
+    position: relative;
+    width: 320px;
+
+}
+
+.old {
+    position: absolute;
+    min-width: 25px;
+}
 
 @media screen and (max-width: 1100px) {
     .account {
-        &_password-icon {
-            height: 2rem;
-            width: 2rem;
+        &__delivery-address-current {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            &.hidden {
+                display: none;
+            }
         }
 
-        &_password-icon.old {
-            display: none;
+        &__delivery-add-new-address-wrap {
+            flex-wrap: wrap;
+            width: 100%;
+
+        }
+
+        &__personal-data-inputs {
+            display: flex;
+            flex-wrap: wrap;
+
+            & input {
+                width: 345px;
+            }
         }
 
         &__tab :checked+.account__tab-title {
@@ -395,50 +453,131 @@
         }
 
         &__delivery-address-current-left {
-            min-width: 48%;
+            width: 100%;
+
         }
 
         &__delivery-address-current-right {
-            width: 53%;
+            width: 100%;
+
         }
 
         &__delivery-add-new-address-center {
+
             & input {
-                min-width: 357px;
+                min-width: 100%;
             }
         }
 
-        &__password {
+        &__password-block {
+            width: 100%;
+
             & input {
-                width: 180px;
+                width: 345px;
             }
         }
 
-        &__password-create-new {
+        &__input-wrapp {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        &__inputs-row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
             & input {
-                min-width: 180px;
+                width: 220px;
             }
         }
+
+        &__inputs-block {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            height: auto;
+
+            & input {
+                min-width: 220px;
+            }
+        }
+
+        &__organization-data-addresses {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 0rem;
+
+            & input {
+                width: 100%;
+            }
+
+        }
+
+        &__organization-data-addresses-actual {
+            width: 100%;
+        }
+
+        &__organization-data-addresses-legal {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+
+    .old-pass-wrap {
+        position: relative;
+        width: 345px;
+    }
+
+    #current-sity {
+        width: 100%;
+    }
+
+    #current-street {
+        width: 100%;
+    }
+
+    #street {
+        width: 100%;
+    }
+
+    #sity {
+        width: 100%;
+    }
+
+    #organization-address-legal {
+        width: 100%;
     }
 }
 
 
+
 @media screen and (max-width: 480px) {
     .account {
+
         button {
-            height: 7rem;
+            width: 170px;
+            height: 45px;
+            border-radius: 32px;
             font-size: 14px;
         }
 
-        &_password-icon {
-            top: 38%;
-        }
+        &__tabs-sing-up-wrapp {
 
-        &_password-icon.old {
-            display: flex;
-            justify-content: end;
-            height: 2rem;
-            width: 2rem;
+            button {
+                height: 7rem;
+                justify-content: end;
+                padding-right: 0;
+                font-size: 10px;
+                width: 50px;
+            }
         }
 
         &__form {
@@ -486,7 +625,7 @@
 
         &__delivery-address-select-btn {
 
-            min-height: 5rem;
+            min-height: 50px;
             gap: 5rem;
             width: 100%;
             display: flex;
@@ -524,7 +663,7 @@
         }
 
         &__remind-pass {
-            left: 79%;
+            display: none;
         }
 
 
@@ -561,5 +700,10 @@
             }
         }
 
+    }
+
+    .old-pass-wrap {
+        position: relative;
+        width: 100%;
     }
 }

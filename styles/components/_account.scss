@@ -1,709 +1,700 @@
 #name-organization {
-    width: 100%;
+  width: 100%;
 }
 
 .account {
+  margin-bottom: 5rem;
+  &__form-wrapp {
+    max-width: 1019px;
+  }
 
-    &__form-wrapp {
-        max-width: 1019px;
+  &__required {
+    position: absolute;
+    right: 2rem;
+    top: 43%;
+    color: red;
+  }
+
+  &__nav {
+    min-height: 6rem;
+    display: flex;
+    align-items: center;
+    width: 60%;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 12rem;
+    border-bottom: 1px solid rgb(207, 207, 207);
+  }
+
+  &__tabs-sing-up-wrapp {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 1rem 0;
+    height: 5rem;
+  }
+
+  &__tabs {
+    display: flex;
+
+    & input[type="radio"] {
+      display: none;
     }
 
-    &__required {
-        position: absolute;
-        right: 2rem;
-        top: 43%;
-        color: red;
+    & label {
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: rgb(149, 150, 155);
+      margin-right: 3rem;
+    }
+  }
+
+  &__tab :checked + .account__tab-title {
+    position: relative;
+    padding-bottom: 3.8rem;
+    border-bottom: 3px solid rgb(7, 196, 127);
+    z-index: 10;
+    color: #000;
+  }
+
+  &__tab-title {
+    border-bottom: none;
+    top: 0;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__singup-btn {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    justify-content: space-between;
+    background-color: #fff;
+    color: rgb(149, 150, 155);
+    transition: all 300ms ease;
+    span {
+      margin-left: 2rem;
+      font-size: 14px;
+    }
+    &:hover {
+      background-color: #fff;
+      color: rgb(131, 132, 136);
+      opacity: 0.6;
+    }
+  }
+
+  &__signup-icon {
+    stroke: rgb(149, 150, 155);
+  }
+
+  &__input-wrapp {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    & input {
+      width: 49rem;
+    }
+  }
+
+  &__inputs-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & input {
+      width: 23.5rem;
+    }
+  }
+
+  &__inputs-row {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+
+    width: 49rem;
+
+    & input {
+      width: 100%;
+    }
+  }
+
+  &__form {
+    & input[type="text"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="email"],
+    input[type="password"] {
+      border: 1px solid rgb(207, 207, 207);
+      border-radius: 3px;
+      min-height: 50px;
+      font-size: 1.4rem;
+      background-clip: padding-box;
+      margin: 0 0 3rem 0;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      cursor: pointer;
     }
 
-    &__nav {
-        min-height: 6rem;
-        display: flex;
-        align-items: center;
-        width: 60%;
+    & label {
+      margin-bottom: 1rem;
+      font-weight: 900;
     }
 
-    &__header {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        min-height: 12rem;
-        border-bottom: 1px solid rgb(207, 207, 207);
+    & input:focus {
+      color: #212529;
+      background-color: #fff;
+      border-color: #bdbdbd;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
     }
 
-    &__tabs-sing-up-wrapp {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 0.8rem;
+    & input:hover {
+      border: 1px solid rgb(130, 128, 128);
     }
 
-    &__tabs {
-        display: flex;
+    & button[type="reset"] {
+      background-color: #fff;
+      color: rgb(149, 150, 155);
+      text-decoration: underline;
+      padding-left: 0;
 
-        & input[type="radio"] {
-            display: none;
-        }
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
 
-        & label {
-            font-size: 1.8rem;
-            font-weight: 900;
-            color: rgb(149, 150, 155);
-            ;
-            margin-right: 3rem;
-        }
+  &__personal-data {
+    border-bottom: 1px solid rgb(207, 207, 207);
+  }
+
+  &__title {
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin: 3rem 0 5rem 0;
+  }
+
+  &__personal-data-inputs {
+    display: flex;
+    justify-content: space-between;
+
+    & input {
+      width: 32rem;
+    }
+  }
+
+  &__organization-data {
+    //display: none;
+    border-bottom: 1px solid rgb(207, 207, 207);
+  }
+
+  &__organization-data-addresses {
+    display: flex;
+    justify-content: space-between;
+    gap: 0rem;
+  }
+
+  &__organization-data-addresses-legal {
+    width: 490px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__organization-data-addresses-actual {
+    width: 490px;
+  }
+
+  &__delivery-address {
+    border-bottom: 1px solid rgb(207, 207, 207);
+  }
+
+  &__delivery-address-select-btn {
+    display: flex;
+    gap: 3rem;
+
+    & select {
+      min-width: 49rem;
+      cursor: pointer;
+      height: 50px;
     }
 
-    &__tab :checked+.account__tab-title {
-        position: relative;
-        padding-bottom: 1.9rem;
-        border-bottom: 3px solid rgb(7, 196, 127);
-        z-index: 10;
-        color: #000;
-    }
+    & button {
+      background-color: #fff;
+      border: 1px solid rgb(7, 196, 127);
+      color: rgb(7, 196, 127);
+      min-width: 26rem;
+      min-height: 6rem;
+      justify-content: space-around;
+      border-radius: 32px;
 
-    &__tab-title {
-        border-bottom: none;
-        top: 0;
-        cursor: pointer;
-
-        &:hover {
-            opacity: 1;
-        }
-    }
-
-    &__singup-btn {
+      &:hover {
         background-color: #fff;
-        color: rgb(149, 150, 155);
-        transition: all 300ms ease;
-
-        &:hover {
-            background-color: #fff;
-            color: rgb(131, 132, 136);
-            opacity: 0.6;
-        }
+        opacity: 0.6;
+      }
     }
 
-    &__signup-icon {
-        stroke: rgb(149, 150, 155);
+    & button:disabled {
+      background-color: #fff;
+      border: 1px solid rgb(207, 207, 207);
+      color: rgb(207, 207, 207);
+
+      & .account__choose-icon {
+        stroke: rgb(207, 207, 207);
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__choose-icon {
+    stroke: rgb(7, 196, 127);
+  }
+
+  &__delivery-address-delete {
+    margin: 2rem 0 2rem 0;
+  }
+
+  &__delete-icon {
+    stroke: rgb(149, 150, 155);
+  }
+
+  &__delivery-address-current {
+    display: flex;
+    justify-content: space-between;
+
+    &.hidden {
+      display: none;
+    }
+  }
+
+  &__delivery-address-current-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__delivery-address-current-right {
+    min-width: none;
+  }
+
+  &__delivery-add-new-address {
+    display: none;
+
+    & p {
+      color: rgb(7, 196, 127);
     }
 
-    &__input-wrapp {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-
-        & input {
-            width: 49rem;
-        }
+    &.add-address {
+      display: flex;
+      flex-direction: column;
     }
 
-    &__inputs-block {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        & input {
-            width: 23.5rem;
-        }
+    & button {
+      min-width: 25rem;
+      min-height: 5rem;
+      border-radius: 32px;
     }
+  }
 
-    &__inputs-row {
-        display: flex;
-        gap: 2rem;
-        justify-content: space-between;
+  &__delivery-add-new-address-center {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
 
-        width: 49rem;
-
-        & input {
-            width: 100%;
-        }
+    & input {
+      min-width: 490px;
     }
+  }
 
-    &__form {
+  &__delivery-add-new-address-wrap {
+    display: flex;
+    gap: 3rem;
+  }
 
-        & input[type='text'],
-        input[type='tel'],
-        input[type='number'],
-        input[type='email'],
-        input[type='password'] {
-            border: 1px solid rgb(207, 207, 207);
-            border-radius: 3px;
-            min-height: 50px;
-            font-size: 1.4rem;
-            background-clip: padding-box;
-            margin: 0 0 3rem 0;
-            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-            cursor: pointer;
-        }
+  &__delivery-add-new-address-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 
-        & label {
-            margin-bottom: 1rem;
-            font-weight: 900;
-        }
+  &__delivery-add-new-address-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 
-        & input:focus {
-            color: #212529;
-            background-color: #fff;
-            border-color: #bdbdbd;
-            outline: 0;
-            box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
-        }
+  &__delivery-add-new-address-buttons {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
 
-        & input:hover {
-            border: 1px solid rgb(130, 128, 128);
-        }
+  &__password {
+    border-bottom: 1px solid rgb(207, 207, 207);
+  }
 
-        & button[type='reset'] {
-            background-color: #fff;
-            color: rgb(149, 150, 155);
-            text-decoration: underline;
-            padding-left: 0;
+  &__password-block {
+    width: 50%;
 
-            &:hover {
-                opacity: 0.6;
-            }
-        }
+    & input {
+      width: 320px;
     }
+  }
 
-    &__personal-data {
-        border-bottom: 1px solid rgb(207, 207, 207);
+  &__password-create-new {
+    display: flex;
+    justify-content: space-between;
+
+    & input {
+      margin: 0;
+      min-width: 32rem;
     }
+  }
 
-    &__title {
-        font-size: 2.2rem;
-        font-weight: 900;
-        margin: 3rem 0 5rem 0;
+  &__remind-pass {
+    position: absolute;
+    right: 0;
+    color: rgb(149, 150, 155);
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: #fff;
+
+    &:hover {
+      opacity: 0.6;
     }
+  }
 
-    &__personal-data-inputs {
-        display: flex;
-        justify-content: space-between;
+  &__save-buttons {
+    display: flex;
+    gap: 2rem;
+    margin: 4rem 0;
 
-        & input {
-            width: 32rem;
-        }
+  }
+
+  &__save-btn{
+    width: 200px;
+    height: 50px;
+  }
+
+  &_password-icon {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    margin-right: 10px;
+    right: 0;
+    top: 36px;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: all 300ms ease;
+
+    &:hover {
+      opacity: 0.7;
     }
+  }
 
-    &__organization-data {
-        //display: none;
-        border-bottom: 1px solid rgb(207, 207, 207);
+  &__old-pass-wrap {
+    position: relative;
+
+    #old-pass-icon {
+      max-width: 320px;
+
+      position: absolute;
+      left: -10px;
     }
-
-    &__organization-data-addresses {
-        display: flex;
-        justify-content: space-between;
-        gap: 0rem;
-
-    }
-
-    &__organization-data-addresses-legal {
-        width: 490px;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    &__organization-data-addresses-actual {
-        width: 490px;
-
-    }
-
-    &__delivery-address {
-        border-bottom: 1px solid rgb(207, 207, 207);
-    }
-
-    &__delivery-address-select-btn {
-        display: flex;
-        gap: 3rem;
-
-        & select {
-            min-width: 49rem;
-            cursor: pointer;
-            height: 50px;
-        }
-
-        & button {
-            background-color: #fff;
-            border: 1px solid rgb(7, 196, 127);
-            color: rgb(7, 196, 127);
-            min-width: 26rem;
-            min-height: 6rem;
-            justify-content: space-around;
-            border-radius: 32px;
-
-            &:hover {
-                background-color: #fff;
-                opacity: 0.6;
-            }
-        }
-
-        & button:disabled {
-            background-color: #fff;
-            border: 1px solid rgb(207, 207, 207);
-            color: rgb(207, 207, 207);
-
-            & .account__choose-icon {
-                stroke: rgb(207, 207, 207);
-            }
-
-            &:hover {
-                opacity: 1;
-            }
-        }
-    }
-
-    &__choose-icon {
-        stroke: rgb(7, 196, 127);
-    }
-
-    &__delivery-address-delete {
-        margin: 2rem 0 2rem 0;
-    }
-
-    &__delete-icon {
-        stroke: rgb(149, 150, 155);
-        ;
-    }
-
-    &__delivery-address-current {
-        display: flex;
-        justify-content: space-between;
-
-        &.hidden {
-            display: none;
-        }
-    }
-
-    &__delivery-address-current-left {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__delivery-address-current-right {
-        min-width: none;
-    }
-
-    &__delivery-add-new-address {
-        display: none;
-
-        & p {
-            color: rgb(7, 196, 127);
-        }
-
-        &.add-address {
-            display: flex;
-            flex-direction: column;
-        }
-
-        & button {
-            min-width: 25rem;
-            min-height: 5rem;
-            border-radius: 32px;
-        }
-    }
-
-    &__delivery-add-new-address-center {
-        display: flex;
-        align-items: center;
-        gap: 3rem;
-
-        & input {
-            min-width: 490px;
-        }
-    }
-
-    &__delivery-add-new-address-wrap {
-        display: flex;
-        gap: 3rem;
-    }
-
-    &__delivery-add-new-address-left {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    &__delivery-add-new-address-right {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-
-    &__delivery-add-new-address-buttons {
-        display: flex;
-        gap: 2rem;
-        margin-bottom: 3rem;
-    }
-
-    &__password {
-        border-bottom: 1px solid rgb(207, 207, 207);
-    }
-
-    &__password-block {
-        width: 50%;
-
-        & input {
-            width: 320px;
-        }
-    }
-
-    &__password-create-new {
-        display: flex;
-        justify-content: space-between;
-
-        & input {
-            margin: 0;
-            min-width: 32rem;
-        }
-    }
-
-    &__remind-pass {
-        position: absolute;
-        right: 0;
-        color: rgb(149, 150, 155);
-        text-decoration: underline;
-        cursor: pointer;
-        background-color: #fff;
-
-        &:hover {
-            opacity: 0.6;
-        }
-    }
-
-    &__save-buttons {
-        display: flex;
-        gap: 2rem;
-        margin: 4rem 0;
-    }
-
-    &_password-icon {
-        display: flex;
-        justify-content: end;
-        position: absolute;
-        margin-right: 10px;
-        right: 0;
-        top: 36px;
-        opacity: 0.4;
-        cursor: pointer;
-        transition: all 300ms ease;
-
-        &:hover {
-            opacity: 0.7;
-        }
-    }
-
-    &__old-pass-wrap {
-        position: relative;
-
-        #old-pass-icon {
-            max-width: 320px;
-
-            position: absolute;
-            left: -10px;
-        }
-    }
+  }
 }
 
 .account .card__nav {
-    width: 230px;
+  width: 230px;
 }
 
 .old-pass-wrap {
-    position: relative;
-    width: 320px;
-
+  position: relative;
+  width: 320px;
 }
 
 .old {
-    position: absolute;
-    min-width: 25px;
+  position: absolute;
+  min-width: 25px;
 }
 
 @media screen and (max-width: 1100px) {
-    .account {
-        &__delivery-address-current {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
+  .account {
+    &__delivery-address-current {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
 
-            &.hidden {
-                display: none;
-            }
-        }
-
-        &__delivery-add-new-address-wrap {
-            flex-wrap: wrap;
-            width: 100%;
-
-        }
-
-        &__personal-data-inputs {
-            display: flex;
-            flex-wrap: wrap;
-
-            & input {
-                width: 345px;
-            }
-        }
-
-        &__tab :checked+.account__tab-title {
-            border-bottom: 3px solid rgb(7, 196, 127);
-            padding-bottom: 19px;
-        }
-
-        &__delivery-address-current-left {
-            width: 100%;
-
-        }
-
-        &__delivery-address-current-right {
-            width: 100%;
-
-        }
-
-        &__delivery-add-new-address-center {
-
-            & input {
-                min-width: 100%;
-            }
-        }
-
-        &__password-block {
-            width: 100%;
-
-            & input {
-                width: 345px;
-            }
-        }
-
-        &__input-wrapp {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-
-        }
-
-        &__inputs-row {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-
-            & input {
-                width: 220px;
-            }
-        }
-
-        &__inputs-block {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            width: 100%;
-            height: auto;
-
-            & input {
-                min-width: 220px;
-            }
-        }
-
-        &__organization-data-addresses {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            width: 100%;
-            gap: 0rem;
-
-            & input {
-                width: 100%;
-            }
-
-        }
-
-        &__organization-data-addresses-actual {
-            width: 100%;
-        }
-
-        &__organization-data-addresses-legal {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-
-        }
+      &.hidden {
+        display: none;
+      }
     }
 
-    .old-pass-wrap {
-        position: relative;
+    &__delivery-add-new-address-wrap {
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    &__personal-data-inputs {
+      display: flex;
+      flex-wrap: wrap;
+
+      & input {
         width: 345px;
+      }
     }
 
-    #current-sity {
-        width: 100%;
+    &__tab :checked + .account__tab-title {
+      border-bottom: 3px solid rgb(7, 196, 127);
     }
 
-    #current-street {
-        width: 100%;
+    &__delivery-address-current-left {
+      width: 100%;
     }
 
-    #street {
-        width: 100%;
+    &__delivery-address-current-right {
+      width: 100%;
     }
 
-    #sity {
-        width: 100%;
+    &__delivery-add-new-address-center {
+      & input {
+        min-width: 100%;
+      }
     }
 
-    #organization-address-legal {
-        width: 100%;
+    &__password-block {
+      width: 100%;
+
+      & input {
+        width: 345px;
+      }
     }
+
+    &__input-wrapp {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__inputs-row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      & input {
+        width: 220px;
+      }
+    }
+
+    &__inputs-block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      height: auto;
+
+      & input {
+        min-width: 220px;
+      }
+    }
+
+    &__organization-data-addresses {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 0rem;
+
+      & input {
+        width: 100%;
+      }
+    }
+
+    &__organization-data-addresses-actual {
+      width: 100%;
+    }
+
+    &__organization-data-addresses-legal {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .old-pass-wrap {
+    position: relative;
+    width: 345px;
+  }
+
+  #current-sity {
+    width: 100%;
+  }
+
+  #current-street {
+    width: 100%;
+  }
+
+  #street {
+    width: 100%;
+  }
+
+  #sity {
+    width: 100%;
+  }
+
+  #organization-address-legal {
+    width: 100%;
+  }
 }
 
-
-
 @media screen and (max-width: 480px) {
-    .account {
-
-        button {
-            width: 170px;
-            height: 45px;
-            border-radius: 32px;
-            font-size: 14px;
-        }
-
-        &__tabs-sing-up-wrapp {
-
-            button {
-                height: 7rem;
-                justify-content: end;
-                padding-right: 0;
-                font-size: 10px;
-                width: 50px;
-            }
-        }
-
-        &__form {
-
-            & input {
-                height: 5rem;
-                width: 100%;
-            }
-
-            & label {
-                font-size: 12px;
-                font-weight: 300;
-            }
-
-            & p {
-                font-size: 16px;
-                font-weight: 500;
-            }
-        }
-
-        &__delivery-address-current {
-            flex-direction: column;
-        }
-
-        &__personal-data-inputs {
-            flex-direction: column;
-
-        }
-
-        &__delivery-address-current-left {
-            width: 100%;
-            flex-direction: column;
-        }
-
-        &__delivery-address-choose {
-            button[type='reset'] {
-                height: 3rem;
-                margin: 5rem 0;
-            }
-        }
-
-        &__delivery-address-current-right {
-            width: 100%;
-        }
-
-        &__delivery-address-select-btn {
-
-            min-height: 50px;
-            gap: 5rem;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-
-
-            & button {
-                width: 100%;
-                font-size: 12px;
-                padding: 0.5rem 0 0.5rem 0.5rem;
-                height: 7rem;
-                justify-content: center;
-            }
-        }
-
-        &__tab :checked+.account__tab-title {
-            border-bottom: 2px solid rgb(7, 196, 127);
-            padding-bottom: 12px;
-        }
-
-        &__delivery-add-new-address-wrap {
-            flex-wrap: wrap;
-        }
-
-        &__delivery-add-new-address-left {
-            width: 100%;
-        }
-
-        &__delivery-add-new-address-right {
-            width: 100%;
-        }
-
-        &__delivery-add-new-address-center {
-            gap: 1rem;
-        }
-
-        &__remind-pass {
-            display: none;
-        }
-
-
-        &__organization-data-addresses {
-            flex-direction: column;
-
-        }
-
-        &__inputs-block {
-            flex-direction: column;
-        }
-
-        &__inputs-row {
-            flex-direction: column;
-        }
-
-        &__password {
-            width: 100%;
-
-            & input {
-                width: 100%;
-            }
-        }
-
-        &__password-create-new {
-            flex-direction: column;
-        }
-
-        &__tabs {
-            & label {
-                font-size: 11px;
-                font-weight: 900;
-                color: rgb(149, 150, 155);
-            }
-        }
-
+  .account {
+    button {
+      width: 170px;
+      height: 45px;
+      border-radius: 32px;
+      font-size: 14px;
     }
 
-    .old-pass-wrap {
-        position: relative;
+    &__tabs-sing-up-wrapp {
+      margin: 35px 0 1rem 0;
+      button {
+        height: 3rem;
+        font-size: 12px;
+        max-width: 80px;
+        border-radius: 0px;
+      }
+    }
+
+    &__form {
+      & input {
+        height: 5rem;
         width: 100%;
+      }
+
+      & label {
+        font-size: 12px;
+        font-weight: 300;
+      }
+
+      & p {
+        font-size: 16px;
+        font-weight: 500;
+      }
     }
+
+    &__delivery-address-current {
+      flex-direction: column;
+    }
+
+    &__personal-data-inputs {
+      flex-direction: column;
+    }
+
+    &__delivery-address-current-left {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    &__delivery-address-choose {
+      button[type="reset"] {
+        height: 3rem;
+        margin: 5rem 0;
+      }
+    }
+
+    &__delivery-address-current-right {
+      width: 100%;
+    }
+
+    &__delivery-address-select-btn {
+      min-height: 50px;
+      gap: 5rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      & button {
+        width: 100%;
+        font-size: 12px;
+        padding: 0.5rem 0 0.5rem 0.5rem;
+        height: 7rem;
+        justify-content: center;
+      }
+    }
+
+    &__tab :checked + .account__tab-title {
+      border-bottom: 2px solid rgb(7, 196, 127);
+      padding-bottom: 13px;
+    }
+
+    &__delivery-add-new-address-wrap {
+      flex-wrap: wrap;
+    }
+
+    &__delivery-add-new-address-left {
+      width: 100%;
+    }
+
+    &__delivery-add-new-address-right {
+      width: 100%;
+    }
+
+    &__delivery-add-new-address-center {
+      gap: 1rem;
+    }
+
+    &__remind-pass {
+      display: none;
+    }
+
+    &__organization-data-addresses {
+      flex-direction: column;
+    }
+
+    &__inputs-block {
+      flex-direction: column;
+    }
+
+    &__inputs-row {
+      flex-direction: column;
+    }
+
+    &__password {
+      width: 100%;
+
+      & input {
+        width: 100%;
+      }
+    }
+
+    &__password-create-new {
+      flex-direction: column;
+    }
+
+    &__tabs {
+      & label {
+        font-size: 11px;
+        font-weight: 900;
+        color: rgb(149, 150, 155);
+      }
+    }
+    &__tabs {
+      & label {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .old-pass-wrap {
+    position: relative;
+    width: 100%;
+  }
 }

@@ -305,42 +305,37 @@
                 </nav>
             </div>
         </header>
-        <main class="account">
+        <main class="registration">
             <div class="container-main">
                 <div class="account__nav">
-                    <nav class="card__nav account__nav-link">
+                    <nav class="card__nav registration__nav-link">
                         <a href="./index.html" class="card__nav-link-home">
                             <img src="./common/svg/Home-green.svg" alt="">
                         </a>
                         <a href="./index.html" class="card__nav-link">Главная </a>
                         <span class="card__nav-slach">/</span>
-                        <a href="./catalog-main.html" class="card__nav-link">Личный кабинет</a>
+                        <a href="./catalog-main.html" class="card__nav-link">Регистрация</a>
                     </nav>
                 </div>
                 <div class="catalog__header account__header">
                     <h2 class="catalog__title-main">
-                        Личный кабинет
+                        Регистрация
                     </h2>
-                    <div class="account__tabs-sing-up-wrapp">
-                        <div class="account__tabs">
-                            <div class="account__tab">
-                                <input class="account__radio" type="radio" id="tab1" name="account__tab-group" checked>
-                                <label for="tab1" class="account__tab-title">Профиль</label>
-                            </div>
-                            <div class="account__tab">
-                                <input class="account__radio" type="radio" id="tab2" name="account__tab-group">
-                                <label for="tab2" class="account__tab-title">История заказов</label>
-                                <div class="account__tab-content"></div>
-                            </div>
-                        </div>
-                        <button class="main-btn account__singup-btn">
-                            <i id="icon" class="account__signup-icon" stroke="#000" data-feather="log-out"></i>
-                            <span>ВЫХОД</span>
-                        </button>
-                    </div>
                 </div>
-
-                <form action="#" class="account__form">
+                <form action="#" class="account__form registration__form">
+                    <div class="account__personal-data  registration__radio-block">
+                        <div class="registration__natural-person">
+                            <input class="radio" type="radio" id="natural-person" name="person" value='Физическое лицо'
+                                checked>
+                            <label for="natural-person">Физическое лицо
+                            </label>
+                        </div>
+                        <div class="registration__legal-person">
+                            <input class="radio" type="radio" id="legal-person" name="person" value='Юридическое лицо'>
+                            <label for="legal-person">Юридическое лицо
+                            </label>
+                        </div>
+                    </div>
                     <div class="account__personal-data">
                         <div class="account__form-wrapp">
                             <p class="account__title">Персональные данные</p>
@@ -363,7 +358,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="account__organization-data">
+                    <div class="account__organization-data registration__organization-data">
                         <div class="account__form-wrapp">
                             <p class="account__title">Данные организации</p>
                             <div class="account__input-wrapp">
@@ -439,24 +434,7 @@
                     <div class="account__delivery-address">
 
                         <p class="account__title">Адрес доставки</p>
-                        <div class="account__delivery-address-choose">
-                            <div class="account__delivery-address-select-btn">
-                                <select class="account__delivery-address-select" name="address-choose"
-                                    id="address-choose">
-                                    <option value="address1">адрес 1</option>
-                                    <option value="address2">адрес 2</option>
-                                    <option value="address3">адрес 3</option>
-                                </select>
-                                <button type="button" class="main-btn account__delivery-address-btn">
-                                    <i id="icon" class="account__choose-icon" data-feather="plus-circle"></i>
-                                    <span>Добавить новый адрес</span>
-                                </button>
-                            </div>
-                            <button type="reset" class="main-btn account__delivery-address-delete">
-                                <i id="icon" class="account__delete-icon" stroke="#000" data-feather="plus-circle"></i>
-                                <span>Удалить адрес</span>
-                            </button>
-                        </div>
+
                         <div class="account__form-wrapp">
                             <div class="account__delivery-address-current">
                                 <div class="account__delivery-address-current-left">
@@ -508,99 +486,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="account__delivery-add-new-address">
-                            <p class="account__title">Добавление нового адреса</p>
-                            <div class="account__delivery-add-new-address-center">
-                                <div class="account__input-wrapp">
-                                    <label for="name-new-address">Название адреса</label>
-                                    <input type="text" name="name-new-address" id="name-new-address" required>
-                                    <span class="account__required">*</span>
-                                </div>
-                                <input type="checkbox" name="create-current-address" id="create-current-address"
-                                    class="sheckbox__sale">
-                                <label for="create-current-address">Сделать основным адресом</label>
 
-                            </div>
-                            <div class="account__form-wrapp">
-                                <div class="account__delivery-add-new-address-wrap">
-                                    <div class="account__delivery-add-new-address-left">
-                                        <div class="account__input-wrapp">
-                                            <label for="sity">Город</label>
-                                            <input type="text" name="sity" id="sity" required>
-                                            <span class="account__required">*</span>
-                                        </div>
-                                        <div class="account__inputs-row">
-                                            <div class="account__input-wrapp">
-                                                <label for="index">Индекс</label>
-                                                <input type="number" name="index" id="index" required>
-                                                <span class="account__required">*</span>
-                                            </div>
-                                            <div class="account__input-wrapp">
-                                                <label for="house">Дом</label>
-                                                <input type="number" name="house" id="house" required>
-                                                <span class="account__required">*</span>
-                                            </div>
-                                            <div class="account__input-wrapp">
-                                                <label for="office">Кв/офис</label>
-                                                <input type="number" name="office" id="office" required>
-                                                <span class="account__required">*</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="account__delivery-add-new-address-right">
-                                        <div class="account__input-wrapp">
-                                            <label for="street">Улица</label>
-                                            <input type="text" name="street" id="street" required>
-                                            <span class="account__required">*</span>
-                                        </div>
-                                        <div class="account__inputs-row">
-                                            <div class="account__input-wrapp">
-                                                <label for="front-door">Подьезд</label>
-                                                <input type="number" name="front-door" id="front-door" required>
-                                                <span class="account__required">*</span>
-                                            </div>
-                                            <div class="account__input-wrapp">
-                                                <label for="floor">Этаж</label>
-                                                <input type="number" name="floor" id="floor">
-                                                <span class="account__required">*</span>
-                                            </div>
-                                            <div class="account__input-wrapp">
-                                                <label for="intercom">Домофон</label>
-                                                <input type="number" name="intercom" id="intercom">
-                                                <span class="account__required">*</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="account__input-wrapp">
-                                <label for="hospital">Больница</label>
-                                <input type="text" name="hospital" id="hospital">
-                            </div>
-                            <div class="account__delivery-add-new-address-buttons">
-                                <button class="main-btn account__delivery-new-address-save">
-                                    <span>Сохранить адрес</span>
-                                </button>
-                                <button type="reset" class="main-btn account__delivery-new-address-cancel">
-                                    <span>Отмненить</span>
-                                </button>
-                            </div>
-                        </div>
                     </div>
                     <div class="account__password">
-                        <div class="account__password-block">
-                            <p class="account__title">Пароль</p>
-                            <div class="account__input-wrapp old-pass-wrap">
-                                <label for="old-pass">Старый пароль</label>
-                                <button class="account__remind-pass" for="old-pass">Напомнить</button>
-                                <input class="pass" type="password" name="old-pass" id="old-pass">
-                                <div class="account_password-icon old" id="old-pass">
-                                    <i id="icon" data-feather="eye"></i>
-                                </div>
-                            </div>
-                            <div class="account__password-create-new">
+                        <p class="account__title">Пароль</p>
+                        <div class="account__password-create-new ">
+                            <div class="account__input-wrapp">
                                 <div class="account__input-wrapp">
-                                    <label for="new-pass">Новый пароль</label>
+                                    <label for="new-pass">Укажите пароль</label>
                                     <input class="pass" type="password" name="new-pass" id="new-pass">
                                     <div class="account_password-icon" id="new-pass">
                                         <i id="icon" data-feather="eye"></i>
@@ -617,172 +510,18 @@
                         </div>
                     </div>
                     <div class="account__save">
-                        <div class="account__save-buttons">
-                            <button type="submit" class="main-btn account__save-btn">
-                                <span>Сохранить</span>
+                        <div class="account__save-buttons registration__footer">
+                            <button type="submit" class="main-btn registration__registration-btn">
+                                <span>Зарегестрироваться</span>
                             </button>
-                            <button type="reset" class="main-btn account__save-cancel-btn">
-                                <span>Отменить</span>
-                            </button>
+                            <p>Нажимая «Зарегистрироваться» вы соглашаетесь
+                                <span>с условиями предоставления услуг</span> и <br> <span>политикой хранения
+
+                                    персональных данных</span>
+                            </p>
                         </div>
                     </div>
                 </form>
-
-                <div class="history">
-                    <table class="history__table">
-                        <thead class="history__header-table">
-                            <tr>
-                                <th>Номер заказа</th>
-                                <th>Дата заказа</th>
-                                <th>Сумма заказа</th>
-                                <th>Доставка и оплата</th>
-                                <th>Статус заказа</th>
-                                <th>Действие</th>
-                            </tr>
-                        </thead>
-                        <tr>
-                            <td data-th="Номер заказа" class="history__num">56989</td>
-                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
-                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
-                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
-                                оплата наличными</td>
-                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
-                            <td data-th="Действие" class="history__action">
-                                <button class="main-btn history__table-btn">
-                                    подробнее
-                                </button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td data-th="Номер заказа" class="history__num">56989</td>
-                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
-                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
-                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
-                                оплата наличными</td>
-                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
-                            <td data-th="Действие" class="history__action">
-                                <button class="main-btn history__table-btn">
-                                    подробнее
-                                </button>
-                            </td>
-                        </tr>
-
-                    </table>
-                </div>
-
-                <div class="history-diteal">
-                    <div class="history-diteal__header">
-                        <div class="history-diteal__header--buttons">
-                            <div class="history-diteal__header--title">
-                                <div class="history-diteal__arrow-btn">
-                                    <i id="icon" data-feather="arrow-left"></i>
-                                </div>
-                                <p class="history-diteal__header--num">Заказ № 335-56</p>
-                            </div>
-                            <button type="button" class="main-btn history-diteal__delete-btn ">
-                                <span>Отменить заказ</span>
-                            </button>
-                        </div>
-                        <div class="history-diteal__header--description">
-                            <ul class='history-diteal__list'>
-                                <li>Дата заказа:
-                                    <span>24.02.2022</span>
-                                </li>
-                                <li>Персональные данные:
-                                    <span>Андрей Гайдулян</span>
-                                </li>
-                                <li>Доставка:
-                                    <span>Курьером</span>
-                                </li>
-                                <li>Способ оплаты:
-                                    <span>Оплата картой</span>
-                                </li>
-                                <li>Статус:
-                                    <span>Передан в отдел доставки</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="history-diteal__tables">
-                        <table class="history__table history-diteal__table">
-                            <thead class="history__header-table">
-                                <tr>
-                                    <th class="history-diteal__th-product">Товар</th>
-                                    <th>Цена</th>
-                                    <th>Скидка</th>
-                                    <th>Стоимость</th>
-                                    <th>Количество</th>
-                                </tr>
-                            </thead>
-                            <tr>
-                                <td data-th="Товар" class="history-diteal__tables--product">
-                                    <div class="history-diteal__product">
-                                        <img src="./common/cards-img/mini-img-card.png" alt=""
-                                            class="history-diteal__product--img">
-                                        <div class="history-diteal__product--description">
-                                            <h3 class="history-diteal__product--title">MAMMOREP Игла для локализации в
-                                                молочной железе</h3>
-                                            <p class="history-diteal__product--subtitle">
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta aliquid
-
-                                            </p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td data-th="Цена" class="history-diteal__tables--price">1 000 000 &#8381</td>
-                                <td data-th="Скидка" class="history-diteal__tables--discount">20%</td>
-                                <td data-th="Стоимость" class="history-diteal__tables--cost">1 300 &#8381</td>
-                                <td data-th="Количество" class="history-diteal__tables--quantity">1 шт</td>
-                            </tr>
-                            <tr>
-                                <td data-th="Товар" class="history-diteal__tables--product">
-                                    <div class="history-diteal__product">
-                                        <img src="./common/cards-img/mini-img-card.png" alt=""
-                                            class="history-diteal__product--img">
-                                        <div class="history-diteal__product--description">
-                                            <h3 class="history-diteal__product--title">MAMMOREP Игла для локализации в
-                                                молочной железе</h3>
-                                            <p class="history-diteal__product--subtitle">
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta aliquid
-
-                                            </p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td data-th="Цена" class="history-diteal__tables--price">1 000 000 &#8381</td>
-                                <td data-th="Скидка" class="history-diteal__tables--discount">20%</td>
-                                <td data-th="Стоимость" class="history-diteal__tables--cost">1 300 &#8381</td>
-                                <td data-th="Количество" class="history-diteal__tables--quantity">1 шт</td>
-                            </tr>
-
-                        </table>
-                    </div>
-                    <div class="history-diteal__footer">
-                        <div class="history-diteal__footer--content">
-                            <ul class='history-diteal__list'>
-                                <li>Стоимость товаров:
-                                    <span> 11 600 &#8381</span>
-                                </li>
-                                <li>Скидка:
-                                    <span style="color:red;">1 100 &#8381</span>
-                                </li>
-                                <li>Стоимость доставки:
-                                    <span>-</span>
-                                </li>
-                            </ul>
-                            <ul class='history-diteal__list cost'>
-                                <li>Общая стоимость:
-                                    <span>11 600 &#8381</span>
-                                </li>
-                            </ul>
-                            <button type="button" class="main-btn">
-                                <span>Повторить заказ</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </main>
         <footer class="footer">
@@ -896,7 +635,7 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script type="module" src="./scripts/index.js"></script>
-    <script src="./scripts/user-account.js"></script>
+    <script src="./scripts/registration.js"></script>
 </body>
 
 </html>

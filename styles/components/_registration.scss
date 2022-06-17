@@ -1,0 +1,121 @@
+.registration {
+
+    &__nav-link {
+        width: 27rem;
+    }
+
+    &__radio-block {
+        display: flex;
+        min-height: 16rem;
+    }
+
+    &__natural-person {
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+        margin-right: 2rem;
+        height: 70px;
+        width: 32rem;
+        border: 1px solid #10AE73;
+    }
+
+    &__natural-person.not-active {
+        border: 1px dashed rgba(204, 201, 201, 0.5);
+    }
+
+    &__legal-person {
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+        height: 70px;
+        width: 32rem;
+        border: 1px dashed rgba(204, 201, 201, 0.5);
+    }
+
+    &__legal-person.active {
+        border: 1px solid #10AE73;
+    }
+
+
+    &__registration-btn {
+        width: 32rem;
+        height: 5rem;
+        border-radius: 32px;
+
+        & span {
+            text-decoration: none !important;
+        }
+    }
+
+    &__organization-data {
+        display: none;
+    }
+
+    &__footer {
+        display: flex;
+        flex-wrap: wrap;
+
+        p {
+            color: #979797;
+            line-height: 2.3rem;
+        }
+
+        span {
+            text-decoration: underline;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+    .registration {
+
+
+        &__radio-block {
+            display: flex;
+            min-height: 16rem;
+            justify-content: space-between;
+        }
+
+        &__natural-person {
+            width: 345px;
+        }
+
+        &__legal-person {
+            width: 345px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .registration {
+        &__footer {
+            height: 100%;
+            width: 100%;
+
+            button {
+                width: 100%;
+                height: 45px;
+                font-size: 15px;
+            }
+
+            p {
+                color: #979797;
+                font-size: 12px;
+                line-height: 4rem;
+            }
+
+            span {
+                text-decoration: underline;
+            }
+
+            &__natural-person {
+                width: 30%;
+            }
+
+            &__legal-person {
+                width: 30%;
+            }
+        }
+    }
+}

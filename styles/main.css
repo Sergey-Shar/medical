@@ -4600,6 +4600,14 @@ input {
   }
 }
 
+#name-organization {
+  width: 100%;
+}
+
+.account__form-wrapp {
+  max-width: 1019px;
+}
+
 .account__required {
   position: absolute;
   right: 2rem;
@@ -4709,6 +4717,10 @@ input {
           flex-direction: column;
 }
 
+.account__input-wrapp input {
+  width: 49rem;
+}
+
 .account__inputs-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4720,6 +4732,10 @@ input {
           justify-content: space-between;
 }
 
+.account__inputs-block input {
+  width: 23.5rem;
+}
+
 .account__inputs-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4728,6 +4744,7 @@ input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 49rem;
 }
 
 .account__inputs-row input {
@@ -4741,7 +4758,7 @@ input {
 .account__form input[type='password'] {
   border: 1px solid #cfcfcf;
   border-radius: 3px;
-  min-height: 3.3rem;
+  min-height: 50px;
   font-size: 1.4rem;
   background-clip: padding-box;
   margin: 0 0 3rem 0;
@@ -4786,7 +4803,7 @@ input {
 }
 
 .account__title {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 900;
   margin: 3rem 0 5rem 0;
 }
@@ -4801,7 +4818,7 @@ input {
 }
 
 .account__personal-data-inputs input {
-  min-width: 25rem;
+  width: 32rem;
 }
 
 .account__organization-data {
@@ -4812,12 +4829,14 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 3rem;
-  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0rem;
 }
 
 .account__organization-data-addresses-legal {
-  width: 100%;
+  width: 490px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4828,7 +4847,7 @@ input {
 }
 
 .account__organization-data-addresses-actual {
-  width: 100%;
+  width: 490px;
 }
 
 .account__delivery-address {
@@ -4843,8 +4862,9 @@ input {
 }
 
 .account__delivery-address-select-btn select {
-  min-width: 48%;
+  min-width: 49rem;
   cursor: pointer;
+  height: 50px;
 }
 
 .account__delivery-address-select-btn button {
@@ -4893,7 +4913,9 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .account__delivery-address-current.hidden {
@@ -4908,12 +4930,10 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 44%;
 }
 
 .account__delivery-address-current-right {
   min-width: none;
-  width: 56%;
 }
 
 .account__delivery-add-new-address {
@@ -4951,7 +4971,7 @@ input {
 }
 
 .account__delivery-add-new-address-center input {
-  min-width: 446px;
+  min-width: 490px;
 }
 
 .account__delivery-add-new-address-wrap {
@@ -4969,7 +4989,7 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 48.5%;
+  width: 100%;
 }
 
 .account__delivery-add-new-address-right {
@@ -4980,7 +5000,7 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 50%;
+  width: 100%;
 }
 
 .account__delivery-add-new-address-buttons {
@@ -4993,11 +5013,14 @@ input {
 
 .account__password {
   border-bottom: 1px solid #cfcfcf;
+}
+
+.account__password-block {
   width: 50%;
 }
 
-.account__password input {
-  width: 22rem;
+.account__password-block input {
+  width: 320px;
 }
 
 .account__password-create-new {
@@ -5011,15 +5034,16 @@ input {
 
 .account__password-create-new input {
   margin: 0;
-  min-width: 22rem;
+  min-width: 32rem;
 }
 
 .account__remind-pass {
   position: absolute;
-  left: 30%;
+  right: 0;
   color: #95969b;
   text-decoration: underline;
   cursor: pointer;
+  background-color: #fff;
 }
 
 .account__remind-pass:hover {
@@ -5042,9 +5066,9 @@ input {
       -ms-flex-pack: end;
           justify-content: end;
   position: absolute;
-  margin-right: 1rem;
+  margin-right: 10px;
   right: 0;
-  top: 32%;
+  top: 36px;
   opacity: 0.4;
   cursor: pointer;
   -webkit-transition: all 300ms ease;
@@ -5055,63 +5079,180 @@ input {
   opacity: 0.7;
 }
 
-.account_password-icon.old {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  width: 70%;
+.account__old-pass-wrap {
+  position: relative;
+}
+
+.account__old-pass-wrap #old-pass-icon {
+  max-width: 320px;
+  position: absolute;
+  left: -10px;
 }
 
 .account .card__nav {
   width: 230px;
 }
 
+.old-pass-wrap {
+  position: relative;
+  width: 320px;
+}
+
+.old {
+  position: absolute;
+  min-width: 25px;
+}
+
 @media screen and (max-width: 1100px) {
-  .account_password-icon {
-    height: 2rem;
-    width: 2rem;
+  .account__delivery-address-current {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  .account_password-icon.old {
+  .account__delivery-address-current.hidden {
     display: none;
+  }
+  .account__delivery-add-new-address-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  .account__personal-data-inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .account__personal-data-inputs input {
+    width: 345px;
   }
   .account__tab :checked + .account__tab-title {
     border-bottom: 3px solid #07c47f;
     padding-bottom: 19px;
   }
   .account__delivery-address-current-left {
-    min-width: 48%;
+    width: 100%;
   }
   .account__delivery-address-current-right {
-    width: 53%;
+    width: 100%;
   }
   .account__delivery-add-new-address-center input {
-    min-width: 357px;
+    min-width: 100%;
   }
-  .account__password input {
-    width: 180px;
+  .account__password-block {
+    width: 100%;
   }
-  .account__password-create-new input {
-    min-width: 180px;
+  .account__password-block input {
+    width: 345px;
+  }
+  .account__input-wrapp {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .account__inputs-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .account__inputs-row input {
+    width: 220px;
+  }
+  .account__inputs-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    height: auto;
+  }
+  .account__inputs-block input {
+    min-width: 220px;
+  }
+  .account__organization-data-addresses {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    gap: 0rem;
+  }
+  .account__organization-data-addresses input {
+    width: 100%;
+  }
+  .account__organization-data-addresses-actual {
+    width: 100%;
+  }
+  .account__organization-data-addresses-legal {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .old-pass-wrap {
+    position: relative;
+    width: 345px;
+  }
+  #current-sity {
+    width: 100%;
+  }
+  #current-street {
+    width: 100%;
+  }
+  #street {
+    width: 100%;
+  }
+  #sity {
+    width: 100%;
+  }
+  #organization-address-legal {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 480px) {
   .account button {
-    height: 7rem;
+    width: 170px;
+    height: 45px;
+    border-radius: 32px;
     font-size: 14px;
   }
-  .account_password-icon {
-    top: 38%;
-  }
-  .account_password-icon.old {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .account__tabs-sing-up-wrapp button {
+    height: 7rem;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
-    height: 2rem;
-    width: 2rem;
+    padding-right: 0;
+    font-size: 10px;
+    width: 50px;
   }
   .account__form input {
     height: 5rem;
@@ -5152,7 +5293,7 @@ input {
     width: 100%;
   }
   .account__delivery-address-select-btn {
-    min-height: 5rem;
+    min-height: 50px;
     gap: 5rem;
     width: 100%;
     display: -webkit-box;
@@ -5190,7 +5331,7 @@ input {
     gap: 1rem;
   }
   .account__remind-pass {
-    left: 79%;
+    display: none;
   }
   .account__organization-data-addresses {
     -webkit-box-orient: vertical;
@@ -5226,6 +5367,10 @@ input {
     font-size: 11px;
     font-weight: 900;
     color: #95969b;
+  }
+  .old-pass-wrap {
+    position: relative;
+    width: 100%;
   }
 }
 
@@ -8785,6 +8930,858 @@ input {
   .about h4 {
     font-size: 16px;
     line-height: 5rem;
+  }
+}
+
+.login-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-modal__title {
+  font-size: 32px;
+  font-weight: bold;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: title;
+}
+
+.login-modal__content {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "title title" "label-email label-email" "input-email input-email" "label-pass remind" "input-pass input-pass" "btn-block btn-block";
+  position: relative;
+  background: #fff;
+  width: 480px;
+  height: 480px;
+  border-radius: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 65px 80px;
+}
+
+.login-modal__content input {
+  border: 2px solid #B8B8B8;
+  border-radius: 10px;
+  height: 50px;
+  width: 320px;
+  padding: 1rem;
+  font-size: 16px;
+}
+
+.login-modal__content input::-webkit-input-placeholder {
+  color: #000;
+}
+
+.login-modal__content input:-ms-input-placeholder {
+  color: #000;
+}
+
+.login-modal__content input::-ms-input-placeholder {
+  color: #000;
+}
+
+.login-modal__content input::placeholder {
+  color: #000;
+}
+
+.login-modal__content label {
+  font-size: 16px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.login-modal__content label[for=login-email] {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: label-email;
+}
+
+.login-modal__content label[for=login-pass] {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: label-pass;
+}
+
+.login-modal__btn-close {
+  margin: 22px 22px 0 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #FFF;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-modal__email-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: input-email;
+}
+
+.login-modal__email-block img {
+  position: absolute;
+  right: 15px;
+}
+
+.login-modal__password-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: input-pass;
+}
+
+.login-modal__password-block img {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}
+
+.login-modal__btn-submit {
+  width: 170px;
+  height: 50px;
+  font-weight: normal;
+}
+
+.login-modal__link-register {
+  text-decoration: underline;
+}
+
+.login-modal__link-remind {
+  text-decoration: underline;
+  color: #707070;
+  font-weight: normal;
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: remind;
+  justify-self: flex-end;
+}
+
+.login-modal__link-remind:hover {
+  color: #10AE73;
+  text-decoration: underline;
+}
+
+.login-modal__btn-block {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: btn-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .login-modal__content {
+    width: 100%;
+    height: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    padding: 34rem 2rem;
+    border-radius: 0;
+  }
+  .login-modal__content input {
+    height: 50px;
+    padding: 1rem;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 7rem;
+  }
+  .login-modal__content label {
+    font-size: 14px;
+    margin-bottom: 2rem;
+  }
+  .login-modal__link-remind {
+    margin-bottom: 2rem;
+  }
+  .login-modal__title {
+    font-size: 26px;
+    margin-bottom: 4rem;
+  }
+  .login-modal__btn-submit {
+    height: 45px;
+    font-size: 14px;
+    border-radius: 32px;
+  }
+  .login-modal__password-block img, .login-modal__email-block img {
+    top: 20%;
+  }
+}
+
+.remind-password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.remind-password__title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.remind-password__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background: #fff;
+  width: 480px;
+  border-radius: 8px;
+  height: auto;
+  gap: 3rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 65px 80px;
+}
+
+.remind-password__content input {
+  border: 2px solid #B8B8B8;
+  border-radius: 10px;
+  height: 50px;
+  width: 320px;
+  padding: 1rem;
+  font-size: 16px;
+}
+
+.remind-password__content input::-webkit-input-placeholder {
+  color: #000;
+}
+
+.remind-password__content input:-ms-input-placeholder {
+  color: #000;
+}
+
+.remind-password__content input::-ms-input-placeholder {
+  color: #000;
+}
+
+.remind-password__content input::placeholder {
+  color: #000;
+}
+
+.remind-password__content label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.remind-password__btn-close {
+  margin: 22px 22px 0 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #FFF;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.remind-password__email-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.remind-password__email-block img {
+  position: absolute;
+  right: 15px;
+}
+
+.remind-password__btn-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.remind-password__btn-submit {
+  width: 170px;
+  height: 50px;
+  font-weight: normal;
+}
+
+.remind-password__link-back {
+  text-decoration: underline;
+}
+
+.remind-password__link-back:hover {
+  color: #10AE73;
+  text-decoration: underline;
+}
+
+.remind-password__text {
+  font-size: 16px;
+  margin-bottom: 5.5rem;
+}
+
+.remind-password__text-hide {
+  color: #B8B8B8;
+  width: 105px;
+}
+
+@media screen and (max-width: 480px) {
+  .remind-password {
+    width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+    height: auto;
+    overflow: visible;
+  }
+  .remind-password__content {
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    padding: 34rem 2rem;
+    border-radius: 0;
+  }
+  .remind-password__content input {
+    height: 50px;
+    padding: 1rem;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 7rem;
+  }
+  .remind-password__content label {
+    font-size: 14px;
+    margin-bottom: 2rem;
+  }
+  .remind-password__title {
+    font-size: 26px;
+    margin-bottom: 4rem;
+  }
+  .remind-password__btn-submit {
+    height: 45px;
+    font-size: 14px;
+    border-radius: 32px;
+  }
+  .remind-password__email-block {
+    width: 100%;
+  }
+  .remind-password__password-block img, .remind-password__email-block img {
+    top: 20%;
+  }
+  .remind-password__text {
+    font-size: 14px;
+  }
+}
+
+.city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.city__title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.city__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background: #fff;
+  width: 730px;
+  gap: 4rem;
+  border-radius: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 68px 65px 100px;
+}
+
+.city__content input {
+  border-radius: 32px;
+  height: 50px;
+  width: 100%;
+  background: #EFF1F5;
+  padding: 1rem 1rem 1rem 6rem;
+  font-size: 16px;
+}
+
+.city__content input::-webkit-input-placeholder {
+  color: #5C596A;
+}
+
+.city__content input:-ms-input-placeholder {
+  color: #5C596A;
+}
+
+.city__content input::-ms-input-placeholder {
+  color: #5C596A;
+}
+
+.city__content input::placeholder {
+  color: #5C596A;
+}
+
+.city__content input:hover {
+  background: #cfd0d7;
+}
+
+.city__search-block {
+  position: relative;
+  width: 100%;
+}
+
+.city__search-block img {
+  position: absolute;
+  left: 2%;
+  top: 30%;
+}
+
+.city__btn-close {
+  margin: 22px 22px 0 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #FFF;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.city__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.city__auto {
+  color: #10AE73;
+  font-weight: normal;
+  background: #FFF;
+}
+
+.city__auto:hover {
+  text-decoration: underline;
+}
+
+.city__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+.city__item {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.city__item:hover {
+  color: #10AE73;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .city__content {
+    width: 100%;
+    height: 100%;
+    padding: 34rem 2rem;
+    border-radius: 0;
+  }
+  .city__content input {
+    font-size: 14px;
+    padding: 1rem 1rem 1rem 10rem;
+  }
+  .city__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 2rem;
+  }
+  .city__title {
+    font-size: 26px;
+    text-transform: uppercase;
+  }
+  .city__search-block img {
+    left: 4%;
+  }
+  .city__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+}
+
+.catalog__line {
+  height: 1px;
+  background: #c2c2c2;
+  margin: 5rem 0;
+}
+
+.catalog__brand-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 26rem 1fr;
+      grid-template-columns: 26rem 1fr;
+  -webkit-column-gap: 7.5rem;
+          column-gap: 7.5rem;
+  row-gap: 3rem;
+}
+
+.catalog__brand-logo-block {
+  width: 26rem;
+  height: 17.5rem;
+  border: 2px solid #e8e8e8;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.catalog__brand-logo-block img {
+  width: 19rem;
+  height: 10rem;
+}
+
+.catalog__brand-text {
+  line-height: 3rem;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1100px) {
+  .catalog__brand-wrapper {
+    display: -ms-grid;
+    display: grid;
+  }
+  .catalog__brand-logo-block {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .catalog__brand-logo-block + .catalog__brand-text {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  .catalog__brand-text {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .catalog__brand-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .catalog__brand-logo-block {
+    width: auto;
+  }
+  .catalog__brand-text {
+    font-size: 14px;
+    line-height: 4rem;
+  }
+  .catalog__brand-text:last-child {
+    display: none;
+  }
+}
+
+.registration__nav-link {
+  width: 27rem;
+}
+
+.registration__radio-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 16rem;
+}
+
+.registration__natural-person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 2rem;
+  margin-right: 2rem;
+  height: 70px;
+  width: 32rem;
+  border: 1px solid #10AE73;
+}
+
+.registration__natural-person.not-active {
+  border: 1px dashed rgba(204, 201, 201, 0.5);
+}
+
+.registration__legal-person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 2rem;
+  height: 70px;
+  width: 32rem;
+  border: 1px dashed rgba(204, 201, 201, 0.5);
+}
+
+.registration__legal-person.active {
+  border: 1px solid #10AE73;
+}
+
+.registration__registration-btn {
+  width: 32rem;
+  height: 5rem;
+  border-radius: 32px;
+}
+
+.registration__registration-btn span {
+  text-decoration: none !important;
+}
+
+.registration__organization-data {
+  display: none;
+}
+
+.registration__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.registration__footer p {
+  color: #979797;
+  line-height: 2.3rem;
+}
+
+.registration__footer span {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1100px) {
+  .registration__radio-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 16rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .registration__natural-person {
+    width: 345px;
+  }
+  .registration__legal-person {
+    width: 345px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .registration__footer {
+    height: 100%;
+    width: 100%;
+  }
+  .registration__footer button {
+    width: 100%;
+    height: 45px;
+    font-size: 15px;
+  }
+  .registration__footer p {
+    color: #979797;
+    font-size: 12px;
+    line-height: 4rem;
+  }
+  .registration__footer span {
+    text-decoration: underline;
+  }
+  .registration__footer__natural-person {
+    width: 30%;
+  }
+  .registration__footer__legal-person {
+    width: 30%;
   }
 }
 /*# sourceMappingURL=main.css.map */

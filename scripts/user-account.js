@@ -37,6 +37,8 @@
 
     tabsFirst.addEventListener('click', () => {
         isShowBlok = true
+        historyDiteal.style.display = 'none'
+        history.style.display = 'block'
 
         if (isShowBlok) {
             history.style.display = 'none'

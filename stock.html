@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Название бренда</title>
+  <title>Акции</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./styles/main.css" />
 </head>
@@ -408,38 +408,20 @@
     </header>
     <main class="catalog-individual">
       <div class="container-main">
-        <div class="catalog-individual__nav">
+        <div class="catalog-individual__nav stock__nav">
           <nav class="card__nav catalog__nav-link">
             <a href="./index.html" class="card__nav-link-home">
               <img src="./common/svg/Home-green.svg" alt="">
             </a>
             <a href="./index.html" class="card__nav-link">Главная </a>
             <span class="card__nav-slach">/</span>
-            <a href="" class="card__nav-link">Бренды</a>
-            <span class="card__nav-slach">/</span>
-            <a href="" class="card__nav-link">Natural Pharmacy</a>
+            <a href="" class="card__nav-link">Акции</a>
           </nav>
         </div>
         <div class="catalog__header">
           <h2 class="catalog__title-main">
-            Natural Pharmacy
+            Акции
           </h2>
-          <div class="catalog__line"></div>
-          <div class="catalog__brand-wrapper">
-            <div class="catalog__brand-logo-block">
-              <img src="./common/images/brand.png"  width="190" height="100" alt="" class="catalog__brand-logo">
-            </div>
-            <p class="catalog__brand-text">
-              Производитель медицинского инструмента корпорация C. R. Bard, Inc. – лидер мирового масштаба в изобретении
-              и изготовлении медицинской техники, инструментария и расходных материалов нового поколения.
-              Ключевыми ценностями компании BARD являются Качество, Профессиональная этика, Услуги и Инновации.
-            </p>
-            <p class="catalog__brand-text">
-              Эти ценности помогают преодолевать трудности, руководят повседневной деятельностью и не позволяют компании
-              забыть о главных задачах. Они являются ориентиром и меркой, по которой нас будут оценивать сотрудники, клиенты,
-              акционеры и общественность.
-            </p>
-        </div>
         </div>
         <div class="catalog-individual__content">
 
@@ -473,10 +455,7 @@
               </ul>
             </div>
 
-            <div class="filter-bar__price">
-              <p class="filter-bar__price-name">
-                Цена
-              </p>
+
               <!-- <div class="range-input">
                 <div class="range-input__values">
                   <div class="range-input__value">
@@ -492,13 +471,6 @@
                   <input type="range" min="1000" max="100000" value="100000" class="range-input__to">
                 </div>
               </div> -->
-            </div>
-            <div class="filter-bar__sale-products">
-              <input type="checkbox" id="sale" class="sheckbox__sale" name="sale">
-              <label for="sale">Товары со скидкой
-                <img src="./common/svg/sale.svg" alt="sale" class='filter-bar__sale-icon' />
-              </label>
-            </div>
             <div class="filter-bar__manufacturer">
               <p class="filter-bar__manufacturer-name">
                 Производитель
@@ -520,55 +492,7 @@
                 <label for="fifth-brand">Пятый бренд</label>
               </div>
             </div>
-            <div class="filter-bar__material">
-              <p class="filter-bar__material-name">
-                Материал
-              </p>
-              <div class="filter-bar__material-checkboxes">
-                <input type="checkbox" id="name-material" class="sheckbox__sale" name="name-material">
-                <label for="name-material">Название материала
-                </label>
-                <input type="checkbox" id="more-name-material" class="sheckbox__sale" name="more-name-material">
-                <label for="more-name-material"> Еще одно название материала
-                </label>
-                <input type="checkbox" id="third-name-material" class="sheckbox__sale" name="third-name-material">
-                <label for="third-name-material">Третье название материала
-                </label>
-              </div>
-            </div>
 
-            <div class="filter-bar__size">
-              <p class="filter-bar__size-name">
-                Размер
-              </p>
-              <div class="filter-bar__size-checkboxes">
-                <input class="radio" type="radio" id="size-first" name="size" value='Размер 1'>
-                <label for="size-first">Размер 1
-                </label>
-                <input class="radio" type="radio" id="size-second" name="size" value='Размер 2'>
-                <label for="size-second"> Еще один размер
-                </label>
-                <input class="radio" type="radio" id="size-third" name="size" value='Размер 3'>
-                <label for="size-third">Третий размер
-                </label>
-              </div>
-            </div>
-            <div class="filter-bar__selects">
-              <select name="params" id="params" class="filter-bar__select">
-                <option value="">Параметр</option>
-                <option value="">Lorem</option>
-                <option value="">Lorem</option>
-              </select>
-              <select name="more-params" id="more-params" class="filter-bar__select">
-                <option value="">Еще один параметр</option>
-                <option value="">Lorem</option>
-                <option value="">Lorem</option>
-              </select>
-            </div>
-            <button type="reset" class="filter-bar__reset-btn">
-              <p>Сбросить фильтр</p>
-              <i id="icon" stroke="#c2c2c2" data-feather="x-circle"></i>
-            </button>
           </form>
 
           <div class="cards-block">
@@ -611,6 +535,11 @@
             <div class="cards-block__main">
               <div class=" swiper-card__products cards-block__card ">
                 <div class="swiper-card__img-block">
+                    <div class="favorite-product__header">
+                        <div class="favorite-product__banner favorite-product__banner--sale ">
+                          скидка 15%
+                        </div>  
+                      </div>
                   <img src="./common/cards-img/card-prod-slider.png" alt="" class="swiper-card__img">
                 </div>
                 <div class="swiper-card__description-block ">
@@ -625,7 +554,9 @@
                   </div>
                 </div>
                 <div class="swiper-card__footer">
-                  <p class="swiper-card__price">9.500 &#8381</p>
+                    <p class="favorite-product__price favorite-product__price--sale">9.500 &#8381
+                        <span class="favorite-product__price--former-price">10 430 &#8381</span>
+                    </p>
                   <div class="swiper-card__btn-block">
                     <button class="main-btn ">
                       <a href="./card-products.html">

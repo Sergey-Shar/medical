@@ -1739,7 +1739,7 @@ input {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: "first   first   fifth sixth" "second  third   fifth seventh" "fourth  fourth  eighth eighth";
+      grid-template-areas: "first   first   fifth sixth" "second  third   fifth seventh" "fourth  fourth  eighth eighth";
   gap: 2.5rem;
 }
 
@@ -1879,13 +1879,13 @@ input {
     -ms-grid-rows: auto;
     -ms-grid-columns: (1fr)[2];
         grid-template: auto/repeat(2, 1fr);
-        grid-template-areas: "first   first" "first   first" "second  third" "second  third" "fourth  fourth" "fourth  fourth";
+        grid-template-areas: "first   first" "first   first" "second  third" "second  third" "fourth  fourth" "fourth  fourth";
   }
   .products__right-columns {
     -ms-grid-rows: auto;
     -ms-grid-columns: (1fr)[2];
         grid-template: auto/repeat(2, 1fr);
-        grid-template-areas: "fifth sixth " "fifth sixth " "fifth seventh" "fifth seventh" "eighth eighth";
+        grid-template-areas: "fifth sixth " "fifth sixth " "fifth seventh" "fifth seventh" "eighth eighth";
     gap: 1rem;
     border-radius: 2rem;
   }
@@ -3139,7 +3139,7 @@ input {
   display: -ms-grid;
   display: grid;
   gap: 1rem;
-      grid-template-areas: 'img' 'description' 'footer';
+      grid-template-areas: 'img' 'description' 'footer';
 }
 
 .swiper-card__products.list {
@@ -3249,7 +3249,7 @@ input {
   .swiper-card__products {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: 'img description' 'img  description' 'img  footer';
+        grid-template-areas: 'img description' 'img  description' 'img  footer';
     gap: 20px;
   }
   .swiper-card__price {
@@ -3263,6 +3263,10 @@ input {
     width: 115px;
     height: 115px;
     min-width: 0;
+    position: relative;
+  }
+  .swiper-card__img-block .favorite-product__header {
+    top: 0;
   }
   .swiper-card__link {
     font-size: 14px;
@@ -3306,7 +3310,7 @@ input {
   display: -ms-grid;
   display: grid;
   gap: 2rem;
-      grid-template-areas: "foto description" "foto main" "foto calculation" "foto .. ";
+      grid-template-areas: "foto description" "foto main" "foto calculation" "foto .. ";
   margin-top: 2rem;
 }
 
@@ -3564,7 +3568,7 @@ input {
 
 @media screen and (max-width: 1100px) {
   .card__main {
-        grid-template-areas: "description description" "foto foto" "foto foto" "main main" "calculation calculation";
+        grid-template-areas: "description description" "foto foto" "foto foto" "main main" "calculation calculation";
   }
   .card__header-title {
     width: 630px;
@@ -6538,7 +6542,7 @@ input {
   display: -ms-grid;
   display: grid;
   gap: 16px;
-      grid-template-areas: 'img' 'description' 'footer';
+      grid-template-areas: 'img' 'description' 'footer';
 }
 
 .favorite-product__img-block {
@@ -6777,7 +6781,7 @@ input {
   .favorite-product {
     border-bottom: 1px solid #d2d2d2;
     padding: 20px 0;
-        grid-template-areas: 'img description' 'img description' 'img footer' 'img footer';
+        grid-template-areas: 'img description' 'img description' 'img footer' 'img footer';
     -webkit-column-gap: 3rem;
             column-gap: 3rem;
   }
@@ -7797,7 +7801,7 @@ input {
     padding: 1.5rem;
   }
   .feedback__form {
-        grid-template-areas: "name name name" "phone phone email" "text text text" "politic captcha submit";
+        grid-template-areas: "name name name" "phone phone email" "text text text" "politic captcha submit";
     gap: 4rem;
   }
   .feedback__form input {
@@ -8068,7 +8072,7 @@ input {
     padding: 1.5rem;
   }
   .write-review__form {
-        grid-template-areas: "name name name" "phone phone email" "text text text" "politic captcha submit";
+        grid-template-areas: "name name name" "phone phone email" "text text text" "politic captcha submit";
     gap: 4rem;
   }
   .write-review__form input {
@@ -9061,7 +9065,7 @@ input {
 .login-modal__content {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "title title" "label-email label-email" "input-email input-email" "label-pass remind" "input-pass input-pass" "btn-block btn-block";
+      grid-template-areas: "title title" "label-email label-email" "input-email input-email" "label-pass remind" "input-pass input-pass" "btn-block btn-block";
   position: relative;
   background: #fff;
   width: 480px;
@@ -9883,6 +9887,132 @@ input {
   }
   .registration__footer__legal-person {
     width: 30%;
+  }
+}
+
+.stock__nav {
+  width: 17rem;
+}
+
+.search-empty__nav {
+  width: 23rem;
+}
+
+.search-empty__line {
+  width: 100%;
+  height: 1px;
+  background: #d2d2d2;
+  margin: 5rem 0 10rem 0;
+}
+
+.search-empty__title {
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.search-empty__text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.search-empty__text--green {
+  color: #10AE73;
+}
+
+.search-empty__input-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 4rem 0 14rem 0;
+}
+
+.search-empty__input-block img {
+  position: absolute;
+  left: 2.5rem;
+  top: 30%;
+}
+
+.search-empty__input-block input {
+  width: 90rem;
+  border-radius: 32px;
+  font-size: 16px;
+  color: #5C596A;
+  height: 50px;
+  background: #EFF1F5;
+  padding-left: 6.5rem;
+}
+
+.search-empty__input-block input:hover {
+  background: #cfd0d7;
+}
+
+@media screen and (max-width: 1100px) {
+  .search-empty__nav {
+    width: 32rem;
+    min-width: 0;
+  }
+  .search-empty__input-block input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .search-empty__line {
+    margin-bottom: 7rem;
+  }
+  .search-empty__title {
+    font-size: 26px;
+  }
+  .search-empty__text {
+    font-size: 14px;
+    line-height: 4rem;
+  }
+  .search-empty__input-block {
+    margin-bottom: 10rem;
+  }
+  .search-empty__input-block input {
+    font-size: 14px;
+  }
+}
+
+.search-page__nav {
+  width: 23rem;
+}
+
+.search-page__result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  gap: 3rem;
+  margin: 3rem 0 4rem 0;
+}
+
+.search-page__result-item {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.search-page__result--green {
+  color: #10AE73;
+}
+
+@media screen and (max-width: 1100px) {
+  .search-page__nav {
+    width: 32rem;
+  }
+  .search-page__result {
+    gap: 4rem;
+    margin: 4rem 0 5rem 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .search-page__result-item {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=main.css.map */

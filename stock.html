@@ -210,6 +210,56 @@
       </div>
     </div>
   </div>
+  <div class="modal-mask login-modal">
+    <form class="login-modal__content" action="" onsubmit="return false">
+      <button class="login-modal__btn-close">&#9587;</button>
+      <h1 class="login-modal__title">Вход на сайт</h1>
+      <label for="login-email">Логин</label>
+      <div class="login-modal__email-block">
+      <input id="login-email" type="email" placeholder="Введите почту">
+      <img src="./common/svg/Message-gray.svg" alt="">      
+      </div>
+      <label for="login-pass">Пароль</label>
+      <button class="login-modal__link-remind">Напомнить</button>
+      <div class="login-modal__password-block">
+      <input id="login-pass" type="password" placeholder="Введите пароль">
+      <img src="./common/svg/Eye.svg" alt="" class="show-pass">    
+      </div>
+      <div class="login-modal__btn-block">
+      <button class="main-btn login-modal__btn-submit" type="submit">Войти</button><a class="login-modal__link-register" href="./registration.html">Регистрация</a>
+    </div>
+    </form>
+    
+    <form class="remind-password__content" action="" onsubmit="return false">
+      <button class="remind-password__btn-close">&#9587;</button>
+      <h1 class="remind-password__title">Напомнить пароль</h1>
+      <label for="remind-pass-email" >Укажите вашу почту</label>
+      <div class="remind-password__email-block">
+      <input id="remind-pass-email" type="email" placeholder="Введите почту">
+      <img src="./common/svg/Message-gray.svg" alt="">
+      </div>
+      <div class="remind-password__btn-block">
+        <button type="submit" class="main-btn remind-password__btn-submit">Отправить</button>
+        <button class="remind-password__link-back">Назад</button>
+      </div>
+    </form>
+
+    <div class="remind-password__content remind-password__content-finish">
+      <button class="remind-password__btn-close">&#9587;</button>
+      <h1 class="remind-password__title">Напомнить пароль</h1>
+      <p class="remind-password__text">
+        На вашу почту отправлен e-mail,
+        с дальнейшими инстуркциями
+        по восстановлению пароля.
+      </p>
+      <div class="remind-password__btn-block">
+        <button type="submit" class="main-btn remind-password__btn-submit">Закрыть</button>
+        <p class="remind-password__text-hide">
+          Окно закроется через 3 сек.
+        </p>
+      </div>
+    </div>
+  </div>
 
   <div class="filter-modal">
     <div class="filter-modal__overlay">

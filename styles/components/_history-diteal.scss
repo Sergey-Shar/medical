@@ -79,8 +79,7 @@
 
             &:before {
                 content: attr(data-th)": ";
-                margin-right: 2rem;
-                width: 45%;
+                width:45%;
                 display: inline-block;
 
                 @media (min-width:480px) {
@@ -108,12 +107,13 @@
         overflow: hidden;
 
         th {
-            color: #c2c2c2;
+         color: #c2c2c2;
         }
 
         th,
         td {
-            padding: 4rem 0;
+            padding: 3rem 0;
+            height: 100%;
 
             @media (min-width:480px) {
                 padding: 1rem !important;
@@ -230,8 +230,13 @@
         }
 
         &__product {
-            min-height: 20rem;
+            min-height: 30rem;
         }
+
+        &__product--description {
+            max-width: 50%;
+        }
+    
 
         &__product--title {
             font-size: 14px;

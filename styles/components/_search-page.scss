@@ -1,0 +1,43 @@
+.search-page {
+    &__nav {
+        width: 23rem;
+    }
+    &__result{
+        display: flex;
+        width: max-content;
+        gap: 3rem;
+        margin: 3rem 0 4rem 0;
+        &-item {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        &--green {
+            color: #10AE73;
+        }
+    }
+}
+
+@media screen and(max-width:1100px) {
+    .search-page {
+        &__nav {
+            width: 32rem;
+        }
+        &__result{
+            gap: 4rem;
+            margin: 4rem 0 5rem 0;
+        }
+  }
+}
+
+  @media screen and(max-width:480px) {
+    .search-page {
+        &__nav {
+
+        }
+        &__result {
+            &-item {
+                font-size: 12px;
+            }
+        } 
+  }
+}

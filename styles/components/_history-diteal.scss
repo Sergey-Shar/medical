@@ -61,8 +61,6 @@
         }
     }
 
-
-
     &__list-header {
         display: flex;
     }
@@ -77,11 +75,12 @@
 
         td {
             display: flex;
+            flex-wrap: wrap;
 
             &:before {
                 content: attr(data-th)": ";
                 margin-right: 2rem;
-                width: 15rem;
+                width: 45%;
                 display: inline-block;
 
                 @media (min-width:480px) {
@@ -158,31 +157,22 @@
         margin-bottom: 3rem;
     }
 
+    &__footer-content-block {
+        display: flex;
+        flex-direction: column;
+        height: 140px;
+        width: 256px;
+        margin-right: 5rem;
+    }
+
     &__footer--content {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         min-height: 26rem;
-
-        span {
-            font-size: 16px;
-        }
-
-        button {
-            width: 27rem;
-            height: 5rem;
-        }
-    }
-
-    &__footer--content .cost {
-
-        span {
-            font-size: 18px;
-        }
-
     }
 
 }
+
 
 @media screen and (max-width:480px) {
     .history-diteal {
@@ -221,9 +211,7 @@
             margin: 6rem 0;
 
             span {
-
                 font-size: 14px;
-
             }
         }
 
@@ -231,39 +219,9 @@
             margin-bottom: 5rem;
         }
 
-        &__list {
-            display: flex;
-            justify-content: space-between;
-            width: 70%;
-        }
-
-        &__footer--content {
-
-            min-height: 40rem;
-
-            span {
-                font-size: 12px;
-                line-height: 4rem;
-            }
-
-            button {
-                width: 100%;
-                height: 45px;
-                justify-content: center;
-            }
-        }
-
-        &__footer--content .cost {
-            span {
-                font-size: 16px;
-
-            }
-
-            button {
-                width: 100%;
-                height: 45px;
-                justify-content: center;
-            }
+        &__footer-content-block {
+            margin-top: 8rem;
+            margin-right: 5rem;
         }
 
         &__header--num {
@@ -273,6 +231,21 @@
 
         &__product {
             min-height: 20rem;
+        }
+
+        &__product--title {
+            font-size: 14px;
+            line-height: 3rem;
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+
+        &__product--subtitle {
+            margin-left: 1rem;
+            line-height: 3rem;
+            font-size: 12px;
+            width: 100%;
         }
     }
 

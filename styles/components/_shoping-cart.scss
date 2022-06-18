@@ -37,6 +37,7 @@
         display: flex;
         justify-content: space-between;
 
+
         & input[type='text'] {
             border: 1px solid rgb(207, 207, 207);
             border-radius: 3px;
@@ -62,20 +63,31 @@
     &__footer-content {
         display: flex;
         flex-direction: row;
-        width: 50%;
+    }
 
-        button {
-            width: 30rem;
-            height: 5rem;
+    &__footer-content-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 11rem;
+        width: 256px;
+        margin-right: 5rem;
+    }
+
+    &__checkout-btn {
+        width: 300px !important;
+        height: 50px !important;
+        justify-content: start;
+
+        span {
+            width: 100%;
         }
     }
 
     &__list {
         display: flex;
         justify-content: space-between;
-        min-width: 30rem;
         margin-bottom: 2rem;
-
 
         p {
             font-size: 1.4rem;
@@ -85,7 +97,6 @@
 
     &__cost {
         display: flex;
-
         justify-content: space-between;
 
         p {
@@ -102,6 +113,7 @@
 
 @media screen and (max-width: 1100px) {
     .shoping-cart {
+
         &__picker {
             width: 11.5rem;
             height: 4.5rem;
@@ -121,9 +133,11 @@
 @media screen and (max-width: 480px) {
     .shoping-cart {
         &__picker {
-            width: 11.5rem;
-            height: 4.5rem;
-            margin-left: 1rem;
+            height: 30px;
+
+            span {
+                font-size: 14px;
+            }
         }
 
         &__delete {
@@ -139,6 +153,7 @@
         &__footer {
             display: flex;
             flex-direction: column;
+            margin-bottom: 55px;
 
             & input[type='text'] {
                 min-width: 100%;
@@ -153,20 +168,9 @@
             display: flex;
             flex-direction: column;
             width: 100%;
-            min-height: 33rem;
-
-            button {
-                min-width: 100%;
-                height: 45px;
-
-                span {
-                    font-size: 16px;
-                }
-            }
         }
 
         &__list {
-
             p {
                 font-size: 14px;
                 margin-bottom: 2rem;
@@ -174,13 +178,30 @@
         }
 
         &__cost {
-
-            width: 72%;
-
             p {
                 font-size: 16px;
                 font-weight: bold;
             }
         }
+
+        &__checkout-btn {
+            width: 100% !important;
+            height: 45px !important;
+
+            justify-content: start;
+            border-radius: 120px;
+
+            span {
+                width: 100%;
+                font-size: 16px;
+            }
+        }
+
+        &__footer-content-block {
+            margin: 3rem 0;
+            height: 80px;
+            margin-bottom: 8rem;
+        }
+
     }
 }

@@ -4,6 +4,7 @@
 
 .account {
   margin-bottom: 5rem;
+
   &__form-wrapp {
     max-width: 1019px;
   }
@@ -52,7 +53,7 @@
     }
   }
 
-  &__tab :checked + .account__tab-title {
+  &__tab :checked+.account__tab-title {
     position: relative;
     padding-bottom: 3.8rem;
     border-bottom: 3px solid rgb(7, 196, 127);
@@ -78,10 +79,12 @@
     background-color: #fff;
     color: rgb(149, 150, 155);
     transition: all 300ms ease;
+
     span {
       margin-left: 2rem;
       font-size: 14px;
     }
+
     &:hover {
       background-color: #fff;
       color: rgb(131, 132, 136);
@@ -126,6 +129,7 @@
   }
 
   &__form {
+
     & input[type="text"],
     input[type="tel"],
     input[type="number"],
@@ -300,6 +304,7 @@
       min-width: 25rem;
       min-height: 5rem;
       border-radius: 32px;
+
     }
   }
 
@@ -378,7 +383,7 @@
 
   }
 
-  &__save-btn{
+  &__save-btn {
     width: 200px;
     height: 50px;
   }
@@ -451,7 +456,7 @@
       }
     }
 
-    &__tab :checked + .account__tab-title {
+    &__tab :checked+.account__tab-title {
       border-bottom: 3px solid rgb(7, 196, 127);
     }
 
@@ -555,6 +560,7 @@
 }
 
 @media screen and (max-width: 480px) {
+
   .account {
     button {
       width: 170px;
@@ -565,6 +571,7 @@
 
     &__tabs-sing-up-wrapp {
       margin: 35px 0 1rem 0;
+
       button {
         height: 3rem;
         font-size: 12px;
@@ -612,6 +619,7 @@
 
     &__delivery-address-current-right {
       width: 100%;
+
     }
 
     &__delivery-address-select-btn {
@@ -627,10 +635,11 @@
         padding: 0.5rem 0 0.5rem 0.5rem;
         height: 7rem;
         justify-content: center;
+        height: 45px;
       }
     }
 
-    &__tab :checked + .account__tab-title {
+    &__tab :checked+.account__tab-title {
       border-bottom: 2px solid rgb(7, 196, 127);
       padding-bottom: 13px;
     }
@@ -645,10 +654,20 @@
 
     &__delivery-add-new-address-right {
       width: 100%;
+
+    }
+
+    &__delivery-add-new-address {
+      & button {
+        span {
+          margin: 1rem 0;
+        }
+      }
     }
 
     &__delivery-add-new-address-center {
-      gap: 1rem;
+      flex-wrap: wrap-reverse;
+      align-items: flex-start;
     }
 
     &__remind-pass {
@@ -679,6 +698,10 @@
       flex-direction: column;
     }
 
+    &__input-wrapp {
+      width: 100%;
+    }
+
     &__tabs {
       & label {
         font-size: 11px;
@@ -686,15 +709,18 @@
         color: rgb(149, 150, 155);
       }
     }
+
     &__tabs {
       & label {
         font-size: 12px;
       }
     }
+
   }
 
   .old-pass-wrap {
     position: relative;
     width: 100%;
   }
+
 }

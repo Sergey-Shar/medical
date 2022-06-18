@@ -1,5 +1,6 @@
 .registration {
     margin-bottom: 5rem;
+
     &__nav-link {
         width: 27rem;
     }
@@ -35,7 +36,6 @@
     &__legal-person.active {
         border: 1px solid #10AE73;
     }
-
 
     &__registration-btn {
         width: 32rem;

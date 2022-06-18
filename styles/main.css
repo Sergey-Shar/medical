@@ -135,6 +135,10 @@ html {
   }
 }
 
+* {
+  font-family: "Nunito", sans-serif;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

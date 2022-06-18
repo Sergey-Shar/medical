@@ -7369,6 +7369,7 @@ input {
 .location {
   text-decoration: underline;
   color: #07c47f;
+  cursor: pointer;
 }
 
 .mobile {
@@ -9515,9 +9516,7 @@ input {
 }
 
 .city {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   z-index: 3000;
   position: absolute;
   width: 100%;
@@ -9539,9 +9538,7 @@ input {
 }
 
 .city__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

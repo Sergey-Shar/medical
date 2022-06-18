@@ -305,3 +305,23 @@ e.preventDefault()
   formFeedback.style.transform = 'translateX(-3000px)'
   document.body.style.overflow = 'visible'
 })
+
+// клик на локацию
+
+const btnLocation = document.querySelector('.location')
+const modalCity = document.querySelector('.city__content')
+const modalMask = document.querySelector('.modal-mask')
+const btnCloseModalCity = document.querySelector('.city__content')
+
+
+btnLocation.addEventListener('click', () => {
+  modalMask.style.display = 'flex'
+  modalCity.style.display = 'flex'
+  navModal.classList.toggle('open')
+})
+
+btnCloseModalCity.addEventListener('click', () => {
+  modalCity.style.display = 'none'
+  modalMask.style.display = 'none'
+  navModal.classList.toggle('open')
+})

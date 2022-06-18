@@ -1,6 +1,5 @@
 .city {
-    // display: none;
-    display: flex;
+    display: none;
     z-index: 3000;
     position: absolute;
     width: 100%;
@@ -15,7 +14,8 @@
         font-weight: bold;
     }
     &__content {
-        display: flex;
+        // display: flex;
+        display: none;
         flex-direction: column;
         position: relative;
         background: #fff;

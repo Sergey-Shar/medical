@@ -312,7 +312,7 @@ e.preventDefault()
 const btnLocation = document.querySelectorAll('.location')
 const modalCity = document.querySelector('.city__content')
 const modalMask = document.querySelector('.modal-mask')
-const btnCloseModalCity = document.querySelector('.city__content')
+const btnCloseModalCity = document.querySelector('.city__btn-close')
 
 btnLocation.forEach((btn) => {
   btn.addEventListener('click', () => {

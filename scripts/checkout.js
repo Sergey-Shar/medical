@@ -11,6 +11,8 @@
 
     const btnOrder = document.querySelector('.checkout__punkt-btn')
 
+    const btnCheckoutLogin = document.querySelector('.checkout__login')
+
     const btnOrderClose = document.querySelector('.order-point__btn-close')
 
     const btnShowHide = document.querySelectorAll('.order-point__btn-show-hide')
@@ -67,6 +69,13 @@
         modalMask.style.display = 'none'
         orderPoint.style.display = 'none'
     })
+
+    
+    btnCheckoutLogin.addEventListener('click', () => {
+        modalMask.style.display = 'flex'
+        modalLogin.style.display = 'grid'
+        document.body.style.overflow = 'hidden'
+      })
 
     btnShowHide.forEach((btn) => {   
         btn.addEventListener('click', (e) => {

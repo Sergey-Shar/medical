@@ -344,8 +344,6 @@ btnCloseModalCity.addEventListener('click', () => {
   (function () {
     const btnUser = document.querySelector('.header__user-btn')
     
-    const btnCheckoutLogin = document.querySelector('.checkout__login')
-
     const btnAccountRemindPass = document.querySelector('.account__remind-pass')
 
     const modalMask = document.querySelector('.modal-mask')
@@ -386,12 +384,11 @@ btnCloseModalCity.addEventListener('click', () => {
 
 })
 
-    btnAccountRemindPass.addEventListener('click', () => {
-      modalMask.style.display = 'flex'
-      scrollTo(0, 0)
-      modalRemindPassword.style.display = 'flex'
-      document.body.style.overflow = 'hidden'
-    })
+btnRemindPassword.addEventListener('click', (e) => {
+  modalLogin.style.display = 'none'
+  modalRemindPassword.style.display = 'flex'
+
+})
 
     modalLogin.addEventListener('submit', () => {
       modalMask.style.display = 'none'
@@ -403,18 +400,6 @@ btnCloseModalCity.addEventListener('click', () => {
         modalMask.style.display = 'flex'
         modalLogin.style.display = 'grid'
         document.body.style.overflow = 'hidden'
-
-    })
-
-    btnCheckoutLogin.addEventListener('click', () => {
-      modalMask.style.display = 'flex'
-      modalLogin.style.display = 'grid'
-      document.body.style.overflow = 'hidden'
-    })
-
-    btnRemindPassword.addEventListener('click', (e) => {
-        modalLogin.style.display = 'none'
-        modalRemindPassword.style.display = 'flex'
 
     })
 
@@ -432,12 +417,29 @@ btnCloseModalCity.addEventListener('click', () => {
         }
     })
 
+
+
     modalRemindPassword.addEventListener('submit',  (e) => {
 
         modalRemindPassword.style.display = 'none'
         modalRemindPasswordFinish.style.display = 'flex'
+        let seconds = document.querySelector('.remind-password__seconds')
         e.preventDefault()
+        let intervalCloseModal = setInterval(() => {
+          seconds.innerHTML -=1
+        }, 1000); 
+        setTimeout(() => {
+          clearInterval(intervalCloseModal)
+          seconds.innerHTML = '3'
+        }, 3000);
         closeModalTimeout(3000)
+        })
+
+        btnAccountRemindPass.addEventListener('click', () => {
+          modalMask.style.display = 'flex'
+          scrollTo(0, 0)
+          modalRemindPassword.style.display = 'flex'
+          document.body.style.overflow = 'hidden'
         })
         btnShowPass.addEventListener('click', () => {
           inputPass.classList.toggle('show')

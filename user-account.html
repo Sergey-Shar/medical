@@ -220,13 +220,13 @@
           <h1 class="login-modal__title">Вход на сайт</h1>
           <label for="login-email">Логин</label>
           <div class="login-modal__email-block">
-          <input id="login-email" type="email" placeholder="Введите почту">
+          <input id="login-email" required type="email" placeholder="Введите почту">
           <img src="./common/svg/Message-gray.svg" alt="">      
           </div>
           <label for="login-pass">Пароль</label>
           <button class="login-modal__link-remind">Напомнить</button>
           <div class="login-modal__password-block">
-          <input id="login-pass" type="password" placeholder="Введите пароль">
+          <input id="login-pass" required type="password" placeholder="Введите пароль">
           <img src="./common/svg/Eye.svg" alt="" class="show-pass">    
           </div>
           <div class="login-modal__btn-block">
@@ -239,7 +239,7 @@
           <h1 class="remind-password__title">Напомнить пароль</h1>
           <label for="remind-pass-email" >Укажите вашу почту</label>
           <div class="remind-password__email-block">
-          <input id="remind-pass-email" type="email" placeholder="Введите почту">
+          <input id="remind-pass-email" required type="email" placeholder="Введите почту">
           <img src="./common/svg/Message-gray.svg" alt="">
           </div>
           <div class="remind-password__btn-block">
@@ -668,7 +668,7 @@
                             <p class="account__title">Пароль</p>
                             <div class="account__input-wrapp old-pass-wrap">
                                 <label for="old-pass">Старый пароль</label>
-                                <button class="account__remind-pass" for="old-pass">Напомнить</button>
+                                <button type="button" class="account__remind-pass" for="old-pass">Напомнить</button>
                                 <input class="pass" type="password" name="old-pass" id="old-pass">
                                 <div class="account_password-icon old" id="old-pass">
                                     <i id="icon" data-feather="eye"></i>

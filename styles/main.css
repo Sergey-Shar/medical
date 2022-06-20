@@ -9508,6 +9508,7 @@ input {
 .remind-password__text {
   font-size: 16px;
   margin-bottom: 5.5rem;
+  line-height: 3rem;
 }
 
 .remind-password__text-hide {
@@ -9565,6 +9566,7 @@ input {
   }
   .remind-password__text {
     font-size: 14px;
+    line-height: 4rem;
   }
 }
 

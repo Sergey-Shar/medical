@@ -7,7 +7,7 @@
 
     &__radio-block {
         display: flex;
-        min-height: 16rem;
+        padding-bottom: 5rem;
     }
 
     &__natural-person {
@@ -73,7 +73,7 @@
 
         &__radio-block {
             display: flex;
-            min-height: 16rem;
+            //min-height: 16rem;
             justify-content: space-between;
         }
 
@@ -83,6 +83,14 @@
 
         &__legal-person {
             width: 345px;
+        }
+        &__registration-btn {
+            width: 270px;
+            height: 50px;
+            margin: 2rem 0;
+            & span {
+                text-decoration: none !important;
+            }
         }
     }
 }

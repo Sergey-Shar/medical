@@ -7,6 +7,7 @@
 
   &__form-wrapp {
     max-width: 1019px;
+    margin-bottom: 3rem;
   }
 
   &__required {
@@ -120,7 +121,6 @@
     display: flex;
     gap: 2rem;
     justify-content: space-between;
-
     width: 49rem;
 
     & input {
@@ -179,9 +179,9 @@
   }
 
   &__title {
-    font-size: 2.2rem;
+    font-size: 22px;
     font-weight: 900;
-    margin: 3rem 0 5rem 0;
+    margin: 5rem 0 5rem 0;
   }
 
   &__personal-data-inputs {
@@ -233,7 +233,7 @@
       border: 1px solid rgb(7, 196, 127);
       color: rgb(7, 196, 127);
       min-width: 26rem;
-      min-height: 6rem;
+      min-height: 5rem;
       justify-content: space-around;
       border-radius: 32px;
 
@@ -347,7 +347,7 @@
 
   &__password-block {
     width: 50%;
-
+   
     & input {
       width: 320px;
     }
@@ -356,7 +356,7 @@
   &__password-create-new {
     display: flex;
     justify-content: space-between;
-
+    margin-bottom: 3rem;
     & input {
       margin: 0;
       min-width: 32rem;

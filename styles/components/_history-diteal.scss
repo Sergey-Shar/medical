@@ -97,7 +97,7 @@
         td {
             text-align: left;
 
-            @media (min-width:480px) {
+            @media (min-width:1100px) {
                 display: table-cell;
                 padding: 2.5rem 5rem;
             }
@@ -173,6 +173,45 @@
 
 }
 
+@media screen and (max-width: 1100px){
+    .history-diteal{
+        &__footer {
+            margin-bottom: 5rem;
+          
+        }
+
+        &__footer-content-block {
+            margin-top: 8rem;
+            margin-right: 5rem;
+        }
+
+        &__header--num {
+            font-size: 14px;
+            font-weight: 900;
+        }
+
+        &__product {
+            min-height: 20rem;
+            min-width: 100%;
+            
+        }
+
+        &__product--title {
+            font-size: 14px;
+            line-height: 3rem;
+            margin-left: 0.5rem;
+            margin-bottom: 1rem;
+            min-width: 100%;
+        }
+
+        &__product--subtitle {
+            margin-left: 1rem;
+            line-height: 3rem;
+            font-size: 12px;
+            width: 100%;
+        }
+    }
+}
 
 @media screen and (max-width:480px) {
     .history-diteal {

@@ -1,0 +1,118 @@
+.order-point {
+    display: none;
+    width: 100rem;
+    padding: 4rem 3rem 5rem;
+    position: relative;
+    border-radius: 8px;
+    background: #FFF;
+    &__container {
+        display: flex;
+    }
+    &__title {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 3rem;
+    }
+    &__btn-close {
+        margin: 22px 22px 0 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: #FFF;
+        color: #000;
+        font-weight: bold;
+        font-size: 20px;
+        height: 20px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #e2e2e2;
+        height: 53.5rem;
+        overflow-y: scroll;
+    }
+    &__item {
+        background: #FFF;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 2rem   ;
+        padding: 2.5rem 2.5rem 2rem;
+        border-bottom: 1px solid #e2e2e2;
+    }
+    &__time {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        display: none;
+    }
+    &__text {
+       font-size: 14px;     
+       &--green {
+        color: #10AE73;
+       }
+    }
+    &__btn-block {
+        display: flex;
+    }
+    &__btn-submit {
+        width: 135px;
+        height: 35px;
+        font-size: 16px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 25px;
+    }
+    &__btn-show-hide {
+        background: none;
+        color: #707070;
+        font-size: 14px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+@media screen and(max-width:1100px) {
+    .order-point {
+    width: 100%;
+    padding: 4rem 0 5rem;
+    position: relative;
+    border-radius: 0;
+    height: 100%;
+        &__container {
+            flex-direction: column-reverse;
+        }
+        &__title {
+            padding: 0 3rem;
+        }
+        &__list {
+            overflow: hidden;
+            height: auto;
+            border: none;
+        }
+        &__item  {
+            padding: 4.5rem 2rem 4.5rem;
+            gap: 3rem;
+        }
+        &__map img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and(max-width:1100px) {
+    .order-point {
+        &__title {
+            font-size: 20px;
+        }
+        &__btn-submit {
+            font-size: 12px;
+        }
+    }
+}

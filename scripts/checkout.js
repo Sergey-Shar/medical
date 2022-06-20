@@ -5,7 +5,15 @@
 
     const develiryAddress = document.querySelector('.checkout__devilery-address')
 
-    
+    const modalMask = document.querySelector('.modal-mask')
+
+    const orderPoint = document.querySelector('.order-point')
+
+    const btnOrder = document.querySelector('.checkout__punkt-btn')
+
+    const btnOrderClose = document.querySelector('.order-point__btn-close')
+
+    const btnShowHide = document.querySelectorAll('.order-point__btn-show-hide')
 
     radioDevilery.forEach(item => {
         item.addEventListener('change', (e) => {
@@ -48,5 +56,32 @@
                 })
             }})
     })
+
+    
+    btnOrder.addEventListener('click', () => {
+        modalMask.style.display = 'flex'
+        orderPoint.style.display = 'block'
+    })
+
+    btnOrderClose.addEventListener('click', () => {
+        modalMask.style.display = 'none'
+        orderPoint.style.display = 'none'
+    })
+
+    btnShowHide.forEach((btn) => {   
+        btn.addEventListener('click', (e) => {
+          const orderPoint = e.target.parentElement.parentElement
+          const orderTime = e.target.parentElement.previousElementSibling
+          if (btn.innerText === 'Подробнее') {
+            orderPoint.style.background  = "#f3f3f3"
+            btn.innerText = 'Скрыть' 
+            orderTime.style.display = 'flex'
+          } else {
+            orderPoint.style.background = "#fff"
+            btn.innerText = 'Подробнее' 
+            orderTime.style.display = 'none'
+          }        
+        })
+      })
 
 })()

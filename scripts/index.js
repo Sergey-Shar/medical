@@ -409,25 +409,3 @@ btnCloseModalCity.addEventListener('click', () => {
 
 })()
 }
-
-// клик на пункт заказа
-{
-  (function () {
-    const btnShowHide = document.querySelectorAll('.order-point__btn-show-hide')
-    btnShowHide.forEach((btn) => {   
-      btn.addEventListener('click', (e) => {
-        const orderPoint = e.target.parentElement.parentElement
-        const orderTime = e.target.parentElement.previousElementSibling
-        if (btn.innerText === 'Подробнее') {
-          orderPoint.style.background  = "#f3f3f3"
-          btn.innerText = 'Скрыть' 
-          orderTime.style.display = 'flex'
-        } else {
-          orderPoint.style.background = "#fff"
-          btn.innerText = 'Подробнее' 
-          orderTime.style.display = 'none'
-        }        
-      })
-    })
-  })()
-}

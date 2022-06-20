@@ -343,6 +343,10 @@ btnCloseModalCity.addEventListener('click', () => {
 {
   (function () {
     const btnUser = document.querySelector('.header__user-btn')
+    
+    const btnCheckoutLogin = document.querySelector('.checkout__login')
+
+    const btnAccountRemindPass = document.querySelector('.account__remind-pass')
 
     const modalMask = document.querySelector('.modal-mask')
 
@@ -357,22 +361,55 @@ btnCloseModalCity.addEventListener('click', () => {
     const btnCloseModalLogin = document.querySelector('.login-modal__btn-close')
     const btnCloseModalRemindPassword = document.querySelector('.remind-password__btn-close')
 
+    const btnShowPass = document.querySelector('.show-pass')
+    const inputPass = document.getElementById('login-pass')
+
     const closeModalTimeout = (sec) => {
         setTimeout(() => {
             modalMask.style.display = 'none'
             modalRemindPasswordFinish.style.display = 'none'
+            document.body.style.overflow = 'visible'
         }, sec)
     } 
+
+    btnCloseModalLogin.addEventListener('click', (e) => {
+      modalMask.style.display = 'none'
+      modalLogin.style.display = 'none'
+      document.body.style.overflow = 'visible'
+
+  })
+
+  btnCloseModalRemindPassword.addEventListener('click', () => {
+    modalMask.style.display = 'none'
+    modalRemindPassword.style.display = 'none'
+    document.body.style.overflow = 'visible'
+
+})
+
+    btnAccountRemindPass.addEventListener('click', () => {
+      modalMask.style.display = 'flex'
+      scrollTo(0, 0)
+      modalRemindPassword.style.display = 'flex'
+      document.body.style.overflow = 'hidden'
+    })
+
+    modalLogin.addEventListener('submit', () => {
+      modalMask.style.display = 'none'
+      modalLogin.style.display = 'none'
+      document.body.style.overflow = 'visible'
+    })
 
     btnUser.addEventListener('click', (e) => {
         modalMask.style.display = 'flex'
         modalLogin.style.display = 'grid'
+        document.body.style.overflow = 'hidden'
 
     })
 
-    btnCloseModalLogin.addEventListener('click', (e) => {
-        modalMask.style.display = 'none'
-        modalLogin.style.display = 'none'
+    btnCheckoutLogin.addEventListener('click', () => {
+      modalMask.style.display = 'flex'
+      modalLogin.style.display = 'grid'
+      document.body.style.overflow = 'hidden'
     })
 
     btnRemindPassword.addEventListener('click', (e) => {
@@ -387,11 +424,6 @@ btnCloseModalCity.addEventListener('click', () => {
 
     })
 
-    btnCloseModalRemindPassword.addEventListener('click', () => {
-        modalMask.style.display = 'none'
-        modalRemindPassword.style.display = 'none'
-    })
-
     modalRemindPasswordFinish.addEventListener('click', (e) => {
         if (e.target.className === 'remind-password__btn-close' || 'main-btn remind-password__btn-submit') {
             modalMask.style.display = 'none'
@@ -400,12 +432,21 @@ btnCloseModalCity.addEventListener('click', () => {
         }
     })
 
-    btnSubmitRemindPassword.addEventListener('click',  (e) => {
+    modalRemindPassword.addEventListener('submit',  (e) => {
+
         modalRemindPassword.style.display = 'none'
         modalRemindPasswordFinish.style.display = 'flex'
+        e.preventDefault()
         closeModalTimeout(3000)
-        }
-    )
-
+        })
+        btnShowPass.addEventListener('click', () => {
+          inputPass.classList.toggle('show')
+          if (inputPass.className === 'show') {
+              inputPass.type = 'text'
+            }
+            else {
+              inputPass.type = 'password'
+            }
+      })
 })()
 }

@@ -1,6 +1,5 @@
 .login-modal {
-    // display: none;
-    display: flex;
+    display: none;
     z-index: 3000;
     position: absolute;
     width: 100%;
@@ -16,7 +15,7 @@
         grid-area: title;
     }
     &__content {
-        display: grid;
+        display: none;
         grid-template-areas: "title title"
         "label-email label-email"
         "input-email input-email"
@@ -108,6 +107,7 @@
         color: #707070;
         font-weight: normal;
         grid-area: remind;
+        background: #FFF;
         justify-self: flex-end;
         &:hover {
             color: #10AE73;

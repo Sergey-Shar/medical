@@ -129,7 +129,7 @@
     .login-modal {
         &__content {
             width: 100%;
-            height: 100%;
+            height: 110%;
             min-width: 320px;
             max-width: 480px;
             padding: 34rem 2rem;
@@ -157,6 +157,9 @@
         height: 45px;
         font-size: 14px;
         border-radius: 32px;
+    }
+    &__btn-close {
+        margin: 52px 22px 0 0;
     }
     &__password-block img, &__email-block img {
         top: 20%;

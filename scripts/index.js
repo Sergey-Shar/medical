@@ -363,27 +363,20 @@ btnCloseModalCity.addEventListener('click', () => {
     const btnShowPass = document.querySelector('.show-pass')
     const inputPass = document.getElementById('login-pass')
 
-    const closeModalTimeout = (sec) => {
-        setTimeout(() => {
-            modalMask.style.display = 'none'
-            modalRemindPasswordFinish.style.display = 'none'
-            document.body.style.overflow = 'visible'
-        }, sec)
-    } 
-
-    btnCloseModalLogin.addEventListener('click', (e) => {
+    const closeAllModal = () => {
       modalMask.style.display = 'none'
       modalLogin.style.display = 'none'
-      document.body.style.overflow = 'visible'
+      modalRemindPassword.style.display = 'none'
+      modalRemindPasswordFinish.style.display = 'none'
+      document.body.style.overflow = 'visible' 
+    }
+    const closeModalTimeout = (sec) => {
+        setTimeout( closeAllModal, sec)
+    } 
 
-  })
+  btnCloseModalLogin.addEventListener('click', closeAllModal)
 
-  btnCloseModalRemindPassword.addEventListener('click', () => {
-    modalMask.style.display = 'none'
-    modalRemindPassword.style.display = 'none'
-    document.body.style.overflow = 'visible'
-
-})
+  btnCloseModalRemindPassword.addEventListener('click', closeAllModal)
 
 btnRemindPassword.addEventListener('click', (e) => {
   modalLogin.style.display = 'none'
@@ -412,8 +405,6 @@ btnRemindPassword.addEventListener('click', (e) => {
 
     modalRemindPasswordFinish.addEventListener('click', (e) => {
         if (e.target.className === 'remind-password__btn-close' || 'main-btn remind-password__btn-submit') {
-            modalMask.style.display = 'none'
-            modalRemindPasswordFinish.style.display = 'none'
             closeModalTimeout(0)
         }
     })

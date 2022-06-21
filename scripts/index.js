@@ -284,10 +284,9 @@ accordionCard.forEach((btn) => {
   btn.addEventListener("click", () => {
     btn.classList.toggle("active");
     const panel = btn.nextElementSibling;
-    const chevrone = btn.children[0]
     panel.style.display === "block" ?
-      (panel.style.display = "none", chevrone.style.transform = 'rotate(90deg)') :
-      (panel.style.display = "block", chevrone.style.transform = 'rotate(270deg)');
+      (panel.style.display = "none") :
+      (panel.style.display = "block");
   });
 });
 

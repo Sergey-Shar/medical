@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/main.css">
-    <title>О компании</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/main.css">
+  <title>О компании</title>
 </head>
 
 <body>
@@ -215,27 +215,28 @@
       <h1 class="login-modal__title">Вход на сайт</h1>
       <label for="login-email">Логин</label>
       <div class="login-modal__email-block">
-      <input id="login-email" required type="email" placeholder="Введите почту">
-      <img src="./common/svg/Message-gray.svg" alt="">      
+        <input id="login-email" required type="email" placeholder="Введите почту">
+        <img src="./common/svg/Message-gray.svg" alt="">
       </div>
       <label for="login-pass">Пароль</label>
       <button class="login-modal__link-remind">Напомнить</button>
       <div class="login-modal__password-block">
-      <input id="login-pass" required type="password" placeholder="Введите пароль">
-      <img src="./common/svg/Eye.svg" alt="" class="show-pass">    
+        <input id="login-pass" required type="password" placeholder="Введите пароль">
+        <img src="./common/svg/Eye.svg" alt="" class="show-pass">
       </div>
       <div class="login-modal__btn-block">
-      <button class="main-btn login-modal__btn-submit" type="submit">Войти</button><a class="login-modal__link-register" href="./registration.html">Регистрация</a>
-    </div>
+        <button class="main-btn login-modal__btn-submit" type="submit">Войти</button><a
+          class="login-modal__link-register" href="./registration.html">Регистрация</a>
+      </div>
     </form>
-    
+
     <form class="remind-password__content" action="" onsubmit="return false">
       <button class="remind-password__btn-close">&#9587;</button>
       <h1 class="remind-password__title">Напомнить пароль</h1>
-      <label for="remind-pass-email" >Укажите вашу почту</label>
+      <label for="remind-pass-email">Укажите вашу почту</label>
       <div class="remind-password__email-block">
-      <input id="remind-pass-email" required type="email" placeholder="Введите почту">
-      <img src="./common/svg/Message-gray.svg" alt="">
+        <input id="remind-pass-email" required type="email" placeholder="Введите почту">
+        <img src="./common/svg/Message-gray.svg" alt="">
       </div>
       <div class="remind-password__btn-block">
         <button type="submit" class="main-btn remind-password__btn-submit">Отправить</button>
@@ -322,310 +323,322 @@
       </ul>
     </div>
   </div>
-    <div class="wrapper">
-      <header class="header">
-        <div class="container">
-          <div class="header__top">
-            <div class="logo">
-              <button type="button" class="burger header__burger">
-                <span></span>
-              </button>
-              <a href="./index.html">
-                <img src="./common/svg/logo.svg" alt="logo-company" class="logo__icon" />
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <div class="logo">
+            <button type="button" class="burger header__burger">
+              <span></span>
+            </button>
+            <a href="./index.html">
+              <img src="./common/svg/logo.svg" alt="logo-company" class="logo__icon" />
+            </a>
+          </div>
+          <button class="main-btn header__dropdown-btn">
+            <span>КАТАЛОГ</span>
+            <i id="icon" class="header__dropdown-icon-down" stroke="#fff" data-feather="chevron-down"></i>
+            <i id="icon" class="header__dropdown-icon-up" stroke="#fff" data-feather="chevron-up"></i>
+          </button>
+          <div class="search header__search">
+            <i id="icon" class="search__icon" data-feather="search"></i>
+            <input type="search" placeholder="Введите товар для поиска" class="search__input" />
+          </div>
+          <address class="tel header__tel">
+            <a href="tel:8 800 245 56 56" class="tel__num">8 800 245 56 56</a>
+          </address>
+          <div class="header__icons-buttons">
+            <button type="button" class="icon-btn header__seacrh-btn">
+              <a href="./search-page.html">
+                <img src="./common/svg/Search.svg" alt="">
               </a>
-            </div>
-            <button class="main-btn header__dropdown-btn">
-              <span>КАТАЛОГ</span>
-              <i id="icon" class="header__dropdown-icon-down" stroke="#fff" data-feather="chevron-down"></i>
-              <i id="icon" class="header__dropdown-icon-up" stroke="#fff" data-feather="chevron-up"></i>
             </button>
-            <div class="search header__search">
-              <i id="icon" class="search__icon" data-feather="search"></i>
-              <input type="search" placeholder="Введите товар для поиска" class="search__input" />
-            </div>
-            <address class="tel header__tel">
-              <a href="tel:8 800 245 56 56" class="tel__num">8 800 245 56 56</a>
-            </address>
-            <div class="header__icons-buttons">
-              <button type="button" class="icon-btn header__seacrh-btn">
-                <a href="./search-page.html">
-                  <img src="./common/svg/Search.svg" alt="">
-                </a>
-              </button>
-              <button type="button" class="icon-btn header__map-btn location">
-                <a href="./404.html">
-                  <img src="./common/svg/Location.svg" alt="">
-                </a>
-              </button>
-              <button type="button" class="icon-btn header__heart-btn">
-                <a href="./favorites-products.html">
-                  <img src="./common/svg/Heart.svg" alt="">
-                </a>
-              </button>
-              <button type="button" class="icon-btn header__user-btn">
-                <a href="./user-account.html">
-                  <img src="./common/svg/User.svg" alt="">
-                </a>
-              </button>
-              <button type="button" class="icon-btn">
-                <div class="icon-amount">3</div>
-                <a href="./shoping_cart.html">
-                  <img src="./common/svg/Cart.svg" alt="">
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
-        <hr class="header__line">
-        </hr>
-        <div class="container">
-  
-          <nav class="header__nav">
-            <button type="button" class="burger nav__burger">
-              <span></span>
+            <button type="button" class="icon-btn header__map-btn location">
+              <a href="./404.html">
+                <img src="./common/svg/Location.svg" alt="">
+              </a>
             </button>
-            <div class="site-nav">
-              <img src="./common/svg/sale.svg" alt="sale" class="site-nav__icon-sale" />
-              <div class="site-nav__item">
-                <a href="./404.html" class="site-nav__link_red"> Акции </a>
-              </div>
-              <span></span>
-              <div class="site-nav__item">
-                <a href="./catalog-main.html" class="site-nav__link">Каталог</a>
-              </div>
-              <span></span>
-              <div class="site-nav__item">
-                <a href="./directions-page.html" class="site-nav__link">Направления</a>
-              </div>
-              <span></span>
-              <div class="site-nav__item">
-                <a href="./brands-all.html" class="site-nav__link">Бренды</a>
-              </div>
-              <span></span>
-              <div class="site-nav__item">
-                <a href="./about.html" class="site-nav__link">О компании</a>
-              </div>
-              <span></span>
-              <div class="site-nav__item">
-                <a href="./contacts.html" class="site-nav__link">Контакты</a>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </header>
-      <main class="about">
-        <div class="container-main">
-            <nav class="about__nav">
-                <a href="./index.html" class="about__nav-link-home">
-                    <img src="./common/svg/Home-green.svg" alt="">
-                </a>
-                <a href="./index.html" class="about__nav-link">Главная </a>
-                <span class="about__nav-slash">/</span>
-                <a href="" class="about__nav-link">О компании</a>
-            </nav>
-            <h1 class="about__title">О компании</h1>
-            <div class="about__line"></div>
-            <div class="about__container">
-            <span class="mobile-aside__link mobile-aside__link--title">О компании <span class="aside-chevrone">&#10095;</span></span>
-            <div class="mobile-aside">
-                <a class="mobile-aside__link" href="/">Способы оплаты товаров</a>
-                <a class="mobile-aside__link" href="/">Условия доставки</a>
-                <a class="mobile-aside__link" href="/">Возврат товара</a>
-                <a class="mobile-aside__link" href="/">Оптовым покупателям</a>
-            </div>    
-            <aside class="about__aside">
-                <ul class="aside__list">
-                    <li><a class="aside__item aside__item--this" href="./about">О компании</a></li>
-                    <li><a class="aside__item" href="#">Способы оплаты товаров</a></li>
-                    <li><a class="aside__item" href="#">Условия доставки</a></li>
-                    <li><a class="aside__item" href="#">Возврат товара</a></li>
-                    <li><a class="aside__item" href="#">Оптовым покупателям</a></li>
-                </ul>
-            </aside>
-            <div class="about__content">
-                <h2 class="about__subtitle">Инструменты медицинского назначения: <span class="about__subtitle--green">эффективная работа клиник</span></h2>
-                <p class="about__text about__text--bold">
-                    Компания «Альна Медикал» предлагает новейшее оборудование и медицинские инструменты высокого
-                    качества от C.R.Bard, Inc. (США), STERYLAB (Италия), Zamar (Хорватия), Marflow (Швейцария) и Biorad (Индия).
-                    У нас разумные цены и высококлассный сервис. Заказчики получают:</p>
-                <p class="about__text">
-                    <img src="./common/svg/icon1.svg" alt="">
-                    Последние технические разработки в области онкологии, маммологии, хирургии, урологии,
-                    и других немаловажных направлений;</p>
-                <p class="about__text">
-                    <img src="./common/svg/icon2.svg" alt="">
-                    Наличие необходимого пакета документов к каждой позиции (сертификаты, декларации,
-                    разрешения и др.);</p>
-                <p class="about__text">
-                    <img src="./common/svg/icon3.svg" alt="">
-                    Инструменты и изделия для оборудования клиник и частного пользования в домашних условиях;</p>
-                <p class="about__text">
-                    <img src="./common/svg/icon4.svg" alt="">
-                    Рекомендации и консультации касательно особенностей эксплуатации конкретного медицинского
-                    инструмента и оборудования.
-                    </p>
-                <p class="about__text about__text--bold about__text--hide">
-                    В результате клиника, больница и пациенты получают возможность точной диагностики патологии
-                    и максимально  ффективного лечения опасных заболеваний.</p>
-                <div class="about__line"></div>
-                <h3 class="about__subtitle">Сотрудничество с «Альна Медикал» <span class="about__subtitle--green">всегда выгодно и перспективно</span></h3>
-                <p class="about__text about__text--bold">
-                    Наши партнеры, заказчики и частные покупатели уверены в надежности и нерушимости всех
-                    договоренностей. Почему нам доверяют:
-                </p>
-                <span class="about__text"><img src="./common/svg/icon5.svg" alt="">
-                    Работаем более 10 лет на рынке медицинского импорта;
-                </span>
-                <span class="about__text"><img src="./common/svg/icon6.svg" alt="">
-                    Являемся официальным дистрибьютором;
-                </span>
-                <span class="about__text"><img src="./common/svg/icon7.svg" alt="">
-                    Предоставляем широкий ассортимент всех типов инструментов, техники;
-                </span>
-                <span class="about__text"><img src="./common/svg/icon8.svg" alt="">
-                    Доставляем продукцию в сжатые сроки (перевозка авиатранспортом);
-                </span>
-                <span class="about__text"><img src="./common/svg/icon9.svg" alt="">
-                    Осуществляем прямые поставки из Бельгии, США, Италии и Германии.
-                </span>
-                <div class="about__line"></div>
-                <p class="about__text">
-                    Благодаря нашим товарам существенно повышается качество обслуживания и лечения пациентов в таких
-направлениях медицины, как онкология и маммология, гинекология и урология, вертебропластика и кифопластика,
-а также дискэктомия и артроскопия.
-                </p>
-                <p class="about__text">
-                    Наши специалисты прекрасно разбираются в наименованиях, особенностях установки и назначении каждого
-инструмента. Поэтому заказчик получит профессиональные разъяснения и рекомендации, а также всестороннюю
-помощь и содействие в подготовке конкурсной документации для проведения госторгов. 
-                </p>
-                <p class="about__text">
-                    Вам не придется неделями дожидаться поставки партии оборудования из-за рубежа, так как широкий ассортимент
-приборов и инструментов всегда есть на складе компании. Поставка товаров под заказ осуществляется только
-авиатранспортом в максимально сжатые сроки. мы прекрасно понимаем, что своевременное обеспечение клиники
-нужным оборудованием может спасти десятки жизней и быстро поставить на ноги людей после перенесенных
-заболеваний, операций.
-                </p>
-                <h4>
-                    <span>Инструменты медицинского назначения от нашей компании</span> – это средство повышения
-качества медицинского оборудования, надежные помощники квалифицированных
-докторов, а также возможность для пациентов полного и скорого выздоровления. 
-
-                </h3>
-            </div>
-        </div>
-        </div>
-    </main>
-        <footer class="footer">
-          <div class="container-main footer__container">
-            <div class="footer__top">
-              <div class="footer__left-menu">
-                <div class="footer__menu-wrap-left">
-                  <a class="footer__link" href="#">Акции</a>
-                  <a class="footer__link" href="./catalog-main.html">Каталог</a>
-                  <a class="footer__link" href="#">Направления</a>
-                </div>
-                <div class="footer__menu-wrap-right">
-                  <a class="footer__link" href="#">Бренды</a>
-                  <a class="footer__link" href="./about">О компании</a>
-                  <a class="footer__link" href="./contacts">Контакты</a>
-                </div>
-              </div>
-              <ul class="footer__catalog">
-                <li class="footer__caption footer__list-item--mb-10">Каталог продукции</li>
-                <li class="footer__list-item--mb-10"><a class="footer__link--green"
-                    href="./catalog-individual.html">Биопсия</a></li>
-                <li class="footer__list-item--mb-10"><a class="footer__link--green"
-                    href="./catalog-individual.html">Урология</a></li>
-                <li class="footer__list-item--mb-10"><a class="footer__link--green"
-                    href="./catalog-individual.html">Гемостатические
-                    средства</a></li>
-                <li class="footer__list-item--mb-10"><a class="footer__link--green"
-                    href="./catalog-individual.html">Маммология</a></li>
-                <li class="footer__list-item--mb-10"><a class="footer__link--green"
-                    href="./catalog-individual.html">Сетчатые
-                    импланты</a></li>
-                <li class="footer__list-item--mb-10"><a class="footer__link--green" href="./catalog-individual.html">Шовный
-                    материал</a>
-                </li>
-                <li class="footer__list-item--mb-10"><a class="footer__link--green"
-                    href="./catalog-individual.html">Центральный
-                    венозный доступ</a></li>
-                <li class="footer__list-item--mb-10"><a class="footer__link--green"
-                    href="./catalog-individual.html">Переферический
-                    венозный доступ</a></li>
-              </ul>
-              <ul class="footer__information">
-                <li class="footer__caption footer__list-item--mb-10">Информация</li>
-                <li class="footer__list-item--mb-10"><a class="footer__link--green" href="#">Способы оплаты
-                    товаров</a></li>
-                <li class="footer__list-item--mb-10"><a class="footer__link--green" href="#">Условия
-                    доставки</a></li>
-                <li class="footer__list-item--mb-10"><a class="footer__link--green" href="#">Возврат товара</a>
-                </li>
-                <li class="footer__list-item--mb-10"><a class="footer__link--green" href="#">Оптовым
-                    покупателям</a></li>
-              </ul>
-              <div class="footer__contacts">
-                <div class="footer__phone">
-                  <a class="footer__phone-number" href="tel:8 800 245 56 56">
-                    8 800 245 56 56
-                  </a>
-                  <p class="footer__phone-text">
-                    Для звонков по России
-                  </p>
-                </div>
-                <p class="footer__address">
-                  г. Москва, Название улицы,<br />д. 30/6 оф.25
-                </p>
-                <button class=" main-btn footer__feedback  ">
-                  <img src="./common/svg/Message.svg" alt="">
-                  <span>
-                    Обратная связь
-                  </span>
-                </button>
-              </div>
-            </div>
-            <div class="footer__line"></div>
-            <div class="footer__bottom">
-              <p>© «Альна-Медикал», 2021</p>
-              <a class="footer__link" href="#">Политика конфидециальности</a>
-              <a class="footer__link" href="#">Пользовательское соглашение</a>
-              <div class="footer__card-icons">
-                <img class="footer__card-icons--item" src="common/svg/mir.svg" alt="mir logo">
-                <img class="footer__card-icons--item" src="common/svg/mastercard.svg" alt="mastercard logo">
-                <img class="footer__card-icons--item" src="common/svg/visa.svg" alt="visa logo">
-              </div>
-            </div>
-          </div>
-        </footer>
-        <div class="feedback">
-          <div class="feedback__container">
-          <div class="feedback__content">
-          <h1 class="feedback__title">Обратная связь</h1>
-          <form class="feedback__form" action="">
-              <label class="feedback__name" for="feedback-name">Ваше имя<input id="feedback-name" placeholder="Введите имя" type="text"></label>
-              <label class="feedback__phone" for="feedback-phone">Телефон<input id="feedback-phone" placeholder="+7(" type="tel"></label>
-              <label class="feedback__email" for="feedback-email">E-mail<input id="feedback-email" placeholder="Введите e-mail" type="email"></label>
-              <label class="feedback__text" for="feedback-text"><textarea id="feedback-text" placeholder="Текст сообщения" name="" id="" cols="30" rows="10"></textarea></label>
-              <span class="feedback__politic">Нажимая кнопку отправить, вы соглашаетесь
-                  с политикой обработки <a class="feedback__link" href="">персональных данных</a></span>
-              <div class="feedback__captcha">
-                <img src="./common/images/Капча.png" alt="">
-              </div>
-              <button class="feedback__btn-submit main-btn">ОТПРАВИТЬ</button>
-              <button class="feedback__btn-close">&#9587;</button>
-          </form>
+            <button type="button" class="icon-btn header__heart-btn">
+              <a href="./favorites-products.html">
+                <img src="./common/svg/Heart.svg" alt="">
+              </a>
+            </button>
+            <button type="button" class="icon-btn header__user-btn">
+              <a href="./user-account.html">
+                <img src="./common/svg/User.svg" alt="">
+              </a>
+            </button>
+            <button type="button" class="icon-btn">
+              <div class="icon-amount">3</div>
+              <a href="./shoping_cart.html">
+                <img src="./common/svg/Cart.svg" alt="">
+              </a>
+            </button>
           </div>
         </div>
       </div>
+      <hr class="header__line">
+      </hr>
+      <div class="container">
+
+        <nav class="header__nav">
+          <button type="button" class="burger nav__burger">
+            <span></span>
+          </button>
+          <div class="site-nav">
+            <img src="./common/svg/sale.svg" alt="sale" class="site-nav__icon-sale" />
+            <div class="site-nav__item">
+              <a href="./404.html" class="site-nav__link_red"> Акции </a>
+            </div>
+            <span></span>
+            <div class="site-nav__item">
+              <a href="./catalog-main.html" class="site-nav__link">Каталог</a>
+            </div>
+            <span></span>
+            <div class="site-nav__item">
+              <a href="./directions-page.html" class="site-nav__link">Направления</a>
+            </div>
+            <span></span>
+            <div class="site-nav__item">
+              <a href="./brands-all.html" class="site-nav__link">Бренды</a>
+            </div>
+            <span></span>
+            <div class="site-nav__item">
+              <a href="./about.html" class="site-nav__link">О компании</a>
+            </div>
+            <span></span>
+            <div class="site-nav__item">
+              <a href="./contacts.html" class="site-nav__link">Контакты</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="about">
+      <div class="container-main">
+        <nav class="about__nav">
+          <a href="./index.html" class="about__nav-link-home">
+            <img src="./common/svg/Home-green.svg" alt="">
+          </a>
+          <a href="./index.html" class="about__nav-link">Главная </a>
+          <span class="about__nav-slash">/</span>
+          <a href="" class="about__nav-link">О компании</a>
+        </nav>
+        <h1 class="about__title">О компании</h1>
+        <div class="about__line"></div>
+        <div class="about__container">
+          <span class="mobile-aside__link mobile-aside__link--title">О компании <span
+              class="aside-chevrone">&#10095;</span></span>
+          <div class="mobile-aside">
+            <a class="mobile-aside__link" href="/">Способы оплаты товаров</a>
+            <a class="mobile-aside__link" href="/">Условия доставки</a>
+            <a class="mobile-aside__link" href="/">Возврат товара</a>
+            <a class="mobile-aside__link" href="/">Оптовым покупателям</a>
+          </div>
+          <aside class="about__aside">
+            <ul class="aside__list">
+              <li><a class="aside__item aside__item--this" href="./about">О компании</a></li>
+              <li><a class="aside__item" href="#">Способы оплаты товаров</a></li>
+              <li><a class="aside__item" href="#">Условия доставки</a></li>
+              <li><a class="aside__item" href="#">Возврат товара</a></li>
+              <li><a class="aside__item" href="#">Оптовым покупателям</a></li>
+            </ul>
+          </aside>
+          <div class="about__content">
+            <h2 class="about__subtitle">Инструменты медицинского назначения: <span
+                class="about__subtitle--green">эффективная работа клиник</span></h2>
+            <p class="about__text about__text--bold">
+              Компания «Альна Медикал» предлагает новейшее оборудование и медицинские инструменты высокого
+              качества от C.R.Bard, Inc. (США), STERYLAB (Италия), Zamar (Хорватия), Marflow (Швейцария) и Biorad
+              (Индия).
+              У нас разумные цены и высококлассный сервис. Заказчики получают:</p>
+            <p class="about__text">
+              <img src="./common/svg/icon1.svg" alt="">
+              Последние технические разработки в области онкологии, маммологии, хирургии, урологии,
+              и других немаловажных направлений;
+            </p>
+            <p class="about__text">
+              <img src="./common/svg/icon2.svg" alt="">
+              Наличие необходимого пакета документов к каждой позиции (сертификаты, декларации,
+              разрешения и др.);
+            </p>
+            <p class="about__text">
+              <img src="./common/svg/icon3.svg" alt="">
+              Инструменты и изделия для оборудования клиник и частного пользования в домашних условиях;
+            </p>
+            <p class="about__text">
+              <img src="./common/svg/icon4.svg" alt="">
+              Рекомендации и консультации касательно особенностей эксплуатации конкретного медицинского
+              инструмента и оборудования.
+            </p>
+            <p class="about__text about__text--bold about__text--hide">
+              В результате клиника, больница и пациенты получают возможность точной диагностики патологии
+              и максимально ффективного лечения опасных заболеваний.</p>
+            <div class="about__line"></div>
+            <h3 class="about__subtitle">Сотрудничество с «Альна Медикал» <span class="about__subtitle--green">всегда
+                выгодно и перспективно</span></h3>
+            <p class="about__text about__text--bold">
+              Наши партнеры, заказчики и частные покупатели уверены в надежности и нерушимости всех
+              договоренностей. Почему нам доверяют:
+            </p>
+            <span class="about__text"><img src="./common/svg/icon5.svg" alt="">
+              Работаем более 10 лет на рынке медицинского импорта;
+            </span>
+            <span class="about__text"><img src="./common/svg/icon6.svg" alt="">
+              Являемся официальным дистрибьютором;
+            </span>
+            <span class="about__text"><img src="./common/svg/icon7.svg" alt="">
+              Предоставляем широкий ассортимент всех типов инструментов, техники;
+            </span>
+            <span class="about__text"><img src="./common/svg/icon8.svg" alt="">
+              Доставляем продукцию в сжатые сроки (перевозка авиатранспортом);
+            </span>
+            <span class="about__text"><img src="./common/svg/icon9.svg" alt="">
+              Осуществляем прямые поставки из Бельгии, США, Италии и Германии.
+            </span>
+            <div class="about__line"></div>
+            <p class="about__text">
+              Благодаря нашим товарам существенно повышается качество обслуживания и лечения пациентов в таких
+              направлениях медицины, как онкология и маммология, гинекология и урология, вертебропластика и
+              кифопластика,
+              а также дискэктомия и артроскопия.
+            </p>
+            <p class="about__text">
+              Наши специалисты прекрасно разбираются в наименованиях, особенностях установки и назначении каждого
+              инструмента. Поэтому заказчик получит профессиональные разъяснения и рекомендации, а также всестороннюю
+              помощь и содействие в подготовке конкурсной документации для проведения госторгов.
+            </p>
+            <p class="about__text">
+              Вам не придется неделями дожидаться поставки партии оборудования из-за рубежа, так как широкий ассортимент
+              приборов и инструментов всегда есть на складе компании. Поставка товаров под заказ осуществляется только
+              авиатранспортом в максимально сжатые сроки. мы прекрасно понимаем, что своевременное обеспечение клиники
+              нужным оборудованием может спасти десятки жизней и быстро поставить на ноги людей после перенесенных
+              заболеваний, операций.
+            </p>
+            <h4>
+              <span>Инструменты медицинского назначения от нашей компании</span> – это средство повышения
+              качества медицинского оборудования, надежные помощники квалифицированных
+              докторов, а также возможность для пациентов полного и скорого выздоровления.
+
+              </h3>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container-main footer__container">
+        <div class="footer__top">
+          <div class="footer__left-menu">
+            <div class="footer__menu-wrap-left">
+              <a class="footer__link" href="#">Акции</a>
+              <a class="footer__link" href="./catalog-main.html">Каталог</a>
+              <a class="footer__link" href="#">Направления</a>
+            </div>
+            <div class="footer__menu-wrap-right">
+              <a class="footer__link" href="#">Бренды</a>
+              <a class="footer__link" href="./about">О компании</a>
+              <a class="footer__link" href="./contacts">Контакты</a>
+            </div>
+          </div>
+          <ul class="footer__catalog">
+            <li class="footer__caption footer__list-item--mb-10">Каталог продукции</li>
+            <li class="footer__list-item--mb-10"><a class="footer__link--green"
+                href="./catalog-individual.html">Биопсия</a></li>
+            <li class="footer__list-item--mb-10"><a class="footer__link--green"
+                href="./catalog-individual.html">Урология</a></li>
+            <li class="footer__list-item--mb-10"><a class="footer__link--green"
+                href="./catalog-individual.html">Гемостатические
+                средства</a></li>
+            <li class="footer__list-item--mb-10"><a class="footer__link--green"
+                href="./catalog-individual.html">Маммология</a></li>
+            <li class="footer__list-item--mb-10"><a class="footer__link--green"
+                href="./catalog-individual.html">Сетчатые
+                импланты</a></li>
+            <li class="footer__list-item--mb-10"><a class="footer__link--green" href="./catalog-individual.html">Шовный
+                материал</a>
+            </li>
+            <li class="footer__list-item--mb-10"><a class="footer__link--green"
+                href="./catalog-individual.html">Центральный
+                венозный доступ</a></li>
+            <li class="footer__list-item--mb-10"><a class="footer__link--green"
+                href="./catalog-individual.html">Переферический
+                венозный доступ</a></li>
+          </ul>
+          <ul class="footer__information">
+            <li class="footer__caption footer__list-item--mb-10">Информация</li>
+            <li class="footer__list-item--mb-10"><a class="footer__link--green" href="#">Способы оплаты
+                товаров</a></li>
+            <li class="footer__list-item--mb-10"><a class="footer__link--green" href="#">Условия
+                доставки</a></li>
+            <li class="footer__list-item--mb-10"><a class="footer__link--green" href="#">Возврат товара</a>
+            </li>
+            <li class="footer__list-item--mb-10"><a class="footer__link--green" href="#">Оптовым
+                покупателям</a></li>
+          </ul>
+          <div class="footer__contacts">
+            <div class="footer__phone">
+              <a class="footer__phone-number" href="tel:8 800 245 56 56">
+                8 800 245 56 56
+              </a>
+              <p class="footer__phone-text">
+                Для звонков по России
+              </p>
+            </div>
+            <p class="footer__address">
+              г. Москва, Название улицы,<br />д. 30/6 оф.25
+            </p>
+            <button class=" main-btn footer__feedback  ">
+              <img src="./common/svg/Message.svg" alt="">
+              <span>
+                Обратная связь
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="footer__line"></div>
+        <div class="footer__bottom">
+          <p>© «Альна-Медикал», 2021</p>
+          <a class="footer__link" href="#">Политика конфидециальности</a>
+          <a class="footer__link" href="#">Пользовательское соглашение</a>
+          <div class="footer__card-icons">
+            <img class="footer__card-icons--item" src="common/svg/mir.svg" alt="mir logo">
+            <img class="footer__card-icons--item" src="common/svg/mastercard.svg" alt="mastercard logo">
+            <img class="footer__card-icons--item" src="common/svg/visa.svg" alt="visa logo">
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="feedback">
+      <div class="feedback__container">
+        <div class="feedback__content">
+          <h1 class="feedback__title">Обратная связь</h1>
+          <form class="feedback__form" action="">
+            <label class="feedback__name" for="feedback-name">Ваше имя<input id="feedback-name"
+                placeholder="Введите имя" type="text"></label>
+            <label class="feedback__phone" for="feedback-phone">Телефон<input id="feedback-phone" placeholder="+7("
+                type="tel"></label>
+            <label class="feedback__email" for="feedback-email">E-mail<input id="feedback-email"
+                placeholder="Введите e-mail" type="email"></label>
+            <label class="feedback__text" for="feedback-text"><textarea id="feedback-text" placeholder="Текст сообщения"
+                name="" id="" cols="30" rows="10"></textarea></label>
+            <span class="feedback__politic">Нажимая кнопку отправить, вы соглашаетесь
+              с политикой обработки <a class="feedback__link" href="">персональных данных</a></span>
+            <div class="feedback__captcha">
+              <img src="./common/images/Капча.png" alt="">
+            </div>
+            <button class="feedback__btn-submit main-btn">ОТПРАВИТЬ</button>
+            <button class="feedback__btn-close">&#9587;</button>
+          </form>
+        </div>
+      </div>
     </div>
-    </div>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script type="module" src="./scripts/reviews-all.js"></script>
-    <script type="module" src="./scripts/contacts.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script type="module" src="./scripts/index.js"></script>
+  </div>
+  </div>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script type="module" src="./scripts/reviews-all.js"></script>
+  <script type="module" src="./scripts/contacts.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script type="module" src="./scripts/index.js"></script>
 </body>
 
 </html>

@@ -5,11 +5,12 @@
     }
 
     &.open &__owerlay {
-        background-color: rgba(45, 47, 48, 0.7);
-        backdrop-filter: blur(3px);
+        background-color: rgba(45, 47, 48, 0.2);
+        backdrop-filter: blur(36px);
         z-index: 2000;
         transition: all 0.5s ease 0s;
         opacity: 1;
+        box-shadow: 15px 15px 55px #00000029;
     }
 
     &.open &__body {
@@ -22,14 +23,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        left: 20%;
+        left: 55rem;
         z-index: -1;
         border-bottom-left-radius: 2rem;
         border-bottom-right-radius: 2rem;
         transition: all 0.5s ease 0s;
         opacity: 0;
         backdrop-filter: blur(3px);
-        width: 34rem;
+        width: 37.4rem;
         height: 40rem;
     }
 

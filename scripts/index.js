@@ -345,8 +345,6 @@ btnCloseModalCity.addEventListener('click', () => {
 
   const search = document.querySelector('.search__input')
 
-  const searchEmpty = document.querySelector('.search-empty__input')
-
   const headerSearch = document.querySelector('.header__search')
 
   const logoHeader = document.querySelector('.logo')
@@ -372,8 +370,6 @@ btnCloseModalCity.addEventListener('click', () => {
 
 
   search.addEventListener('input', (e) => searchResultWmax(e))
-
-  searchEmpty.addEventListener('input', (e) => searchResultWmax(e))
 
   headerSerchBtn.addEventListener('click', () => {
     logoHeader.classList.add('hide')

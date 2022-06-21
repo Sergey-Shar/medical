@@ -436,12 +436,6 @@ btnRemindPassword.addEventListener('click', (e) => {
         closeModalTimeout(3000)
         })
 
-        btnAccountRemindPass.addEventListener('click', () => {
-          modalMask.style.display = 'flex'
-          scrollTo(0, 0)
-          modalRemindPassword.style.display = 'flex'
-          document.body.style.overflow = 'hidden'
-        })
         btnShowPass.addEventListener('click', () => {
           inputPass.classList.toggle('show')
           if (inputPass.className === 'show') {
@@ -450,6 +444,13 @@ btnRemindPassword.addEventListener('click', (e) => {
             else {
               inputPass.type = 'password'
             }
+      })
+
+      btnAccountRemindPass.addEventListener('click', () => {
+        modalMask.style.display = 'flex'
+        scrollTo(0, 0)
+        modalRemindPassword.style.display = 'flex'
+        document.body.style.overflow = 'hidden'
       })
 })()
 }

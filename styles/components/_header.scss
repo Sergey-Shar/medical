@@ -45,6 +45,12 @@
   &__seacrh-btn {
     display: none;
   }
+  &__search {
+    &.open {
+      display: block;
+      width: 85%;
+    }
+  }
 
   &__top {
     display: flex;
@@ -109,6 +115,9 @@
 
     &__icons-buttons {
       width: 50rem;
+      &.hide {
+        display: none;
+      }
     }
   }
 }
@@ -128,6 +137,12 @@
     &__top {
       min-height: 12rem;
       // justify-content: flex-start;
+    }
+    &__search {
+      &.open {
+        display: block;
+        width: 70%;
+      }
     }
   }
 }

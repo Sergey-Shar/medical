@@ -10,11 +10,15 @@
   }
 
   &__input {
+    &.open {
+      width: 100%;
+      height: 40px;
+    }
     font: caption;
     font-weight: 200;
     width: 60rem;
-    height: 5rem;
-    border-radius: 2.5rem;
+    height: 50px;
+    border-radius: 25px;
     background-color: rgb(240, 241, 245);
     padding: 0 2rem 0 5rem;
     transition: all 300ms ease;

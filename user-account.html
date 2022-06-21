@@ -216,80 +216,81 @@
     </div>
     <div class="modal-mask login-modal">
         <form class="login-modal__content" action="" onsubmit="return false">
-          <button class="login-modal__btn-close">&#9587;</button>
-          <h1 class="login-modal__title">Вход на сайт</h1>
-          <label for="login-email">Логин</label>
-          <div class="login-modal__email-block">
-          <input id="login-email" required type="email" placeholder="Введите почту">
-          <img src="./common/svg/Message-gray.svg" alt="">      
-          </div>
-          <label for="login-pass">Пароль</label>
-          <button class="login-modal__link-remind">Напомнить</button>
-          <div class="login-modal__password-block">
-          <input id="login-pass" required type="password" placeholder="Введите пароль">
-          <img src="./common/svg/Eye.svg" alt="" class="show-pass">    
-          </div>
-          <div class="login-modal__btn-block">
-          <button class="main-btn login-modal__btn-submit" type="submit">Войти</button><a class="login-modal__link-register" href="./registration.html">Регистрация</a>
-        </div>
+            <button class="login-modal__btn-close">&#9587;</button>
+            <h1 class="login-modal__title">Вход на сайт</h1>
+            <label for="login-email">Логин</label>
+            <div class="login-modal__email-block">
+                <input id="login-email" required type="email" placeholder="Введите почту">
+                <img src="./common/svg/Message-gray.svg" alt="">
+            </div>
+            <label for="login-pass">Пароль</label>
+            <button class="login-modal__link-remind">Напомнить</button>
+            <div class="login-modal__password-block">
+                <input id="login-pass" required type="password" placeholder="Введите пароль">
+                <img src="./common/svg/Eye.svg" alt="" class="show-pass">
+            </div>
+            <div class="login-modal__btn-block">
+                <button class="main-btn login-modal__btn-submit" type="submit">Войти</button><a
+                    class="login-modal__link-register" href="./registration.html">Регистрация</a>
+            </div>
         </form>
-        
+
         <form class="remind-password__content" action="" onsubmit="return false">
-          <button class="remind-password__btn-close">&#9587;</button>
-          <h1 class="remind-password__title">Напомнить пароль</h1>
-          <label for="remind-pass-email" >Укажите вашу почту</label>
-          <div class="remind-password__email-block">
-          <input id="remind-pass-email" required type="email" placeholder="Введите почту">
-          <img src="./common/svg/Message-gray.svg" alt="">
-          </div>
-          <div class="remind-password__btn-block">
-            <button type="submit" class="main-btn remind-password__btn-submit">Отправить</button>
-            <button class="remind-password__link-back">Назад</button>
-          </div>
+            <button class="remind-password__btn-close">&#9587;</button>
+            <h1 class="remind-password__title">Напомнить пароль</h1>
+            <label for="remind-pass-email">Укажите вашу почту</label>
+            <div class="remind-password__email-block">
+                <input id="remind-pass-email" required type="email" placeholder="Введите почту">
+                <img src="./common/svg/Message-gray.svg" alt="">
+            </div>
+            <div class="remind-password__btn-block">
+                <button type="submit" class="main-btn remind-password__btn-submit">Отправить</button>
+                <button class="remind-password__link-back">Назад</button>
+            </div>
         </form>
-    
+
         <div class="remind-password__content remind-password__content-finish">
-          <button class="remind-password__btn-close">&#9587;</button>
-          <h1 class="remind-password__title">Напомнить пароль</h1>
-          <p class="remind-password__text">
-            На вашу почту отправлен e-mail,
-            с дальнейшими инстуркциями
-            по восстановлению пароля.
-          </p>
-          <div class="remind-password__btn-block">
-            <button type="submit" class="main-btn remind-password__btn-submit">Закрыть</button>
-            <p class="remind-password__text-hide">
-              Окно закроется через <span class="remind-password__seconds">3</span> сек.
+            <button class="remind-password__btn-close">&#9587;</button>
+            <h1 class="remind-password__title">Напомнить пароль</h1>
+            <p class="remind-password__text">
+                На вашу почту отправлен e-mail,
+                с дальнейшими инстуркциями
+                по восстановлению пароля.
             </p>
-          </div>
+            <div class="remind-password__btn-block">
+                <button type="submit" class="main-btn remind-password__btn-submit">Закрыть</button>
+                <p class="remind-password__text-hide">
+                    Окно закроется через <span class="remind-password__seconds">3</span> сек.
+                </p>
+            </div>
         </div>
         <div class="city__content">
             <button class="city__btn-close">&#9587;</button>
             <div class="city__header">
-              <h1 class="city__title">Выбрать город</h1>
-              <button class="city__auto">Определить автоматически</button>
+                <h1 class="city__title">Выбрать город</h1>
+                <button class="city__auto">Определить автоматически</button>
             </div>
             <div class="city__search-block">
-              <img src="./common/svg/Search.svg" alt="">
-              <input class="city__search" type="search" name="" id="" placeholder="Найти город">
+                <img src="./common/svg/Search.svg" alt="">
+                <input class="city__search" type="search" name="" id="" placeholder="Найти город">
             </div>
             <ul class="city__list">
-              <li class="city__item">
-                Москва
-                <img src="./common/svg/Checbox.svg" alt="">
-              </li>
-              <li class="city__item">Екатеринбург</li>
-              <li class="city__item">Краснодар</li>
-              <li class="city__item">Нижний Ровгород</li>
-              <li class="city__item">Новосибирск</li>
-              <li class="city__item">Ростов-на-Дону</li>
-              <li class="city__item">Самара</li>
-              <li class="city__item">Санкт-Петербург</li>
-              <li class="city__item">Уфа</li>
-              <li class="city__item">Челябинск</li>
+                <li class="city__item">
+                    Москва
+                    <img src="./common/svg/Checbox.svg" alt="">
+                </li>
+                <li class="city__item">Екатеринбург</li>
+                <li class="city__item">Краснодар</li>
+                <li class="city__item">Нижний Ровгород</li>
+                <li class="city__item">Новосибирск</li>
+                <li class="city__item">Ростов-на-Дону</li>
+                <li class="city__item">Самара</li>
+                <li class="city__item">Санкт-Петербург</li>
+                <li class="city__item">Уфа</li>
+                <li class="city__item">Челябинск</li>
             </ul>
-          </div>
-      </div>
+        </div>
+    </div>
     <div class="wrapper">
         <header class="header">
             <div class="container">
@@ -423,17 +424,19 @@
                             <div class="account__personal-data-inputs">
                                 <div class="account__input-wrapp">
                                     <label for="name">Ваше ФИО</label>
-                                    <input type="text" name="name-user" id="name" required>
+                                    <input placeholder="Введите ваше ФИО" type="text" name="name-user" id="name"
+                                        required>
                                     <span class="account__required">*</span>
                                 </div>
                                 <div class="account__input-wrapp">
                                     <label for="email">Електронная почта</label>
-                                    <input type="email" name="email-user" id="email" required>
+                                    <input placeholder="Введите ваш e-mail" type="email" name="email-user" id="email"
+                                        required>
                                     <span class="account__required">*</span>
                                 </div>
                                 <div class="account__input-wrapp">
                                     <label for="tel">Контактный телефон</label>
-                                    <input type="tel" name="tel-user" id="tel" required>
+                                    <input placeholder="+7(" type="tel" name="tel-user" id="tel" required>
                                     <span class="account__required">*</span>
                                 </div>
                             </div>
@@ -444,37 +447,39 @@
                             <p class="account__title">Данные организации</p>
                             <div class="account__input-wrapp">
                                 <label for="name-organization">Наименование организации</label>
-                                <input type="text" name="name-organization" id="name-organization" required>
+                                <input placeholder="Название организации" type="text" name="name-organization"
+                                    id="name-organization" required>
                                 <span class="account__required">*</span>
                             </div>
                             <div class="account__organization-data-addresses">
                                 <div class="account__organization-data-addresses-legal">
                                     <div class="account__input-wrapp">
                                         <label for="organization-address-legal">Юридический адрес</label>
-                                        <input type="text" name="organization-address-legal"
-                                            id="organization-address-legal" required>
+                                        <input placeholder="Юридический адрес" type="text"
+                                            name="organization-address-legal" id="organization-address-legal" required>
                                         <span class="account__required">*</span>
                                     </div>
                                     <div class="account__inputs-block">
                                         <div class="account__input-wrapp">
                                             <label for="INN">ИНН</label>
-                                            <input type="number" name="INN" id="INN" required>
+                                            <input placeholder="111222" type="number" name="INN" id="INN" required>
                                             <span class="account__required">*</span>
                                         </div>
                                         <div class="account__input-wrapp">
 
                                             <label for="KPP">КПП</label>
-                                            <input type="number" name="KPP" id="KPP" required>
+                                            <input placeholder="111222" type="number" name="KPP" id="KPP" required>
                                             <span class="account__required">*</span>
                                         </div>
                                         <div class="account__input-wrapp">
                                             <label for="name-bank">Банк</label>
-                                            <input type="text" name="name-bank" id="name-bank" required>
+                                            <input placeholder="Название банка" type="text" name="name-bank"
+                                                id="name-bank" required>
                                             <span class="account__required">*</span>
                                         </div>
                                         <div class="account__input-wrapp">
                                             <label for="count">Расчетный счет</label>
-                                            <input type="number" name="count" id="count" required>
+                                            <input placeholder="Счет" type="number" name="count" id="count" required>
                                             <span class="account__required">*</span>
                                         </div>
                                     </div>
@@ -482,29 +487,31 @@
                                 <div class="account__organization-data-addresses-actual">
                                     <div class="account__input-wrapp">
                                         <label for="organization-address-actual">Фактический адрес</label>
-                                        <input type="text" name="organization-address-actual"
-                                            id="organization-address-actual" required>
+                                        <input placeholder="Фактический адрес" type="text"
+                                            name="organization-address-actual" id="organization-address-actual"
+                                            required>
                                         <span class="account__required">*</span>
                                     </div>
                                     <div class="account__inputs-block">
                                         <div class="account__input-wrapp">
                                             <label for="OGRN">ОГРН</label>
-                                            <input type="number" name="OGRN" id="OGRN" required>
+                                            <input placeholder="ОГРН" type="number" name="OGRN" id="OGRN" required>
                                             <span class="account__required">*</span>
                                         </div>
                                         <div class="account__input-wrapp">
                                             <label for="OKPO">ОКПО</label>
-                                            <input type="number" name="OKPO" id="OKPO" required>
+                                            <input placeholder="ОКПО" type="number" name="OKPO" id="OKPO" required>
                                             <span class="account__required">*</span>
                                         </div>
                                         <div class="account__input-wrapp">
                                             <label for="cor-count">Кор счет</label>
-                                            <input type="number" name="cor-count" id="cor-count" required>
+                                            <input placeholder="Кор счет" type="number" name="cor-count" id="cor-count"
+                                                required>
                                             <span class="account__required">*</span>
                                         </div>
                                         <div class="account__input-wrapp">
                                             <label for="BICK">БИК</label>
-                                            <input type="number" name="BICK" id="BICK" required>
+                                            <input placeholder="БИК" type="number" name="BICK" id="BICK" required>
                                             <span class="account__required">*</span>
                                         </div>
                                     </div>
@@ -513,13 +520,12 @@
                         </div>
                     </div>
                     <div class="account__delivery-address">
-
                         <p class="account__title">Адрес доставки</p>
                         <div class="account__delivery-address-choose">
                             <div class="account__delivery-address-select-btn">
                                 <select class="account__delivery-address-select" name="address-choose"
                                     id="address-choose">
-                                    <option value="address1">адрес 1</option>
+                                    <option value="address1">Адрес (основной)</option>
                                     <option value="address2">адрес 2</option>
                                     <option value="address3">адрес 3</option>
                                 </select>
@@ -538,23 +544,27 @@
                                 <div class="account__delivery-address-current-left">
                                     <div class="account__input-wrapp">
                                         <label for="current-sity">Город</label>
-                                        <input type="text" name="current-sity" id="current-sity" required>
+                                        <input placeholder="Ваш город" type="text" name="current-sity" id="current-sity"
+                                            required>
                                         <span class="account__required">*</span>
                                     </div>
                                     <div class="account__inputs-row">
                                         <div class="account__input-wrapp">
                                             <label for="current-index">Индекс</label>
-                                            <input type="number" name="current-index" id="current-index" required>
+                                            <input placeholder="111222" type="number" name="current-index"
+                                                id="current-index" required>
                                             <span class="account__required">*</span>
                                         </div>
                                         <div class="account__input-wrapp">
                                             <label for="current-house">Дом</label>
-                                            <input type="number" name="current-house" id="current-house" required>
+                                            <input placeholder="Дом" type="number" name="current-house"
+                                                id="current-house" required>
                                             <span class="account__required">*</span>
                                         </div>
                                         <div class="account__input-wrapp">
                                             <label for="current-office">Кв/офис</label>
-                                            <input type="number" name="current-office" id="current-office" required>
+                                            <input placeholder="Кв/офис" type="number" name="current-office"
+                                                id="current-office" required>
                                             <span class="account__required">*</span>
                                         </div>
                                     </div>
@@ -562,23 +572,26 @@
                                 <div class="account__delivery-address-current-right">
                                     <div class="account__input-wrapp">
                                         <label for="current-street">Улица</label>
-                                        <input type="text" name="current-street" id="current-street" required>
+                                        <input placeholder="Укажите улицу" type="text" name="current-street"
+                                            id="current-street" required>
                                         <span class="account__required">*</span>
                                     </div>
                                     <div class="account__inputs-row">
                                         <div class="account__input-wrapp">
                                             <label for="current-front-door">Подьезд</label>
-                                            <input type="number" name="current-front-door" id="current-front-door"
-                                                required>
+                                            <input placeholder="Подьезд" type="number" name="current-front-door"
+                                                id="current-front-door" required>
                                             <span class="account__required">*</span>
                                         </div>
                                         <div class="account__input-wrapp">
                                             <label for="current-floor">Этаж</label>
-                                            <input type="number" name="current-floor" id="current-floor">
+                                            <input placeholder="Этаж" type="number" name="current-floor"
+                                                id="current-floor">
                                         </div>
                                         <div class="account__input-wrapp">
                                             <label for="current-intercom">Домофон</label>
-                                            <input type="number" name="current-intercom" id="current-intercom">
+                                            <input placeholder="Домофон" type="number" name="current-intercom"
+                                                id="current-intercom">
                                         </div>
                                     </div>
                                 </div>
@@ -589,7 +602,8 @@
                             <div class="account__delivery-add-new-address-center">
                                 <div class="account__input-wrapp">
                                     <label for="name-new-address">Название адреса</label>
-                                    <input type="text" name="name-new-address" id="name-new-address" required>
+                                    <input placeholder="Название адреса" type="text" name="name-new-address"
+                                        id="name-new-address" required>
                                     <span class="account__required">*</span>
                                 </div>
                                 <input type="checkbox" name="create-current-address" id="create-current-address"
@@ -602,23 +616,26 @@
                                     <div class="account__delivery-add-new-address-left">
                                         <div class="account__input-wrapp">
                                             <label for="sity">Город</label>
-                                            <input type="text" name="sity" id="sity" required>
+                                            <input placeholder="Ваш город" type="text" name="sity" id="sity" required>
                                             <span class="account__required">*</span>
                                         </div>
                                         <div class="account__inputs-row">
                                             <div class="account__input-wrapp">
                                                 <label for="index">Индекс</label>
-                                                <input type="number" name="index" id="index" required>
+                                                <input placeholder="Индекс" type="number" name="index" id="index"
+                                                    required>
                                                 <span class="account__required">*</span>
                                             </div>
                                             <div class="account__input-wrapp">
                                                 <label for="house">Дом</label>
-                                                <input type="number" name="house" id="house" required>
+                                                <input placeholder="Ваш дом" type="number" name="house" id="house"
+                                                    required>
                                                 <span class="account__required">*</span>
                                             </div>
                                             <div class="account__input-wrapp">
                                                 <label for="office">Кв/офис</label>
-                                                <input type="number" name="office" id="office" required>
+                                                <input placeholder="Кв/офис" type="number" name="office" id="office"
+                                                    required>
                                                 <span class="account__required">*</span>
                                             </div>
                                         </div>
@@ -626,23 +643,26 @@
                                     <div class="account__delivery-add-new-address-right">
                                         <div class="account__input-wrapp">
                                             <label for="street">Улица</label>
-                                            <input type="text" name="street" id="street" required>
+                                            <input placeholder="Укажите улицу" type="text" name="street" id="street"
+                                                required>
                                             <span class="account__required">*</span>
                                         </div>
                                         <div class="account__inputs-row">
                                             <div class="account__input-wrapp">
                                                 <label for="front-door">Подьезд</label>
-                                                <input type="number" name="front-door" id="front-door" required>
+                                                <input placeholder="Подьезд" type="number" name="front-door"
+                                                    id="front-door" required>
                                                 <span class="account__required">*</span>
                                             </div>
                                             <div class="account__input-wrapp">
                                                 <label for="floor">Этаж</label>
-                                                <input type="number" name="floor" id="floor">
+                                                <input placeholder="Этаж" type="number" name="floor" id="floor">
                                                 <span class="account__required">*</span>
                                             </div>
                                             <div class="account__input-wrapp">
                                                 <label for="intercom">Домофон</label>
-                                                <input type="number" name="intercom" id="intercom">
+                                                <input placeholder="Домофон" type="number" name="intercom"
+                                                    id="intercom">
                                                 <span class="account__required">*</span>
                                             </div>
                                         </div>
@@ -651,7 +671,7 @@
                             </div>
                             <div class="account__input-wrapp">
                                 <label for="hospital">Больница</label>
-                                <input type="text" name="hospital" id="hospital">
+                                <input placeholder="Больница" type="text" name="hospital" id="hospital">
                             </div>
                             <div class="account__delivery-add-new-address-buttons">
                                 <button class="main-btn account__delivery-new-address-save">
@@ -669,7 +689,8 @@
                             <div class="account__input-wrapp old-pass-wrap">
                                 <label for="old-pass">Старый пароль</label>
                                 <button type="button" class="account__remind-pass" for="old-pass">Напомнить</button>
-                                <input class="pass" type="password" name="old-pass" id="old-pass">
+                                <input placeholder="Ваш старый пароль" class="pass" type="password" name="old-pass"
+                                    id="old-pass">
                                 <div class="account_password-icon old" id="old-pass">
                                     <i id="icon" data-feather="eye"></i>
                                 </div>
@@ -677,14 +698,16 @@
                             <div class="account__password-create-new">
                                 <div class="account__input-wrapp">
                                     <label for="new-pass">Новый пароль</label>
-                                    <input class="pass" type="password" name="new-pass" id="new-pass">
+                                    <input placeholder="Ваш новый пароль" class="pass" type="password" name="new-pass"
+                                        id="new-pass">
                                     <div class="account_password-icon" id="new-pass">
                                         <i id="icon" data-feather="eye"></i>
                                     </div>
                                 </div>
                                 <div class="account__input-wrapp">
                                     <label for="confirm-pass">Подтвердить пароль</label>
-                                    <input class="pass" type="password" name="confirm-pass" id="confirm-pass">
+                                    <input placeholder="Подтвердите пароль" class="pass" type="password"
+                                        name="confirm-pass" id="confirm-pass">
                                     <div class="account_password-icon" id="confirm-pass">
                                         <i id="icon" data-feather="eye"></i>
                                     </div>

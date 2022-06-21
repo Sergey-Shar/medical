@@ -378,7 +378,7 @@ input {
 }
 
 .dropdown.open .dropdown__owerlay {
-  background-color: rgba(45, 47, 48, 0.2);
+  background-color: rgba(45, 47, 48, 0.5);
   -webkit-backdrop-filter: blur(36px);
           backdrop-filter: blur(36px);
   z-index: 2000;

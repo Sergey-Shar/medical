@@ -338,6 +338,60 @@ btnCloseModalCity.addEventListener('click', () => {
   })()
 }
 
+// поиск 
+
+(function () {
+
+
+  const search = document.querySelector('.search__input')
+
+  const searchEmpty = document.querySelector('.search-empty__input')
+
+  const headerSearch = document.querySelector('.header__search')
+
+  const logoHeader = document.querySelector('.logo')
+
+  const iconHeader = document.querySelector('.header__icons-buttons')
+
+  const btnCloseSearch = document.querySelector('.search-result__btn-cancel')
+
+  const searchResult = document.querySelector('.search-result')
+
+  const headerSerchBtn = document.querySelector('.header__seacrh-btn')
+
+  const searchResultWmax = (e) => {
+    if (!e.target.value) {
+      searchResult.style.zIndex = '0'
+      searchResult.style.opacity = '0'
+    } else { 
+    searchResult.style.opacity = '1'
+    searchResult.style.zIndex = '1000'
+    }
+  }
+
+
+
+  search.addEventListener('input', (e) => searchResultWmax(e))
+
+  searchEmpty.addEventListener('input', (e) => searchResultWmax(e))
+
+  headerSerchBtn.addEventListener('click', () => {
+    logoHeader.classList.add('hide')
+    iconHeader.classList.add('hide')
+    headerSearch.classList.add('open')
+    search.classList.add('open')
+    btnCloseSearch.classList.add('open')
+  })
+
+  btnCloseSearch.addEventListener('click', () => {
+    logoHeader.classList.remove('hide')
+    iconHeader.classList.remove('hide')
+    headerSearch.classList.remove('open')
+    search.classList.remove('open')
+    btnCloseSearch.classList.remove('open')
+  })
+})()
+
 // модальные окна: логин, напомнить пароль
 
 {

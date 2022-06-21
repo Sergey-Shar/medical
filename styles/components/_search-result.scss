@@ -66,6 +66,8 @@
         &__btn-cancel {
             &.open {
                 display: block;
+                grid-area: cancel;
+                justify-self: end;
             }
         }
     }

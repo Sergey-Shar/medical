@@ -46,10 +46,10 @@
     display: none;
   }
   &__search {
-    &.open {
-      display: block;
-      width: 85%;
-    }
+    // &.open {
+    //   display: block;
+    //   width: 85%;
+    // }
   }
 
   &__top {
@@ -87,6 +87,14 @@
 
     &__top {
       min-height: 13rem;
+      &.open {
+        display: grid;
+        grid-template-areas:
+            "logo icons"
+            "search cancel";
+        row-gap: 4rem;
+        padding: 2rem 0 4rem 0;
+      }
     }
 
     &__nav {
@@ -95,6 +103,11 @@
 
     &__search {
       display: none;
+      &.open {
+        display: block;
+        width: 200%;
+        grid-area: search;
+      }
     }
 
     &__dropdown-btn {
@@ -115,8 +128,8 @@
 
     &__icons-buttons {
       width: 50rem;
-      &.hide {
-        display: none;
+      &.open {
+        grid-area: icons;
       }
     }
   }
@@ -131,7 +144,7 @@
     }
 
     &__icons-buttons {
-      min-width: 30rem;
+      max-width: 30rem;
     }
 
     &__top {
@@ -140,8 +153,7 @@
     }
     &__search {
       &.open {
-        display: block;
-        width: 70%;
+        width: 140%;
       }
     }
   }

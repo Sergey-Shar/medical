@@ -9151,6 +9151,7 @@ input {
 }
 
 .login-modal__content {
+  z-index: 2900;
   display: none;
       grid-template-areas: "title title" "label-email label-email" "input-email input-email" "label-pass remind" "input-pass input-pass" "btn-block btn-block";
   position: relative;

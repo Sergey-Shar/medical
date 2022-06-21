@@ -15,6 +15,7 @@
         grid-area: title;
     }
     &__content {
+        z-index: 2900;
         display: none;
         grid-template-areas: "title title"
         "label-email label-email"

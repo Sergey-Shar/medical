@@ -25,19 +25,19 @@
         align-items: center;
         justify-content: space-between;
         padding: 68px 65px 100px;
-        & input {
-            border-radius: 32px;
-            height: 50px;
-            width: 100%;
-            background: #EFF1F5;
-            padding: 1rem 1rem 1rem 6rem;
-            font-size: 16px;
-            &::placeholder {
-                color: #5C596A;
-            }
-            &:hover {
-                background: #cfd0d7;
-            }
+    }
+    &__search {
+        border-radius: 32px;
+        height: 50px;
+        width: 100%;
+        background: #EFF1F5;
+        padding: 1rem 1rem 1rem 6rem;
+        font-size: 16px;
+        &::placeholder {
+            color: #5C596A;
+        }
+        &:hover {
+            background: #cfd0d7;
         }
     }
     &__search-block {
@@ -92,7 +92,19 @@
         &:hover {
             color: #10AE73;
             text-decoration: underline;
+        }
+        & img {
+            display: none;
+        }
+        & input {
+            display: none;
+            cursor: default;
+        }
+        & label {
             cursor: pointer;
+        }
+        & input:checked + img {
+            display: block;
         }
     }
 }

@@ -347,6 +347,8 @@ btnCloseModalCity.addEventListener('click', () => {
 
   const headerSearch = document.querySelector('.header__search')
 
+  const headerTop = document.querySelector('.header__top')
+
   const logoHeader = document.querySelector('.logo')
 
   const iconHeader = document.querySelector('.header__icons-buttons')
@@ -372,16 +374,18 @@ btnCloseModalCity.addEventListener('click', () => {
   search.addEventListener('input', (e) => searchResultWmax(e))
 
   headerSerchBtn.addEventListener('click', () => {
-    logoHeader.classList.add('hide')
-    iconHeader.classList.add('hide')
+    headerTop.classList.add('open')
+    logoHeader.classList.add('open')
+    iconHeader.classList.add('open')
     headerSearch.classList.add('open')
     search.classList.add('open')
     btnCloseSearch.classList.add('open')
   })
 
   btnCloseSearch.addEventListener('click', () => {
-    logoHeader.classList.remove('hide')
-    iconHeader.classList.remove('hide')
+    logoHeader.classList.remove('open')
+    iconHeader.classList.remove('open')
+    headerTop.classList.remove('open')
     headerSearch.classList.remove('open')
     search.classList.remove('open')
     btnCloseSearch.classList.remove('open')

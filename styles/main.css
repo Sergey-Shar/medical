@@ -545,13 +545,12 @@ input {
   margin-right: 4rem;
 }
 
-.logo.hide {
-  display: none;
-}
-
 @media screen and (max-width: 1100px) {
   .logo {
     margin-left: 10rem;
+  }
+  .logo.open {
+    grid-area: logo;
   }
   .logo__icon {
     width: 90%;
@@ -1232,11 +1231,6 @@ input {
   display: none;
 }
 
-.header__search.open {
-  display: block;
-  width: 85%;
-}
-
 .header__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1285,11 +1279,25 @@ input {
   .header__top {
     min-height: 13rem;
   }
+  .header__top.open {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "logo icons" "search cancel";
+    row-gap: 4rem;
+    padding: 2rem 0 4rem 0;
+  }
   .header__nav {
     display: none;
   }
   .header__search {
     display: none;
+  }
+  .header__search.open {
+    display: block;
+    width: 200%;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: search;
   }
   .header__dropdown-btn {
     display: none;
@@ -1306,8 +1314,10 @@ input {
   .header__icons-buttons {
     width: 50rem;
   }
-  .header__icons-buttons.hide {
-    display: none;
+  .header__icons-buttons.open {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: icons;
   }
 }
 
@@ -1316,14 +1326,13 @@ input {
     display: none;
   }
   .header__icons-buttons {
-    min-width: 30rem;
+    max-width: 30rem;
   }
   .header__top {
     min-height: 12rem;
   }
   .header__search.open {
-    display: block;
-    width: 70%;
+    width: 140%;
   }
 }
 
@@ -10261,6 +10270,9 @@ input {
   }
   .search-result__btn-cancel.open {
     display: block;
+    grid-area: cancel;
+    -ms-grid-column-align: end;
+        justify-self: end;
   }
 }
 

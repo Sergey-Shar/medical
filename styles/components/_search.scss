@@ -41,3 +41,22 @@
     }
   }
 }
+
+@media screen and(max-width:1100px) {
+  .search {
+    &__icon {
+      top: 23%;
+      left: 1%;
+    }
+  }
+}
+
+@media screen and(max-width:480px) {
+  .search {
+    &__icon {
+    top: 37%;
+    left: 4%;
+    }
+  }
+
+}

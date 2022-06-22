@@ -727,6 +727,11 @@ input {
 .accordion__icon {
   position: relative;
   background-color: #fff;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: #000;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .accordion__icon .chevron {

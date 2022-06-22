@@ -144,7 +144,10 @@
     }
 
     &__icons-buttons {
-      max-width: 30rem;
+      min-width: 30rem;
+      &.open {
+        max-width: 30rem;
+      }
     }
 
     &__top {

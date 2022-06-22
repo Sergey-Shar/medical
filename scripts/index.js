@@ -284,9 +284,19 @@ accordionCard.forEach((btn) => {
   btn.addEventListener("click", () => {
     btn.classList.toggle("active");
     const panel = btn.nextElementSibling;
-    panel.style.display === "block" ?
-      (panel.style.display = "none") :
-      (panel.style.display = "block");
+    // const chevron = btn.children[0]
+    if (btn.children[0].className === 'accordion__icon') {
+      const chevron = btn.children[0]  
+      panel.style.display === "block" ?
+      (panel.style.display = "none", chevron.style.transform = 'rotate(90deg)', chevron.firstElementChild.style.color = '#000') :
+      (panel.style.display = "block", chevron.style.transform = 'rotate(270deg)', chevron.firstElementChild.style.color = '#707070');
+    }
+    else {
+      const chevron = btn.children[1]
+      panel.style.display === "block" ?
+      (panel.style.display = "none", chevron.style.transform = 'rotate(90deg)', chevron.firstElementChild.style.color = '#000') :
+      (panel.style.display = "block", chevron.style.transform = 'rotate(270deg)', chevron.firstElementChild.style.color = '#707070');
+    }
   });
 });
 

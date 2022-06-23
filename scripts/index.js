@@ -284,9 +284,19 @@ accordionCard.forEach((btn) => {
   btn.addEventListener("click", () => {
     btn.classList.toggle("active");
     const panel = btn.nextElementSibling;
-    panel.style.display === "block" ?
-      (panel.style.display = "none") :
-      (panel.style.display = "block");
+    // const chevron = btn.children[0]
+    if (btn.children[0].className === 'accordion__icon') {
+      const chevron = btn.children[0]  
+      panel.style.display === "block" ?
+      (panel.style.display = "none", chevron.style.transform = 'rotate(90deg)', chevron.firstElementChild.style.color = '#000') :
+      (panel.style.display = "block", chevron.style.transform = 'rotate(270deg)', chevron.firstElementChild.style.color = '#707070');
+    }
+    else {
+      const chevron = btn.children[1]
+      panel.style.display === "block" ?
+      (panel.style.display = "none", chevron.style.transform = 'rotate(90deg)', chevron.firstElementChild.style.color = '#000') :
+      (panel.style.display = "block", chevron.style.transform = 'rotate(270deg)', chevron.firstElementChild.style.color = '#707070');
+    }
   });
 });
 
@@ -312,7 +322,7 @@ e.preventDefault()
 const btnLocation = document.querySelectorAll('.location')
 const modalCity = document.querySelector('.city__content')
 const modalMask = document.querySelector('.modal-mask')
-const btnCloseModalCity = document.querySelector('.city__content')
+const btnCloseModalCity = document.querySelector('.city__btn-close')
 
 btnLocation.forEach((btn) => {
   btn.addEventListener('click', () => {
@@ -338,11 +348,67 @@ btnCloseModalCity.addEventListener('click', () => {
   })()
 }
 
+// поиск 
+
+(function () {
+
+
+  const search = document.querySelector('.search__input')
+
+  const headerSearch = document.querySelector('.header__search')
+
+  const headerTop = document.querySelector('.header__top')
+
+  const logoHeader = document.querySelector('.logo')
+
+  const iconHeader = document.querySelector('.header__icons-buttons')
+
+  const btnCloseSearch = document.querySelector('.search-result__btn-cancel')
+
+  const searchResult = document.querySelector('.search-result')
+
+  const headerSerchBtn = document.querySelector('.header__seacrh-btn')
+
+  const searchResultWmax = (e) => {
+    if (!e.target.value) {
+      searchResult.style.zIndex = '0'
+      searchResult.style.opacity = '0'
+    } else { 
+    searchResult.style.opacity = '1'
+    searchResult.style.zIndex = '1000'
+    }
+  }
+
+
+
+  search.addEventListener('input', (e) => searchResultWmax(e))
+
+  headerSerchBtn.addEventListener('click', () => {
+    headerTop.classList.add('open')
+    logoHeader.classList.add('open')
+    iconHeader.classList.add('open')
+    headerSearch.classList.add('open')
+    search.classList.add('open')
+    btnCloseSearch.classList.add('open')
+  })
+
+  btnCloseSearch.addEventListener('click', () => {
+    logoHeader.classList.remove('open')
+    iconHeader.classList.remove('open')
+    headerTop.classList.remove('open')
+    headerSearch.classList.remove('open')
+    search.classList.remove('open')
+    btnCloseSearch.classList.remove('open')
+  })
+})()
+
 // модальные окна: логин, напомнить пароль
 
 {
   (function () {
     const btnUser = document.querySelector('.header__user-btn')
+    
+    const btnAccountRemindPass = document.querySelector('.account__remind-pass')
 
     const modalMask = document.querySelector('.modal-mask')
 
@@ -357,27 +423,40 @@ btnCloseModalCity.addEventListener('click', () => {
     const btnCloseModalLogin = document.querySelector('.login-modal__btn-close')
     const btnCloseModalRemindPassword = document.querySelector('.remind-password__btn-close')
 
+    const btnShowPass = document.querySelector('.show-pass')
+    const inputPass = document.getElementById('login-pass')
+
+    const closeAllModal = () => {
+      modalMask.style.display = 'none'
+      modalLogin.style.display = 'none'
+      modalRemindPassword.style.display = 'none'
+      modalRemindPasswordFinish.style.display = 'none'
+      document.body.style.overflow = 'visible' 
+    }
     const closeModalTimeout = (sec) => {
-        setTimeout(() => {
-            modalMask.style.display = 'none'
-            modalRemindPasswordFinish.style.display = 'none'
-        }, sec)
+        setTimeout( closeAllModal, sec)
     } 
+
+  btnCloseModalLogin.addEventListener('click', closeAllModal)
+
+  btnCloseModalRemindPassword.addEventListener('click', closeAllModal)
+
+btnRemindPassword.addEventListener('click', (e) => {
+  modalLogin.style.display = 'none'
+  modalRemindPassword.style.display = 'flex'
+
+})
+
+    modalLogin.addEventListener('submit', () => {
+      modalMask.style.display = 'none'
+      modalLogin.style.display = 'none'
+      document.body.style.overflow = 'visible'
+    })
 
     btnUser.addEventListener('click', (e) => {
         modalMask.style.display = 'flex'
         modalLogin.style.display = 'grid'
-
-    })
-
-    btnCloseModalLogin.addEventListener('click', (e) => {
-        modalMask.style.display = 'none'
-        modalLogin.style.display = 'none'
-    })
-
-    btnRemindPassword.addEventListener('click', (e) => {
-        modalLogin.style.display = 'none'
-        modalRemindPassword.style.display = 'flex'
+        document.body.style.overflow = 'hidden'
 
     })
 
@@ -387,47 +466,45 @@ btnCloseModalCity.addEventListener('click', () => {
 
     })
 
-    btnCloseModalRemindPassword.addEventListener('click', () => {
-        modalMask.style.display = 'none'
-        modalRemindPassword.style.display = 'none'
-    })
-
     modalRemindPasswordFinish.addEventListener('click', (e) => {
         if (e.target.className === 'remind-password__btn-close' || 'main-btn remind-password__btn-submit') {
-            modalMask.style.display = 'none'
-            modalRemindPasswordFinish.style.display = 'none'
             closeModalTimeout(0)
         }
     })
 
-    btnSubmitRemindPassword.addEventListener('click',  (e) => {
+
+
+    modalRemindPassword.addEventListener('submit',  (e) => {
+
         modalRemindPassword.style.display = 'none'
         modalRemindPasswordFinish.style.display = 'flex'
+        let seconds = document.querySelector('.remind-password__seconds')
+        e.preventDefault()
+        let intervalCloseModal = setInterval(() => {
+          seconds.innerHTML -=1
+        }, 1000); 
+        setTimeout(() => {
+          clearInterval(intervalCloseModal)
+          seconds.innerHTML = '3'
+        }, 3000);
         closeModalTimeout(3000)
-        }
-    )
+        })
 
-})()
-}
-
-// клик на пункт заказа
-{
-  (function () {
-    const btnShowHide = document.querySelectorAll('.order-point__btn-show-hide')
-    btnShowHide.forEach((btn) => {   
-      btn.addEventListener('click', (e) => {
-        const orderPoint = e.target.parentElement.parentElement
-        const orderTime = e.target.parentElement.previousElementSibling
-        if (btn.innerText === 'Подробнее') {
-          orderPoint.style.background  = "#f3f3f3"
-          btn.innerText = 'Скрыть' 
-          orderTime.style.display = 'flex'
-        } else {
-          orderPoint.style.background = "#fff"
-          btn.innerText = 'Подробнее' 
-          orderTime.style.display = 'none'
-        }        
+        btnShowPass.addEventListener('click', () => {
+          inputPass.classList.toggle('show')
+          if (inputPass.className === 'show') {
+              inputPass.type = 'text'
+            }
+            else {
+              inputPass.type = 'password'
+            }
       })
-    })
-  })()
+
+      btnAccountRemindPass.addEventListener('click', () => {
+        modalMask.style.display = 'flex'
+        scrollTo(0, 0)
+        modalRemindPassword.style.display = 'flex'
+        document.body.style.overflow = 'hidden'
+      })
+})()
 }

@@ -20,6 +20,9 @@
     &__icon {
         position: relative;
         background-color: #fff;
+        transform: rotate(90deg);
+        color: #000;
+        transition: all 0.3s ease 0s;
 
         .chevron {
             position: relative;

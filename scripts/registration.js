@@ -4,7 +4,7 @@
     const registrationNaturalPerson = document.querySelector('.registration__natural-person')
     const registrationLegalPerson = document.querySelector('.registration__legal-person')
 
-    radioPerson.forEach((item, i) => {
+    radioPerson.forEach((item) => {
         item.addEventListener('change', (e) => {
             if (e.target.id === 'legal-person') {
                 registrationOrganizationData.style.display = 'block'

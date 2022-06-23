@@ -23,6 +23,7 @@
     }
     &__text {
         font-size: 18px;
+        line-height: 3rem;
         &--bold {
             font-weight: bold;
         }
@@ -34,7 +35,6 @@
             display: flex;
             flex-direction: column;
             width: 70rem;
-            height: 23rem;
             gap: 2rem;
         }
     }

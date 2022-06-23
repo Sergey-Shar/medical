@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -47,7 +47,7 @@
                 <a class="" href="#">Бренды</a>
               </div>
               <div class="nav-modal__main-nav-3">
-                <a class="" href="#">О компании</a>
+                <a class="" href="./about">О компании</a>
                 <a class="" href="./contacts">Контакты</a>
               </div>
             </div>
@@ -126,7 +126,7 @@
               </div>
               <div class="nav-modal__main-nav-2">
                 <a class="" href="#">Бренды</a>
-                <a class="" href="#">О компании</a>
+                <a class="" href="./about">О компании</a>
                 <a class="" href="./contacts">Контакты</a>
               </div>
             </div>
@@ -134,7 +134,7 @@
               <div style="background-color:rgb(240, 241, 245);padding-left: 0rem;" class="accordion card__accordion ">
                 Каталог продукции
                 <button style="background-color:rgb(240, 241, 245);" class="accordion__icon">
-                  <span class="chevron"></span>
+                  <span class="aside-chevrone">❯</span>
                 </button>
               </div>
               <div class="panel">
@@ -156,7 +156,7 @@
               <div style="background-color:rgb(240, 241, 245);padding-left: 0rem;" class="accordion card__accordion">
                 Направления
                 <button style="background-color:rgb(240, 241, 245);" class="accordion__icon">
-                  <span class="chevron"></span>
+                  <span class="aside-chevrone">❯</span>
                 </button>
               </div>
               <div class="panel">
@@ -177,7 +177,7 @@
               <div style="background-color:rgb(240, 241, 245);padding-left: 0rem;" class="accordion card__accordion">
                 Информация
                 <button style="background-color:rgb(240, 241, 245);" class="accordion__icon">
-                  <span class="chevron"></span>
+                  <span class="aside-chevrone">❯</span>
                 </button>
               </div>
               <div class="panel">
@@ -215,27 +215,28 @@
       <h1 class="login-modal__title">Вход на сайт</h1>
       <label for="login-email">Логин</label>
       <div class="login-modal__email-block">
-      <input id="login-email" type="email" placeholder="Введите почту">
-      <img src="./common/svg/Message-gray.svg" alt="">      
+        <input id="login-email" required type="email" placeholder="Введите почту">
+        <img src="./common/svg/Message-gray.svg" alt="">
       </div>
       <label for="login-pass">Пароль</label>
       <button class="login-modal__link-remind">Напомнить</button>
       <div class="login-modal__password-block">
-      <input id="login-pass" type="password" placeholder="Введите пароль">
-      <img src="./common/svg/Eye.svg" alt="" class="show-pass">    
+        <input id="login-pass" required type="password" placeholder="Введите пароль">
+        <img src="./common/svg/Eye.svg" alt="" class="show-pass">
       </div>
       <div class="login-modal__btn-block">
-      <button class="main-btn login-modal__btn-submit" type="submit">Войти</button><a class="login-modal__link-register" href="./registration.html">Регистрация</a>
-    </div>
+        <button class="main-btn login-modal__btn-submit" type="submit">Войти</button><a
+          class="login-modal__link-register" href="./registration.html">Регистрация</a>
+      </div>
     </form>
-    
+
     <form class="remind-password__content" action="" onsubmit="return false">
       <button class="remind-password__btn-close">&#9587;</button>
       <h1 class="remind-password__title">Напомнить пароль</h1>
-      <label for="remind-pass-email" >Укажите вашу почту</label>
+      <label for="remind-pass-email">Укажите вашу почту</label>
       <div class="remind-password__email-block">
-      <input id="remind-pass-email" type="email" placeholder="Введите почту">
-      <img src="./common/svg/Message-gray.svg" alt="">
+        <input id="remind-pass-email" required type="email" placeholder="Введите почту">
+        <img src="./common/svg/Message-gray.svg" alt="">
       </div>
       <div class="remind-password__btn-block">
         <button type="submit" class="main-btn remind-password__btn-submit">Отправить</button>
@@ -254,9 +255,72 @@
       <div class="remind-password__btn-block">
         <button type="submit" class="main-btn remind-password__btn-submit">Закрыть</button>
         <p class="remind-password__text-hide">
-          Окно закроется через 3 сек.
+          Окно закроется через <span class="remind-password__seconds">3</span> сек.
         </p>
       </div>
+    </div>
+    <div class="city__content">
+      <button class="city__btn-close">&#9587;</button>
+      <div class="city__header">
+        <h1 class="city__title">Выбрать город</h1>
+        <button class="city__auto">Определить автоматически</button>
+      </div>
+      <div class="city__search-block">
+        <img src="./common/svg/Search.svg" alt="">
+        <input class="city__search" type="search" name="city" id="" placeholder="Найти город">
+      </div>
+      <ul class="city__list">
+        <li class="city__item">
+          <label for="Москва">Москва</label>
+          <input type="radio" checked name="city" id="Москва">
+          <img src="./common/svg/Checbox.svg" alt="">
+        </li>
+        <li class="city__item">
+          <label for="Екатеринбург">Екатеринбург</label>
+          <input type="radio" name="city" id="Екатеринбург">
+          <img src="./common/svg/Checbox.svg" alt="">
+        </li>
+        <li class="city__item">
+          <label for="Краснодар">Краснодар</label>
+          <input type="radio" name="city" id="Краснодар">
+          <img src="./common/svg/Checbox.svg" alt="">
+        </li>
+        <li class="city__item">
+          <label for="Нижний Новгород">Нижний Новгород</label>
+          <input type="radio" name="city" id="Нижний Новгород">
+          <img src="./common/svg/Checbox.svg" alt="">
+        </li>
+        <li class="city__item">
+          <label for="Новосибирск">Новосибирск</label>
+          <input type="radio" name="city" id="Новосибирск">
+          <img src="./common/svg/Checbox.svg" alt="">
+        </li>
+        <li class="city__item">
+          <label for="Ростов-на-Дону">Ростов-на-Дону</label>
+          <input type="radio" name="city" id="Ростов-на-Дону">
+          <img src="./common/svg/Checbox.svg" alt="">
+        </li>
+        <li class="city__item">
+          <label for="Самара">Самара</label>
+          <input type="radio" name="city" id="Самара">
+          <img src="./common/svg/Checbox.svg" alt="">
+        </li>
+        <li class="city__item">
+          <label for="Санкт-Петербург">Санкт-Петербург</label>
+          <input type="radio" name="city" id="Санкт-Петербург">
+          <img src="./common/svg/Checbox.svg" alt="">
+        </li>
+        <li class="city__item">
+          <label for="Уфа">Уфа</label>
+          <input type="radio" name="city" id="Уфа">
+          <img src="./common/svg/Checbox.svg" alt="">
+        </li>
+        <li class="city__item">
+          <label for="Челябинск">Челябинск</label>
+          <input type="radio" name="city" id="Челябинск">
+          <img src="./common/svg/Checbox.svg" alt="">
+        </li>
+      </ul>
     </div>
   </div>
   <div class="wrapper">
@@ -279,17 +343,70 @@
           <div class="search header__search">
             <i id="icon" class="search__icon" data-feather="search"></i>
             <input type="search" placeholder="Введите товар для поиска" class="search__input" />
+            <div class="search-result">
+              <ul class="search-result__list">
+                <li class="search-result__item">
+                  <img src="./common/cards-img/card-prod-slider.png" alt="" width="30" height="30"
+                    class="search-result__img">
+                  <div class="search-result__description">
+                    <a href="./card-products.html" class="search-result__link">Название товара на сайте</a>
+                    <span class="search-result__price favorite-product__price favorite-product__price--sale">9.500
+                      &#8381
+                      <span class="favorite-product__price--former-price">10 430 &#8381</span>
+                    </span>
+                  </div>
+                </li>
+                <li class="search-result__item">
+                  <img src="./common/cards-img/card-prod-slider.png" alt="" width="30" height="30"
+                    class="search-result__img">
+                  <div class="search-result__description">
+                    <a href="./card-products.html" class="search-result__link">Название товара на сайте</a>
+                    <span class="search-result__price favorite-product__price">9.500 &#8381
+                    </span>
+                  </div>
+                </li>
+                <li class="search-result__item">
+                  <img src="./common/cards-img/card-prod-slider.png" alt="" width="30" height="30"
+                    class="search-result__img">
+                  <div class="search-result__description">
+                    <a href="./card-products.html" class="search-result__link">Название товара на сайте</a>
+                    <span class="search-result__price favorite-product__price">9.500 &#8381
+                    </span>
+                  </div>
+                </li>
+                <li class="search-result__item">
+                  <img src="./common/cards-img/card-prod-slider.png" alt="" width="30" height="30"
+                    class="search-result__img">
+                  <div class="search-result__description">
+                    <a href="./card-products.html" class="search-result__link">Название товара на сайте</a>
+                    <span class="search-result__price favorite-product__price">9.500 &#8381
+                    </span>
+                  </div>
+                </li>
+                <li class="search-result__item">
+                  <img src="./common/cards-img/card-prod-slider.png" alt="" width="30" height="30"
+                    class="search-result__img">
+                  <div class="search-result__description">
+                    <a href="./card-products.html" class="search-result__link">Название товара на сайте</a>
+                    <span class="search-result__price favorite-product__price">9.500 &#8381
+                    </span>
+                  </div>
+                </li>
+              </ul>
+              <a href="./search-page.html" class="main-btn search-result__btn" type="button">ПОКАЗАТЬ ВСЕ (36)</a>
+            </div>
           </div>
-          <address class="tel header__tel">
+          <button class="search-result__btn-cancel" type="button">Отменить</button>
+<address class="tel header__tel">
             <a href="tel:8 800 245 56 56" class="tel__num">8 800 245 56 56</a>
           </address>
           <div class="header__icons-buttons">
             <button type="button" class="icon-btn header__seacrh-btn">
-              <a href="./search-page.html">
+              <a href="#">
                 <img src="./common/svg/Search.svg" alt="">
               </a>
             </button>
-            <button type="button" class="icon-btn header__map-btn">
+            <button type="button" class="icon-btn header__map-btn location">
               <a href="./404.html">
                 <img src="./common/svg/Location.svg" alt="">
               </a>
@@ -364,12 +481,13 @@
           <h1 class="search-empty__title">Поиск по сайту</h1>
           <div class="search-empty__line"></div>
           <p class="search-empty__text">
-            По вашему запросу: <span class="search-empty__text--green">ячсяии</span>, ничего не найдено, попробуйте другие ключевые слова
+            По вашему запросу: <span class="search-empty__text--green">ячсяии</span>, ничего не найдено, попробуйте
+            другие ключевые слова
           </p>
-        <div class="search-empty__input-block">
+          <div class="search-empty__input-block">
             <img src="./common/svg/Search.svg" alt="">
-          <input type="search" name="" id="" placeholder="Введите товар для поиска">
-        </div>
+            <input class="search-empty__input" type="search" name="" id="" placeholder="Введите товар для поиска">
+          </div>
         </div>
       </div>
     </main>
@@ -384,7 +502,7 @@
             </div>
             <div class="footer__menu-wrap-right">
               <a class="footer__link" href="#">Бренды</a>
-              <a class="footer__link" href="#">О компании</a>
+              <a class="footer__link" href="./about">О компании</a>
               <a class="footer__link" href="./contacts">Контакты</a>
             </div>
           </div>
@@ -450,24 +568,28 @@
     </footer>
     <div class="feedback">
       <div class="feedback__container">
-      <div class="feedback__content">
-      <h1 class="feedback__title">Обратная связь</h1>
-      <form class="feedback__form" action="">
-          <label class="feedback__name" for="feedback-name">Ваше имя<input id="feedback-name" placeholder="Введите имя" type="text"></label>
-          <label class="feedback__phone" for="feedback-phone">Телефон<input id="feedback-phone" placeholder="+7(" type="tel"></label>
-          <label class="feedback__email" for="feedback-email">E-mail<input id="feedback-email" placeholder="Введите e-mail" type="email"></label>
-          <label class="feedback__text" for="feedback-text"><textarea id="feedback-text" placeholder="Текст сообщения" name="" id="" cols="30" rows="10"></textarea></label>
-          <span class="feedback__politic">Нажимая кнопку отправить, вы соглашаетесь
+        <div class="feedback__content">
+          <h1 class="feedback__title">Обратная связь</h1>
+          <form class="feedback__form" action="">
+            <label class="feedback__name" for="feedback-name">Ваше имя<input id="feedback-name"
+                placeholder="Введите имя" type="text"></label>
+            <label class="feedback__phone" for="feedback-phone">Телефон<input id="feedback-phone" placeholder="+7("
+                type="tel"></label>
+            <label class="feedback__email" for="feedback-email">E-mail<input id="feedback-email"
+                placeholder="Введите e-mail" type="email"></label>
+            <label class="feedback__text" for="feedback-text"><textarea id="feedback-text" placeholder="Текст сообщения"
+                name="" id="" cols="30" rows="10"></textarea></label>
+            <span class="feedback__politic">Нажимая кнопку отправить, вы соглашаетесь
               с политикой обработки <a class="feedback__link" href="">персональных данных</a></span>
-          <div class="feedback__captcha">
-            <img src="./common/images/Капча.png" alt="">
-          </div>
-          <button class="feedback__btn-submit main-btn">ОТПРАВИТЬ</button>
-          <button class="feedback__btn-close">&#9587;</button>
-      </form>
+            <div class="feedback__captcha">
+              <img src="./common/images/Капча.png" alt="">
+            </div>
+            <button class="feedback__btn-submit main-btn">ОТПРАВИТЬ</button>
+            <button class="feedback__btn-close">&#9587;</button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
   </div>
   <script src="https://unpkg.com/feather-icons"></script>
   <script type="module" src="./scripts/reviews-all.js"></script>

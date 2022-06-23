@@ -41,7 +41,7 @@
         & input[type='text'] {
             border: 1px solid rgb(207, 207, 207);
             border-radius: 3px;
-            min-height: 45px;
+            min-height: 50px;
             min-width: 30rem;
             font-size: 1.4rem;
             background-clip: padding-box;
@@ -115,17 +115,43 @@
     .shoping-cart {
 
         &__picker {
-            width: 11.5rem;
-            height: 4.5rem;
+            width: 115px;
+            height: 40px;
+        }
+
+        &__delete {
+            visibility: hidden;
+            z-index: -10000;
+            max-height: 0.1rem;
         }
 
         &__delete-icon {
-            width: 1.7rem;
-            height: 1.9rem;
+            display: none;
+        }
+        &__footer-content {
+            width: 65%;
+        }
+        &__list {
+            p {
+                font-size: 14px;
+                margin-bottom: 2rem;
+            }
         }
 
-        &__footer-content {
-            width: 60%;
+        &__cost {
+            p {
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+        &__checkout-btn {
+            width: 180px!important;
+            height: 50px !important;
+      
+            span {
+                width: 100%;
+                font-size: 16px;
+            }
         }
     }
 }

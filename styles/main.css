@@ -3231,6 +3231,15 @@ input {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .brand-description-card__country {
@@ -3239,6 +3248,15 @@ input {
   border-radius: 2rem;
   border: 1px solid #cfcfcf;
   word-break: break-word;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .swiper-card__products {
@@ -4621,8 +4639,8 @@ input {
     display: none;
   }
   .cards-block__main {
-    -ms-grid-columns: 0.7fr;
-        grid-template-columns: 0.7fr;
+    -ms-grid-columns: 0.8fr;
+        grid-template-columns: 0.8fr;
   }
   .cards-block__main .main-btn {
     width: 130px;

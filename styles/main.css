@@ -4639,8 +4639,8 @@ input {
     display: none;
   }
   .cards-block__main {
-    -ms-grid-columns: 0.8fr;
-        grid-template-columns: 0.8fr;
+    -ms-grid-columns: 0.75fr;
+        grid-template-columns: 0.75fr;
   }
   .cards-block__main .main-btn {
     width: 130px;

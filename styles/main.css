@@ -7784,7 +7784,7 @@ input {
   background: -webkit-gradient(linear, right top, left top, from(#134574), to(#10ae73));
   background: linear-gradient(270deg, #134574, #10ae73);
   width: 100%;
-  height: 100vh;
+  height: 100%;
   -webkit-transform: translateX(-3000px);
           transform: translateX(-3000px);
   position: fixed;
@@ -8056,7 +8056,7 @@ input {
   background: -webkit-gradient(linear, right top, left top, from(#134574), to(#10ae73));
   background: linear-gradient(270deg, #134574, #10ae73);
   width: 100%;
-  height: 100vh;
+  height: 100%;
   -webkit-transform: translateX(-3000px);
           transform: translateX(-3000px);
   position: fixed;

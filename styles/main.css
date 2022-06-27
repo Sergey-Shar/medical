@@ -4630,7 +4630,7 @@ input {
   .cards-block__header {
     -ms-grid-columns: 25% 60%;
         grid-template-columns: 25% 60%;
-    gap: 2rem;
+    gap: 0;
   }
   .cards-block__grid-list {
     display: none;
@@ -4639,8 +4639,8 @@ input {
     display: none;
   }
   .cards-block__main {
-    -ms-grid-columns: 0.75fr;
-        grid-template-columns: 0.75fr;
+    -ms-grid-columns: 0.8fr;
+        grid-template-columns: 0.8fr;
   }
   .cards-block__main .main-btn {
     width: 130px;

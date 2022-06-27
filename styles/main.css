@@ -1347,8 +1347,38 @@ input {
   .header__top {
     min-height: 12rem;
   }
+  .header__top.open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header__top .logo {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 10%;
+            flex: 0 0 10%;
+  }
+  .header__top .logo__icon {
+    width: 240%;
+  }
   .header__search.open {
-    width: 140%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 70%;
+            flex: 0 1 70%;
+    width: auto;
+  }
+  .header__icons-buttons {
+    width: 30rem;
+  }
+  .header__icons-buttons.open {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    max-width: 50%;
   }
 }
 

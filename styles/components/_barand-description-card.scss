@@ -1,8 +1,9 @@
 .brand-description-card {
     display: flex;
     justify-content: space-between;
-    width: 35%;
+    width: fit-content;
     gap: 1rem;
+    align-items: center;
 
 
     &__manufacturer {
@@ -10,6 +11,11 @@
         background-color: rgb(207, 207, 207);
         padding: 0.5rem 1rem;
         border-radius: 2rem;
+        word-break: break-word;
+        flex: 1 0 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     &__country {
@@ -17,5 +23,9 @@
         padding: 0.5rem 1rem;
         border-radius: 2rem;
         border: 1px solid rgb(207, 207, 207);
+        word-break: break-word;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

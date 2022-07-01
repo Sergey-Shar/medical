@@ -24,6 +24,10 @@ const swiperBanner = new Swiper(".banner__swiper", {
   },
   pagination: {
     el: ".swiper-pagination",
+    type: 'custom',
+    renderCustom: function(swiper, current, total) {
+      return `<span class="banner__num-icon"><span class="banner__num-current">${current}</span>/${total}</span>`
+    },
     clickable: true,
     renderBullet: function (index, className) {
       return '<span class="' + className + '">' + "</span>";

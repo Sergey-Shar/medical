@@ -152,11 +152,31 @@
 
     &__top {
       min-height: 12rem;
-      // justify-content: flex-start;
+      &.open {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      & .logo {
+        order: -1;
+        flex: 0 0 10%;
+        &__icon {
+          width: 240%;
+        }
+      }
     }
     &__search {
       &.open {
-        width: 140%;
+        flex: 0 1 70%;
+        width: auto;
+      }
+    }
+    &__icons {
+      &-buttons {
+        width: 30rem;
+        &.open {
+          order: -1;
+          max-width: 50%;
+        }
       }
     }
   }

@@ -214,120 +214,7 @@
             </div>
         </div>
     </div>
-    <div class="modal-mask login-modal">
-        <form class="login-modal__content" action="" onsubmit="return false">
-            <button class="login-modal__btn-close">&#9587;</button>
-            <h1 class="login-modal__title">Вход на сайт</h1>
-            <label for="login-email">Логин</label>
-            <div class="login-modal__email-block">
-                <input id="login-email" required type="email" placeholder="Введите почту">
-                <img src="./common/svg/Message-gray.svg" alt="">
-            </div>
-            <label for="login-pass">Пароль</label>
-            <button class="login-modal__link-remind">Напомнить</button>
-            <div class="login-modal__password-block">
-                <input id="login-pass" required type="password" placeholder="Введите пароль">
-                <img src="./common/svg/Eye.svg" alt="" class="show-pass">
-            </div>
-            <div class="login-modal__btn-block">
-                <button class="main-btn login-modal__btn-submit" type="submit">Войти</button><a
-                    class="login-modal__link-register" href="./registration.html">Регистрация</a>
-            </div>
-        </form>
 
-        <form class="remind-password__content" action="" onsubmit="return false">
-            <button class="remind-password__btn-close">&#9587;</button>
-            <h1 class="remind-password__title">Напомнить пароль</h1>
-            <label for="remind-pass-email">Укажите вашу почту</label>
-            <div class="remind-password__email-block">
-                <input id="remind-pass-email" required type="email" placeholder="Введите почту">
-                <img src="./common/svg/Message-gray.svg" alt="">
-            </div>
-            <div class="remind-password__btn-block">
-                <button type="submit" class="main-btn remind-password__btn-submit">Отправить</button>
-                <button class="remind-password__link-back">Назад</button>
-            </div>
-        </form>
-
-        <div class="remind-password__content remind-password__content-finish">
-            <button class="remind-password__btn-close">&#9587;</button>
-            <h1 class="remind-password__title">Напомнить пароль</h1>
-            <p class="remind-password__text">
-                На вашу почту отправлен e-mail,
-                с дальнейшими инстуркциями
-                по восстановлению пароля.
-            </p>
-            <div class="remind-password__btn-block">
-                <button type="submit" class="main-btn remind-password__btn-submit">Закрыть</button>
-                <p class="remind-password__text-hide">
-                    Окно закроется через <span class="remind-password__seconds">3</span> сек.
-                </p>
-            </div>
-        </div>
-        <div class="city__content">
-            <button class="city__btn-close">&#9587;</button>
-            <div class="city__header">
-                <h1 class="city__title">Выбрать город</h1>
-                <button class="city__auto">Определить автоматически</button>
-            </div>
-            <div class="city__search-block">
-              <img src="./common/svg/Search.svg" alt="">
-              <input class="city__search" type="search" name="city" id="" placeholder="Найти город">
-            </div>
-            <ul class="city__list">
-              <li class="city__item">
-                <label for="Москва">Москва</label>
-                <input type="radio" checked name="city" id="Москва">
-                <img src="./common/svg/Checbox.svg" alt="">
-              </li>
-              <li class="city__item">
-                <label for="Екатеринбург">Екатеринбург</label>
-                <input type="radio" name="city" id="Екатеринбург">
-                <img src="./common/svg/Checbox.svg" alt="">
-              </li>
-              <li class="city__item">
-                <label for="Краснодар">Краснодар</label>
-                <input type="radio" name="city" id="Краснодар">
-                <img src="./common/svg/Checbox.svg" alt="">
-              </li>
-              <li class="city__item">
-                <label for="Нижний Новгород">Нижний Новгород</label>
-                <input type="radio" name="city" id="Нижний Новгород">
-                <img src="./common/svg/Checbox.svg" alt="">
-              </li>
-              <li class="city__item">
-                <label for="Новосибирск">Новосибирск</label>
-                <input type="radio" name="city" id="Новосибирск">
-                <img src="./common/svg/Checbox.svg" alt="">
-              </li>
-              <li class="city__item">
-                <label for="Ростов-на-Дону">Ростов-на-Дону</label>
-                <input type="radio" name="city" id="Ростов-на-Дону">
-                <img src="./common/svg/Checbox.svg" alt="">
-              </li>
-              <li class="city__item">
-                <label for="Самара">Самара</label>
-                <input type="radio" name="city" id="Самара">
-                <img src="./common/svg/Checbox.svg" alt="">
-              </li>
-              <li class="city__item">
-                <label for="Санкт-Петербург">Санкт-Петербург</label>
-                <input type="radio" name="city" id="Санкт-Петербург">
-                <img src="./common/svg/Checbox.svg" alt="">
-              </li>
-              <li class="city__item">
-                <label for="Уфа">Уфа</label>
-                <input type="radio" name="city" id="Уфа">
-                <img src="./common/svg/Checbox.svg" alt="">
-              </li>
-              <li class="city__item">
-                <label for="Челябинск">Челябинск</label>
-                <input type="radio" name="city" id="Челябинск">
-                <img src="./common/svg/Checbox.svg" alt="">
-              </li>
-            </ul>
-        </div>
-    </div>
     <div class="wrapper">
         <header class="header">
             <div class="container">
@@ -844,6 +731,305 @@
                         </tr>
 
                         <tr>
+                            <td data-th="Номер заказа" class="history__num">56989</td>
+                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
+                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
+                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
+                                оплата наличными</td>
+                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
+                            <td data-th="Действие" class="history__action">
+                                <button class="main-btn history__table-btn">
+                                    подробнее
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Номер заказа" class="history__num">56989</td>
+                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
+                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
+                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
+                                оплата наличными</td>
+                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
+                            <td data-th="Действие" class="history__action">
+                                <button class="main-btn history__table-btn">
+                                    подробнее
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Номер заказа" class="history__num">56989</td>
+                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
+                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
+                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
+                                оплата наличными</td>
+                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
+                            <td data-th="Действие" class="history__action">
+                                <button class="main-btn history__table-btn">
+                                    подробнее
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Номер заказа" class="history__num">56989</td>
+                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
+                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
+                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
+                                оплата наличными</td>
+                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
+                            <td data-th="Действие" class="history__action">
+                                <button class="main-btn history__table-btn">
+                                    подробнее
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Номер заказа" class="history__num">56989</td>
+                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
+                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
+                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
+                                оплата наличными</td>
+                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
+                            <td data-th="Действие" class="history__action">
+                                <button class="main-btn history__table-btn">
+                                    подробнее
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Номер заказа" class="history__num">56989</td>
+                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
+                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
+                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
+                                оплата наличными</td>
+                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
+                            <td data-th="Действие" class="history__action">
+                                <button class="main-btn history__table-btn">
+                                    подробнее
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Номер заказа" class="history__num">56989</td>
+                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
+                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
+                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
+                                оплата наличными</td>
+                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
+                            <td data-th="Действие" class="history__action">
+                                <button class="main-btn history__table-btn">
+                                    подробнее
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Номер заказа" class="history__num">56989</td>
+                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
+                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
+                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
+                                оплата наличными</td>
+                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
+                            <td data-th="Действие" class="history__action">
+                                <button class="main-btn history__table-btn">
+                                    подробнее
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Номер заказа" class="history__num">56989</td>
+                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
+                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
+                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
+                                оплата наличными</td>
+                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
+                            <td data-th="Действие" class="history__action">
+                                <button class="main-btn history__table-btn">
+                                    подробнее
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Номер заказа" class="history__num">56989</td>
+                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
+                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
+                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
+                                оплата наличными</td>
+                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
+                            <td data-th="Действие" class="history__action">
+                                <button class="main-btn history__table-btn">
+                                    подробнее
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Номер заказа" class="history__num">56989</td>
+                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
+                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
+                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
+                                оплата наличными</td>
+                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
+                            <td data-th="Действие" class="history__action">
+                                <button class="main-btn history__table-btn">
+                                    подробнее
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Номер заказа" class="history__num">56989</td>
+                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
+                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
+                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
+                                оплата наличными</td>
+                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
+                            <td data-th="Действие" class="history__action">
+                                <button class="main-btn history__table-btn">
+                                    подробнее
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Номер заказа" class="history__num">56989</td>
+                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
+                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
+                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
+                                оплата наличными</td>
+                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
+                            <td data-th="Действие" class="history__action">
+                                <button class="main-btn history__table-btn">
+                                    подробнее
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Номер заказа" class="history__num">56989</td>
+                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
+                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
+                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
+                                оплата наличными</td>
+                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
+                            <td data-th="Действие" class="history__action">
+                                <button class="main-btn history__table-btn">
+                                    подробнее
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Номер заказа" class="history__num">56989</td>
+                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
+                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
+                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
+                                оплата наличными</td>
+                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
+                            <td data-th="Действие" class="history__action">
+                                <button class="main-btn history__table-btn">
+                                    подробнее
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Номер заказа" class="history__num">56989</td>
+                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
+                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
+                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
+                                оплата наличными</td>
+                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
+                            <td data-th="Действие" class="history__action">
+                                <button class="main-btn history__table-btn">
+                                    подробнее
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Номер заказа" class="history__num">56989</td>
+                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
+                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
+                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
+                                оплата наличными</td>
+                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
+                            <td data-th="Действие" class="history__action">
+                                <button class="main-btn history__table-btn">
+                                    подробнее
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Номер заказа" class="history__num">56989</td>
+                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
+                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
+                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
+                                оплата наличными</td>
+                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
+                            <td data-th="Действие" class="history__action">
+                                <button class="main-btn history__table-btn">
+                                    подробнее
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Номер заказа" class="history__num">56989</td>
+                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
+                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
+                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
+                                оплата наличными</td>
+                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
+                            <td data-th="Действие" class="history__action">
+                                <button class="main-btn history__table-btn">
+                                    подробнее
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Номер заказа" class="history__num">56989</td>
+                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
+                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
+                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
+                                оплата наличными</td>
+                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
+                            <td data-th="Действие" class="history__action">
+                                <button class="main-btn history__table-btn">
+                                    подробнее
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Номер заказа" class="history__num">56989</td>
+                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
+                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
+                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
+                                оплата наличными</td>
+                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
+                            <td data-th="Действие" class="history__action">
+                                <button class="main-btn history__table-btn">
+                                    подробнее
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Номер заказа" class="history__num">56989</td>
+                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
+                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
+                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
+                                оплата наличными</td>
+                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
+                            <td data-th="Действие" class="history__action">
+                                <button class="main-btn history__table-btn">
+                                    подробнее
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Номер заказа" class="history__num">56989</td>
+                            <td data-th="Дата заказа" class="history__date">24.02.2022</td>
+                            <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>
+                            <td data-th="Доставка и  оплата" class="history__dilivery">Курьерская доставка,<br>
+                                оплата наличными</td>
+                            <td data-th="Статус заказа" class="history__status">Не оплачен</td>
+                            <td data-th="Действие" class="history__action">
+                                <button class="main-btn history__table-btn">
+                                    подробнее
+                                </button>
+                            </td>
+                        </tr>
+                            <tr>
                             <td data-th="Номер заказа" class="history__num">56989</td>
                             <td data-th="Дата заказа" class="history__date">24.02.2022</td>
                             <td data-th="Сумма заказа" class="history__count">12 457 &#8381</td>

@@ -239,7 +239,7 @@ input {
 
 .search__icon {
   position: absolute;
-  top: 29%;
+  top: 13px;
   left: 2%;
   cursor: pointer;
   stroke: #5c596a;
@@ -310,6 +310,7 @@ input {
 
 @media screen and (max-width: 1100px) {
   .search__icon {
+    display: none;
     top: 23%;
     left: 1%;
   }
@@ -1294,7 +1295,7 @@ input {
   .header__top.open {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "logo icons" "search cancel";
+        grid-template-areas: "logo icons" "search cancel";
     row-gap: 4rem;
     padding: 2rem 0 4rem 0;
   }
@@ -1346,8 +1347,38 @@ input {
   .header__top {
     min-height: 12rem;
   }
+  .header__top.open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header__top .logo {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 10%;
+            flex: 0 0 10%;
+  }
+  .header__top .logo__icon {
+    width: 240%;
+  }
   .header__search.open {
-    width: 140%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 70%;
+            flex: 0 1 70%;
+    width: auto;
+  }
+  .header__icons-buttons {
+    width: 30rem;
+  }
+  .header__icons-buttons.open {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    max-width: 50%;
   }
 }
 
@@ -1513,6 +1544,20 @@ input {
 
 .banner__slider-btn {
   color: #fff;
+}
+
+.banner__num-current {
+  font-size: 50px;
+}
+
+.banner .swiper-pagination-custom {
+  bottom: 7%;
+  left: 32%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 30px;
+  color: white;
 }
 
 @media screen and (max-width: 1100px) {
@@ -1790,7 +1835,7 @@ input {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: "first   first   fifth sixth" "second  third   fifth seventh" "fourth  fourth  eighth eighth";
+      grid-template-areas: "first   first   fifth sixth" "second  third   fifth seventh" "fourth  fourth  eighth eighth";
   gap: 2.5rem;
 }
 
@@ -1930,13 +1975,13 @@ input {
     -ms-grid-rows: auto;
     -ms-grid-columns: (1fr)[2];
         grid-template: auto/repeat(2, 1fr);
-        grid-template-areas: "first   first" "first   first" "second  third" "second  third" "fourth  fourth" "fourth  fourth";
+        grid-template-areas: "first   first" "first   first" "second  third" "second  third" "fourth  fourth" "fourth  fourth";
   }
   .products__right-columns {
     -ms-grid-rows: auto;
     -ms-grid-columns: (1fr)[2];
         grid-template: auto/repeat(2, 1fr);
-        grid-template-areas: "fifth sixth " "fifth sixth " "fifth seventh" "fifth seventh" "eighth eighth";
+        grid-template-areas: "fifth sixth " "fifth sixth " "fifth seventh" "fifth seventh" "eighth eighth";
     gap: 1rem;
     border-radius: 2rem;
   }
@@ -3168,8 +3213,13 @@ input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 35%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .brand-description-card__manufacturer {
@@ -3177,6 +3227,19 @@ input {
   background-color: #cfcfcf;
   padding: 0.5rem 1rem;
   border-radius: 2rem;
+  word-break: break-word;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .brand-description-card__country {
@@ -3184,13 +3247,23 @@ input {
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   border: 1px solid #cfcfcf;
+  word-break: break-word;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .swiper-card__products {
   display: -ms-grid;
   display: grid;
   gap: 1rem;
-      grid-template-areas: 'img' 'description' 'footer';
+      grid-template-areas: 'img' 'description' 'footer';
 }
 
 .swiper-card__products.list {
@@ -3300,7 +3373,7 @@ input {
   .swiper-card__products {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: 'img description' 'img  description' 'img  footer';
+        grid-template-areas: 'img description' 'img  description' 'img  footer';
     gap: 20px;
   }
   .swiper-card__price {
@@ -3361,7 +3434,7 @@ input {
   display: -ms-grid;
   display: grid;
   gap: 2rem;
-      grid-template-areas: "foto description" "foto main" "foto calculation" "foto .. ";
+      grid-template-areas: "foto description" "foto main" "foto calculation" "foto .. ";
   margin-top: 2rem;
 }
 
@@ -3619,7 +3692,7 @@ input {
 
 @media screen and (max-width: 1100px) {
   .card__main {
-        grid-template-areas: "description description" "foto foto" "foto foto" "main main" "calculation calculation";
+        grid-template-areas: "description description" "foto foto" "foto foto" "main main" "calculation calculation";
   }
   .card__header-title {
     width: 630px;
@@ -4557,7 +4630,7 @@ input {
   .cards-block__header {
     -ms-grid-columns: 25% 60%;
         grid-template-columns: 25% 60%;
-    gap: 2rem;
+    gap: 0;
   }
   .cards-block__grid-list {
     display: none;
@@ -4566,8 +4639,8 @@ input {
     display: none;
   }
   .cards-block__main {
-    -ms-grid-columns: 0.7fr;
-        grid-template-columns: 0.7fr;
+    -ms-grid-columns: 0.8fr;
+        grid-template-columns: 0.8fr;
   }
   .cards-block__main .main-btn {
     width: 130px;
@@ -5467,7 +5540,11 @@ input {
 }
 
 .history {
-  min-height: 50vh;
+  display: none;
+}
+
+.history__dilivery {
+  line-height: 2rem;
 }
 
 .history__table-btn {
@@ -5561,6 +5638,10 @@ input {
     height: 35px;
     width: 178px;
   }
+}
+
+.history-diteal {
+  display: none;
 }
 
 .history-diteal__header {
@@ -6623,7 +6704,7 @@ input {
   display: -ms-grid;
   display: grid;
   gap: 16px;
-      grid-template-areas: 'img' 'description' 'footer';
+      grid-template-areas: 'img' 'description' 'footer';
 }
 
 .favorite-product__img-block {
@@ -6862,7 +6943,7 @@ input {
   .favorite-product {
     border-bottom: 1px solid #d2d2d2;
     padding: 20px 0;
-        grid-template-areas: 'img description' 'img description' 'img footer' 'img footer';
+        grid-template-areas: 'img description' 'img description' 'img footer' 'img footer';
     -webkit-column-gap: 3rem;
             column-gap: 3rem;
   }
@@ -7729,7 +7810,7 @@ input {
   background: -webkit-gradient(linear, right top, left top, from(#134574), to(#10ae73));
   background: linear-gradient(270deg, #134574, #10ae73);
   width: 100%;
-  height: 100vh;
+  height: 100%;
   -webkit-transform: translateX(-3000px);
           transform: translateX(-3000px);
   position: fixed;
@@ -7909,7 +7990,7 @@ input {
     padding: 1.5rem;
   }
   .feedback__form {
-        grid-template-areas: "name name name" "phone phone email" "text text text" "politic captcha submit";
+        grid-template-areas: "name name name" "phone phone email" "text text text" "politic captcha submit";
     gap: 4rem;
   }
   .feedback__form input {
@@ -8001,7 +8082,7 @@ input {
   background: -webkit-gradient(linear, right top, left top, from(#134574), to(#10ae73));
   background: linear-gradient(270deg, #134574, #10ae73);
   width: 100%;
-  height: 100vh;
+  height: 100%;
   -webkit-transform: translateX(-3000px);
           transform: translateX(-3000px);
   position: fixed;
@@ -8180,7 +8261,7 @@ input {
     padding: 1.5rem;
   }
   .write-review__form {
-        grid-template-areas: "name name name" "phone phone email" "text text text" "politic captcha submit";
+        grid-template-areas: "name name name" "phone phone email" "text text text" "politic captcha submit";
     gap: 4rem;
   }
   .write-review__form input {
@@ -9222,7 +9303,7 @@ input {
 .login-modal__content {
   z-index: 2900;
   display: none;
-      grid-template-areas: "title title" "label-email label-email" "input-email input-email" "label-pass remind" "input-pass input-pass" "btn-block btn-block";
+      grid-template-areas: "title title" "label-email label-email" "input-email input-email" "label-pass remind" "input-pass input-pass" "btn-block btn-block";
   position: relative;
   background: #fff;
   width: 480px;

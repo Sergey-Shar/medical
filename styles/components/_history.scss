@@ -1,5 +1,10 @@
 .history {
-    min-height: 50vh;
+    //min-height: 50vh;
+    display: none;
+
+    &__dilivery{
+        line-height: 2rem;
+    }
 
     &__table-btn {
         background-color: #fff;

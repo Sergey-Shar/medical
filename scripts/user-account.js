@@ -21,58 +21,34 @@
 
     /////////////////////////////////////////////////
 
-    const tabsFirst = document.getElementById('tab1')
-    const tabsSecond = document.getElementById('tab2')
 
     const history = document.querySelector('.history')
 
     const accountForm = document.querySelector('.account__form')
 
-    let isShowBlok = true
+    const tabRadio = document.getElementsByName('account__tab-group')
 
-
-
-    isShowBlok ? history.style.display = 'none' : history.style.display = 'block'
-
-
-    tabsFirst.addEventListener('click', () => {
-        isShowBlok = true
-        historyDiteal.style.display = 'none'
-        history.style.display = 'block'
-
-        if (isShowBlok) {
-            history.style.display = 'none'
-            accountForm.style.display = 'block'
-        } else {
-            history.style.display = 'block'
-            accountForm.style.display = 'none'
-        }
-
+    tabRadio.forEach(item => {
+        item.addEventListener('change', (e) => {
+            if (e.target.id === 'tab2') {
+                history.style.display = 'block'
+                accountForm.style.display = 'none'
+            } else if (e.target.id === 'tab1') {
+                history.style.display = 'none'
+                accountForm.style.display = 'block'
+                historyDiteal.style.display = 'none'
+            }
+        })
     })
 
-    tabsSecond.addEventListener('click', () => {
-        isShowBlok = false
-
-        if (isShowBlok) {
-            history.style.display = 'none'
-            accountForm.style.display = 'block'
-        } else {
-            history.style.display = 'block'
-            accountForm.style.display = 'none'
-        }
-    })
 
     const historyDiteal = document.querySelector('.history-diteal')
-
 
     const ditealBtn = document.querySelectorAll('.history__table-btn')
 
     const backHistoryBtn = document.querySelector('.history-diteal__arrow-btn')
 
 
-    const isShowDiteal = false
-
-    isShowDiteal ? historyDiteal.style.display = 'block' : historyDiteal.style.display = 'none'
 
     ditealBtn.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -104,5 +80,3 @@
     })
 
 })()
-
-

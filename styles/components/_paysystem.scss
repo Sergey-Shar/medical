@@ -1,0 +1,90 @@
+.paysystem {
+    &__nav {
+        margin: 3rem 0;
+    }
+    &__title {
+        font-size: 34px;
+        font-weight: bold;
+        margin-bottom: 3rem;
+        line-height: 4rem;
+    }
+    &__list {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+    &__list-card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 3rem 0;
+        & .paysystem__item {
+        font-weight: normal;
+        &--underline {
+            font-weight: normal;
+            text-decoration: underline;
+        }
+        }
+        & .paysystem__item {
+            list-style-type: disc;
+        }
+    }
+    &__item {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    &__text {
+        font-weight: normal;
+        font-size:medium;
+        margin-top: 1rem;
+        line-height: 3rem;
+        &--italic {
+            font-style: italic;
+        }
+    }
+    
+    &__table {
+        border-spacing: 20px;
+        margin-bottom: 3rem;
+        &-title {
+            font-weight: bold;
+            text-align: left;
+        }
+    }
+    &__body {
+        padding: 0;
+    }
+}
+
+@media screen and(max-width:1100px) {
+    .paysystem {
+        
+    }
+}
+
+@media screen and(max-width:480px) {
+    .paysystem {
+        &__title {
+            font-size: 26px;
+            line-height: 6rem;
+        }
+        &__item {
+            line-height: 4rem;
+        }
+        &__text {
+            line-height: 5rem;
+            font-size: 14px;
+        }
+        &__table {
+            border-spacing: 5px;
+            font-size: 12px;
+        }
+        &__list-card {
+            & .paysystem__item {
+            font-size: 14px;
+            }
+        }
+    }
+}

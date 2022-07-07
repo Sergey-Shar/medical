@@ -41,6 +41,16 @@
 
 @media screen and(max-width:480px) {
     .delivery {
-
+        &__title {
+            font-size: 26px;
+            line-height: 6rem;
+        }
+        &__item {
+            line-height: 5rem;
+        }
+        &__text {
+            line-height: 5rem;
+            font-size: 14px;
+        }
     }
 }

@@ -11027,6 +11027,20 @@ input {
   font-weight: bold;
 }
 
+@media screen and (max-width: 480px) {
+  .delivery__title {
+    font-size: 26px;
+    line-height: 6rem;
+  }
+  .delivery__item {
+    line-height: 5rem;
+  }
+  .delivery__text {
+    line-height: 5rem;
+    font-size: 14px;
+  }
+}
+
 .paysystem__nav {
   margin: 3rem 0;
 }
@@ -11112,7 +11126,7 @@ input {
     line-height: 6rem;
   }
   .paysystem__item {
-    line-height: 4rem;
+    line-height: 5rem;
   }
   .paysystem__text {
     line-height: 5rem;

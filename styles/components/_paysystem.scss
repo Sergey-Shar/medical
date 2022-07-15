@@ -1,5 +1,9 @@
 .paysystem {
     &__nav {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
         margin: 3rem 0;
     }
     &__title {

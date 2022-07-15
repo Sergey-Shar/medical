@@ -1,6 +1,8 @@
 .delivery {
     &__nav {
         margin: 3rem 0;
+        flex-wrap: wrap;
+        gap: 5px;
     }
     &__title {
         font-size: 34px;

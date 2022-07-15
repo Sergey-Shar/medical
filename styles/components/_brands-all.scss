@@ -1,8 +1,9 @@
 .brands-all {
     &__nav {
-        display: flex;justify-content: space-between;
+        display: flex;
         margin: 3rem 0;
-        width: 18rem;
+        flex-wrap: wrap;
+        gap: 5px;
         &-link, &-slash {
             color: #5C596A;
         }
@@ -82,7 +83,6 @@
     .brands-all {
         &__nav {
             margin: 4rem 0;
-            width: 26rem;
         }
         &__abc {
             gap: 1.5rem;
@@ -109,7 +109,6 @@
 @media screen and(max-width:480px) {
     .brands-all {
         &__nav {
-            width: 28rem;
             &-link, &-slash {
                 font-size: 12px;
             }

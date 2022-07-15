@@ -21,7 +21,8 @@
     min-height: 6rem;
     display: flex;
     align-items: center;
-    width: 60%;
+    flex-wrap: wrap;
+    gap: 5px;
   }
 
   &__header {
@@ -416,9 +417,6 @@
   }
 }
 
-.account .card__nav {
-  width: 230px;
-}
 
 .old-pass-wrap {
   position: relative;

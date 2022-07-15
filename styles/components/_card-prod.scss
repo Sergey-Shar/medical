@@ -6,11 +6,11 @@
 
   &__nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-top: 26px;
     margin-bottom: 30px;
-    // min-width: 70%;
+    flex-wrap: wrap;
+    gap: 5px;
   }
 
   &__nav-link {
@@ -230,10 +230,6 @@
   }
 }
 
-.card-product .card__nav {
-  width: 500px;
-}
-
 @media screen and(max-width:1100px) {
   .card {
     &__main {
@@ -293,10 +289,6 @@
 
     &__footer-description {
       min-height: 20rem;
-    }
-
-    &__nav {
-      min-width: 70%;
     }
   }
 }
@@ -370,11 +362,6 @@
     &__footer-description {
       min-height: 20rem;
     }
-
-    &__nav {
-      min-width: 100%;
-    }
-
     &__footer-text-block {
       display: none;
     }

@@ -1,6 +1,7 @@
 .order {
     &__nav {
-        width: 36rem;
+        flex-wrap: wrap;
+        gap: 5px;    
     }
     &__title {
         font-size: 56px;
@@ -67,10 +68,6 @@
 
 @media screen and (max-width: 1100px) {
     .order {
-        &__nav {
-            width: 51rem;
-            min-width: 0;
-        }
         &__line {
             &--green {
                 width: 100%;

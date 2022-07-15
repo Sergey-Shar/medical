@@ -1,9 +1,6 @@
 
 .checkout {
     margin-bottom: 5rem;
-    &__nav-link{
-      min-width: 35.8rem;
-    }
 
     &__header {
         display: flex;
@@ -164,10 +161,6 @@
 
 @media screen and (max-width: 480px){
     .checkout{
-
-        &__nav-link{
-            min-width: 280px;
-          }
       
         &__punkt-input {
             margin: 3rem 0;

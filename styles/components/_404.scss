@@ -9,9 +9,8 @@
         margin-top: 3rem;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        width: 266px;
-        min-width: 0;
+        flex-wrap: wrap;
+        gap: 5px;
     }
 
     &__nav-link,

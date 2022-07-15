@@ -3,10 +3,9 @@
 
     &__nav {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        width: 250px;
-        min-width: 0;
+        flex-wrap: wrap;
+        gap: 5px;
         margin: 3rem 0;
     }
 
@@ -254,10 +253,6 @@
 @media screen and(max-width:480px) {
     .favorites-products {
         margin-bottom: 50px;
-
-        &__nav {
-            width: 180px;
-        }
 
         &__line {
             margin-bottom: 10px;

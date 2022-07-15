@@ -4,6 +4,8 @@
         min-height: 6rem;
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
     }
 
     &__content {
@@ -14,14 +16,9 @@
     }
 }
 
-.catalog-individual .card__nav {
-    width: 310px;
-}
-
 @media screen and(max-width:1100px) {
     .catalog-individual {
         &__nav {
-            width: 304px;
             margin: 2rem 0 1rem 0;
         }
 
@@ -29,12 +26,5 @@
             gap: 4rem;
             grid-template-columns: 1fr;
         }
-    }
-}
-
-@media screen and(max-width:480px) {
-    .catalog-individual .card__nav {
-        width: 230px;
-        min-width: 0;
     }
 }

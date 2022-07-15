@@ -3469,7 +3469,6 @@ input {
 .card__foto {
   margin-bottom: 3rem;
   width: 100%;
-  border: 1px solid #cfcfcf;
   height: 600px;
   -o-object-fit: contain;
      object-fit: contain;
@@ -3494,7 +3493,7 @@ input {
   display: -ms-flexbox;
   display: flex;
   overflow-x: auto;
-  height: 100%;
+  overflow-y: hidden;
   scrollbar-color: rgba(79, 79, 79, 0.4) rgba(193, 193, 193, 0.4);
   scrollbar-width: thin;
   gap: 20px;

@@ -3614,25 +3614,36 @@ input {
 
 .card__footer {
   border-bottom: 1px solid #cfcfcf;
+  padding-top: 3rem;
 }
 
-.card__footer-lincks-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 5rem;
-  border-bottom: 1px solid #cfcfcf;
+.card__footer input[type='radio']:checked + label {
+  padding-bottom: 0.8rem;
+  border-bottom: 3.5px solid #07c47f;
 }
 
-.card__footer-lincks-block input[type="radio"] {
+.card__footer .input-card-1:checked ~ .card-1 {
+  display: block;
+}
+
+.card__footer .input-card-2:checked ~ .card-2 {
+  display: block;
+}
+
+.card__footer .input-card-3:checked ~ .card-3 {
+  display: block;
+}
+
+.card__footer section {
+  margin-top: 3rem;
+  border-top: 1px solid #cfcfcf;
+}
+
+.card input[type="radio"] {
   display: none;
 }
 
-.card__footer-lincks-block label {
+.card label {
   font-size: 18px;
   font-weight: 900;
   color: #000;
@@ -3640,7 +3651,6 @@ input {
 }
 
 .card__footer-tab-title {
-  position: relative;
   padding: 0.5px 1rem;
   border-bottom: none;
   top: 0;
@@ -3652,33 +3662,13 @@ input {
 }
 
 .card__footer-tab-content {
-  position: absolute;
-  padding: 1rem;
-  left: 0;
-  top: 7rem;
+  padding: 1rem 0;
   width: calc(100% - 2rem);
-  visibility: hidden;
-}
-
-.card__footer-tab :checked + .card__footer-tab-title {
-  position: relative;
-  padding-bottom: 0.8rem;
-  border-bottom: 3.5px solid #07c47f;
-  top: 0;
-  z-index: 1;
-  cursor: pointer;
-}
-
-.card__footer-tab :checked + .card__footer-tab-title:hover {
-  opacity: 1;
-}
-
-.card__footer-tab :checked ~ .card__footer-tab-content {
-  visibility: visible;
+  display: none;
 }
 
 .card__footer-text-block {
-  min-height: 15rem;
+  min-height: 0rem;
 }
 
 .card__footer-text {
@@ -3791,6 +3781,9 @@ input {
   }
   .card__main-description {
     min-height: 40rem;
+  }
+  .card__footer label, .card__footer section {
+    display: none;
   }
   .card__footer-description {
     min-height: 20rem;

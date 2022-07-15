@@ -161,29 +161,39 @@
 
   &__footer {
     border-bottom: 1px solid rgb(207, 207, 207);
+    padding-top: 3rem;
+
+    & input[type='radio']:checked + label {
+      padding-bottom: 0.8rem;
+      border-bottom: 3.5px solid rgb(7, 196, 127)
+    }
+    .input-card-1:checked ~ .card-1 {
+      display: block;
+    }
+    .input-card-2:checked ~ .card-2 {
+      display: block;
+    }
+    .input-card-3:checked ~ .card-3 {
+      display: block;
+    }
+    & section {
+      margin-top: 3rem;
+      border-top: 1px solid rgb(207, 207, 207);
+    }
   }
 
-  &__footer-lincks-block {
-    display: flex;
-    position: relative;
-    align-items: center;
-    min-height: 5rem;
-    border-bottom: 1px solid rgb(207, 207, 207);
+  & input[type="radio"] {
+    display: none;
+  }
 
-    & input[type="radio"] {
-      display: none;
-    }
-
-    & label {
-      font-size: 18px;
-      font-weight: 900;
-      color: #000;
-      margin-right: 3rem;
-    }
+  & label {
+    font-size: 18px;
+    font-weight: 900;
+    color: #000;
+    margin-right: 3rem;
   }
 
   &__footer-tab-title {
-    position: relative;
     padding: 0.5px 1rem;
     border-bottom: none;
     top: 0;
@@ -195,33 +205,13 @@
   }
 
   &__footer-tab-content {
-    position: absolute;
-    padding: 1rem;
-    left: 0;
-    top: 7rem;
+    padding: 1rem 0;
     width: calc(100% - 2rem);
-    visibility: hidden;
-  }
-
-  &__footer-tab :checked+.card__footer-tab-title {
-    position: relative;
-    padding-bottom: 0.8rem;
-    border-bottom: 3.5px solid rgb(7, 196, 127);
-    top: 0;
-    z-index: 1;
-    cursor: pointer;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-
-  &__footer-tab :checked~.card__footer-tab-content {
-    visibility: visible;
+    display: none;
   }
 
   &__footer-text-block {
-    min-height: 15rem;
+    min-height: 0rem;
   }
 
   &__footer-text {
@@ -359,6 +349,11 @@
       min-height: 40rem;
     }
 
+    &__footer {
+      & label, & section {
+        display: none;
+      }
+    }
     &__footer-description {
       min-height: 20rem;
     }

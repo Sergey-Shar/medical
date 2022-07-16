@@ -3467,6 +3467,7 @@ input {
 }
 
 .card__foto-main {
+  padding-bottom: 5rem;
   height: 550px;
 }
 
@@ -3495,6 +3496,8 @@ input {
   gap: 20px;
   padding-bottom: 21px;
   border-bottom: 1px solid rgba(193, 193, 193, 0.4);
+  scrollbar-color: #07c47f rgba(150, 150, 150, 0.3);
+  scrollbar-width: thin;
 }
 
 .card__block-foto-mini input[type="radio"] {

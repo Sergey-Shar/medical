@@ -40,13 +40,14 @@
   }
 
   &__foto-main {
+    padding-bottom: 5rem;
     height: 550px;
   }
 
   &__foto {
     width: 100%;
   }
-
+  //стили скроллбара для webkit браузеров 
   &__block-foto-mini::-webkit-scrollbar { 
     height: 6px;
     width: 15%;
@@ -54,8 +55,8 @@
   &__block-foto-mini::-webkit-scrollbar-thumb {
     background-color: rgb(7, 196, 127);
     border-radius: 50px;
-  }
-
+  } 
+  
   &__block-foto-mini {
     
     display: flex;
@@ -66,6 +67,9 @@
     gap: 20px;
     padding-bottom: 21px;
     border-bottom: 1px solid rgba(193, 193, 193, 0.4);
+    //стили скроллбара для mozilla браузера
+    scrollbar-color: rgb(7, 196, 127) rgba(150,150,150,0.3);
+    scrollbar-width: thin;
 
     & input[type="radio"] {
       display: none;

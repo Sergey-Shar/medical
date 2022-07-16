@@ -4545,7 +4545,17 @@ input {
   height: 45px;
 }
 
+@media screen and (min-width: 1100px) {
+  .cards-block {
+    width: 964px;
+  }
+}
+
 @media screen and (max-width: 1100px) {
+  .cards-block {
+    min-width: none;
+    width: none;
+  }
   .cards-block__more-show-btn {
     height: 50px;
   }

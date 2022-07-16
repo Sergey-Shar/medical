@@ -1,4 +1,5 @@
 .cards-block {
+
   &__header {
     display: flex;
     min-height: 12rem;
@@ -174,8 +175,15 @@
   }
 }
 
+@media screen and(min-width:1100px){
+  .cards-block{
+    width: 964px;
+  }
+}
+
 @media screen and(max-width:1100px) {
   .cards-block {
+    min-width: none;width: none;
     &__more-show-btn {
       height: 50px;
     }

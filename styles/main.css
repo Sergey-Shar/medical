@@ -1295,7 +1295,7 @@ input {
   .header__top.open {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "logo icons" "search cancel";
+        grid-template-areas: "logo icons" "search cancel";
     row-gap: 4rem;
     padding: 2rem 0 4rem 0;
   }
@@ -1835,7 +1835,7 @@ input {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: "first   first   fifth sixth" "second  third   fifth seventh" "fourth  fourth  eighth eighth";
+      grid-template-areas: "first   first   fifth sixth" "second  third   fifth seventh" "fourth  fourth  eighth eighth";
   gap: 2.5rem;
 }
 
@@ -1975,13 +1975,13 @@ input {
     -ms-grid-rows: auto;
     -ms-grid-columns: (1fr)[2];
         grid-template: auto/repeat(2, 1fr);
-        grid-template-areas: "first   first" "first   first" "second  third" "second  third" "fourth  fourth" "fourth  fourth";
+        grid-template-areas: "first   first" "first   first" "second  third" "second  third" "fourth  fourth" "fourth  fourth";
   }
   .products__right-columns {
     -ms-grid-rows: auto;
     -ms-grid-columns: (1fr)[2];
         grid-template: auto/repeat(2, 1fr);
-        grid-template-areas: "fifth sixth " "fifth sixth " "fifth seventh" "fifth seventh" "eighth eighth";
+        grid-template-areas: "fifth sixth " "fifth sixth " "fifth seventh" "fifth seventh" "eighth eighth";
     gap: 1rem;
     border-radius: 2rem;
   }
@@ -3263,7 +3263,7 @@ input {
   display: -ms-grid;
   display: grid;
   gap: 1rem;
-      grid-template-areas: 'img' 'description' 'footer';
+      grid-template-areas: 'img' 'description' 'footer';
 }
 
 .swiper-card__products.list {
@@ -3382,7 +3382,7 @@ input {
   .swiper-card__products {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: 'img description' 'img  description' 'img  footer';
+        grid-template-areas: 'img description' 'img  description' 'img  footer';
     gap: 20px;
   }
   .swiper-card__price {
@@ -3444,7 +3444,7 @@ input {
   display: -ms-grid;
   display: grid;
   gap: 2rem;
-      grid-template-areas: "foto description" "foto main" "foto calculation" "foto .. ";
+      grid-template-areas: "foto description" "foto main" "foto calculation" "foto .. ";
   margin-top: 2rem;
 }
 
@@ -3467,6 +3467,7 @@ input {
 }
 
 .card__foto-main {
+  padding-bottom: 5rem;
   height: 550px;
 }
 
@@ -3475,17 +3476,15 @@ input {
 }
 
 .card__block-foto-mini::-webkit-scrollbar {
-  height: 4px;
+  height: 7px;
 }
 
 .card__block-foto-mini::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background: rgba(150, 150, 150, 0.3);
 }
 
 .card__block-foto-mini::-webkit-scrollbar-thumb {
-  -webkit-box-shadow: inset 0 0 6px #07c47f;
-          box-shadow: inset 0 0 6px #07c47f;
+  background: #07c47f;
 }
 
 .card__block-foto-mini {
@@ -3494,11 +3493,11 @@ input {
   display: flex;
   overflow-x: auto;
   overflow-y: hidden;
-  scrollbar-color: rgba(79, 79, 79, 0.4) rgba(193, 193, 193, 0.4);
-  scrollbar-width: thin;
   gap: 20px;
   padding-bottom: 21px;
   border-bottom: 1px solid rgba(193, 193, 193, 0.4);
+  scrollbar-color: #07c47f rgba(150, 150, 150, 0.3);
+  scrollbar-width: thin;
 }
 
 .card__block-foto-mini input[type="radio"] {
@@ -3714,7 +3713,7 @@ input {
 
 @media screen and (max-width: 1100px) {
   .card__main {
-        grid-template-areas: "description description" "foto foto" "foto foto" "main main" "calculation calculation";
+        grid-template-areas: "description description" "foto foto" "foto foto" "main main" "calculation calculation";
   }
   .card__header-description {
     -ms-flex-pack: distribute;
@@ -6702,7 +6701,7 @@ input {
   display: -ms-grid;
   display: grid;
   gap: 16px;
-      grid-template-areas: 'img' 'description' 'footer';
+      grid-template-areas: 'img' 'description' 'footer';
 }
 
 .favorite-product__img-block {
@@ -6938,7 +6937,7 @@ input {
   .favorite-product {
     border-bottom: 1px solid #d2d2d2;
     padding: 20px 0;
-        grid-template-areas: 'img description' 'img description' 'img footer' 'img footer';
+        grid-template-areas: 'img description' 'img description' 'img footer' 'img footer';
     -webkit-column-gap: 3rem;
             column-gap: 3rem;
   }
@@ -7978,7 +7977,7 @@ input {
     padding: 1.5rem;
   }
   .feedback__form {
-        grid-template-areas: "name name name" "phone phone email" "text text text" "politic captcha submit";
+        grid-template-areas: "name name name" "phone phone email" "text text text" "politic captcha submit";
     gap: 4rem;
   }
   .feedback__form input {
@@ -8249,7 +8248,7 @@ input {
     padding: 1.5rem;
   }
   .write-review__form {
-        grid-template-areas: "name name name" "phone phone email" "text text text" "politic captcha submit";
+        grid-template-areas: "name name name" "phone phone email" "text text text" "politic captcha submit";
     gap: 4rem;
   }
   .write-review__form input {
@@ -9279,7 +9278,7 @@ input {
 .login-modal__content {
   z-index: 2900;
   display: none;
-      grid-template-areas: "title title" "label-email label-email" "input-email input-email" "label-pass remind" "input-pass input-pass" "btn-block btn-block";
+      grid-template-areas: "title title" "label-email label-email" "input-email input-email" "label-pass remind" "input-pass input-pass" "btn-block btn-block";
   position: relative;
   background: #fff;
   width: 480px;

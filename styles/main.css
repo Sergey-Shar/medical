@@ -7021,7 +7021,11 @@ input {
   z-index: -10;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
-  overflow: scroll;
+  overflow: auto;
+}
+
+.nav-modal__overlay::-webkit-scrollbar {
+  display: none;
 }
 
 .nav-modal__body {

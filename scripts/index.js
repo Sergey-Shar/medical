@@ -253,11 +253,11 @@ const onClickBurgerNav = () => {
 
   if (navModal.className === 'nav-modal open') {
     document.body.style.overflow = 'hidden'
-    document.body.style.paddingRight = '16.8px'
+    //document.body.style.paddingRight = '16.8px'
   }
   else {
     document.body.style.overflow = 'visible'
-    document.body.style.paddingRight = '0'
+    //document.body.style.paddingRight = '0'
 
   }
 };

@@ -136,7 +136,7 @@ html {
 }
 
 * {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .wrapper {
@@ -161,7 +161,7 @@ html {
 .wrapper option,
 .wrapper label,
 .wrapper input {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .wrapper select {
@@ -178,11 +178,11 @@ html {
   font-weight: normal;
 }
 
-.wrapper select *[dir="rtl"] .select-css,
+.wrapper select *[dir='rtl'] .select-css,
 .wrapper select :root:lang(ar) .select-css,
 .wrapper select :root:lang(iw) .select-css {
-  background-position: left .7em top 50%, 0 0;
-  padding: .6em .8em .5em 1.4em;
+  background-position: left 0.7em top 50%, 0 0;
+  padding: 0.6em 0.8em 0.5em 1.4em;
 }
 
 .wrapper select::-ms-expand {
@@ -194,8 +194,8 @@ html {
 }
 
 .wrapper select:focus {
-  border-color: #B8B8B8;
-  background: #F3F3F3;
+  border-color: #b8b8b8;
+  background: #f3f3f3;
   color: #222;
   outline: none;
 }
@@ -825,6 +825,222 @@ input {
   }
 }
 
+.range-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+.range-input__inputs {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 3rem;
+}
+
+.range-input__inputs input[type='range'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  outline: none;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.range-input__inputs input[type='range']::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 5px;
+}
+
+.range-input__inputs input[type='range']::-moz-range-track {
+  -moz-appearance: none;
+  height: 5px;
+}
+
+.range-input__inputs input[type='range']::-ms-track {
+  appearance: none;
+  height: 5px;
+}
+
+.range-input__inputs input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 1em;
+  width: 1em;
+  background-color: #10ae73;
+  cursor: pointer;
+  border-radius: 50%;
+  pointer-events: auto;
+  margin-top: -4px;
+  pointer-events: auto;
+}
+
+.range-input__inputs input[type='range']:active::-webkit-slider-thumb {
+  background-color: #fff;
+  border: 1px solid #10ae73;
+}
+
+.range-input__values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.range-input__value {
+  border: 1px solid #cfcfcf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0.5rem;
+  height: 5rem;
+  width: 10rem;
+}
+
+.range-input__value-from {
+  font-size: 1.6rem;
+}
+
+.range-input__value-to {
+  font-size: 1.6rem;
+}
+
+.range-input__track {
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+
+.range-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+.range-input__inputs-modal {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 3rem;
+}
+
+.range-input__inputs-modal input[type='range'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  outline: none;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.range-input__inputs-modal input[type='range']::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 5px;
+}
+
+.range-input__inputs-modal input[type='range']::-moz-range-track {
+  -moz-appearance: none;
+  height: 5px;
+}
+
+.range-input__inputs-modal input[type='range']::-ms-track {
+  appearance: none;
+  height: 5px;
+}
+
+.range-input__inputs-modal input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 1em;
+  width: 1em;
+  background-color: #10ae73;
+  cursor: pointer;
+  border-radius: 50%;
+  pointer-events: auto;
+  margin-top: -4px;
+  pointer-events: auto;
+}
+
+.range-input__inputs-modal input[type='range']:active::-webkit-slider-thumb {
+  background-color: #fff;
+  border: 1px solid #10ae73;
+}
+
+.range-input__values-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.range-input__value-modal {
+  border: 1px solid #cfcfcf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0.5rem;
+  height: 5rem;
+  width: 10rem;
+}
+
+.range-input__value-from-modal {
+  font-size: 1.6rem;
+}
+
+.range-input__value-to-modal {
+  font-size: 1.6rem;
+}
+
+.range-input__track-modal {
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+
 .sheckbox {
   /* стили при наведении курсора на checkbox */
   /* стили для активного состояния чекбокса (при нажатии на него) */
@@ -1065,7 +1281,7 @@ input {
   margin: 4rem 0 3rem 3rem;
 }
 
-.filter-modal__price .range-input__value {
+.filter-modal__price .range-input__value-modal {
   width: 40%;
   margin: 0 2rem 2rem 2rem;
   height: 7rem;
@@ -1077,7 +1293,7 @@ input {
           align-items: center;
 }
 
-.filter-modal__price .range-input__inputs {
+.filter-modal__price .range-input__inputs-modal {
   margin: 0 3rem;
   width: 90%;
 }
@@ -7009,7 +7225,7 @@ input {
 .nav-modal a,
 .nav-modal span,
 .nav-modal div {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .nav-modal__overlay {
@@ -9282,7 +9498,7 @@ input {
 .login-modal__content {
   z-index: 2900;
   display: none;
-      grid-template-areas: "title title" "label-email label-email" "input-email input-email" "label-pass remind" "input-pass input-pass" "btn-block btn-block";
+      grid-template-areas: 'title title' 'label-email label-email' 'input-email input-email' 'label-pass remind' 'input-pass input-pass' 'btn-block btn-block';
   position: relative;
   background: #fff;
   width: 480px;
@@ -9298,7 +9514,7 @@ input {
 }
 
 .login-modal__content input {
-  border: 2px solid #B8B8B8;
+  border: 2px solid #b8b8b8;
   border-radius: 10px;
   height: 50px;
   width: 320px;
@@ -9334,14 +9550,14 @@ input {
           flex-direction: column-reverse;
 }
 
-.login-modal__content label[for=login-email] {
+.login-modal__content label[for='login-email'] {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: label-email;
 }
 
-.login-modal__content label[for=login-pass] {
+.login-modal__content label[for='login-pass'] {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: label-pass;
@@ -9352,7 +9568,7 @@ input {
   position: absolute;
   right: 0;
   top: 0;
-  background: #FFF;
+  background: #fff;
   color: #000;
   font-weight: bold;
   font-size: 20px;
@@ -9431,12 +9647,12 @@ input {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: remind;
-  background: #FFF;
+  background: #fff;
   justify-self: flex-end;
 }
 
 .login-modal__link-remind:hover {
-  color: #10AE73;
+  color: #10ae73;
   text-decoration: underline;
 }
 
@@ -9489,7 +9705,8 @@ input {
     font-size: 14px;
     border-radius: 32px;
   }
-  .login-modal__password-block img, .login-modal__email-block img {
+  .login-modal__password-block img,
+  .login-modal__email-block img {
     top: 20%;
   }
 }

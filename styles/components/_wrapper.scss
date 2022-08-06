@@ -1,71 +1,68 @@
 * {
-  font-family: "Nunito", sans-serif;
+	font-family: 'Nunito', sans-serif;
 }
 .wrapper {
+	@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&display=swap');
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	background-color: #fff;
 
-  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&display=swap");
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  background-color: #fff;
+	*,
+	a,
+	h1,
+	h2,
+	h3,
+	p,
+	select,
+	option,
+	label,
+	input {
+		font-family: 'Nunito', sans-serif;
+	}
 
+	& select {
+		border: 1px solid #b8b8b8;
+		border-radius: 0.5rem;
+		box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+		font-size: 14px;
+		background-color: #fff;
+		color: #222;
 
-  *,
-  a,
-  h1,
-  h2,
-  h3,
-  p,
-  select,
-  option,
-  label,
-  input {
-    font-family: "Nunito", sans-serif;
-  }
+		& option {
+			font-weight: normal;
+		}
 
-  & select {
-    border: 1px solid #b8b8b8;
-    border-radius: 0.5rem;
-    box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
-    font-size: 14px;
-    background-color: #fff;
-    color: #222;
+		*[dir='rtl'] .select-css,
+		:root:lang(ar) .select-css,
+		:root:lang(iw) .select-css {
+			background-position: left 0.7em top 50%, 0 0;
+			padding: 0.6em 0.8em 0.5em 1.4em;
+		}
 
-    & option {
-      font-weight: normal;
-    }
+		&::-ms-expand {
+			display: none;
+		}
 
-    *[dir="rtl"] .select-css,
-    :root:lang(ar) .select-css,
-    :root:lang(iw) .select-css {
-      background-position: left .7em top 50%, 0 0;
-      padding: .6em .8em .5em 1.4em;
-    }
+		&:hover {
+			border-color: #888;
+		}
 
-    &::-ms-expand {
-      display: none;
-    }
-
-    &:hover {
-      border-color: #888;
-    }
-
-    &:focus {
-      border-color: #B8B8B8;
-      background: #F3F3F3;
-      // box-shadow: 0 0 1px 3px red;
-      // box-shadow: 0 0 0 3px -moz-mac-focusring;
-      color: #222;
-      outline: none;
-    }
-  }
+		&:focus {
+			border-color: #b8b8b8;
+			background: #f3f3f3;
+			// box-shadow: 0 0 1px 3px red;
+			// box-shadow: 0 0 0 3px -moz-mac-focusring;
+			color: #222;
+			outline: none;
+		}
+	}
 }
 
 a {
-  color: #000;
+	color: #000;
 }
 
 input {
-  padding-left: 1rem;
+	padding-left: 1rem;
 }
-

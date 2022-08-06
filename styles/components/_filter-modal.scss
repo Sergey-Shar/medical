@@ -83,7 +83,7 @@
             margin: 4rem 0 3rem 3rem;
         }
 
-        & .range-input__value {
+        & .range-input__value-modal {
             width: 40%;
             margin: 0 2rem 2rem 2rem;
             height: 7rem;
@@ -91,7 +91,7 @@
             align-items: center;
         }
 
-        & .range-input__inputs {
+        & .range-input__inputs-modal {
             margin: 0 3rem;
             width: 90%;
         }
@@ -170,6 +170,7 @@
         }
     }
 }
+
 
 @media screen and(max-width:480px) {
     .filter-modal {

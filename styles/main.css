@@ -852,6 +852,7 @@ input {
   position: absolute;
   margin: auto;
   top: 0;
+  left: -5px;
   bottom: 0;
   background-color: transparent;
   pointer-events: none;
@@ -882,6 +883,23 @@ input {
   pointer-events: auto;
   margin-top: -4px;
   pointer-events: auto;
+}
+
+.range-input__inputs input[type='range']::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 1em;
+  width: 1em;
+  background-color: #10ae73;
+  cursor: pointer;
+  border-radius: 50%;
+  pointer-events: auto;
+  margin-top: -4px;
+  pointer-events: auto;
+}
+
+.range-input__inputs input[type='range']:active::-moz-range-thumb {
+  background-color: #fff;
+  border: 1px solid #10ae73;
 }
 
 .range-input__inputs input[type='range']:active::-webkit-slider-thumb {
@@ -924,12 +942,13 @@ input {
 }
 
 .range-input__track {
-  width: 100%;
+  width: 90%;
   height: 3px;
   position: absolute;
   margin: auto;
   top: 0;
   bottom: 0;
+  left: 10px;
   border-radius: 5px;
 }
 
@@ -955,11 +974,12 @@ input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 100%;
+  width: 95%;
   outline: none;
   position: absolute;
   margin: auto;
   top: 0;
+  left: -5px;
   bottom: 0;
   background-color: transparent;
   pointer-events: none;
@@ -990,6 +1010,23 @@ input {
   pointer-events: auto;
   margin-top: -4px;
   pointer-events: auto;
+}
+
+.range-input__inputs-modal input[type='range']::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 1em;
+  width: 1em;
+  background-color: #10ae73;
+  cursor: pointer;
+  border-radius: 50%;
+  pointer-events: auto;
+  margin-top: -4px;
+  pointer-events: auto;
+}
+
+.range-input__inputs-modal input[type='range']:active::-moz-range-thumb {
+  background-color: #fff;
+  border: 1px solid #10ae73;
 }
 
 .range-input__inputs-modal input[type='range']:active::-webkit-slider-thumb {
@@ -1032,12 +1069,13 @@ input {
 }
 
 .range-input__track-modal {
-  width: 100%;
+  width: 90%;
   height: 3px;
   position: absolute;
   margin: auto;
   top: 0;
   bottom: 0;
+  left: 10px;
   border-radius: 5px;
 }
 

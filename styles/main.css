@@ -1079,6 +1079,42 @@ input {
   border-radius: 5px;
 }
 
+.loader {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #10ae73;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 17.5% auto;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .sheckbox {
   /* стили при наведении курсора на checkbox */
   /* стили для активного состояния чекбокса (при нажатии на него) */

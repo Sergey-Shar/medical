@@ -12,6 +12,9 @@
         margin-bottom: 3rem;
         line-height: 4rem;
     }
+    &__content {
+        margin-left: calc(30rem + 80px);
+    }
     &__list {
         margin-left: 20px;
         display: flex;
@@ -64,7 +67,9 @@
 
 @media screen and(max-width:1100px) {
     .paysystem {
-        
+        &__content {
+            margin-left: 0;
+        }   
     }
 }
 

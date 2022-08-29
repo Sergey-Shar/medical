@@ -19,10 +19,16 @@ main {
   .container {
     padding: 0 15px;
   }
+  main {
+    margin-top: 93px;
+  }
 }
 
 @media screen and(max-width: 480px) {
   .container-main {
     padding: 0 10px;
+  }
+  main {
+    margin-top: 62px;
   }
 }

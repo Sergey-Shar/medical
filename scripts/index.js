@@ -18,9 +18,6 @@ const swiperBanner = new Swiper('.banner__swiper', {
 	touchRatio: 5,
 	loop: true,
 	loopFillGroupWithBlank: true,
-	mousewheel: {
-		invert: true,
-	},
 	pagination: {
 		el: '.swiper-pagination',
 		type: 'custom',
@@ -90,9 +87,6 @@ const swiperBrands = new Swiper('.brands__swiper', {
 			slidesPerView: 3,
 		},
 	},
-	mousewheel: {
-		invert: true,
-	},
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
@@ -108,9 +102,6 @@ const swiperArticles = new Swiper('.articles__swiper', {
 	grabCursor: true,
 	touchRatio: 5,
 	loopFillGroupWithBlank: true,
-	mousewheel: {
-		invert: true,
-	},
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
@@ -141,9 +132,6 @@ const swiperReviews = new Swiper('.reviews__swiper', {
 	touchRatio: 5,
 	loop: true,
 	loopFillGroupWithBlank: true,
-	mousewheel: {
-		invert: true,
-	},
 	breakpoints: {
 		480: {
 			slidesPerView: 1,
@@ -372,9 +360,11 @@ btnCloseModalFeedback.addEventListener('click', (e) => {
 		if (!e.target.value) {
 			searchResult.style.zIndex = '0';
 			searchResult.style.opacity = '0';
+			searchResult.style.transform = 'scale(0)'
 		} else {
 			searchResult.style.opacity = '1';
 			searchResult.style.zIndex = '1000';
+			searchResult.style.transform = 'scale(1)'
 		}
 	};
 

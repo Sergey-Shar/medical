@@ -1,5 +1,10 @@
 .header {
   border-bottom: 1px solid #c2c2c2;
+  position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    background: white;
 
   &__burger {
     display: none;
@@ -17,6 +22,10 @@
     & .header__dropdown-icon-up {
       opacity: 0;
     }
+  }
+
+  &__dropdown-container {
+    position: relative;
   }
 
   &__dropdown-icon-down {
@@ -63,7 +72,8 @@
   &__icons-buttons {
     display: flex;
     justify-content: space-between;
-    width: 30rem;
+    // width: 30rem;
+    gap: 20px;
   }
 
   &__line {
@@ -78,6 +88,9 @@
     width: 100%;
     height: 6.5rem;
     gap: 14%;
+  }
+  &__tel {
+    margin: 0 5.5rem;
   }
 }
 

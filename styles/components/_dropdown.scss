@@ -9,7 +9,8 @@
         backdrop-filter: blur(36px);
         z-index: 2000;
         transition: all 0.5s ease 0s;
-        opacity: 1;
+        // opacity: 1;
+        transform: translateY(-0);
         box-shadow: 15px 15px 55px #00000029;
     }
 
@@ -30,7 +31,8 @@
         border-bottom-left-radius: 2rem;
         border-bottom-right-radius: 2rem;
         transition: all 0.5s ease 0s;
-        opacity: 0;
+        // opacity: 0;
+        transform: translateY(-100%);
         backdrop-filter: blur(3px);
         width: 37.4rem;
         height: 40rem;

@@ -214,6 +214,7 @@ main {
 @media screen and (max-width: 1100px) {
   .container-main {
     padding: 0 15px;
+    max-width: 768px;
   }
   .container {
     padding: 0 15px;
@@ -1375,7 +1376,7 @@ main {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   background: white;
 }
 .header__burger {
@@ -2132,6 +2133,13 @@ main {
 }
 .brands {
   background: linear-gradient(226.84deg, #134574 16.01%, #10ae73 100%);
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .brands__container {
   position: relative;
@@ -2150,47 +2158,79 @@ main {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 3.5rem;
-  line-height: 4.2rem;
+  font-size: 35px;
+  line-height: 3.8rem;
   color: #ffffff;
+  margin-right: 6rem;
 }
 .brands__swiper {
-  height: 50%;
-  width: 80%;
+  height: 300px;
   padding: 0 3.5rem;
+}
+.brands__swiper .swiper-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .brands__btn-next {
   position: absolute;
   right: 0;
   color: #fff;
 }
+.brands__btn-next::after {
+  font-size: 30px;
+  font-weight: bold;
+}
 .brands__btn-prev {
   position: absolute;
   left: 0;
   color: #fff;
 }
+.brands__btn-prev::after {
+  font-size: 30px;
+  font-weight: bold;
+}
 .brands__img {
-  -webkit-transition: -webkit-transform 0.5s linear;
-  transition: -webkit-transform 0.5s linear;
-  transition: transform 0.5s linear;
-  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
   overflow: hidden;
-  min-height: 10rem;
   padding: 1.3rem;
   cursor: pointer;
+  height: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  border-radius: 10px;
 }
 .brands__img:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  height: 155px;
 }
 
 @media screen and (max-width: 1100px) {
   .brands__container {
-    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-bottom: 4rem;
+    gap: 30px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .brands__title {
     margin: 20px 0 10px 0;
+  }
+  .brands__swiper {
+    width: 100%;
+    height: auto;
   }
   .brands__btn-next {
     right: -2px;
@@ -2204,6 +2244,9 @@ main {
   }
 }
 @media screen and (max-width: 480px) {
+  .brands {
+    height: 210px;
+  }
   .brands__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2216,6 +2259,7 @@ main {
     padding-bottom: 0;
   }
   .brands__title {
+    font-size: 18px;
     margin: 10px 0 10px 0;
   }
   .brands__swiper {
@@ -2228,6 +2272,10 @@ main {
   }
   .brands__img {
     padding: 0rem;
+    height: 80px;
+  }
+  .brands__img img {
+    width: 100%;
   }
 }
 .reviews {
@@ -2402,7 +2450,7 @@ main {
   }
   .reviews__button {
     position: relative;
-    z-index: 100;
+    z-index: 2;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2415,7 +2463,7 @@ main {
   }
   .reviews__subtitle {
     position: relative;
-    z-index: 100;
+    z-index: 2;
     width: 100%;
     line-height: 4rem;
   }
@@ -2468,7 +2516,6 @@ main {
   .reviews__subtitle {
     font-size: 14px;
     position: relative;
-    z-index: 100;
     margin-top: 20px;
     margin-left: 0;
     line-height: 4.5rem;

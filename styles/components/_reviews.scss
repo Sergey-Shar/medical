@@ -147,7 +147,7 @@
 
     &__button {
       position: relative;
-      z-index: 100;
+      z-index: 2;
       justify-content: center;
     }
 
@@ -160,7 +160,7 @@
 
     &__subtitle {
       position: relative;
-      z-index: 100;
+      z-index: 2;
       width: 100%;
       line-height: 4rem;
     }
@@ -207,7 +207,6 @@
     &__subtitle {
       font-size: 14px;
       position: relative;
-      z-index: 100;
       margin-top: 20px;
       margin-left: 0;
       line-height: 4.5rem;

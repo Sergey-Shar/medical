@@ -68,7 +68,7 @@ const swiperFeatures = new Swiper('.features__swiper', {
 
 const swiperBrands = new Swiper('.brands__swiper', {
 	slidesPerView: 4,
-	spaceBetween: 45,
+	spaceBetween: 38,
 	speed: 1000,
 	slideToClikedSlide: true,
 	grabCursor: true,
@@ -80,12 +80,12 @@ const swiperBrands = new Swiper('.brands__swiper', {
 			slidesPerView: 2,
 			spaceBetween: 50,
 		},
-		480: {
-			slidesPerView: 2,
-		},
 		768: {
 			slidesPerView: 3,
 		},
+		1100: {
+			slidesPerView: 4,
+		}
 	},
 	navigation: {
 		nextEl: '.swiper-button-next',
@@ -135,7 +135,7 @@ const swiperReviews = new Swiper('.reviews__swiper', {
 	breakpoints: {
 		480: {
 			slidesPerView: 1,
-			spaceBetween: 5,
+			spaceBetween: 50,
 		},
 		769: {
 			slidesPerView: 3,

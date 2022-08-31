@@ -2415,7 +2415,7 @@ main {
 
 .brands__btn-next {
   position: absolute;
-  right: 0;
+  right: -40px;
   color: #fff;
 }
 
@@ -2426,7 +2426,7 @@ main {
 
 .brands__btn-prev {
   position: absolute;
-  left: 0;
+  left: 276px;
   color: #fff;
 }
 
@@ -2465,8 +2465,12 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-bottom: 4rem;
+    padding-bottom: 0;
     gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 300px;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -2475,14 +2479,23 @@ main {
     margin: 20px 0 10px 0;
   }
   .brands__swiper {
-    width: 100%;
+    width: 90%;
     height: auto;
+    padding: 0;
   }
   .brands__btn-next {
-    right: -2px;
+    right: 0;
+    top: 64%;
+  }
+  .brands__btn-next::after {
+    font-size: 20px;
   }
   .brands__btn-prev {
-    left: -2px;
+    left: 0;
+    top: 64%;
+  }
+  .brands__btn-prev::after {
+    font-size: 20px;
   }
   .brands__img:hover {
     -webkit-transform: scale(1);
@@ -2503,6 +2516,7 @@ main {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    min-height: 0;
     padding-bottom: 0;
   }
   .brands__title {
@@ -2510,12 +2524,15 @@ main {
     margin: 10px 0 10px 0;
   }
   .brands__swiper {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 0 8rem;
+    width: 85%;
+    margin-bottom: 0;
+    padding: 0;
   }
   .brands__btn-next::after, .brands__btn-prev::after {
     font-size: 21px;
+  }
+  .brands__btn-next, .brands__btn-prev {
+    top: 73%;
   }
   .brands__img {
     padding: 0rem;

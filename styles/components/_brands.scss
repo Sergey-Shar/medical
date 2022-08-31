@@ -33,7 +33,7 @@
 
   &__btn-next {
     position: absolute;
-    right: 0;
+    right: -40px;
     color: #fff;
     &::after {
       font-size: 30px;
@@ -43,7 +43,7 @@
 
   &__btn-prev {
     position: absolute;
-    left: 0;
+    left: 276px;
     color: #fff;
     &::after {
       font-size: 30px;
@@ -74,8 +74,10 @@
     &__container {
       // display: block;
       flex-direction: column;
-      padding-bottom: 4rem;
+      padding-bottom: 0;
       gap: 30px;
+      justify-content: center;
+      min-height: 300px;
       align-items: baseline;
     }
 
@@ -83,16 +85,25 @@
       margin: 20px 0 10px 0;
     }
     &__swiper {
-      width: 100%;
+      width: 90%;
       height: auto;
+      padding: 0;
     }
 
     &__btn-next {
-      right: -2px;
+      right: 0;
+      top: 64%;
+      &::after {
+        font-size: 20px;
+      }
     }
 
     &__btn-prev {
-      left: -2px;
+      left: 0;
+      top: 64%;
+      &::after {
+        font-size: 20px;
+      }
     }
 
     &__img {
@@ -110,6 +121,7 @@
       display: flex;
       flex-direction: column;
       width: 100%;
+      min-height: 0;
       padding-bottom: 0;
     }
 
@@ -119,9 +131,9 @@
     }
 
     &__swiper {
-      width: 100%;
-      margin-bottom: 15px;
-      padding: 0 8rem;
+      width: 85%;
+      margin-bottom: 0;
+      padding: 0;
       & .swiper-wrapper {
         // height: 210px;
       }
@@ -130,6 +142,10 @@
     &__btn-next::after,
     &__btn-prev::after {
       font-size: 21px;
+    }
+    &__btn-next,
+    &__btn-prev {
+      top: 73%;
     }
 
     &__img {

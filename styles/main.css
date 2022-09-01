@@ -416,7 +416,8 @@ main {
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   width: 37.4rem;
-  height: 40rem;
+  min-height: 40rem;
+  padding-bottom: 3rem;
 }
 .dropdown__body {
   display: -webkit-box;
@@ -431,9 +432,7 @@ main {
           justify-content: center;
   width: 30rem;
   min-height: 30rem;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  padding-top: 35%;
   gap: 1rem;
   opacity: 0;
   -webkit-transition: all 0.5s ease 0s;

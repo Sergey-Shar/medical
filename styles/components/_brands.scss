@@ -63,9 +63,9 @@
     background: white;
     border-radius: 10px;
 
-    &:hover {
-      height: 155px;
-    }
+    // &:hover {
+    //   height: 155px;
+    // }
   }
 }
 
@@ -134,9 +134,6 @@
       width: 85%;
       margin-bottom: 0;
       padding: 0;
-      & .swiper-wrapper {
-        // height: 210px;
-      }
     }
 
     &__btn-next::after,

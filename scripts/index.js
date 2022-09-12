@@ -83,7 +83,7 @@ const swiperBrands = new Swiper('.brands__swiper', {
 		768: {
 			slidesPerView: 3,
 		},
-		1100: {
+		1281: {
 			slidesPerView: 4,
 		}
 	},

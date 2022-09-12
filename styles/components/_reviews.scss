@@ -5,8 +5,14 @@
   &__top {
     display: flex;
     margin-bottom: 4.7rem;
+    padding: 3rem 0;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    background: url(../common/images/quotes.png);
+    background-repeat: no-repeat;
+    background-position-x: 80%;
   }
   &__text {
     width: 52%;
@@ -107,7 +113,7 @@
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 768px) {
   .reviews {
     padding: 1rem 0 3.8rem;
 
@@ -116,8 +122,10 @@
       min-height: 180px;
       justify-content: space-between;
       align-items: flex-start;
-      margin-top: 12rem;
+      padding: 12rem 0;
       margin-bottom: 0;
+      background-position-x: 70%;
+      background-position-y: 30%;
     }
     &__text {
       width: auto;
